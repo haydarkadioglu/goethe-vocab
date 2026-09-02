@@ -4,6 +4,8 @@ import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { VocabCard } from './components/VocabCard';
 import { Flashcards } from './components/Flashcards';
+import { SpeedDrill } from './components/SpeedDrill';
+import { ListeningQuiz } from './components/ListeningQuiz';
 import { Quiz } from './components/Quiz';
 import { HomePage } from './components/HomePage';
 import { VocabWord, CEFRLevel, PartOfSpeech, AppView, SupportedLanguage, ThemeMode } from './types';
@@ -149,10 +151,11 @@ export const App: React.FC = () => {
         const q = searchQuery.toLowerCase().trim();
         const matchWord = w.word.toLowerCase().includes(q);
         const matchEn = w.meaning_en && w.meaning_en.toLowerCase().includes(q);
+        const matchTr = w.meaning_tr && w.meaning_tr.toLowerCase().includes(q);
         const matchForms = w.forms && w.forms.toLowerCase().includes(q);
         const matchPlural = w.plural && w.plural.toLowerCase().includes(q);
         const matchExamples = w.examples && w.examples.some(ex => ex.toLowerCase().includes(q));
-        return matchWord || matchEn || matchForms || matchPlural || matchExamples;
+        return matchWord || matchEn || matchTr || matchForms || matchPlural || matchExamples;
       }
       return true;
     });
@@ -185,12 +188,13 @@ export const App: React.FC = () => {
   };
 
   const handleDownloadCSV = () => {
-    const headers = ['id', 'level', 'word', 'meaning_en', 'full_entry', 'article', 'pos', 'plural', 'forms', 'examples', 'page'];
+    const headers = ['id', 'level', 'word', 'meaning_en', 'meaning_tr', 'full_entry', 'article', 'pos', 'plural', 'forms', 'examples', 'page'];
     const rows = filteredWords.map(w => [
       `"${w.id}"`,
       `"${w.level}"`,
       `"${w.word.replace(/"/g, '""')}"`,
       `"${(w.meaning_en || '').replace(/"/g, '""')}"`,
+      `"${(w.meaning_tr || '').replace(/"/g, '""')}"`,
       `"${(w.full_entry || '').replace(/"/g, '""')}"`,
       `"${w.article || ''}"`,
       `"${w.pos || ''}"`,
@@ -204,7 +208,7 @@ export const App: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.setAttribute('href', url);
-    link.setAttribute('download', `goethe_vocab_${selectedLevel.toLowerCase()}_en.csv`);
+    link.setAttribute('download', `goethe_vocab_${selectedLevel.toLowerCase()}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -216,7 +220,7 @@ export const App: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.setAttribute('href', url);
-    link.setAttribute('download', `goethe_vocab_${selectedLevel.toLowerCase()}_en.json`);
+    link.setAttribute('download', `goethe_vocab_${selectedLevel.toLowerCase()}.json`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -229,7 +233,7 @@ export const App: React.FC = () => {
           🇩🇪
         </div>
         <h2 className="text-xl font-black text-zinc-900 dark:text-white tracking-tight">Loading Goethe Vocabulary...</h2>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 font-medium">Connecting to browser local database</p>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 font-medium">Connecting to browser database</p>
       </div>
     );
   }
@@ -237,7 +241,7 @@ export const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-zinc-100/90 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 flex flex-col bg-grid-pattern selection:bg-amber-200 selection:text-amber-900 dark:selection:bg-amber-900 dark:selection:text-amber-100 transition-colors">
       
-      {/* Header with Theme Toggle */}
+      {/* Header */}
       <Header
         currentView={currentView}
         onSelectView={setCurrentView}
@@ -372,7 +376,20 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 2: FLASHCARDS */}
+          {/* VIEW 2: SPEED DRILL ("Der, Die, Das" Reflex) */}
+          {currentView === 'speed-drill' && (
+            <motion.div
+              key="speed-drill-view"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.22, ease: 'easeOut' }}
+            >
+              <SpeedDrill words={allWords} />
+            </motion.div>
+          )}
+
+          {/* VIEW 3: FLASHCARDS */}
           {currentView === 'flashcards' && (
             <motion.div
               key="flashcards-view"
@@ -390,7 +407,7 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 3: QUIZ */}
+          {/* VIEW 4: QUIZ */}
           {currentView === 'quiz' && (
             <motion.div
               key="quiz-view"
@@ -406,7 +423,23 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 4: FAVORITES (SAVED) */}
+          {/* VIEW 5: LISTENING (Hörverstehen) */}
+          {currentView === 'listening' && (
+            <motion.div
+              key="listening-view"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.22, ease: 'easeOut' }}
+            >
+              <ListeningQuiz
+                words={filteredWords}
+                targetLang={targetLang}
+              />
+            </motion.div>
+          )}
+
+          {/* VIEW 6: FAVORITES */}
           {currentView === 'favorites' && (
             <motion.div
               key="favorites-view"
@@ -431,7 +464,6 @@ export const App: React.FC = () => {
                 </div>
               ) : (
                 <div>
-                  {/* Saved Header bar */}
                   <div className="flex items-center justify-between bg-white/95 dark:bg-zinc-900/95 p-4 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 mb-6 shadow-xs">
                     <div className="flex items-center gap-2">
                       <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
@@ -482,7 +514,7 @@ export const App: React.FC = () => {
       {/* Footer */}
       <footer className="mt-auto border-t border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-100/80 dark:bg-zinc-950/80 py-6 text-center text-xs text-zinc-500 dark:text-zinc-400 transition-colors">
         <p>
-          Official Goethe-Zertifikat A1, A2 & B1 Vocabulary Datasets • Pre-Translated English • Free On-Demand Multilingual • Native German TTS • Browser Local DB
+          Official Goethe-Zertifikat A1, A2 & B1 Vocabulary Datasets • Pre-Translated English & Turkish • Native German TTS with Speed Control • Offline PWA
         </p>
       </footer>
 

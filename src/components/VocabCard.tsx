@@ -20,9 +20,14 @@ export const VocabCard: React.FC<VocabCardProps> = ({
   onToggleFavorite,
   index = 0
 }) => {
-  // If English, we already have word.meaning_en pre-translated!
-  const defaultEnglish = word.meaning_en || null;
-  const [wordTranslation, setWordTranslation] = useState<string | null>(targetLang === 'en' ? defaultEnglish : null);
+  // Pre-translated meaning (English or Turkish)
+  const getPreTranslated = () => {
+    if (targetLang === 'en') return word.meaning_en || null;
+    if (targetLang === 'tr') return word.meaning_tr || null;
+    return null;
+  };
+
+  const [wordTranslation, setWordTranslation] = useState<string | null>(getPreTranslated());
   const [exampleTranslations, setExampleTranslations] = useState<Record<number, string>>({});
   const [loadingWordTrans, setLoadingWordTrans] = useState(false);
   const [loadingExTrans, setLoadingExTrans] = useState<Record<number, boolean>>({});
@@ -30,13 +35,10 @@ export const VocabCard: React.FC<VocabCardProps> = ({
 
   // Update translation when target language changes
   useEffect(() => {
-    if (targetLang === 'en') {
-      setWordTranslation(word.meaning_en || null);
-    } else {
-      setWordTranslation(null);
-    }
+    const pre = getPreTranslated();
+    setWordTranslation(pre);
     setExampleTranslations({});
-  }, [targetLang, word.meaning_en]);
+  }, [targetLang, word.meaning_en, word.meaning_tr]);
 
   // Subscribe to speech state
   useEffect(() => {
@@ -49,7 +51,6 @@ export const VocabCard: React.FC<VocabCardProps> = ({
     });
   }, [word.word]);
 
-  // Gender article badge
   const getArticleBadge = () => {
     if (!word.article) return null;
     const styles: Record<string, { bg: string; text: string; border: string }> = {
@@ -65,7 +66,6 @@ export const VocabCard: React.FC<VocabCardProps> = ({
     );
   };
 
-  // CEFR level badge
   const getLevelBadge = () => {
     const map = {
       A1: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-800/60',
@@ -79,8 +79,10 @@ export const VocabCard: React.FC<VocabCardProps> = ({
     );
   };
 
+  const isPreTranslated = targetLang === 'en' || targetLang === 'tr';
+
   const handleTranslateWord = async () => {
-    if (wordTranslation && targetLang !== 'en') {
+    if (wordTranslation && !isPreTranslated) {
       setWordTranslation(null);
       return;
     }
@@ -186,8 +188,8 @@ export const VocabCard: React.FC<VocabCardProps> = ({
               )}
             </motion.button>
 
-            {/* Translate Button */}
-            {targetLang !== 'en' && (
+            {/* Translate Button for other languages */}
+            {!isPreTranslated && (
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -209,7 +211,7 @@ export const VocabCard: React.FC<VocabCardProps> = ({
           </div>
         </div>
 
-        {/* Translation Box (Pre-loaded English or on-demand other language) */}
+        {/* Pre-translated Translation Box */}
         <AnimatePresence>
           {wordTranslation && (
             <motion.div
@@ -262,7 +264,6 @@ export const VocabCard: React.FC<VocabCardProps> = ({
                   </div>
                 </div>
 
-                {/* Animated Example Translation */}
                 <AnimatePresence>
                   {exampleTranslations[idx] && (
                     <motion.div
@@ -284,7 +285,6 @@ export const VocabCard: React.FC<VocabCardProps> = ({
         )}
       </div>
 
-      {/* Card Footer */}
       <div className="mt-4 pt-2.5 flex items-center justify-between text-[10px] font-mono text-zinc-400 dark:text-zinc-500 border-t border-zinc-100 dark:border-zinc-800">
         <span>ID: {word.id}</span>
         <span>Goethe PDF p.{word.page}</span>

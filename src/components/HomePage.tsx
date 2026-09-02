@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Layers, Award, Download, ExternalLink, ArrowRight, CheckCircle2, Sparkles, Volume2, Globe, FileSpreadsheet, FileCode, ShieldCheck } from 'lucide-react';
+import { BookOpen, Layers, Award, Download, ExternalLink, ArrowRight, CheckCircle2, Sparkles, Volume2, Globe, FileSpreadsheet, FileCode, ShieldCheck, Zap, Headphones } from 'lucide-react';
 import { AppView, CEFRLevel } from '../types';
 
 interface HomePageProps {
@@ -17,9 +17,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
       wordsCount: counts.a1,
       badgeColor: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/80',
       heroBorder: 'hover:border-emerald-300 dark:hover:border-emerald-700',
-      description: 'Foundational vocabulary for everyday situations, greetings, shopping, numbers, time, family, and essential survival German with English translations.',
+      description: 'Foundational vocabulary for everyday situations, greetings, shopping, numbers, time, family, and essential survival German with English & Turkish translations.',
       pdfUrl: 'https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf',
-      csvFile: './data/words_a1_en.csv',
+      csvFile: './data/words_a1_tr.csv',
       jsonFile: './data/words_a1.json',
     },
     {
@@ -31,7 +31,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
       heroBorder: 'hover:border-sky-300 dark:hover:border-sky-700',
       description: 'Elementary vocabulary covering workplace routines, leisure, health, travel, past tenses (Perfekt & Präteritum forms), and expressing opinions.',
       pdfUrl: 'https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf',
-      csvFile: './data/words_a2_en.csv',
+      csvFile: './data/words_a2_tr.csv',
       jsonFile: './data/words_a2.json',
     },
     {
@@ -41,43 +41,43 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
       wordsCount: counts.b1,
       badgeColor: 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800/80',
       heroBorder: 'hover:border-indigo-300 dark:hover:border-indigo-700',
-      description: 'Intermediate German developed jointly with ÖSD and Uni Freiburg (Schweiz). Pluricentric vocabulary across Germany, Austria, and Switzerland with English.',
+      description: 'Intermediate German developed jointly with ÖSD and Uni Freiburg (Schweiz). Pluricentric vocabulary across Germany, Austria, and Switzerland.',
       pdfUrl: 'https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf',
-      csvFile: './data/words_b1_en.csv',
+      csvFile: './data/words_b1_tr.csv',
       jsonFile: './data/words_b1.json',
     },
   ];
 
   const features = [
     {
-      icon: <Globe className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />,
-      title: 'Pre-Translated & Multilingual',
-      description: 'All 5,791 words have pre-computed English translations directly in the dataset, with instant on-demand translation into Turkish, Spanish, French, etc.'
+      icon: <Zap className="w-5 h-5 text-amber-500" />,
+      title: '⚡ "Der, Die, Das" Speed Drill',
+      description: 'Rapid-fire 60-second article reflex game with combo streaks (🔥 2x, 3x) and keyboard shortcuts (1=der, 2=die, 3=das).'
     },
     {
-      icon: <Volume2 className="w-5 h-5 text-amber-600 dark:text-amber-400" />,
-      title: 'German Speech Synthesis',
-      description: 'Instant zero-latency German audio pronunciation for headwords and authentic Goethe example sentences using the browser’s Web Speech API.'
+      icon: <Headphones className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />,
+      title: '🎧 Hörverstehen (Listening Quiz)',
+      description: 'Train your ear: listen to native German speech audio with adjustable playback speeds (0.75x slow, 1.0x) and test your comprehension.'
     },
     {
-      icon: <Layers className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />,
+      icon: <Globe className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />,
+      title: '🇬🇧 & 🇹🇷 Pre-Translated Offline Data',
+      description: 'All 5,791 words have both English (meaning_en) and Turkish (meaning_tr) baked directly into the dataset for 0ms instant display.'
+    },
+    {
+      icon: <Layers className="w-5 h-5 text-rose-600 dark:text-rose-400" />,
       title: 'Interactive 3D Flashcards',
-      description: 'Spaced repetition flashcards with flip physics, keyboard navigation (Spacebar, Arrows, A for audio), and progress tracking.'
+      description: 'Configure session size (10, 25, 50, or custom), flip with Spacebar, listen with "A", and mark learned cards saved permanently in browser DB.'
     },
     {
-      icon: <Award className="w-5 h-5 text-rose-600 dark:text-rose-400" />,
+      icon: <Award className="w-5 h-5 text-purple-600 dark:text-purple-400" />,
       title: 'Smart Practice Quizzes',
-      description: 'Test gender articles (der/die/das), sentence fill-ins from Goethe exam questions, and vocabulary meanings with instant explanations.'
-    },
-    {
-      icon: <FileSpreadsheet className="w-5 h-5 text-teal-600 dark:text-teal-400" />,
-      title: 'Level-Split CSVs with English',
-      description: 'Clean CSV files split by level (A1, A2, B1) with dedicated columns for German word, article, plural, and English translation for Anki/Excel.'
+      description: 'Custom question sizing (5Q, 10Q, 20Q) testing gender articles, Goethe exam sentence fill-ins, and meanings with instant explanations.'
     },
     {
       icon: <ShieldCheck className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      title: '100% Authentic Goethe Data',
-      description: 'Exact headwords, grammatical forms (articles, plurals, auxiliary verbs), and original Goethe example sentences extracted directly from official PDFs.'
+      title: '📱 PWA & IndexedDB Offline App',
+      description: 'Installable on mobile and desktop as a native-feeling app. Runs 100% offline with zero server requirements.'
     }
   ];
 
@@ -103,39 +103,39 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
           </h1>
 
           <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed mb-8">
-            Complete database of <strong className="text-zinc-900 dark:text-white">{counts.all.toLocaleString()} words</strong> pre-translated into English and extracted directly from official Goethe-Zertifikat exam wordlists. Features authentic example sentences, native German pronunciation audio, and instant translations into Turkish and other languages.
+            Complete database of <strong className="text-zinc-900 dark:text-white">{counts.all.toLocaleString()} words</strong> pre-translated into English & Turkish. Features authentic Goethe example sentences, audio with speed control, ⚡ "Der Die Das" speed drill, and 100% offline PWA support.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => onNavigate('explorer', 'ALL')}
-              className="flex items-center gap-2 px-6 py-3.5 bg-zinc-900 dark:bg-amber-500 hover:bg-zinc-800 dark:hover:bg-amber-600 text-white dark:text-zinc-950 font-bold text-sm rounded-2xl shadow-md transition-all"
+              onClick={() => onNavigate('speed-drill')}
+              className="flex items-center gap-2 px-6 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-2xl shadow-md shadow-amber-500/25 transition-all"
             >
-              <BookOpen className="w-4 h-4 text-amber-400 dark:text-zinc-950" />
-              <span>Explore All {counts.all.toLocaleString()} Words</span>
+              <Zap className="w-4 h-4" />
+              <span>Play "Der, Die, Das" Drill</span>
               <ArrowRight className="w-4 h-4 ml-1" />
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => onNavigate('flashcards', 'ALL')}
-              className="flex items-center gap-2 px-5 py-3.5 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 font-bold text-sm rounded-2xl border border-zinc-200/90 dark:border-zinc-700 shadow-xs transition-all"
+              onClick={() => onNavigate('listening')}
+              className="flex items-center gap-2 px-5 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-2xl shadow-md shadow-indigo-600/25 transition-all"
             >
-              <Layers className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-              <span>Practice Flashcards</span>
+              <Headphones className="w-4 h-4" />
+              <span>Listening Mode (Hörverstehen)</span>
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => onNavigate('quiz', 'ALL')}
-              className="flex items-center gap-2 px-5 py-3.5 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 font-bold text-sm rounded-2xl border border-zinc-200/90 dark:border-zinc-700 shadow-xs transition-all"
+              onClick={() => onNavigate('explorer', 'ALL')}
+              className="flex items-center gap-2 px-5 py-3.5 bg-zinc-900 dark:bg-zinc-800 hover:bg-zinc-800 dark:hover:bg-zinc-700 text-white font-bold text-sm rounded-2xl border border-zinc-200/90 dark:border-zinc-700 shadow-xs transition-all"
             >
-              <Award className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-              <span>Take a Quiz</span>
+              <BookOpen className="w-4 h-4 text-amber-400" />
+              <span>Browse All Words</span>
             </motion.button>
           </div>
         </div>
@@ -156,7 +156,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
             Original Goethe Sources & Modular Datasets
           </h2>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
-            Download individual CSV or JSON files with English translations, or inspect the original Goethe-Institut PDF documents.
+            Download individual CSV or JSON files with English & Turkish translations, or view the original Goethe-Institut PDF documents.
           </p>
         </div>
 
@@ -211,12 +211,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
                 <div className="grid grid-cols-2 gap-2">
                   <a
                     href={src.csvFile}
-                    download={`goethe_${src.level.toLowerCase()}_vocab_en.csv`}
+                    download={`goethe_${src.level.toLowerCase()}_vocab.csv`}
                     className="flex items-center justify-center gap-1.5 py-2 px-3 bg-zinc-100/90 dark:bg-zinc-800 hover:bg-zinc-200/70 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 text-xs font-semibold rounded-xl border border-zinc-200/80 dark:border-zinc-700 transition-all text-center"
-                    title={`Download ${src.level} as CSV with English translations`}
+                    title={`Download ${src.level} as CSV`}
                   >
                     <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                    <span>{src.level} CSV (EN)</span>
+                    <span>{src.level} CSV (TR/EN)</span>
                   </a>
 
                   <a
@@ -243,17 +243,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
               <span>Full Goethe Archive (A1 + A2 + B1)</span>
             </div>
             <h3 className="text-xl sm:text-2xl font-black tracking-tight">
-              Download Complete Master Database with English
+              Download Complete Master Database with EN & TR
             </h3>
             <p className="text-xs sm:text-sm text-zinc-400 mt-1 max-w-xl">
-              All 5,791 words consolidated in a single CSV file with German headwords, articles, plural forms, verb conjugations, English translations, and authentic example sentences.
+              All 5,791 words consolidated in a single CSV file with German headwords, articles, plural forms, verb conjugations, English translations, Turkish translations, and authentic example sentences.
             </p>
           </div>
 
           <div className="flex items-center gap-3 shrink-0">
             <a
-              href="./data/goethe_vocab_en.csv"
-              download="goethe_vocab_master_en.csv"
+              href="./data/goethe_vocab_tr.csv"
+              download="goethe_vocab_master.csv"
               className="flex items-center gap-2 px-5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-2xl shadow-lg shadow-emerald-600/20 transition-all"
             >
               <Download className="w-4 h-4" />

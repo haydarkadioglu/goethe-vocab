@@ -12,7 +12,8 @@
       "Ich bin oft im Büro, aber nur für wenige Stunden."
     ],
     "page": 9,
-    "meaning_en": "but"
+    "meaning_en": "but",
+    "meaning_tr": "Ancak"
   },
   {
     "id": "a1_0002",
@@ -27,7 +28,8 @@
       "Wir fahren um zwölf Uhr ab."
     ],
     "page": 9,
-    "meaning_en": "depart"
+    "meaning_en": "depart",
+    "meaning_tr": "ayrılmak"
   },
   {
     "id": "a1_0003",
@@ -42,7 +44,8 @@
       "Vor der Abfahrt rufe ich an."
     ],
     "page": 9,
-    "meaning_en": "the farewell"
+    "meaning_en": "the farewell",
+    "meaning_tr": "veda"
   },
   {
     "id": "a1_0004",
@@ -57,7 +60,8 @@
       "Ich muss meine Schlüssel abgeben."
     ],
     "page": 9,
-    "meaning_en": "hand over"
+    "meaning_en": "hand over",
+    "meaning_tr": "devretmek"
   },
   {
     "id": "a1_0005",
@@ -73,7 +77,8 @@
       "Wir müssen noch meinen Bruder abholen."
     ],
     "page": 9,
-    "meaning_en": "pick up"
+    "meaning_en": "pick up",
+    "meaning_tr": "toplamak"
   },
   {
     "id": "a1_0006",
@@ -88,7 +93,8 @@
       "Da ist ein Brief für dich ohne Absender."
     ],
     "page": 9,
-    "meaning_en": "the sender"
+    "meaning_en": "the sender",
+    "meaning_tr": "gönderen"
   },
   {
     "id": "a1_0007",
@@ -104,7 +110,8 @@
       "Das dürfen Sie nicht tun."
     ],
     "page": 9,
-    "meaning_en": "Danger"
+    "meaning_en": "Danger",
+    "meaning_tr": "Tehlike"
   },
   {
     "id": "a1_0008",
@@ -119,7 +126,8 @@
       "Können Sie mir seine Adresse sagen?"
     ],
     "page": 9,
-    "meaning_en": "the address,-s"
+    "meaning_en": "the address,-s",
+    "meaning_tr": "die Adresse,-en"
   },
   {
     "id": "a1_0009",
@@ -138,7 +146,8 @@
       "Hast du alles?"
     ],
     "page": 9,
-    "meaning_en": "all-"
+    "meaning_en": "all-",
+    "meaning_tr": "Tümü-"
   },
   {
     "id": "a1_0010",
@@ -153,7 +162,8 @@
       "Er kommt allein."
     ],
     "page": 9,
-    "meaning_en": "alone"
+    "meaning_en": "alone",
+    "meaning_tr": "yalnız"
   },
   {
     "id": "a1_0011",
@@ -169,7 +179,8 @@
       "Er hat Zeit, also muss er uns helfen."
     ],
     "page": 9,
-    "meaning_en": "so"
+    "meaning_en": "so",
+    "meaning_tr": "Bu yüzden"
   },
   {
     "id": "a1_0012",
@@ -188,7 +199,8 @@
       "Köln ist eine alte Stadt."
     ],
     "page": 9,
-    "meaning_en": "old"
+    "meaning_en": "old",
+    "meaning_tr": "eskimiş"
   },
   {
     "id": "a1_0013",
@@ -203,7 +215,8 @@
       "Alter: 26 Jahre."
     ],
     "page": 9,
-    "meaning_en": "the age"
+    "meaning_en": "the age",
+    "meaning_tr": "yaş"
   },
   {
     "id": "a1_0014",
@@ -220,7 +233,8 @@
       "Am nächsten Montag geht es leider nicht."
     ],
     "page": 9,
-    "meaning_en": "to"
+    "meaning_en": "to",
+    "meaning_tr": "ile"
   },
   {
     "id": "a1_0015",
@@ -235,7 +249,8 @@
       "Was darf ich dir anbieten?"
     ],
     "page": 9,
-    "meaning_en": "offer"
+    "meaning_en": "offer",
+    "meaning_tr": "teklif"
   },
   {
     "id": "a1_0016",
@@ -250,7 +265,8 @@
       "Heute sind Sportschuhe im Angebot."
     ],
     "page": 9,
-    "meaning_en": "the offer, -e"
+    "meaning_en": "the offer, -e",
+    "meaning_tr": "teklif, -e"
   },
   {
     "id": "a1_0017",
@@ -266,7 +282,8 @@
       "– Nein, ich möchte die andere."
     ],
     "page": 9,
-    "meaning_en": "at the-"
+    "meaning_en": "at the-",
+    "meaning_tr": "en..."
   },
   {
     "id": "a1_0018",
@@ -282,7 +299,8 @@
       "Der Unterricht fängt gleich an."
     ],
     "page": 9,
-    "meaning_en": "begin"
+    "meaning_en": "begin",
+    "meaning_tr": "başlamak"
   },
   {
     "id": "a1_0019",
@@ -298,7 +316,8 @@
       "Wir machen Anfang Juli Urlaub."
     ],
     "page": 9,
-    "meaning_en": "the beginning"
+    "meaning_en": "the beginning",
+    "meaning_tr": "başlangıç"
   },
   {
     "id": "a1_0020",
@@ -313,7 +332,8 @@
       "Da musst du dieses Wort anklicken."
     ],
     "page": 9,
-    "meaning_en": "click"
+    "meaning_en": "click",
+    "meaning_tr": "tıklamak"
   },
   {
     "id": "a1_0021",
@@ -328,7 +348,8 @@
       "Wann kommt dieser Zug in Hamburg an?"
     ],
     "page": 9,
-    "meaning_en": "arrive"
+    "meaning_en": "arrive",
+    "meaning_tr": "varmak"
   },
   {
     "id": "a1_0022",
@@ -343,7 +364,8 @@
       "Auf diesem Plan steht nur die Ankunft(-szeit) der Züge."
     ],
     "page": 9,
-    "meaning_en": "the arrival"
+    "meaning_en": "the arrival",
+    "meaning_tr": "varış"
   },
   {
     "id": "a1_0023",
@@ -358,7 +380,8 @@
       "Auf dem Formular müssen Sie an mehreren Stellen etwas ankreuzen."
     ],
     "page": 9,
-    "meaning_en": "tick"
+    "meaning_en": "tick",
+    "meaning_tr": "kene"
   },
   {
     "id": "a1_0024",
@@ -373,7 +396,8 @@
       "Mach bitte das Licht an!"
     ],
     "page": 9,
-    "meaning_en": "turn on"
+    "meaning_en": "turn on",
+    "meaning_tr": "aç"
   },
   {
     "id": "a1_0025",
@@ -388,7 +412,8 @@
       "Wo kann ich mich anmelden?"
     ],
     "page": 9,
-    "meaning_en": "(Sign in"
+    "meaning_en": "(Sign in",
+    "meaning_tr": "(Oturum açın"
   },
   {
     "id": "a1_0026",
@@ -403,7 +428,8 @@
       "Eine Anmeldung für diesen Kurs ist nicht mehr möglich."
     ],
     "page": 9,
-    "meaning_en": "the registration"
+    "meaning_en": "the registration",
+    "meaning_tr": "kayıt"
   },
   {
     "id": "a1_0027",
@@ -418,7 +444,8 @@
       "Schreiben Sie auch eine Anrede und einen Gruß."
     ],
     "page": 9,
-    "meaning_en": "die Anrede"
+    "meaning_en": "die Anrede",
+    "meaning_tr": "selamlama"
   },
   {
     "id": "a1_0028",
@@ -434,7 +461,8 @@
       "Peter ruft kurz seine Freundin an."
     ],
     "page": 9,
-    "meaning_en": "call"
+    "meaning_en": "call",
+    "meaning_tr": "Arama"
   },
   {
     "id": "a1_0029",
@@ -449,7 +477,8 @@
       "Sie bekommt viele Anrufe auf ihrem Handy."
     ],
     "page": 9,
-    "meaning_en": "the call, -e"
+    "meaning_en": "the call, -e",
+    "meaning_tr": "çağrı, -e"
   },
   {
     "id": "a1_0030",
@@ -465,7 +494,8 @@
       "Sprechen Sie bitte auf"
     ],
     "page": 9,
-    "meaning_en": "the call"
+    "meaning_en": "the call",
+    "meaning_tr": "çağrı"
   },
   {
     "id": "a1_0031",
@@ -480,7 +510,8 @@
       "den Anrufbeantworter."
     ],
     "page": 9,
-    "meaning_en": "answerer"
+    "meaning_en": "answerer",
+    "meaning_tr": "cevaplayıcı"
   },
   {
     "id": "a1_0032",
@@ -493,7 +524,8 @@
     "forms": "",
     "examples": [],
     "page": 9,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0033",
@@ -508,7 +540,8 @@
       "Hören Sie die Ansagen."
     ],
     "page": 10,
-    "meaning_en": "the announcement, -n"
+    "meaning_en": "the announcement, -n",
+    "meaning_tr": "duyuru, -n"
   },
   {
     "id": "a1_0034",
@@ -524,7 +557,8 @@
       "Ist das die Anmeldung für einen Telefonanschluss?"
     ],
     "page": 10,
-    "meaning_en": "the connection"
+    "meaning_en": "the connection",
+    "meaning_tr": "bağlantı"
   },
   {
     "id": "a1_0035",
@@ -539,7 +573,8 @@
       "Heute Nacht war das Licht an."
     ],
     "page": 10,
-    "meaning_en": "be on"
+    "meaning_en": "be on",
+    "meaning_tr": "açık olmak"
   },
   {
     "id": "a1_0036",
@@ -554,7 +589,8 @@
       "Er antwortet nicht."
     ],
     "page": 10,
-    "meaning_en": "answer"
+    "meaning_en": "answer",
+    "meaning_tr": "cevap"
   },
   {
     "id": "a1_0037",
@@ -569,7 +605,8 @@
       "Er gibt leider keine Antwort."
     ],
     "page": 10,
-    "meaning_en": "the answers"
+    "meaning_en": "the answers",
+    "meaning_tr": "cevaplar"
   },
   {
     "id": "a1_0038",
@@ -584,7 +621,8 @@
       "Ich habe Ihre Anzeige in der Zeitung gelesen."
     ],
     "page": 10,
-    "meaning_en": "the ad, -n"
+    "meaning_en": "the ad, -n",
+    "meaning_tr": "reklam, -n"
   },
   {
     "id": "a1_0039",
@@ -599,7 +637,8 @@
       "Ich muss mich noch anziehen."
     ],
     "page": 10,
-    "meaning_en": "(to get dressed"
+    "meaning_en": "(to get dressed",
+    "meaning_tr": "(giyinmek için"
   },
   {
     "id": "a1_0040",
@@ -614,7 +653,8 @@
       "Wir haben ein Apartment gemietet."
     ],
     "page": 10,
-    "meaning_en": "the apartment, -s"
+    "meaning_en": "the apartment, -s",
+    "meaning_tr": "daire, -s"
   },
   {
     "id": "a1_0041",
@@ -629,7 +669,8 @@
       "Ein Pfund Äpfel bitte."
     ],
     "page": 10,
-    "meaning_en": "the apple, -Ä"
+    "meaning_en": "the apple, -Ä",
+    "meaning_tr": "elma, -Ä"
   },
   {
     "id": "a1_0042",
@@ -644,7 +685,8 @@
       "Guten Appetit!"
     ],
     "page": 10,
-    "meaning_en": "the appetite"
+    "meaning_en": "the appetite",
+    "meaning_tr": "iştah"
   },
   {
     "id": "a1_0043",
@@ -659,7 +701,8 @@
       "Wo arbeiten Sie?"
     ],
     "page": 10,
-    "meaning_en": "work"
+    "meaning_en": "work",
+    "meaning_tr": "iş"
   },
   {
     "id": "a1_0044",
@@ -674,7 +717,8 @@
       "Mein Bruder sucht Arbeit."
     ],
     "page": 10,
-    "meaning_en": "the work, -en"
+    "meaning_en": "the work, -en",
+    "meaning_tr": "iş, -tr"
   },
   {
     "id": "a1_0045",
@@ -689,7 +733,8 @@
       "Es gibt bei uns viele Leute, die schon lange arbeitslos sind."
     ],
     "page": 10,
-    "meaning_en": "unemployed"
+    "meaning_en": "unemployed",
+    "meaning_tr": "arbeitslos"
   },
   {
     "id": "a1_0046",
@@ -704,7 +749,8 @@
       "e An meinem Arbeitsplatz fehlt ein Drucker."
     ],
     "page": 10,
-    "meaning_en": "the workplace, etc"
+    "meaning_en": "the workplace, etc",
+    "meaning_tr": "işyeri vb."
   },
   {
     "id": "a1_0047",
@@ -719,7 +765,8 @@
       "Mein Arm tut weh."
     ],
     "page": 10,
-    "meaning_en": "the poor"
+    "meaning_en": "the poor",
+    "meaning_tr": "fakir"
   },
   {
     "id": "a1_0048",
@@ -734,7 +781,8 @@
       "Morgen habe ich einen Termin bei meiner Ärztin."
     ],
     "page": 10,
-    "meaning_en": "the doctor, -Ä, e"
+    "meaning_en": "the doctor, -Ä, e",
+    "meaning_tr": "doktor, -Ä, e"
   },
   {
     "id": "a1_0049",
@@ -749,7 +797,8 @@
       "Ich bin auch Spanier."
     ],
     "page": 10,
-    "meaning_en": "also"
+    "meaning_en": "also",
+    "meaning_tr": "Ayrıca"
   },
   {
     "id": "a1_0050",
@@ -766,7 +815,8 @@
       "Wie heißt das auf Deutsch?"
     ],
     "page": 10,
-    "meaning_en": "on"
+    "meaning_en": "on",
+    "meaning_tr": "Açık"
   },
   {
     "id": "a1_0051",
@@ -781,7 +831,8 @@
       "Das ist eine schwere Aufgabe."
     ],
     "page": 10,
-    "meaning_en": "the task, -n"
+    "meaning_en": "the task, -n",
+    "meaning_tr": "görev, -n"
   },
   {
     "id": "a1_0052",
@@ -797,7 +848,8 @@
       "Hier hört die Bahnhofstraße auf."
     ],
     "page": 10,
-    "meaning_en": "stop"
+    "meaning_en": "stop",
+    "meaning_tr": "durmak"
   },
   {
     "id": "a1_0053",
@@ -813,7 +865,8 @@
       "Die Wohnung ist auf."
     ],
     "page": 10,
-    "meaning_en": "to be up"
+    "meaning_en": "to be up",
+    "meaning_tr": "uyanık olmak"
   },
   {
     "id": "a1_0054",
@@ -829,7 +882,8 @@
       "Soll ich aufstehen?"
     ],
     "page": 10,
-    "meaning_en": "stand up"
+    "meaning_en": "stand up",
+    "meaning_tr": "ayağa kalk"
   },
   {
     "id": "a1_0055",
@@ -844,7 +898,8 @@
       "In diesem Haus gibt es keinen Aufzug."
     ],
     "page": 10,
-    "meaning_en": "the elevator, -ü, e"
+    "meaning_en": "the elevator, -ü, e",
+    "meaning_tr": "asansör, -ü, e"
   },
   {
     "id": "a1_0056",
@@ -859,7 +914,8 @@
       "Er hat blaue Augen."
     ],
     "page": 10,
-    "meaning_en": "the eye, -n"
+    "meaning_en": "the eye, -n",
+    "meaning_tr": "göz, ​​-n"
   },
   {
     "id": "a1_0057",
@@ -874,7 +930,8 @@
       "Er kommt aus Brasilien."
     ],
     "page": 10,
-    "meaning_en": "out of"
+    "meaning_en": "out of",
+    "meaning_tr": "dışında"
   },
   {
     "id": "a1_0058",
@@ -889,7 +946,8 @@
       "Morgen machen wir einen Ausflug nach Heidelberg."
     ],
     "page": 10,
-    "meaning_en": "the excursion"
+    "meaning_en": "the excursion",
+    "meaning_tr": "gezi"
   },
   {
     "id": "a1_0059",
@@ -904,7 +962,8 @@
       "Füllen Sie bitte dieses Formular aus."
     ],
     "page": 10,
-    "meaning_en": "fill out"
+    "meaning_en": "fill out",
+    "meaning_tr": "doldur"
   },
   {
     "id": "a1_0060",
@@ -919,7 +978,8 @@
       "Wo ist der Ausgang?"
     ],
     "page": 10,
-    "meaning_en": "the exit"
+    "meaning_en": "the exit",
+    "meaning_tr": "çıkış"
   },
   {
     "id": "a1_0061",
@@ -934,7 +994,8 @@
       "Können Sie mir eine Auskunft geben?"
     ],
     "page": 10,
-    "meaning_en": "the information, -ü, e"
+    "meaning_en": "the information, -ü, e",
+    "meaning_tr": "bilgi, -ü, e"
   },
   {
     "id": "a1_0062",
@@ -949,7 +1010,8 @@
       "Fahren Sie ins Ausland?"
     ],
     "page": 10,
-    "meaning_en": "the foreign country"
+    "meaning_en": "the foreign country",
+    "meaning_tr": "yabancı ülke"
   },
   {
     "id": "a1_0063",
@@ -964,7 +1026,8 @@
       "SInd Sie Ausländerin?"
     ],
     "page": 10,
-    "meaning_en": "the foreigner, -"
+    "meaning_en": "the foreigner, -",
+    "meaning_tr": "yabancı, -"
   },
   {
     "id": "a1_0064",
@@ -979,7 +1042,8 @@
       "Leider habe ich nur ausländisches Geld."
     ],
     "page": 10,
-    "meaning_en": "foreign"
+    "meaning_en": "foreign",
+    "meaning_tr": "yabancı"
   },
   {
     "id": "a1_0065",
@@ -994,7 +1058,8 @@
       "Mach bitte das Licht aus!"
     ],
     "page": 10,
-    "meaning_en": "turn off"
+    "meaning_en": "turn off",
+    "meaning_tr": "kapamak"
   },
   {
     "id": "a1_0066",
@@ -1009,7 +1074,8 @@
       "Ist die Aussage richtig oder falsch?"
     ],
     "page": 10,
-    "meaning_en": "the statement, -n"
+    "meaning_en": "the statement, -n",
+    "meaning_tr": "ifade, -n"
   },
   {
     "id": "a1_0067",
@@ -1024,7 +1090,8 @@
       "Das sieht schön aus."
     ],
     "page": 10,
-    "meaning_en": "look"
+    "meaning_en": "look",
+    "meaning_tr": "Bakmak"
   },
   {
     "id": "a1_0068",
@@ -1040,7 +1107,8 @@
       "Die Schule ist aus."
     ],
     "page": 10,
-    "meaning_en": "be off"
+    "meaning_en": "be off",
+    "meaning_tr": "kapalı olmak"
   },
   {
     "id": "a1_0069",
@@ -1055,7 +1123,8 @@
       "Wo muss ich aussteigen?"
     ],
     "page": 10,
-    "meaning_en": "exit"
+    "meaning_en": "exit",
+    "meaning_tr": "çıkış"
   },
   {
     "id": "a1_0070",
@@ -1070,7 +1139,8 @@
       "Hier ist mein Ausweis."
     ],
     "page": 10,
-    "meaning_en": "the ID card"
+    "meaning_en": "the ID card",
+    "meaning_tr": "kimlik kartı"
   },
   {
     "id": "a1_0071",
@@ -1085,7 +1155,8 @@
       "Zieh die Schuhe aus, bitte!"
     ],
     "page": 10,
-    "meaning_en": "(undress"
+    "meaning_en": "(undress",
+    "meaning_tr": "(soyunmak"
   },
   {
     "id": "a1_0072",
@@ -1100,7 +1171,8 @@
       "Er kommt mit dem Auto."
     ],
     "page": 10,
-    "meaning_en": "the car, -s"
+    "meaning_en": "the car, -s",
+    "meaning_tr": "araba, -s"
   },
   {
     "id": "a1_0073",
@@ -1115,7 +1187,8 @@
       "Wo geht‘s hier bitte zur Autobahn?"
     ],
     "page": 10,
-    "meaning_en": "the highway, -en"
+    "meaning_en": "the highway, -en",
+    "meaning_tr": "otoyol, -tr"
   },
   {
     "id": "a1_0074",
@@ -1130,7 +1203,8 @@
       "Die Fahrkarten gibt es nur am Automaten."
     ],
     "page": 10,
-    "meaning_en": "the machine"
+    "meaning_en": "the machine",
+    "meaning_tr": "makine"
   },
   {
     "id": "a1_0075",
@@ -1146,7 +1220,8 @@
       "Das geht automatisch."
     ],
     "page": 10,
-    "meaning_en": "automatically"
+    "meaning_en": "automatically",
+    "meaning_tr": "otomatik olarak"
   },
   {
     "id": "a1_0076",
@@ -1159,7 +1234,8 @@
     "forms": "",
     "examples": [],
     "page": 10,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0077",
@@ -1174,7 +1250,8 @@
       "Mein Kind ist noch ein Baby."
     ],
     "page": 11,
-    "meaning_en": "the baby, -s"
+    "meaning_en": "the baby, -s",
+    "meaning_tr": "bebek, -s"
   },
   {
     "id": "a1_0078",
@@ -1189,7 +1266,8 @@
       "Ich geh mal schnell zur Bäckerei."
     ],
     "page": 11,
-    "meaning_en": "the bakery"
+    "meaning_en": "the bakery",
+    "meaning_tr": "fırın"
   },
   {
     "id": "a1_0079",
@@ -1204,7 +1282,8 @@
       "Wir haben kein großes Bad."
     ],
     "page": 11,
-    "meaning_en": "the bathroom"
+    "meaning_en": "the bathroom",
+    "meaning_tr": "banyo"
   },
   {
     "id": "a1_0080",
@@ -1219,7 +1298,8 @@
       "Ich bade nicht so gern, ich dusche lieber."
     ],
     "page": 11,
-    "meaning_en": "bathe"
+    "meaning_en": "bathe",
+    "meaning_tr": "yıkanmak"
   },
   {
     "id": "a1_0081",
@@ -1235,7 +1315,8 @@
       "Ich nehme die nächste Bahn."
     ],
     "page": 11,
-    "meaning_en": "the train"
+    "meaning_en": "the train",
+    "meaning_tr": "tren"
   },
   {
     "id": "a1_0082",
@@ -1250,7 +1331,8 @@
       "Komme ich hier zum Bahnhof?"
     ],
     "page": 11,
-    "meaning_en": "the station"
+    "meaning_en": "the station",
+    "meaning_tr": "istasyon"
   },
   {
     "id": "a1_0083",
@@ -1265,7 +1347,8 @@
       "Auf welchem Bahnsteig fährt der Zug?"
     ],
     "page": 11,
-    "meaning_en": "the platform"
+    "meaning_en": "the platform",
+    "meaning_tr": "platform"
   },
   {
     "id": "a1_0084",
@@ -1280,7 +1363,8 @@
       "Ich komme bald."
     ],
     "page": 11,
-    "meaning_en": "soon"
+    "meaning_en": "soon",
+    "meaning_tr": "yakında"
   },
   {
     "id": "a1_0085",
@@ -1295,7 +1379,8 @@
       "Die Wohnung hat auch einen kleinen Balkon."
     ],
     "page": 11,
-    "meaning_en": "the balcony"
+    "meaning_en": "the balcony",
+    "meaning_tr": "balkon"
   },
   {
     "id": "a1_0086",
@@ -1310,7 +1395,8 @@
       "Drei Bananen, bitte!"
     ],
     "page": 11,
-    "meaning_en": "the banana, -n"
+    "meaning_en": "the banana, -n",
+    "meaning_tr": "muz, -n"
   },
   {
     "id": "a1_0087",
@@ -1326,7 +1412,8 @@
       "Er sitzt im Park auf einer Bank und liest."
     ],
     "page": 11,
-    "meaning_en": "the Bank"
+    "meaning_en": "the Bank",
+    "meaning_tr": "Banka"
   },
   {
     "id": "a1_0088",
@@ -1341,7 +1428,8 @@
       "Muss ich bar zahlen oder geht‘s auch mit Karte?"
     ],
     "page": 11,
-    "meaning_en": "bear"
+    "meaning_en": "bear",
+    "meaning_tr": "ayı"
   },
   {
     "id": "a1_0089",
@@ -1356,7 +1444,8 @@
       "Seit gestern tut mir der Bauch weh."
     ],
     "page": 11,
-    "meaning_en": "the stomach"
+    "meaning_en": "the stomach",
+    "meaning_tr": "mide"
   },
   {
     "id": "a1_0090",
@@ -1371,7 +1460,8 @@
       "Vorsicht, fahr nicht an den Baum!"
     ],
     "page": 11,
-    "meaning_en": "the tree, -ä, e"
+    "meaning_en": "the tree, -ä, e",
+    "meaning_tr": "ağaç, -ä, e"
   },
   {
     "id": "a1_0091",
@@ -1386,7 +1476,8 @@
       "Fragen Sie die Beamtin an Schalter acht!"
     ],
     "page": 11,
-    "meaning_en": "the official, -n"
+    "meaning_en": "the official, -n",
+    "meaning_tr": "resmi, -n"
   },
   {
     "id": "a1_0092",
@@ -1401,7 +1492,8 @@
       "Was bedeutet das Wort?"
     ],
     "page": 11,
-    "meaning_en": "mean"
+    "meaning_en": "mean",
+    "meaning_tr": "Anlam"
   },
   {
     "id": "a1_0093",
@@ -1416,7 +1508,8 @@
       "Das Spiel beginnt um 15.30 Uhr."
     ],
     "page": 11,
-    "meaning_en": "start"
+    "meaning_en": "start",
+    "meaning_tr": "başlangıç"
   },
   {
     "id": "a1_0094",
@@ -1434,7 +1527,8 @@
       "Er arbeitet bei der Polizei."
     ],
     "page": 11,
-    "meaning_en": "at"
+    "meaning_en": "at",
+    "meaning_tr": "en"
   },
   {
     "id": "a1_0095",
@@ -1450,7 +1544,8 @@
       "Wir kommen beide."
     ],
     "page": 11,
-    "meaning_en": "both"
+    "meaning_en": "both",
+    "meaning_tr": "ikisi birden"
   },
   {
     "id": "a1_0096",
@@ -1465,7 +1560,8 @@
       "Mein rechtes Bein tut weh."
     ],
     "page": 11,
-    "meaning_en": "the leg, -e"
+    "meaning_en": "the leg, -e",
+    "meaning_tr": "bacak, -e"
   },
   {
     "id": "a1_0097",
@@ -1480,7 +1576,8 @@
       "Kannst du mir ein Beispiel sagen?"
     ],
     "page": 11,
-    "meaning_en": "the example, -e"
+    "meaning_en": "the example, -e",
+    "meaning_tr": "örnek, -e"
   },
   {
     "id": "a1_0098",
@@ -1496,7 +1593,8 @@
       "B. meine beiden Brüder, arbeiten auch hier."
     ],
     "page": 11,
-    "meaning_en": "for example/e.g. b."
+    "meaning_en": "for example/e.g. b.",
+    "meaning_tr": "örneğin/ör. B."
   },
   {
     "id": "a1_0099",
@@ -1511,7 +1609,8 @@
       "Picasso ist sehr bekannt."
     ],
     "page": 11,
-    "meaning_en": "known"
+    "meaning_en": "known",
+    "meaning_tr": "bilinen"
   },
   {
     "id": "a1_0100",
@@ -1526,7 +1625,8 @@
       "-n Ein Bekannter von mir heißt Klaus."
     ],
     "page": 11,
-    "meaning_en": "the acquaintance"
+    "meaning_en": "the acquaintance",
+    "meaning_tr": "tanıdık"
   },
   {
     "id": "a1_0101",
@@ -1543,7 +1643,8 @@
       "Dieses Medikament bekommen Sie in der Apotheke."
     ],
     "page": 11,
-    "meaning_en": "receive"
+    "meaning_en": "receive",
+    "meaning_tr": "almak"
   },
   {
     "id": "a1_0102",
@@ -1558,7 +1659,8 @@
       "Die Aufzüge bitte nicht benutzen!"
     ],
     "page": 11,
-    "meaning_en": "use"
+    "meaning_en": "use",
+    "meaning_tr": "kullanmak"
   },
   {
     "id": "a1_0103",
@@ -1574,7 +1676,8 @@
       "Was ist Ihr Beruf?"
     ],
     "page": 11,
-    "meaning_en": "the profession, -e"
+    "meaning_en": "the profession, -e",
+    "meaning_tr": "meslek, -e"
   },
   {
     "id": "a1_0104",
@@ -1590,7 +1693,8 @@
       "Der Platz ist besetzt."
     ],
     "page": 11,
-    "meaning_en": "occupied"
+    "meaning_en": "occupied",
+    "meaning_tr": "dolu"
   },
   {
     "id": "a1_0105",
@@ -1605,7 +1709,8 @@
       "Ich möchte gern den Dom besichtigen."
     ],
     "page": 11,
-    "meaning_en": "view"
+    "meaning_en": "view",
+    "meaning_tr": "görüş"
   },
   {
     "id": "a1_0106",
@@ -1620,7 +1725,8 @@
       "Es geht mir schon besser."
     ],
     "page": 11,
-    "meaning_en": "better"
+    "meaning_en": "better",
+    "meaning_tr": "daha iyi"
   },
   {
     "id": "a1_0107",
@@ -1635,7 +1741,8 @@
       "Am besten treffen wir uns morgen."
     ],
     "page": 11,
-    "meaning_en": "best-"
+    "meaning_en": "best-",
+    "meaning_tr": "en iyi-"
   },
   {
     "id": "a1_0108",
@@ -1651,7 +1758,8 @@
       "Dieses Buch haben wir nicht – sollen wir es für Sie bestellen?"
     ],
     "page": 11,
-    "meaning_en": "order"
+    "meaning_en": "order",
+    "meaning_tr": "emir"
   },
   {
     "id": "a1_0109",
@@ -1666,7 +1774,8 @@
       "Darf ich dich besuchen?"
     ],
     "page": 11,
-    "meaning_en": "visit"
+    "meaning_en": "visit",
+    "meaning_tr": "ziyaret etmek"
   },
   {
     "id": "a1_0110",
@@ -1681,7 +1790,8 @@
       "Wir brauchen noch ein Kinderbett."
     ],
     "page": 11,
-    "meaning_en": "the bed, -en"
+    "meaning_en": "the bed, -en",
+    "meaning_tr": "yatak, -tr"
   },
   {
     "id": "a1_0111",
@@ -1696,7 +1806,8 @@
       "Wo muss ich bezahlen?"
     ],
     "page": 11,
-    "meaning_en": "pay"
+    "meaning_en": "pay",
+    "meaning_tr": "ödemek"
   },
   {
     "id": "a1_0112",
@@ -1711,7 +1822,8 @@
       "Noch ein Bier bitte."
     ],
     "page": 11,
-    "meaning_en": "the beer"
+    "meaning_en": "the beer",
+    "meaning_tr": "bira"
   },
   {
     "id": "a1_0113",
@@ -1726,7 +1838,8 @@
       "Hast du ein Bild von deinem Sohn?"
     ],
     "page": 11,
-    "meaning_en": "the picture, -er"
+    "meaning_en": "the picture, -er",
+    "meaning_tr": "resim, -er"
   },
   {
     "id": "a1_0114",
@@ -1739,7 +1852,8 @@
     "forms": "",
     "examples": [],
     "page": 11,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0115",
@@ -1755,7 +1869,8 @@
       "Die ist aber billig!"
     ],
     "page": 11,
-    "meaning_en": "cheap"
+    "meaning_en": "cheap",
+    "meaning_tr": "ucuz"
   },
   {
     "id": "a1_0116",
@@ -1770,7 +1885,8 @@
       "Ein Kilo Birnen, bitte!"
     ],
     "page": 12,
-    "meaning_en": "the pear, -n"
+    "meaning_en": "the pear, -n",
+    "meaning_tr": "armut, -n"
   },
   {
     "id": "a1_0117",
@@ -1786,7 +1902,8 @@
       "Ich warte bis morgen."
     ],
     "page": 12,
-    "meaning_en": "until"
+    "meaning_en": "until",
+    "meaning_tr": "değin"
   },
   {
     "id": "a1_0118",
@@ -1801,7 +1918,8 @@
       "Ich spreche Englisch, Französisch und ein bisschen Deutsch."
     ],
     "page": 12,
-    "meaning_en": "a little"
+    "meaning_en": "a little",
+    "meaning_tr": "biraz"
   },
   {
     "id": "a1_0119",
@@ -1817,7 +1935,8 @@
       "Sprechen Sie bitte leise!"
     ],
     "page": 12,
-    "meaning_en": "please"
+    "meaning_en": "please",
+    "meaning_tr": "Lütfen"
   },
   {
     "id": "a1_0120",
@@ -1832,7 +1951,8 @@
       "Ich habe noch eine Bitte."
     ],
     "page": 12,
-    "meaning_en": "the request, -n"
+    "meaning_en": "the request, -n",
+    "meaning_tr": "istek, -n"
   },
   {
     "id": "a1_0121",
@@ -1847,7 +1967,8 @@
       "Darf ich Sie um etwas bitten?"
     ],
     "page": 12,
-    "meaning_en": "ask"
+    "meaning_en": "ask",
+    "meaning_tr": "sormak"
   },
   {
     "id": "a1_0122",
@@ -1862,7 +1983,8 @@
       "Der Kaffee schmeckt bitter."
     ],
     "page": 12,
-    "meaning_en": "bitter"
+    "meaning_en": "bitter",
+    "meaning_tr": "acı"
   },
   {
     "id": "a1_0123",
@@ -1878,7 +2000,8 @@
       "Wir bleiben nur bis morgen."
     ],
     "page": 12,
-    "meaning_en": "remain"
+    "meaning_en": "remain",
+    "meaning_tr": "geriye kalmak"
   },
   {
     "id": "a1_0124",
@@ -1893,7 +2016,8 @@
       "Hast du einen Bleistift?"
     ],
     "page": 12,
-    "meaning_en": "the pencil, -e"
+    "meaning_en": "the pencil, -e",
+    "meaning_tr": "kalem, -e"
   },
   {
     "id": "a1_0125",
@@ -1908,7 +2032,8 @@
       "Von diesem Hotel hat man einen guten Blick auf den Rhein."
     ],
     "page": 12,
-    "meaning_en": "the view"
+    "meaning_en": "the view",
+    "meaning_tr": "görünüm"
   },
   {
     "id": "a1_0126",
@@ -1923,7 +2048,8 @@
       "Gefallen dir die Blumen?"
     ],
     "page": 12,
-    "meaning_en": "die Blume, -n"
+    "meaning_en": "die Blume, -n",
+    "meaning_tr": "çiçek, -n"
   },
   {
     "id": "a1_0127",
@@ -1938,7 +2064,8 @@
       "Schreiben Sie Ihre Lösungen bitte auf den Antwortbogen."
     ],
     "page": 12,
-    "meaning_en": "the bow"
+    "meaning_en": "the bow",
+    "meaning_tr": "yay"
   },
   {
     "id": "a1_0128",
@@ -1953,7 +2080,8 @@
       "Sie ist böse auf mich."
     ],
     "page": 12,
-    "meaning_en": "evil"
+    "meaning_en": "evil",
+    "meaning_tr": "fenalık"
   },
   {
     "id": "a1_0129",
@@ -1968,7 +2096,8 @@
       "Brauchst du die Zeitung noch?"
     ],
     "page": 12,
-    "meaning_en": "need"
+    "meaning_en": "need",
+    "meaning_tr": "ihtiyaç"
   },
   {
     "id": "a1_0130",
@@ -1983,7 +2112,8 @@
       "Wie breit ist der Schrank?"
     ],
     "page": 12,
-    "meaning_en": "broad"
+    "meaning_en": "broad",
+    "meaning_tr": "geniş"
   },
   {
     "id": "a1_0131",
@@ -1998,7 +2128,8 @@
       "Haben Sie einen Brief für mich?"
     ],
     "page": 12,
-    "meaning_en": "the letter, -e"
+    "meaning_en": "the letter, -e",
+    "meaning_tr": "harf, -e"
   },
   {
     "id": "a1_0132",
@@ -2013,7 +2144,8 @@
       "Kaufst du bitte Briefmarken bei der Post."
     ],
     "page": 12,
-    "meaning_en": "the stamp, -n"
+    "meaning_en": "the stamp, -n",
+    "meaning_tr": "damga, -n"
   },
   {
     "id": "a1_0133",
@@ -2029,7 +2161,8 @@
       "Wir müssen ihn zum Arzt bringen."
     ],
     "page": 12,
-    "meaning_en": "bring"
+    "meaning_en": "bring",
+    "meaning_tr": "getirmek"
   },
   {
     "id": "a1_0134",
@@ -2045,7 +2178,8 @@
       "Nimm noch ein paar Brote für die Fahrt mit."
     ],
     "page": 12,
-    "meaning_en": "the bread, -e"
+    "meaning_en": "the bread, -e",
+    "meaning_tr": "ekmek, -e"
   },
   {
     "id": "a1_0135",
@@ -2060,7 +2194,8 @@
       "Möchtest du Brötchen zum Frühstück?"
     ],
     "page": 12,
-    "meaning_en": "the bread bun, -"
+    "meaning_en": "the bread bun, -",
+    "meaning_tr": "ekmek çöreği, -"
   },
   {
     "id": "a1_0136",
@@ -2075,7 +2210,8 @@
       "Sein Bruder arbeitet auch hier."
     ],
     "page": 12,
-    "meaning_en": "the brother, -ü"
+    "meaning_en": "the brother, -ü",
+    "meaning_tr": "erkek kardeş, -ü"
   },
   {
     "id": "a1_0137",
@@ -2091,7 +2227,8 @@
       "In diesem Wörterbuch finden Sie mehr als 20.000 Wörter."
     ],
     "page": 12,
-    "meaning_en": "the book, -ü, he"
+    "meaning_en": "the book, -ü, he",
+    "meaning_tr": "kitap, -ü, o"
   },
   {
     "id": "a1_0138",
@@ -2106,7 +2243,8 @@
       "Diesen Buchstaben gibt es in meiner Sprache nicht."
     ],
     "page": 12,
-    "meaning_en": "the letter, -n"
+    "meaning_en": "the letter, -n",
+    "meaning_tr": "harf, -n"
   },
   {
     "id": "a1_0139",
@@ -2121,7 +2259,8 @@
       "Bitte buchstabieren Sie Ihren Namen."
     ],
     "page": 12,
-    "meaning_en": "spell"
+    "meaning_en": "spell",
+    "meaning_tr": "hecelemek"
   },
   {
     "id": "a1_0140",
@@ -2136,7 +2275,8 @@
       "Wann kommt der nächste Bus?"
     ],
     "page": 12,
-    "meaning_en": "the bus, -se"
+    "meaning_en": "the bus, -se",
+    "meaning_tr": "otobüs, -se"
   },
   {
     "id": "a1_0141",
@@ -2151,7 +2291,8 @@
       "Für mich bitte ein Brötchen mit Butter und Käse."
     ],
     "page": 12,
-    "meaning_en": "the butter"
+    "meaning_en": "the butter",
+    "meaning_tr": "tereyağı"
   },
   {
     "id": "a1_0142",
@@ -2164,7 +2305,8 @@
     "forms": "",
     "examples": [],
     "page": 12,
-    "meaning_en": "c"
+    "meaning_en": "c",
+    "meaning_tr": "C"
   },
   {
     "id": "a1_0143",
@@ -2179,7 +2321,8 @@
       "Sollen wir uns im Café treffen?"
     ],
     "page": 12,
-    "meaning_en": "the cafe, -s"
+    "meaning_en": "the cafe, -s",
+    "meaning_tr": "kafe, -s"
   },
   {
     "id": "a1_0144",
@@ -2194,7 +2337,8 @@
       "Bring bitte deine Lieblings-CD mit."
     ],
     "page": 12,
-    "meaning_en": "the CD, -s"
+    "meaning_en": "the CD, -s",
+    "meaning_tr": "CD, -s"
   },
   {
     "id": "a1_0145",
@@ -2209,7 +2353,8 @@
       "Wir haben eine neue Chefin."
     ],
     "page": 12,
-    "meaning_en": "the boss"
+    "meaning_en": "the boss",
+    "meaning_tr": "patron"
   },
   {
     "id": "a1_0146",
@@ -2224,7 +2369,8 @@
       "Von Mainz nach Frankfurt sind es circa fünfzig Kilometer."
     ],
     "page": 12,
-    "meaning_en": "circa/approx."
+    "meaning_en": "circa/approx.",
+    "meaning_tr": "yaklaşık/yaklaşık."
   },
   {
     "id": "a1_0147",
@@ -2239,7 +2385,8 @@
       "Wann bekommst du deinen neuen Computer?"
     ],
     "page": 12,
-    "meaning_en": "the computer, -"
+    "meaning_en": "the computer, -",
+    "meaning_tr": "bilgisayar, -"
   },
   {
     "id": "a1_0148",
@@ -2258,7 +2405,8 @@
       "Ist Herr Klein schon da?"
     ],
     "page": 12,
-    "meaning_en": "there"
+    "meaning_en": "there",
+    "meaning_tr": "Orası"
   },
   {
     "id": "a1_0149",
@@ -2273,7 +2421,8 @@
       "Damen (an der Toilette)"
     ],
     "page": 12,
-    "meaning_en": "the lady, -n"
+    "meaning_en": "the lady, -n",
+    "meaning_tr": "bayan, -n"
   },
   {
     "id": "a1_0150",
@@ -2288,7 +2437,8 @@
       "Sehr geehrte Damen und Herren!"
     ],
     "page": 12,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0151",
@@ -2304,7 +2454,8 @@
       "Daneben ist die Bank."
     ],
     "page": 13,
-    "meaning_en": "next to it"
+    "meaning_en": "next to it",
+    "meaning_tr": "onun yanında"
   },
   {
     "id": "a1_0152",
@@ -2319,7 +2470,8 @@
       "Ich danke Ihnen für die Einladung."
     ],
     "page": 13,
-    "meaning_en": "thank"
+    "meaning_en": "thank",
+    "meaning_tr": "teşekkür etmek"
   },
   {
     "id": "a1_0153",
@@ -2335,7 +2487,8 @@
       "Herzlichen Dank!"
     ],
     "page": 13,
-    "meaning_en": "the thanks"
+    "meaning_en": "the thanks",
+    "meaning_tr": "teşekkürler"
   },
   {
     "id": "a1_0154",
@@ -2351,7 +2504,8 @@
       "- Nein, danke!"
     ],
     "page": 13,
-    "meaning_en": "Thanks"
+    "meaning_en": "Thanks",
+    "meaning_tr": "Teşekkürler"
   },
   {
     "id": "a1_0155",
@@ -2366,7 +2520,8 @@
       "Ich muss noch schnell zur Post, dann komme ich."
     ],
     "page": 13,
-    "meaning_en": "then"
+    "meaning_en": "then",
+    "meaning_tr": "Daha sonra"
   },
   {
     "id": "a1_0156",
@@ -2381,7 +2536,8 @@
       "Bitte schreiben Sie noch das Datum auf das Formular."
     ],
     "page": 13,
-    "meaning_en": "the date"
+    "meaning_en": "the date",
+    "meaning_tr": "tarih"
   },
   {
     "id": "a1_0157",
@@ -2396,7 +2552,8 @@
       "Wie lange dauert der Film?"
     ],
     "page": 13,
-    "meaning_en": "last"
+    "meaning_en": "last",
+    "meaning_tr": "son"
   },
   {
     "id": "a1_0158",
@@ -2412,7 +2569,8 @@
       "Ist das deins?"
     ],
     "page": 13,
-    "meaning_en": "your-"
+    "meaning_en": "your-",
+    "meaning_tr": "senin-"
   },
   {
     "id": "a1_0159",
@@ -2427,7 +2585,8 @@
       "Ich kann nicht kommen, denn ich bin krank."
     ],
     "page": 13,
-    "meaning_en": "because"
+    "meaning_en": "because",
+    "meaning_tr": "Çünkü"
   },
   {
     "id": "a1_0160",
@@ -2444,7 +2603,8 @@
       "Die Fahrkarte bekommst du am Bahnhof."
     ],
     "page": 13,
-    "meaning_en": "the, the, that"
+    "meaning_en": "the, the, that",
+    "meaning_tr": "o, o, o"
   },
   {
     "id": "a1_0161",
@@ -2459,7 +2619,8 @@
       "Die Blumen sind für dich."
     ],
     "page": 13,
-    "meaning_en": "you"
+    "meaning_en": "you",
+    "meaning_tr": "Sen"
   },
   {
     "id": "a1_0162",
@@ -2474,7 +2635,8 @@
       "Ich nehme lieber diesen Kuchen."
     ],
     "page": 13,
-    "meaning_en": "this-"
+    "meaning_en": "this-",
+    "meaning_tr": "Bu-"
   },
   {
     "id": "a1_0163",
@@ -2489,7 +2651,8 @@
       "Gefallen dir die Blumen?"
     ],
     "page": 13,
-    "meaning_en": "you"
+    "meaning_en": "you",
+    "meaning_tr": "Sen"
   },
   {
     "id": "a1_0164",
@@ -2504,7 +2667,8 @@
       "Heute abend gehen wir in die Disco tanzen."
     ],
     "page": 13,
-    "meaning_en": "the disco"
+    "meaning_en": "the disco",
+    "meaning_tr": "disko"
   },
   {
     "id": "a1_0165",
@@ -2520,7 +2684,8 @@
       "Wir gehen zum Doktor."
     ],
     "page": 13,
-    "meaning_en": "the doctor"
+    "meaning_en": "the doctor",
+    "meaning_tr": "doktor"
   },
   {
     "id": "a1_0166",
@@ -2535,7 +2700,8 @@
       "Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?"
     ],
     "page": 13,
-    "meaning_en": "the double room"
+    "meaning_en": "the double room",
+    "meaning_tr": "çift ​​kişilik oda"
   },
   {
     "id": "a1_0167",
@@ -2550,7 +2716,8 @@
       "Meine Familie lebt in einem Dorf."
     ],
     "page": 13,
-    "meaning_en": "the village, -ö, he"
+    "meaning_en": "the village, -ö, he",
+    "meaning_tr": "köy, -ö, o"
   },
   {
     "id": "a1_0168",
@@ -2566,7 +2733,8 @@
       "Dort ist unser Haus."
     ],
     "page": 13,
-    "meaning_en": "there, here, there"
+    "meaning_en": "there, here, there",
+    "meaning_tr": "orada, burada, orada"
   },
   {
     "id": "a1_0169",
@@ -2581,7 +2749,8 @@
       "Wollen wir draußen sitzen?"
     ],
     "page": 13,
-    "meaning_en": "outside"
+    "meaning_en": "outside",
+    "meaning_tr": "dıştan"
   },
   {
     "id": "a1_0170",
@@ -2596,7 +2765,8 @@
       "Bitte drucke das Formular für mich."
     ],
     "page": 13,
-    "meaning_en": "press"
+    "meaning_en": "press",
+    "meaning_tr": "basmak"
   },
   {
     "id": "a1_0171",
@@ -2611,7 +2781,8 @@
       "Mein Drucker ist kaputt."
     ],
     "page": 13,
-    "meaning_en": "the printer, –"
+    "meaning_en": "the printer, –",
+    "meaning_tr": "yazıcı, –"
   },
   {
     "id": "a1_0172",
@@ -2626,7 +2797,8 @@
       "Drück hier, dann geht der Computer an."
     ],
     "page": 13,
-    "meaning_en": "press"
+    "meaning_en": "press",
+    "meaning_tr": "basmak"
   },
   {
     "id": "a1_0173",
@@ -2641,7 +2813,8 @@
       "Am besten gehen Sie durch die Breite Straße."
     ],
     "page": 13,
-    "meaning_en": "through"
+    "meaning_en": "through",
+    "meaning_tr": "başından sonuna kadar"
   },
   {
     "id": "a1_0174",
@@ -2656,7 +2829,8 @@
       "Ich habe die Durchsage nicht verstanden."
     ],
     "page": 13,
-    "meaning_en": "the announcement, -n"
+    "meaning_en": "the announcement, -n",
+    "meaning_tr": "duyuru, -n"
   },
   {
     "id": "a1_0175",
@@ -2673,7 +2847,8 @@
       "Es darf nicht mehr als 15 Euro kosten."
     ],
     "page": 13,
-    "meaning_en": "may"
+    "meaning_en": "may",
+    "meaning_tr": "mayıs"
   },
   {
     "id": "a1_0176",
@@ -2689,7 +2864,8 @@
       "Ich habe großen Durst."
     ],
     "page": 13,
-    "meaning_en": "the thirst"
+    "meaning_en": "the thirst",
+    "meaning_tr": "susuzluk"
   },
   {
     "id": "a1_0177",
@@ -2704,7 +2880,8 @@
       "Ich bade nicht so gern, ich dusche lieber."
     ],
     "page": 13,
-    "meaning_en": "(take a shower"
+    "meaning_en": "(take a shower",
+    "meaning_tr": "(duş al"
   },
   {
     "id": "a1_0178",
@@ -2719,7 +2896,8 @@
       "Unsere Wohnung hat nur eine Dusche."
     ],
     "page": 13,
-    "meaning_en": "the shower"
+    "meaning_en": "the shower",
+    "meaning_tr": "duş"
   },
   {
     "id": "a1_0179",
@@ -2732,7 +2910,8 @@
     "forms": "",
     "examples": [],
     "page": 13,
-    "meaning_en": "e"
+    "meaning_en": "e",
+    "meaning_tr": "e"
   },
   {
     "id": "a1_0180",
@@ -2747,7 +2926,8 @@
       "An der nächsten Ecke links."
     ],
     "page": 13,
-    "meaning_en": "the corner, -n"
+    "meaning_en": "the corner, -n",
+    "meaning_tr": "köşe, -n"
   },
   {
     "id": "a1_0181",
@@ -2760,7 +2940,8 @@
     "forms": "",
     "examples": [],
     "page": 13,
-    "meaning_en": "the wife, -en/"
+    "meaning_en": "the wife, -en/",
+    "meaning_tr": "karısı, -tr/"
   },
   {
     "id": "a1_0182",
@@ -2775,7 +2956,8 @@
       "Das ist mein (Ehe-) Mann/meine (Ehe-) Frau."
     ],
     "page": 13,
-    "meaning_en": "the husband, er, he"
+    "meaning_en": "the husband, er, he",
+    "meaning_tr": "kocası, yani, o"
   },
   {
     "id": "a1_0183",
@@ -2790,7 +2972,8 @@
       "Möchtest du ein Ei zum Frühstück?"
     ],
     "page": 13,
-    "meaning_en": "the egg, -er"
+    "meaning_en": "the egg, -er",
+    "meaning_tr": "yumurta, -er"
   },
   {
     "id": "a1_0184",
@@ -2805,7 +2988,8 @@
       "Hast du es eilig?"
     ],
     "page": 13,
-    "meaning_en": "hurry"
+    "meaning_en": "hurry",
+    "meaning_tr": "acele etmek"
   },
   {
     "id": "a1_0185",
@@ -2822,7 +3006,8 @@
       "Ist hier einer, der das kann?"
     ],
     "page": 13,
-    "meaning_en": "a-"
+    "meaning_en": "a-",
+    "meaning_tr": "A-"
   },
   {
     "id": "a1_0186",
@@ -2840,7 +3025,8 @@
       "Ich brauche nur ein einfaches Zimmer."
     ],
     "page": 13,
-    "meaning_en": "simply"
+    "meaning_en": "simply",
+    "meaning_tr": "basitçe"
   },
   {
     "id": "a1_0187",
@@ -2855,7 +3041,8 @@
       "Der Eingang ist um die Ecke."
     ],
     "page": 13,
-    "meaning_en": "the entrance"
+    "meaning_en": "the entrance",
+    "meaning_tr": "giriş"
   },
   {
     "id": "a1_0188",
@@ -2870,7 +3057,8 @@
       "Ich muss noch für morgen einkaufen."
     ],
     "page": 13,
-    "meaning_en": "shopping"
+    "meaning_en": "shopping",
+    "meaning_tr": "alışveriş"
   },
   {
     "id": "a1_0189",
@@ -2885,7 +3073,8 @@
       "Darf ich Sie zu einem Kaffee einladen?"
     ],
     "page": 13,
-    "meaning_en": "invite"
+    "meaning_en": "invite",
+    "meaning_tr": "davet etmek"
   },
   {
     "id": "a1_0190",
@@ -2898,7 +3087,8 @@
     "forms": "",
     "examples": [],
     "page": 13,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0191",
@@ -2913,7 +3103,8 @@
       "Danke für die Einladung!"
     ],
     "page": 13,
-    "meaning_en": "the invitation"
+    "meaning_en": "the invitation",
+    "meaning_tr": "davet"
   },
   {
     "id": "a1_0192",
@@ -2928,7 +3119,8 @@
       "Diese Prüfung mache ich nicht noch einmal."
     ],
     "page": 14,
-    "meaning_en": "once"
+    "meaning_en": "once",
+    "meaning_tr": "bir kere"
   },
   {
     "id": "a1_0193",
@@ -2943,7 +3135,8 @@
       "Schnell, steig ein, der Zug fährt gleich."
     ],
     "page": 14,
-    "meaning_en": "get in"
+    "meaning_en": "get in",
+    "meaning_tr": "Alın"
   },
   {
     "id": "a1_0194",
@@ -2958,7 +3151,8 @@
       "Der Preis für den Eintritt ist 5 Euro."
     ],
     "page": 14,
-    "meaning_en": "the entry"
+    "meaning_en": "the entry",
+    "meaning_tr": "giriş"
   },
   {
     "id": "a1_0195",
@@ -2973,7 +3167,8 @@
       "Haben Sie noch ein Einzelzimmer?"
     ],
     "page": 14,
-    "meaning_en": "the single room"
+    "meaning_en": "the single room",
+    "meaning_tr": "tek kişilik oda"
   },
   {
     "id": "a1_0196",
@@ -2988,7 +3183,8 @@
       "Meine Eltern leben in Spanien."
     ],
     "page": 14,
-    "meaning_en": "the parents (pl.)"
+    "meaning_en": "the parents (pl.)",
+    "meaning_tr": "ebeveynler (pl.)"
   },
   {
     "id": "a1_0197",
@@ -3003,7 +3199,8 @@
       "Ich habe Ihre E-Mail nicht bekommen."
     ],
     "page": 14,
-    "meaning_en": "the email, -s"
+    "meaning_en": "the email, -s",
+    "meaning_tr": "e-posta, -s"
   },
   {
     "id": "a1_0198",
@@ -3018,7 +3215,8 @@
       "Auf dem Brief steht dein Name, also bist du der Empfänger."
     ],
     "page": 14,
-    "meaning_en": "the recipient, –"
+    "meaning_en": "the recipient, –",
+    "meaning_tr": "alıcı, –"
   },
   {
     "id": "a1_0199",
@@ -3033,7 +3231,8 @@
       "Welchen Wein können Sie mir empfehlen?"
     ],
     "page": 14,
-    "meaning_en": "recommend"
+    "meaning_en": "recommend",
+    "meaning_tr": "tavsiye etmek"
   },
   {
     "id": "a1_0200",
@@ -3048,7 +3247,8 @@
       "Die Straße endet hier."
     ],
     "page": 14,
-    "meaning_en": "end"
+    "meaning_en": "end",
+    "meaning_tr": "son"
   },
   {
     "id": "a1_0201",
@@ -3064,7 +3264,8 @@
       "Er bekommt sein Geld am Ende des Monats."
     ],
     "page": 14,
-    "meaning_en": "the end"
+    "meaning_en": "the end",
+    "meaning_tr": "son"
   },
   {
     "id": "a1_0202",
@@ -3079,7 +3280,8 @@
       "Entschuldigen Sie bitte!"
     ],
     "page": 14,
-    "meaning_en": "excuse"
+    "meaning_en": "excuse",
+    "meaning_tr": "mazeret"
   },
   {
     "id": "a1_0203",
@@ -3095,7 +3297,8 @@
       "– Bitte."
     ],
     "page": 14,
-    "meaning_en": "the apology"
+    "meaning_en": "the apology",
+    "meaning_tr": "özür"
   },
   {
     "id": "a1_0204",
@@ -3110,7 +3313,8 @@
       "Er heißt Ali."
     ],
     "page": 14,
-    "meaning_en": "he"
+    "meaning_en": "he",
+    "meaning_tr": "O"
   },
   {
     "id": "a1_0205",
@@ -3125,7 +3329,8 @@
       "Das Ergebnis des Tests bekommen Sie in zwei Wochen."
     ],
     "page": 14,
-    "meaning_en": "the result, -se"
+    "meaning_en": "the result, -se",
+    "meaning_tr": "sonuç, -se"
   },
   {
     "id": "a1_0206",
@@ -3140,7 +3345,8 @@
       "Kannst du mir das erklären?"
     ],
     "page": 14,
-    "meaning_en": "explain"
+    "meaning_en": "explain",
+    "meaning_tr": "açıklamak"
   },
   {
     "id": "a1_0207",
@@ -3155,7 +3361,8 @@
       "Rauchen ist hier nicht erlaubt."
     ],
     "page": 14,
-    "meaning_en": "allow"
+    "meaning_en": "allow",
+    "meaning_tr": "izin vermek"
   },
   {
     "id": "a1_0208",
@@ -3170,7 +3377,8 @@
       "Dieser Film ist nur für Erwachsene."
     ],
     "page": 14,
-    "meaning_en": "the adult, -n"
+    "meaning_en": "the adult, -n",
+    "meaning_tr": "yetişkin, -n"
   },
   {
     "id": "a1_0209",
@@ -3185,7 +3393,8 @@
       "Wir müssen euch etwas erzählen!"
     ],
     "page": 14,
-    "meaning_en": "tell"
+    "meaning_en": "tell",
+    "meaning_tr": "söylemek"
   },
   {
     "id": "a1_0210",
@@ -3200,7 +3409,8 @@
       "Es regnet."
     ],
     "page": 14,
-    "meaning_en": "it"
+    "meaning_en": "it",
+    "meaning_tr": "BT"
   },
   {
     "id": "a1_0211",
@@ -3215,7 +3425,8 @@
       "Was gibt es zu essen?"
     ],
     "page": 14,
-    "meaning_en": "eat"
+    "meaning_en": "eat",
+    "meaning_tr": "yemek yemek"
   },
   {
     "id": "a1_0212",
@@ -3230,7 +3441,8 @@
       "Das Essen ist heute sehr gut."
     ],
     "page": 14,
-    "meaning_en": "the food"
+    "meaning_en": "the food",
+    "meaning_tr": "yemek"
   },
   {
     "id": "a1_0213",
@@ -3245,7 +3457,8 @@
       "Euer Kurs beginnt heute."
     ],
     "page": 14,
-    "meaning_en": "your"
+    "meaning_en": "your",
+    "meaning_tr": "senin"
   },
   {
     "id": "a1_0214",
@@ -3260,7 +3473,8 @@
       "Ich fahre mit dem Auto zur Arbeit."
     ],
     "page": 14,
-    "meaning_en": "drive"
+    "meaning_en": "drive",
+    "meaning_tr": "sürmek"
   },
   {
     "id": "a1_0215",
@@ -3275,7 +3489,8 @@
       "Bitte nicht mit dem Fahrer sprechen!"
     ],
     "page": 14,
-    "meaning_en": "the driver"
+    "meaning_en": "the driver",
+    "meaning_tr": "sürücü"
   },
   {
     "id": "a1_0216",
@@ -3290,7 +3505,8 @@
       "Hast du schon eine Fahrkarte?"
     ],
     "page": 14,
-    "meaning_en": "the ticket, -n"
+    "meaning_en": "the ticket, -n",
+    "meaning_tr": "bilet, -n"
   },
   {
     "id": "a1_0217",
@@ -3305,7 +3521,8 @@
       "Fährst du mit dem Fahrrad oder mit dem Auto?"
     ],
     "page": 14,
-    "meaning_en": "the bike, -ä, he"
+    "meaning_en": "the bike, -ä, he",
+    "meaning_tr": "bisiklet, -ä, o"
   },
   {
     "id": "a1_0218",
@@ -3320,7 +3537,8 @@
       "Das ist falsch."
     ],
     "page": 14,
-    "meaning_en": "incorrect"
+    "meaning_en": "incorrect",
+    "meaning_tr": "yanlış"
   },
   {
     "id": "a1_0219",
@@ -3335,7 +3553,8 @@
       "Meine Familie lebt in Spanien."
     ],
     "page": 14,
-    "meaning_en": "the family, -n"
+    "meaning_en": "the family, -n",
+    "meaning_tr": "aile, -n"
   },
   {
     "id": "a1_0220",
@@ -3350,7 +3569,8 @@
       "Meine Familiennamen sind García González."
     ],
     "page": 14,
-    "meaning_en": "the family name"
+    "meaning_en": "the family name",
+    "meaning_tr": "aile adı"
   },
   {
     "id": "a1_0221",
@@ -3365,7 +3585,8 @@
       "Bei „Familienstand“ musst du „ledig“ ankreuzen."
     ],
     "page": 14,
-    "meaning_en": "the marital status"
+    "meaning_en": "the marital status",
+    "meaning_tr": "medeni durum"
   },
   {
     "id": "a1_0222",
@@ -3380,7 +3601,8 @@
       "Die Farbe gefällt mir gut."
     ],
     "page": 14,
-    "meaning_en": "the color, -n"
+    "meaning_en": "the color, -n",
+    "meaning_tr": "renk, -n"
   },
   {
     "id": "a1_0223",
@@ -3395,7 +3617,8 @@
       "Schicken Sie uns einfach ein Fax!"
     ],
     "page": 14,
-    "meaning_en": "das Fax, -e"
+    "meaning_en": "das Fax, -e",
+    "meaning_tr": "faks, -e"
   },
   {
     "id": "a1_0224",
@@ -3412,7 +3635,8 @@
       "Feierabend, Feiertag Am Montag ist Feiertag."
     ],
     "page": 14,
-    "meaning_en": "Celebration-"
+    "meaning_en": "Celebration-",
+    "meaning_tr": "Kutlama-"
   },
   {
     "id": "a1_0225",
@@ -3427,7 +3651,8 @@
       "Wir feiern heute meinen Geburtstag."
     ],
     "page": 14,
-    "meaning_en": "celebrate"
+    "meaning_en": "celebrate",
+    "meaning_tr": "kutlamak"
   },
   {
     "id": "a1_0226",
@@ -3443,7 +3668,8 @@
       "Was fehlt Ihnen?"
     ],
     "page": 14,
-    "meaning_en": "miss"
+    "meaning_en": "miss",
+    "meaning_tr": "kayıp"
   },
   {
     "id": "a1_0227",
@@ -3458,7 +3684,8 @@
       "Diesen Fehler mache ich immer."
     ],
     "page": 14,
-    "meaning_en": "the error, –"
+    "meaning_en": "the error, –",
+    "meaning_tr": "hata, –"
   },
   {
     "id": "a1_0228",
@@ -3473,7 +3700,8 @@
       "Wollen wir heute Abend mal fernsehen?"
     ],
     "page": 14,
-    "meaning_en": "TV"
+    "meaning_en": "TV",
+    "meaning_tr": "TV"
   },
   {
     "id": "a1_0229",
@@ -3489,7 +3717,8 @@
       "Ist mein Auto schon fertig?"
     ],
     "page": 14,
-    "meaning_en": "complete"
+    "meaning_en": "complete",
+    "meaning_tr": "tamamlamak"
   },
   {
     "id": "a1_0230",
@@ -3504,7 +3733,8 @@
       "Haben Sie Feuer?"
     ],
     "page": 14,
-    "meaning_en": "the fire"
+    "meaning_en": "the fire",
+    "meaning_tr": "ateş"
   },
   {
     "id": "a1_0231",
@@ -3519,7 +3749,8 @@
       "Mein Mann hat noch immer Fieber."
     ],
     "page": 14,
-    "meaning_en": "the fever"
+    "meaning_en": "the fever",
+    "meaning_tr": "ateş"
   },
   {
     "id": "a1_0232",
@@ -3534,7 +3765,8 @@
       "Ich möchte gern diesen Film sehen."
     ],
     "page": 14,
-    "meaning_en": "the film, -e"
+    "meaning_en": "the film, -e",
+    "meaning_tr": "film, -e"
   },
   {
     "id": "a1_0233",
@@ -3549,7 +3781,8 @@
       "Wir müssen den Schlüssel finden."
     ],
     "page": 14,
-    "meaning_en": "find"
+    "meaning_en": "find",
+    "meaning_tr": "bulmak"
   },
   {
     "id": "a1_0234",
@@ -3564,7 +3797,8 @@
       "Er arbeitet jetzt bei einer anderen Firma."
     ],
     "page": 14,
-    "meaning_en": "the Company"
+    "meaning_en": "the Company",
+    "meaning_tr": "Şirket"
   },
   {
     "id": "a1_0235",
@@ -3577,7 +3811,8 @@
     "forms": "",
     "examples": [],
     "page": 14,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0236",
@@ -3593,7 +3828,8 @@
       "Fleisch mag ich nicht."
     ],
     "page": 14,
-    "meaning_en": "the fish, -e"
+    "meaning_en": "the fish, -e",
+    "meaning_tr": "balık, -e"
   },
   {
     "id": "a1_0237",
@@ -3608,7 +3844,8 @@
       "Eine Flasche Bier, bitte."
     ],
     "page": 15,
-    "meaning_en": "the bottle, -n"
+    "meaning_en": "the bottle, -n",
+    "meaning_tr": "şişe, -n"
   },
   {
     "id": "a1_0238",
@@ -3623,7 +3860,8 @@
       "Fleisch mag ich nicht."
     ],
     "page": 15,
-    "meaning_en": "the meat"
+    "meaning_en": "the meat",
+    "meaning_tr": "et"
   },
   {
     "id": "a1_0239",
@@ -3639,7 +3877,8 @@
       "Deshalb fahre ich mit dem Zug."
     ],
     "page": 15,
-    "meaning_en": "fly"
+    "meaning_en": "fly",
+    "meaning_tr": "uçmak"
   },
   {
     "id": "a1_0240",
@@ -3654,7 +3893,8 @@
       "Wann fliegst du ab?"
     ],
     "page": 15,
-    "meaning_en": "fly off"
+    "meaning_en": "fly off",
+    "meaning_tr": "uçup gitmek"
   },
   {
     "id": "a1_0241",
@@ -3669,7 +3909,8 @@
       "Der Abflug ist um 11.20 Uhr."
     ],
     "page": 15,
-    "meaning_en": "the departure"
+    "meaning_en": "the departure",
+    "meaning_tr": "kalkış"
   },
   {
     "id": "a1_0242",
@@ -3684,7 +3925,8 @@
       "Kannst du mich zum Flughafen bringen?"
     ],
     "page": 15,
-    "meaning_en": "the airport"
+    "meaning_en": "the airport",
+    "meaning_tr": "havaalanı"
   },
   {
     "id": "a1_0243",
@@ -3699,7 +3941,8 @@
       "Das Flugzeug aus Berlin kommt heute später an."
     ],
     "page": 15,
-    "meaning_en": "The plane"
+    "meaning_en": "The plane",
+    "meaning_tr": "Uçak"
   },
   {
     "id": "a1_0244",
@@ -3714,7 +3957,8 @@
       "Sie müssen dieses Formular ausfüllen."
     ],
     "page": 15,
-    "meaning_en": "the form, -e"
+    "meaning_en": "the form, -e",
+    "meaning_tr": "form, -e"
   },
   {
     "id": "a1_0245",
@@ -3729,7 +3973,8 @@
       "Darf ich ein Foto machen?"
     ],
     "page": 15,
-    "meaning_en": "the photo, -s"
+    "meaning_en": "the photo, -s",
+    "meaning_tr": "fotoğraf, -s"
   },
   {
     "id": "a1_0246",
@@ -3745,7 +3990,8 @@
       "Wann kommen Sie?"
     ],
     "page": 15,
-    "meaning_en": "questions"
+    "meaning_en": "questions",
+    "meaning_tr": "sorular"
   },
   {
     "id": "a1_0247",
@@ -3760,7 +4006,8 @@
       "Ich habe eine Frage."
     ],
     "page": 15,
-    "meaning_en": "the questions"
+    "meaning_en": "the questions",
+    "meaning_tr": "sorular"
   },
   {
     "id": "a1_0248",
@@ -3777,7 +4024,8 @@
       "Hier arbeiten mehr Frauen als Männer."
     ],
     "page": 15,
-    "meaning_en": "the women"
+    "meaning_en": "the women",
+    "meaning_tr": "kadınlar"
   },
   {
     "id": "a1_0249",
@@ -3792,7 +4040,8 @@
       "Ist der Platz noch frei?"
     ],
     "page": 15,
-    "meaning_en": "free"
+    "meaning_en": "free",
+    "meaning_tr": "özgür"
   },
   {
     "id": "a1_0250",
@@ -3807,7 +4056,8 @@
       "In meiner Freizeit spiele ich oft Fußball."
     ],
     "page": 15,
-    "meaning_en": "the free time"
+    "meaning_en": "the free time",
+    "meaning_tr": "boş zaman"
   },
   {
     "id": "a1_0251",
@@ -3822,7 +4072,8 @@
       "Das weiß ich nicht; ich bin fremd hier."
     ],
     "page": 15,
-    "meaning_en": "foreign"
+    "meaning_en": "foreign",
+    "meaning_tr": "yabancı"
   },
   {
     "id": "a1_0252",
@@ -3837,7 +4088,8 @@
       "Ich freue mich auf den Urlaub."
     ],
     "page": 15,
-    "meaning_en": "(rejoice"
+    "meaning_en": "(rejoice",
+    "meaning_tr": "(sevin"
   },
   {
     "id": "a1_0253",
@@ -3853,7 +4105,8 @@
       "Das ist meine Freundin."
     ],
     "page": 15,
-    "meaning_en": "the friend, -e"
+    "meaning_en": "the friend, -e",
+    "meaning_tr": "arkadaş, -e"
   },
   {
     "id": "a1_0254",
@@ -3868,7 +4121,8 @@
       "Früher waren wir oft zusammen im Kino."
     ],
     "page": 15,
-    "meaning_en": "earlier"
+    "meaning_en": "earlier",
+    "meaning_tr": "daha erken"
   },
   {
     "id": "a1_0255",
@@ -3883,7 +4137,8 @@
       "Am Sonntag frühstücke ich gern im Bett."
     ],
     "page": 15,
-    "meaning_en": "have breakfast"
+    "meaning_en": "have breakfast",
+    "meaning_tr": "frühstücken"
   },
   {
     "id": "a1_0256",
@@ -3898,7 +4153,8 @@
       "Möchtest du ein Ei zum Frühstück?"
     ],
     "page": 15,
-    "meaning_en": "the breakfast"
+    "meaning_en": "the breakfast",
+    "meaning_tr": "kahvaltı"
   },
   {
     "id": "a1_0257",
@@ -3913,7 +4169,8 @@
       "Die Führung durch das Haus beginnt in 3 Minuten."
     ],
     "page": 15,
-    "meaning_en": "the leadership"
+    "meaning_en": "the leadership",
+    "meaning_tr": "liderlik"
   },
   {
     "id": "a1_0258",
@@ -3930,7 +4187,8 @@
       "Das ist das Brot für morgen."
     ],
     "page": 15,
-    "meaning_en": "for"
+    "meaning_en": "for",
+    "meaning_tr": "için"
   },
   {
     "id": "a1_0259",
@@ -3945,7 +4203,8 @@
       "Der linke Fuß tut mir weh."
     ],
     "page": 15,
-    "meaning_en": "the foot, -ü, e"
+    "meaning_en": "the foot, -ü, e",
+    "meaning_tr": "ayak, -ü, e"
   },
   {
     "id": "a1_0260",
@@ -3960,7 +4219,8 @@
       "Spielt ihr gerne Fußball?"
     ],
     "page": 15,
-    "meaning_en": "the football"
+    "meaning_en": "the football",
+    "meaning_tr": "futbol"
   },
   {
     "id": "a1_0261",
@@ -3975,7 +4235,8 @@
       "Wir haben leider keinen Garten."
     ],
     "page": 15,
-    "meaning_en": "the garden"
+    "meaning_en": "the garden",
+    "meaning_tr": "bahçe"
   },
   {
     "id": "a1_0262",
@@ -3990,7 +4251,8 @@
       "Am Wochenende haben wir mehrere Gäste."
     ],
     "page": 15,
-    "meaning_en": "the guest, -ä, e"
+    "meaning_en": "the guest, -ä, e",
+    "meaning_tr": "misafir, -ä, e"
   },
   {
     "id": "a1_0263",
@@ -4006,7 +4268,8 @@
       "Es gibt keine Karten mehr."
     ],
     "page": 15,
-    "meaning_en": "give"
+    "meaning_en": "give",
+    "meaning_tr": "vermek"
   },
   {
     "id": "a1_0264",
@@ -4021,7 +4284,8 @@
       "Ich bin in Zagreb geboren."
     ],
     "page": 15,
-    "meaning_en": "born"
+    "meaning_en": "born",
+    "meaning_tr": "doğmak"
   },
   {
     "id": "a1_0265",
@@ -4036,7 +4300,8 @@
       "Das Geburtsjahr Ihres Sohnes, bitte?"
     ],
     "page": 15,
-    "meaning_en": "the year of birth"
+    "meaning_en": "the year of birth",
+    "meaning_tr": "doğum yılı"
   },
   {
     "id": "a1_0266",
@@ -4051,7 +4316,8 @@
       "Bitte schreiben Sie Ihren Geburtsort auf das Formular."
     ],
     "page": 15,
-    "meaning_en": "the place of birth"
+    "meaning_en": "the place of birth",
+    "meaning_tr": "doğum yeri"
   },
   {
     "id": "a1_0267",
@@ -4066,7 +4332,8 @@
       "Herzlichen Glückwunsch zum Geburtstag!"
     ],
     "page": 15,
-    "meaning_en": "the birthday"
+    "meaning_en": "the birthday",
+    "meaning_tr": "doğum günü"
   },
   {
     "id": "a1_0268",
@@ -4081,7 +4348,8 @@
       "Das gefällt mir."
     ],
     "page": 15,
-    "meaning_en": "fallen"
+    "meaning_en": "fallen",
+    "meaning_tr": "düşmüş"
   },
   {
     "id": "a1_0269",
@@ -4098,7 +4366,8 @@
       "Wer spielt gegen wen?"
     ],
     "page": 15,
-    "meaning_en": "against"
+    "meaning_en": "against",
+    "meaning_tr": "aykırı"
   },
   {
     "id": "a1_0270",
@@ -4117,7 +4386,8 @@
       "Das geht nicht!"
     ],
     "page": 15,
-    "meaning_en": "go"
+    "meaning_en": "go",
+    "meaning_tr": "Gitmek"
   },
   {
     "id": "a1_0271",
@@ -4132,7 +4402,8 @@
       "Wem gehört das?"
     ],
     "page": 15,
-    "meaning_en": "belong"
+    "meaning_en": "belong",
+    "meaning_tr": "ait olmak"
   },
   {
     "id": "a1_0272",
@@ -4147,7 +4418,8 @@
       "Hast du noch Geld?"
     ],
     "page": 15,
-    "meaning_en": "the money"
+    "meaning_en": "the money",
+    "meaning_tr": "para"
   },
   {
     "id": "a1_0273",
@@ -4160,7 +4432,8 @@
     "forms": "",
     "examples": [],
     "page": 15,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0274",
@@ -4175,7 +4448,8 @@
       "Gemüse brauchen wir auch noch."
     ],
     "page": 15,
-    "meaning_en": "the vegetable"
+    "meaning_en": "the vegetable",
+    "meaning_tr": "sebze"
   },
   {
     "id": "a1_0275",
@@ -4190,7 +4464,8 @@
       "Wollen Sie Ihr Gepäck mitnehmen?"
     ],
     "page": 16,
-    "meaning_en": "the luggage"
+    "meaning_en": "the luggage",
+    "meaning_tr": "bagaj"
   },
   {
     "id": "a1_0276",
@@ -4205,7 +4480,8 @@
       "Da kommt er ja gerade."
     ],
     "page": 16,
-    "meaning_en": "straight"
+    "meaning_en": "straight",
+    "meaning_tr": "dümdüz"
   },
   {
     "id": "a1_0277",
@@ -4220,7 +4496,8 @@
       "Gehen Sie immer geradeaus!"
     ],
     "page": 16,
-    "meaning_en": "straight ahead"
+    "meaning_en": "straight ahead",
+    "meaning_tr": "dümdüz ileri"
   },
   {
     "id": "a1_0278",
@@ -4235,7 +4512,8 @@
       "Ich gehe gerne einkaufen."
     ],
     "page": 16,
-    "meaning_en": "gladly)"
+    "meaning_en": "gladly)",
+    "meaning_tr": "memnuniyetle)"
   },
   {
     "id": "a1_0279",
@@ -4250,7 +4528,8 @@
       "Die Geschäfte schließen um 18.30 Uhr."
     ],
     "page": 16,
-    "meaning_en": "the business, -e"
+    "meaning_en": "the business, -e",
+    "meaning_tr": "iş, -e"
   },
   {
     "id": "a1_0280",
@@ -4265,7 +4544,8 @@
       "Danke für das schöne Geschenk."
     ],
     "page": 16,
-    "meaning_en": "the gift, -e"
+    "meaning_en": "the gift, -e",
+    "meaning_tr": "hediye, -e"
   },
   {
     "id": "a1_0281",
@@ -4280,7 +4560,8 @@
       "Ich habe leider keine Geschwister."
     ],
     "page": 16,
-    "meaning_en": "the siblings (pl.)"
+    "meaning_en": "the siblings (pl.)",
+    "meaning_tr": "kardeşler (pl.)"
   },
   {
     "id": "a1_0282",
@@ -4295,7 +4576,8 @@
       "Das Gespräch mit Frau Kunz ist um 14 Uhr."
     ],
     "page": 16,
-    "meaning_en": "the conversation, -e"
+    "meaning_en": "the conversation, -e",
+    "meaning_tr": "konuşma, -e"
   },
   {
     "id": "a1_0283",
@@ -4310,7 +4592,8 @@
       "Gestern war ich krank."
     ],
     "page": 16,
-    "meaning_en": "yesterday"
+    "meaning_en": "yesterday",
+    "meaning_tr": "Dün"
   },
   {
     "id": "a1_0284",
@@ -4325,7 +4608,8 @@
       "Meine Frau ist gestern gestorben."
     ],
     "page": 16,
-    "meaning_en": "died"
+    "meaning_en": "died",
+    "meaning_tr": "ölü"
   },
   {
     "id": "a1_0285",
@@ -4340,7 +4624,8 @@
       "Mein Lieblingsgetränk ist Tomatensaft."
     ],
     "page": 16,
-    "meaning_en": "the drink, -e"
+    "meaning_en": "the drink, -e",
+    "meaning_tr": "içki, -e"
   },
   {
     "id": "a1_0286",
@@ -4355,7 +4640,8 @@
       "Bei „Gewicht“ schreibst du: 62 Kilo."
     ],
     "page": 16,
-    "meaning_en": "the weight"
+    "meaning_en": "the weight",
+    "meaning_tr": "ağırlık"
   },
   {
     "id": "a1_0287",
@@ -4370,7 +4656,8 @@
       "Wer gewinnt das Spiel?"
     ],
     "page": 16,
-    "meaning_en": "win"
+    "meaning_en": "win",
+    "meaning_tr": "kazanç"
   },
   {
     "id": "a1_0288",
@@ -4386,7 +4673,8 @@
       "Wir brauchen noch drei Gläser."
     ],
     "page": 16,
-    "meaning_en": "the glass, -ä, he"
+    "meaning_en": "the glass, -ä, he",
+    "meaning_tr": "bardak, -ä, o"
   },
   {
     "id": "a1_0289",
@@ -4402,7 +4690,8 @@
       "Ich glaube, er kommt gleich."
     ],
     "page": 16,
-    "meaning_en": "believe"
+    "meaning_en": "believe",
+    "meaning_tr": "inanmak"
   },
   {
     "id": "a1_0290",
@@ -4419,7 +4708,8 @@
       "Ich komme gleich."
     ],
     "page": 16,
-    "meaning_en": "even"
+    "meaning_en": "even",
+    "meaning_tr": "eşit"
   },
   {
     "id": "a1_0291",
@@ -4434,7 +4724,8 @@
       "Der ICE nach Berlin hält heute an Gleis 12."
     ],
     "page": 16,
-    "meaning_en": "the track, -e"
+    "meaning_en": "the track, -e",
+    "meaning_tr": "parça, -e"
   },
   {
     "id": "a1_0292",
@@ -4449,7 +4740,8 @@
       "Viel Glück!"
     ],
     "page": 16,
-    "meaning_en": "the happiness"
+    "meaning_en": "the happiness",
+    "meaning_tr": "mutluluk"
   },
   {
     "id": "a1_0293",
@@ -4464,7 +4756,8 @@
       "Meine Kinder sind glücklich verheiratet."
     ],
     "page": 16,
-    "meaning_en": "happy"
+    "meaning_en": "happy",
+    "meaning_tr": "mutlu"
   },
   {
     "id": "a1_0294",
@@ -4479,7 +4772,8 @@
       "Herzlichen Glückwunsch zum Geburtstag."
     ],
     "page": 16,
-    "meaning_en": "the congratulations"
+    "meaning_en": "the congratulations",
+    "meaning_tr": "tebrikler"
   },
   {
     "id": "a1_0295",
@@ -4494,7 +4788,8 @@
       "Heute haben wir dreißig Grad."
     ],
     "page": 16,
-    "meaning_en": "Degrees Celsius)"
+    "meaning_en": "Degrees Celsius)",
+    "meaning_tr": "Santigrat derece)"
   },
   {
     "id": "a1_0296",
@@ -4509,7 +4804,8 @@
       "Ich gratuliere dir!"
     ],
     "page": 16,
-    "meaning_en": "congratulate"
+    "meaning_en": "congratulate",
+    "meaning_tr": "tebrik etmek"
   },
   {
     "id": "a1_0297",
@@ -4524,7 +4820,8 @@
       "Heute grillen wir im Garten."
     ],
     "page": 16,
-    "meaning_en": "grill"
+    "meaning_en": "grill",
+    "meaning_tr": "ızgara"
   },
   {
     "id": "a1_0298",
@@ -4540,7 +4837,8 @@
       "Frankfurt ist eine große Stadt."
     ],
     "page": 16,
-    "meaning_en": "large"
+    "meaning_en": "large",
+    "meaning_tr": "büyük"
   },
   {
     "id": "a1_0299",
@@ -4555,7 +4853,8 @@
       "Haben Sie das auch in Größe 40?"
     ],
     "page": 16,
-    "meaning_en": "the size"
+    "meaning_en": "the size",
+    "meaning_tr": "boyut"
   },
   {
     "id": "a1_0300",
@@ -4570,7 +4869,8 @@
       "Meine Großeltern leben in Japan."
     ],
     "page": 16,
-    "meaning_en": "the grandparents (pl.)"
+    "meaning_en": "the grandparents (pl.)",
+    "meaning_tr": "büyükanne ve büyükbaba (pl.)"
   },
   {
     "id": "a1_0301",
@@ -4585,7 +4885,8 @@
       "Meine Großmutter heißt Eva."
     ],
     "page": 16,
-    "meaning_en": "the grandmother"
+    "meaning_en": "the grandmother",
+    "meaning_tr": "büyükanne"
   },
   {
     "id": "a1_0302",
@@ -4600,7 +4901,8 @@
       "Mein Großvater ist schon 80."
     ],
     "page": 16,
-    "meaning_en": "the grandfather"
+    "meaning_en": "the grandfather",
+    "meaning_tr": "büyükbaba"
   },
   {
     "id": "a1_0303",
@@ -4615,7 +4917,8 @@
       "Die erste Gruppe beginnt um 16 Uhr."
     ],
     "page": 16,
-    "meaning_en": "the group, -n"
+    "meaning_en": "the group, -n",
+    "meaning_tr": "grup, -n"
   },
   {
     "id": "a1_0304",
@@ -4631,7 +4934,8 @@
       "Mit freundlichen Grüßen"
     ],
     "page": 16,
-    "meaning_en": "the greeting, -ü, e"
+    "meaning_en": "the greeting, -ü, e",
+    "meaning_tr": "selamlama, -ü, e"
   },
   {
     "id": "a1_0305",
@@ -4646,7 +4950,8 @@
       "Der Pass ist nicht mehr gültig."
     ],
     "page": 16,
-    "meaning_en": "valid"
+    "meaning_en": "valid",
+    "meaning_tr": "geçerli"
   },
   {
     "id": "a1_0306",
@@ -4661,7 +4966,8 @@
       "Dort gibt es günstige Angebote."
     ],
     "page": 16,
-    "meaning_en": "cheap"
+    "meaning_en": "cheap",
+    "meaning_tr": "ucuz"
   },
   {
     "id": "a1_0307",
@@ -4681,7 +4987,8 @@
       "Guten Appetit!"
     ],
     "page": 16,
-    "meaning_en": "good"
+    "meaning_en": "good",
+    "meaning_tr": "iyi"
   },
   {
     "id": "a1_0308",
@@ -4696,7 +5003,8 @@
       "Sie hat lange Haare."
     ],
     "page": 16,
-    "meaning_en": "the hair, -e"
+    "meaning_en": "the hair, -e",
+    "meaning_tr": "saç, -e"
   },
   {
     "id": "a1_0309",
@@ -4711,7 +5019,8 @@
       "Ich habe ein neues Auto."
     ],
     "page": 16,
-    "meaning_en": "have"
+    "meaning_en": "have",
+    "meaning_tr": "sahip olmak"
   },
   {
     "id": "a1_0310",
@@ -4726,7 +5035,8 @@
       "Ein Hähnchen mit Pommes bitte!"
     ],
     "page": 16,
-    "meaning_en": "the chicken, -"
+    "meaning_en": "the chicken, -",
+    "meaning_tr": "tavuk, -"
   },
   {
     "id": "a1_0311",
@@ -4741,7 +5051,8 @@
       "Möchten Sie Vollpension oder Halbpension?"
     ],
     "page": 16,
-    "meaning_en": "the half board"
+    "meaning_en": "the half board",
+    "meaning_tr": "yarım pansiyon"
   },
   {
     "id": "a1_0312",
@@ -4756,7 +5067,8 @@
       "Wir treffen uns in Halle B"
     ],
     "page": 16,
-    "meaning_en": "the hall"
+    "meaning_en": "the hall",
+    "meaning_tr": "salon"
   },
   {
     "id": "a1_0313",
@@ -4769,7 +5081,8 @@
     "forms": "",
     "examples": [],
     "page": 16,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0314",
@@ -4785,7 +5098,8 @@
       "Wie geht’s?"
     ],
     "page": 16,
-    "meaning_en": "Hello"
+    "meaning_en": "Hello",
+    "meaning_tr": "Merhaba"
   },
   {
     "id": "a1_0315",
@@ -4800,7 +5114,8 @@
       "Dieser Zug hält nicht in Rüdesheim."
     ],
     "page": 17,
-    "meaning_en": "hold"
+    "meaning_en": "hold",
+    "meaning_tr": "tutmak"
   },
   {
     "id": "a1_0316",
@@ -4815,7 +5130,8 @@
       "An der nächsten Haltestelle müssen Sie aussteigen."
     ],
     "page": 17,
-    "meaning_en": "the bus stop"
+    "meaning_en": "the bus stop",
+    "meaning_tr": "otobüs durağı"
   },
   {
     "id": "a1_0317",
@@ -4830,7 +5146,8 @@
       "Er gibt mir die Hand."
     ],
     "page": 17,
-    "meaning_en": "the hand, -ä, e"
+    "meaning_en": "the hand, -ä, e",
+    "meaning_tr": "el, -ä, e"
   },
   {
     "id": "a1_0318",
@@ -4845,7 +5162,8 @@
       "In der Schule bitte die Handys ausmachen!"
     ],
     "page": 17,
-    "meaning_en": "the cell phone, -s"
+    "meaning_en": "the cell phone, -s",
+    "meaning_tr": "cep telefonu, -s"
   },
   {
     "id": "a1_0319",
@@ -4862,7 +5180,8 @@
       "Paul ist nicht zu Hause."
     ],
     "page": 17,
-    "meaning_en": "the house, -ä, he"
+    "meaning_en": "the house, -ä, he",
+    "meaning_tr": "ev, -ä, o"
   },
   {
     "id": "a1_0320",
@@ -4877,7 +5196,8 @@
       "Kannst du mir bei den Hausaufgaben helfen?"
     ],
     "page": 17,
-    "meaning_en": "the homework, -n"
+    "meaning_en": "the homework, -n",
+    "meaning_tr": "ödev, -n"
   },
   {
     "id": "a1_0321",
@@ -4890,7 +5210,8 @@
     "forms": "",
     "examples": [],
     "page": 17,
-    "meaning_en": "the housewife, -en/"
+    "meaning_en": "the housewife, -en/",
+    "meaning_tr": "die Hausfrau, -en/"
   },
   {
     "id": "a1_0322",
@@ -4905,7 +5226,8 @@
       "Die Hausfrau/der Hausmann wäscht, kocht und kauft ein."
     ],
     "page": 17,
-    "meaning_en": "the househusband"
+    "meaning_en": "the househusband",
+    "meaning_tr": "ev kocası"
   },
   {
     "id": "a1_0323",
@@ -4921,7 +5243,8 @@
       "Das ist meine Heimat."
     ],
     "page": 17,
-    "meaning_en": "the homeland"
+    "meaning_en": "the homeland",
+    "meaning_tr": "vatan"
   },
   {
     "id": "a1_0324",
@@ -4936,7 +5259,8 @@
       "Meine Schwester heiratet einen Japaner."
     ],
     "page": 17,
-    "meaning_en": "marry"
+    "meaning_en": "marry",
+    "meaning_tr": "evlenmek"
   },
   {
     "id": "a1_0325",
@@ -4952,7 +5276,8 @@
       "Wie heißt das auf Deutsch?"
     ],
     "page": 17,
-    "meaning_en": "be called"
+    "meaning_en": "be called",
+    "meaning_tr": "çağrılmak"
   },
   {
     "id": "a1_0326",
@@ -4967,7 +5292,8 @@
       "Können Sie mir helfen, bitte?"
     ],
     "page": 17,
-    "meaning_en": "help"
+    "meaning_en": "help",
+    "meaning_tr": "yardım"
   },
   {
     "id": "a1_0327",
@@ -4982,7 +5308,8 @@
       "Im Sommer ist es bis 21 Uhr hell."
     ],
     "page": 17,
-    "meaning_en": "bright"
+    "meaning_en": "bright",
+    "meaning_tr": "parlak"
   },
   {
     "id": "a1_0328",
@@ -4997,7 +5324,8 @@
       "In der neuen Küche fehlt noch der Herd."
     ],
     "page": 17,
-    "meaning_en": "the stove"
+    "meaning_en": "the stove",
+    "meaning_tr": "soba"
   },
   {
     "id": "a1_0329",
@@ -5012,7 +5340,8 @@
       "Guten Tag, Herr Sommer!"
     ],
     "page": 17,
-    "meaning_en": "the gentleman, -en"
+    "meaning_en": "the gentleman, -en",
+    "meaning_tr": "beyefendi, -tr"
   },
   {
     "id": "a1_0330",
@@ -5027,7 +5356,8 @@
       "Herzlichen Glückwunsch!"
     ],
     "page": 17,
-    "meaning_en": "herzlich"
+    "meaning_en": "herzlich",
+    "meaning_tr": "yürekten"
   },
   {
     "id": "a1_0331",
@@ -5042,7 +5372,8 @@
       "Heute ist ein schöner Tag."
     ],
     "page": 17,
-    "meaning_en": "today"
+    "meaning_en": "today",
+    "meaning_tr": "Bugün"
   },
   {
     "id": "a1_0332",
@@ -5058,7 +5389,8 @@
       "Hier wohne ich."
     ],
     "page": 17,
-    "meaning_en": "here"
+    "meaning_en": "here",
+    "meaning_tr": "Burada"
   },
   {
     "id": "a1_0333",
@@ -5075,7 +5407,8 @@
       "Brauchen Sie meine Hilfe?"
     ],
     "page": 17,
-    "meaning_en": "the help"
+    "meaning_en": "the help",
+    "meaning_tr": "yardım"
   },
   {
     "id": "a1_0334",
@@ -5090,7 +5423,8 @@
       "Die Tür zum Aussteigen ist hinten."
     ],
     "page": 17,
-    "meaning_en": "rear"
+    "meaning_en": "rear",
+    "meaning_tr": "arka"
   },
   {
     "id": "a1_0335",
@@ -5105,7 +5439,8 @@
       "Meine Hobbys sind Wandern und Schwimmen."
     ],
     "page": 17,
-    "meaning_en": "the hobby, -s"
+    "meaning_en": "the hobby, -s",
+    "meaning_tr": "hobi, -s"
   },
   {
     "id": "a1_0336",
@@ -5120,7 +5455,8 @@
       "Der Mount Everest ist 8.880 Meter hoch."
     ],
     "page": 17,
-    "meaning_en": "high"
+    "meaning_en": "high",
+    "meaning_tr": "yüksek"
   },
   {
     "id": "a1_0337",
@@ -5135,7 +5471,8 @@
       "Zur dieser Hochzeit kommen mehr als fünfzig Gäste."
     ],
     "page": 17,
-    "meaning_en": "the wedding"
+    "meaning_en": "the wedding",
+    "meaning_tr": "düğün"
   },
   {
     "id": "a1_0338",
@@ -5150,7 +5487,8 @@
       "Ich hole zwei Flaschen Wasser aus der Küche."
     ],
     "page": 17,
-    "meaning_en": "fetch"
+    "meaning_en": "fetch",
+    "meaning_tr": "gidip getirmek"
   },
   {
     "id": "a1_0339",
@@ -5167,7 +5505,8 @@
       "Ich habe das Lied schon mal gehört."
     ],
     "page": 17,
-    "meaning_en": "hear"
+    "meaning_en": "hear",
+    "meaning_tr": "duymak"
   },
   {
     "id": "a1_0340",
@@ -5182,7 +5521,8 @@
       "Im Urlaub sind wir in einem Hotel am Meer."
     ],
     "page": 17,
-    "meaning_en": "the hotel, -s"
+    "meaning_en": "the hotel, -s",
+    "meaning_tr": "otel, -s"
   },
   {
     "id": "a1_0341",
@@ -5197,7 +5537,8 @@
       "Der Hund ist noch jung."
     ],
     "page": 17,
-    "meaning_en": "the dog, -e"
+    "meaning_en": "the dog, -e",
+    "meaning_tr": "köpek, -e"
   },
   {
     "id": "a1_0342",
@@ -5213,7 +5554,8 @@
       "Wann ist das Essen fertig?"
     ],
     "page": 17,
-    "meaning_en": "the hunger"
+    "meaning_en": "the hunger",
+    "meaning_tr": "açlık"
   },
   {
     "id": "a1_0343",
@@ -5228,7 +5570,8 @@
       "Ich heiße Veronika."
     ],
     "page": 17,
-    "meaning_en": "I"
+    "meaning_en": "I",
+    "meaning_tr": "BEN"
   },
   {
     "id": "a1_0344",
@@ -5244,7 +5587,8 @@
       "Ruf ihn bitte an."
     ],
     "page": 17,
-    "meaning_en": "ihr/ihm/ihn"
+    "meaning_en": "ihr/ihm/ihn",
+    "meaning_tr": "onu / onu / onu"
   },
   {
     "id": "a1_0345",
@@ -5259,7 +5603,8 @@
       "Frau Bast kommt immer zu spät."
     ],
     "page": 17,
-    "meaning_en": "always"
+    "meaning_en": "always",
+    "meaning_tr": "Her zaman"
   },
   {
     "id": "a1_0346",
@@ -5277,7 +5622,8 @@
       "Komm, wir gehen ins Kino."
     ],
     "page": 17,
-    "meaning_en": "in"
+    "meaning_en": "in",
+    "meaning_tr": "içinde"
   },
   {
     "id": "a1_0347",
@@ -5293,7 +5639,8 @@
       "Wir haben hier wichtige Informationen für Sie."
     ],
     "page": 17,
-    "meaning_en": "the information"
+    "meaning_en": "the information",
+    "meaning_tr": "bilgi"
   },
   {
     "id": "a1_0348",
@@ -5308,7 +5655,8 @@
       "Unser Deutschkurs ist international: Silvana kommt aus Italien, Conchi aus Spanien, Yin aus China ..."
     ],
     "page": 17,
-    "meaning_en": "international"
+    "meaning_en": "international",
+    "meaning_tr": "uluslararası"
   },
   {
     "id": "a1_0349",
@@ -5323,7 +5671,8 @@
       "Das findest du im Internet."
     ],
     "page": 17,
-    "meaning_en": "the Internet"
+    "meaning_en": "the Internet",
+    "meaning_tr": "internet"
   },
   {
     "id": "a1_0350",
@@ -5336,7 +5685,8 @@
     "forms": "",
     "examples": [],
     "page": 17,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0351",
@@ -5352,7 +5702,8 @@
       "– Ja."
     ],
     "page": 18,
-    "meaning_en": "Yes"
+    "meaning_en": "Yes",
+    "meaning_tr": "Evet"
   },
   {
     "id": "a1_0352",
@@ -5368,7 +5719,8 @@
       "Es ist kalt."
     ],
     "page": 18,
-    "meaning_en": "the jacket, -n"
+    "meaning_en": "the jacket, -n",
+    "meaning_tr": "ceket, -n"
   },
   {
     "id": "a1_0353",
@@ -5383,7 +5735,8 @@
       "Blumen kannst du in jedem Bahnhof kaufen."
     ],
     "page": 18,
-    "meaning_en": "any-"
+    "meaning_en": "any-",
+    "meaning_tr": "herhangi-"
   },
   {
     "id": "a1_0354",
@@ -5398,7 +5751,8 @@
       "Jetzt machen wir eine Pause."
     ],
     "page": 18,
-    "meaning_en": "now"
+    "meaning_en": "now",
+    "meaning_tr": "Şimdi"
   },
   {
     "id": "a1_0355",
@@ -5413,7 +5767,8 @@
       "Jenny hat einen neuen Job bei der Post."
     ],
     "page": 18,
-    "meaning_en": "the job, -s"
+    "meaning_en": "the job, -s",
+    "meaning_tr": "iş, -s"
   },
   {
     "id": "a1_0356",
@@ -5428,7 +5783,8 @@
       "Viele Jugendliche kaufen gern ein."
     ],
     "page": 18,
-    "meaning_en": "the young person, -n"
+    "meaning_en": "the young person, -n",
+    "meaning_tr": "genç kişi, -n"
   },
   {
     "id": "a1_0357",
@@ -5445,7 +5801,8 @@
       "Noch so jung?"
     ],
     "page": 18,
-    "meaning_en": "young"
+    "meaning_en": "young",
+    "meaning_tr": "genç"
   },
   {
     "id": "a1_0358",
@@ -5461,7 +5818,8 @@
       "Einen Jungen und ein Mädchen."
     ],
     "page": 18,
-    "meaning_en": "the boy, -n"
+    "meaning_en": "the boy, -n",
+    "meaning_tr": "oğlan, -n"
   },
   {
     "id": "a1_0359",
@@ -5476,7 +5834,8 @@
       "Zum Frühstück trinke ich immer Kaffee."
     ],
     "page": 18,
-    "meaning_en": "the coffee"
+    "meaning_en": "the coffee",
+    "meaning_tr": "kahve"
   },
   {
     "id": "a1_0360",
@@ -5492,7 +5851,8 @@
       "Es geht sehr leicht kaputt."
     ],
     "page": 18,
-    "meaning_en": "broken"
+    "meaning_en": "broken",
+    "meaning_tr": "kırık"
   },
   {
     "id": "a1_0361",
@@ -5510,7 +5870,8 @@
       "Bringen Sie mir die Karte, bitte."
     ],
     "page": 18,
-    "meaning_en": "the card, -n"
+    "meaning_en": "the card, -n",
+    "meaning_tr": "kart, -n"
   },
   {
     "id": "a1_0362",
@@ -5525,7 +5886,8 @@
       "Kann ich auch mit Karte (be-) zahlen?"
     ],
     "page": 18,
-    "meaning_en": "(credit) card, -n"
+    "meaning_en": "(credit) card, -n",
+    "meaning_tr": "(kredi) kartı, -n"
   },
   {
     "id": "a1_0363",
@@ -5540,7 +5902,8 @@
       "Für Pommes frites braucht man Kartoffeln."
     ],
     "page": 18,
-    "meaning_en": "the potato, -n"
+    "meaning_en": "the potato, -n",
+    "meaning_tr": "patates, -n"
   },
   {
     "id": "a1_0364",
@@ -5555,7 +5918,8 @@
       "Zahlen Sie bitte an der Kasse."
     ],
     "page": 18,
-    "meaning_en": "the cash register"
+    "meaning_en": "the cash register",
+    "meaning_tr": "yazarkasa"
   },
   {
     "id": "a1_0365",
@@ -5570,7 +5934,8 @@
       "Tim kauft sich ein neues Auto."
     ],
     "page": 18,
-    "meaning_en": "buy"
+    "meaning_en": "buy",
+    "meaning_tr": "satın almak"
   },
   {
     "id": "a1_0366",
@@ -5585,7 +5950,8 @@
       "Es gibt keine Eintrittskarten mehr."
     ],
     "page": 18,
-    "meaning_en": "no"
+    "meaning_en": "no",
+    "meaning_tr": "HAYIR"
   },
   {
     "id": "a1_0367",
@@ -5601,7 +5967,8 @@
       "– Nein, leider nicht."
     ],
     "page": 18,
-    "meaning_en": "know"
+    "meaning_en": "know",
+    "meaning_tr": "Bilmek"
   },
   {
     "id": "a1_0368",
@@ -5617,7 +5984,8 @@
       "Wir möchten Sie kennenlernen."
     ],
     "page": 18,
-    "meaning_en": "get to know"
+    "meaning_en": "get to know",
+    "meaning_tr": "tanımak"
   },
   {
     "id": "a1_0369",
@@ -5632,7 +6000,8 @@
       "Wie viele Kinder haben Sie?"
     ],
     "page": 18,
-    "meaning_en": "the child, -he"
+    "meaning_en": "the child, -he",
+    "meaning_tr": "çocuk, -o"
   },
   {
     "id": "a1_0370",
@@ -5647,7 +6016,8 @@
       "Die kleine Laura geht schon in den Kindergarten."
     ],
     "page": 18,
-    "meaning_en": "the kindergarten"
+    "meaning_en": "the kindergarten",
+    "meaning_tr": "anaokulu"
   },
   {
     "id": "a1_0371",
@@ -5662,7 +6032,8 @@
       "Wir sehen heute Abend im Kino einen schönen Film."
     ],
     "page": 18,
-    "meaning_en": "the cinema, -s"
+    "meaning_en": "the cinema, -s",
+    "meaning_tr": "sinema, -s"
   },
   {
     "id": "a1_0372",
@@ -5677,7 +6048,8 @@
       "Am Kiosk bekommen Sie Getränke, Zigaretten und Zeitungen."
     ],
     "page": 18,
-    "meaning_en": "the kiosk"
+    "meaning_en": "the kiosk",
+    "meaning_tr": "kiosk"
   },
   {
     "id": "a1_0373",
@@ -5693,7 +6065,8 @@
       "– Klar!"
     ],
     "page": 18,
-    "meaning_en": "clear"
+    "meaning_en": "clear",
+    "meaning_tr": "temizlemek"
   },
   {
     "id": "a1_0374",
@@ -5709,7 +6082,8 @@
       "Klasse."
     ],
     "page": 18,
-    "meaning_en": "the class"
+    "meaning_en": "the class",
+    "meaning_tr": "sınıf"
   },
   {
     "id": "a1_0375",
@@ -5725,7 +6099,8 @@
       "– Jacken im ersten, Jeans im zweiten Stock."
     ],
     "page": 18,
-    "meaning_en": "the clothing"
+    "meaning_en": "the clothing",
+    "meaning_tr": "giyim"
   },
   {
     "id": "a1_0376",
@@ -5740,7 +6115,8 @@
       "Eltville ist eine kleine Stadt am Rhein."
     ],
     "page": 18,
-    "meaning_en": "small"
+    "meaning_en": "small",
+    "meaning_tr": "küçük"
   },
   {
     "id": "a1_0377",
@@ -5755,7 +6131,8 @@
       "Herr Georgi kann gut kochen."
     ],
     "page": 18,
-    "meaning_en": "cook"
+    "meaning_en": "cook",
+    "meaning_tr": "aşçı"
   },
   {
     "id": "a1_0378",
@@ -5770,7 +6147,8 @@
       "Ist das Ihr Koffer?"
     ],
     "page": 18,
-    "meaning_en": "the suitcase, -"
+    "meaning_en": "the suitcase, -",
+    "meaning_tr": "bavul, -"
   },
   {
     "id": "a1_0379",
@@ -5785,7 +6163,8 @@
       "Wie heißt die neue Kollegin?"
     ],
     "page": 18,
-    "meaning_en": "the colleague, -n"
+    "meaning_en": "the colleague, -n",
+    "meaning_tr": "meslektaşım, -n"
   },
   {
     "id": "a1_0380",
@@ -5802,7 +6181,8 @@
       "Kommst du mit ins Schwimmbad?"
     ],
     "page": 18,
-    "meaning_en": "come"
+    "meaning_en": "come",
+    "meaning_tr": "Gelmek"
   },
   {
     "id": "a1_0381",
@@ -5818,7 +6198,8 @@
       "Können Sie mir helfen?"
     ],
     "page": 18,
-    "meaning_en": "can"
+    "meaning_en": "can",
+    "meaning_tr": "olabilmek"
   },
   {
     "id": "a1_0382",
@@ -5833,7 +6214,8 @@
       "Das Geld überweisen wir am ersten März auf Ihr Konto."
     ],
     "page": 18,
-    "meaning_en": "the account"
+    "meaning_en": "the account",
+    "meaning_tr": "hesap"
   },
   {
     "id": "a1_0383",
@@ -5848,7 +6230,8 @@
       "Mein Kopf tut weh!"
     ],
     "page": 18,
-    "meaning_en": "the head"
+    "meaning_en": "the head",
+    "meaning_tr": "kafa"
   },
   {
     "id": "a1_0384",
@@ -5864,7 +6247,8 @@
       "– 10 Euro."
     ],
     "page": 18,
-    "meaning_en": "cost"
+    "meaning_en": "cost",
+    "meaning_tr": "maliyet"
   },
   {
     "id": "a1_0385",
@@ -5879,7 +6263,8 @@
       "Ich kann heute nicht zur Arbeit kommen, ich bin krank und liege im Bett."
     ],
     "page": 18,
-    "meaning_en": "sick"
+    "meaning_en": "sick",
+    "meaning_tr": "hasta"
   },
   {
     "id": "a1_0386",
@@ -5894,7 +6279,8 @@
       "Ich kriege 15 Euro in der Stunde für meine Arbeit."
     ],
     "page": 18,
-    "meaning_en": "get"
+    "meaning_en": "get",
+    "meaning_tr": "elde etmek"
   },
   {
     "id": "a1_0387",
@@ -5909,7 +6295,8 @@
       "Der neue Herd kommt in die Küche."
     ],
     "page": 18,
-    "meaning_en": "the kitchen"
+    "meaning_en": "the kitchen",
+    "meaning_tr": "mutfak"
   },
   {
     "id": "a1_0388",
@@ -5922,7 +6309,8 @@
     "forms": "",
     "examples": [],
     "page": 18,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0389",
@@ -5937,7 +6325,8 @@
       "Ich nehme ein Stück Kuchen."
     ],
     "page": 18,
-    "meaning_en": "the cake"
+    "meaning_en": "the cake",
+    "meaning_tr": "kek"
   },
   {
     "id": "a1_0390",
@@ -5952,7 +6341,8 @@
       "Hast du einen Kugelschreiber für mich?"
     ],
     "page": 19,
-    "meaning_en": "the ballpoint pen"
+    "meaning_en": "the ballpoint pen",
+    "meaning_tr": "tükenmez kalem"
   },
   {
     "id": "a1_0391",
@@ -5968,7 +6358,8 @@
       "– Ja, im Kühlschrank."
     ],
     "page": 19,
-    "meaning_en": "the refrigerator"
+    "meaning_en": "the refrigerator",
+    "meaning_tr": "buzdolabı"
   },
   {
     "id": "a1_0392",
@@ -5984,7 +6375,8 @@
       "Ich gehe oft ins Museum."
     ],
     "page": 19,
-    "meaning_en": "cultural"
+    "meaning_en": "cultural",
+    "meaning_tr": "kültürel"
   },
   {
     "id": "a1_0393",
@@ -5999,7 +6391,8 @@
       "Jede Mutter kümmert sich um ihre kleinen Kinder."
     ],
     "page": 19,
-    "meaning_en": "take care"
+    "meaning_en": "take care",
+    "meaning_tr": "Dikkatli ol"
   },
   {
     "id": "a1_0394",
@@ -6015,7 +6408,8 @@
       "Ich habe eine Kundin."
     ],
     "page": 19,
-    "meaning_en": "the customer, -n"
+    "meaning_en": "the customer, -n",
+    "meaning_tr": "müşteri, -n"
   },
   {
     "id": "a1_0395",
@@ -6030,7 +6424,8 @@
       "Der Deutschkurs geht bis zum Sommer."
     ],
     "page": 19,
-    "meaning_en": "the course, -e"
+    "meaning_en": "the course, -e",
+    "meaning_tr": "kurs, -e"
   },
   {
     "id": "a1_0396",
@@ -6045,7 +6440,8 @@
       "Ricardo hat kurzes Haar."
     ],
     "page": 19,
-    "meaning_en": "short"
+    "meaning_en": "short",
+    "meaning_tr": "kısa"
   },
   {
     "id": "a1_0397",
@@ -6060,7 +6456,8 @@
       "Die Kinder lachen viel."
     ],
     "page": 19,
-    "meaning_en": "laugh"
+    "meaning_en": "laugh",
+    "meaning_tr": "lachen"
   },
   {
     "id": "a1_0398",
@@ -6075,7 +6472,8 @@
       "Im Buchladen können Sie Bücher kaufen."
     ],
     "page": 19,
-    "meaning_en": "the shop, -ä"
+    "meaning_en": "the shop, -ä",
+    "meaning_tr": "dükkan, -ä"
   },
   {
     "id": "a1_0399",
@@ -6090,7 +6488,8 @@
       "Italien ist ein schönes Land."
     ],
     "page": 19,
-    "meaning_en": "the country, -ä, he"
+    "meaning_en": "the country, -ä, he",
+    "meaning_tr": "ülke, -ä, o"
   },
   {
     "id": "a1_0400",
@@ -6105,7 +6504,8 @@
       "Die Jeans ist zu lang."
     ],
     "page": 19,
-    "meaning_en": "long"
+    "meaning_en": "long",
+    "meaning_tr": "uzun"
   },
   {
     "id": "a1_0401",
@@ -6120,7 +6520,8 @@
       "Wie lange fährt der Zug von Hamburg nach Berlin?"
     ],
     "page": 19,
-    "meaning_en": "long"
+    "meaning_en": "long",
+    "meaning_tr": "uzun"
   },
   {
     "id": "a1_0402",
@@ -6135,7 +6536,8 @@
       "Könnten Sie bitte etwas langsamer sprechen?"
     ],
     "page": 19,
-    "meaning_en": "slow"
+    "meaning_en": "slow",
+    "meaning_tr": "yavaş"
   },
   {
     "id": "a1_0403",
@@ -6150,7 +6552,8 @@
       "Ich möchte nicht Auto fahren, ich möchte laufen."
     ],
     "page": 19,
-    "meaning_en": "run"
+    "meaning_en": "run",
+    "meaning_tr": "koşmak"
   },
   {
     "id": "a1_0404",
@@ -6166,7 +6569,8 @@
       "Das Baby schläft."
     ],
     "page": 19,
-    "meaning_en": "loud"
+    "meaning_en": "loud",
+    "meaning_tr": "yüksek sesle"
   },
   {
     "id": "a1_0405",
@@ -6182,7 +6586,8 @@
       "Ihre Eltern leben nicht mehr."
     ],
     "page": 19,
-    "meaning_en": "life"
+    "meaning_en": "life",
+    "meaning_tr": "hayat"
   },
   {
     "id": "a1_0406",
@@ -6197,7 +6602,8 @@
       "Das Leben in diesem Land ist teuer."
     ],
     "page": 19,
-    "meaning_en": "the life"
+    "meaning_en": "the life",
+    "meaning_tr": "hayat"
   },
   {
     "id": "a1_0407",
@@ -6210,7 +6616,8 @@
     "forms": "",
     "examples": [],
     "page": 19,
-    "meaning_en": "the life"
+    "meaning_en": "the life",
+    "meaning_tr": "hayat"
   },
   {
     "id": "a1_0408",
@@ -6225,7 +6632,8 @@
       "Lebensmittel bekommen Sie im Supermarkt."
     ],
     "page": 19,
-    "meaning_en": "medium (pl.)"
+    "meaning_en": "medium (pl.)",
+    "meaning_tr": "orta (pl.)"
   },
   {
     "id": "a1_0409",
@@ -6242,7 +6650,8 @@
       "Ledig."
     ],
     "page": 19,
-    "meaning_en": "single"
+    "meaning_en": "single",
+    "meaning_tr": "Bekar"
   },
   {
     "id": "a1_0410",
@@ -6257,7 +6666,8 @@
       "Legen Sie das Buch auf den Tisch."
     ],
     "page": 19,
-    "meaning_en": "place"
+    "meaning_en": "place",
+    "meaning_tr": "yer"
   },
   {
     "id": "a1_0411",
@@ -6272,7 +6682,8 @@
       "Unsere Deutschlehrerin heißt Frau Müller."
     ],
     "page": 19,
-    "meaning_en": "the teacher, -"
+    "meaning_en": "the teacher, -",
+    "meaning_tr": "öğretmen, -"
   },
   {
     "id": "a1_0412",
@@ -6288,7 +6699,8 @@
       "Deutsch ist nicht leicht."
     ],
     "page": 19,
-    "meaning_en": "light"
+    "meaning_en": "light",
+    "meaning_tr": "ışık"
   },
   {
     "id": "a1_0413",
@@ -6304,7 +6716,8 @@
       "Ich muss zum Arzt."
     ],
     "page": 19,
-    "meaning_en": "unfortunately"
+    "meaning_en": "unfortunately",
+    "meaning_tr": "Ne yazık ki"
   },
   {
     "id": "a1_0414",
@@ -6320,7 +6733,8 @@
       "Die anderen schlafen schon."
     ],
     "page": 19,
-    "meaning_en": "quiet"
+    "meaning_en": "quiet",
+    "meaning_tr": "sessizlik"
   },
   {
     "id": "a1_0415",
@@ -6335,7 +6749,8 @@
       "Wie lange lernen Sie schon Deutsch?"
     ],
     "page": 19,
-    "meaning_en": "learn"
+    "meaning_en": "learn",
+    "meaning_tr": "öğrenmek"
   },
   {
     "id": "a1_0416",
@@ -6350,7 +6765,8 @@
       "Ich lese ein Buch von García Márquez."
     ],
     "page": 19,
-    "meaning_en": "read"
+    "meaning_en": "read",
+    "meaning_tr": "Okumak"
   },
   {
     "id": "a1_0417",
@@ -6365,7 +6781,8 @@
       "Morgen ist der letzte Kurstag."
     ],
     "page": 19,
-    "meaning_en": "last-"
+    "meaning_en": "last-",
+    "meaning_tr": "son-"
   },
   {
     "id": "a1_0418",
@@ -6380,7 +6797,8 @@
       "In der Disko sind viele Leute."
     ],
     "page": 19,
-    "meaning_en": "the people (pl.)"
+    "meaning_en": "the people (pl.)",
+    "meaning_tr": "insanlar (pl.)"
   },
   {
     "id": "a1_0419",
@@ -6395,7 +6813,8 @@
       "Wo macht man hier das Licht an?"
     ],
     "page": 19,
-    "meaning_en": "the light"
+    "meaning_en": "the light",
+    "meaning_tr": "ışık"
   },
   {
     "id": "a1_0420",
@@ -6410,7 +6829,8 @@
       "Liebe Susanne, lieber Hans,"
     ],
     "page": 19,
-    "meaning_en": "dear-"
+    "meaning_en": "dear-",
+    "meaning_tr": "Sayın-"
   },
   {
     "id": "a1_0421",
@@ -6425,7 +6845,8 @@
       "Ich liebe dich!"
     ],
     "page": 19,
-    "meaning_en": "love"
+    "meaning_en": "love",
+    "meaning_tr": "Aşk"
   },
   {
     "id": "a1_0422",
@@ -6440,7 +6861,8 @@
       "Sie fährt lieber mit der Bahn."
     ],
     "page": 19,
-    "meaning_en": "Dear"
+    "meaning_en": "Dear",
+    "meaning_tr": "Canım"
   },
   {
     "id": "a1_0423",
@@ -6455,7 +6877,8 @@
       "Mein Lieblingsfilm ist „Schwarze Augen“."
     ],
     "page": 19,
-    "meaning_en": "Favorite-"
+    "meaning_en": "Favorite-",
+    "meaning_tr": "Favori-"
   },
   {
     "id": "a1_0424",
@@ -6470,7 +6893,8 @@
       "Welches ist dein Lieblingslied?"
     ],
     "page": 19,
-    "meaning_en": "the song, -er"
+    "meaning_en": "the song, -er",
+    "meaning_tr": "şarkı, -er"
   },
   {
     "id": "a1_0425",
@@ -6486,7 +6910,8 @@
       "Frankfurt liegt am Main."
     ],
     "page": 19,
-    "meaning_en": "lay"
+    "meaning_en": "lay",
+    "meaning_tr": "sermek"
   },
   {
     "id": "a1_0426",
@@ -6501,7 +6926,8 @@
       "Gehen Sie die nächste Straße links."
     ],
     "page": 19,
-    "meaning_en": "left"
+    "meaning_en": "left",
+    "meaning_tr": "sol"
   },
   {
     "id": "a1_0427",
@@ -6516,7 +6942,8 @@
       "Dieser Lastkraftwagen ist sehr groß."
     ],
     "page": 19,
-    "meaning_en": "the truck, -s"
+    "meaning_en": "the truck, -s",
+    "meaning_tr": "kamyon, -s"
   },
   {
     "id": "a1_0428",
@@ -6531,7 +6958,8 @@
       "In unserer Straße gibt es ein neues Lokal."
     ],
     "page": 19,
-    "meaning_en": "the local"
+    "meaning_en": "the local",
+    "meaning_tr": "yerel"
   },
   {
     "id": "a1_0429",
@@ -6546,7 +6974,8 @@
       "Die Lösung ist ganz einfach."
     ],
     "page": 19,
-    "meaning_en": "the solution, -en"
+    "meaning_en": "the solution, -en",
+    "meaning_tr": "çözüm, -en"
   },
   {
     "id": "a1_0430",
@@ -6562,7 +6991,8 @@
       "Sie lacht immer."
     ],
     "page": 19,
-    "meaning_en": "funny"
+    "meaning_en": "funny",
+    "meaning_tr": "eğlenceli"
   },
   {
     "id": "a1_0431",
@@ -6575,7 +7005,8 @@
     "forms": "",
     "examples": [],
     "page": 19,
-    "meaning_en": "m"
+    "meaning_en": "m",
+    "meaning_tr": "M"
   },
   {
     "id": "a1_0432",
@@ -6590,7 +7021,8 @@
       "Was machst du heute Abend?"
     ],
     "page": 19,
-    "meaning_en": "make"
+    "meaning_en": "make",
+    "meaning_tr": "yapmak"
   },
   {
     "id": "a1_0433",
@@ -6605,7 +7037,8 @@
       "Ich muss jetzt das Essen machen."
     ],
     "page": 19,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0434",
@@ -6621,7 +7054,8 @@
       "– Junge oder Mädchen?"
     ],
     "page": 20,
-    "meaning_en": "the girl, -"
+    "meaning_en": "the girl, -",
+    "meaning_tr": "kız, -"
   },
   {
     "id": "a1_0435",
@@ -6636,7 +7070,8 @@
       "Hier darf man nicht rauchen."
     ],
     "page": 20,
-    "meaning_en": "man"
+    "meaning_en": "man",
+    "meaning_tr": "Adam"
   },
   {
     "id": "a1_0436",
@@ -6651,7 +7086,8 @@
       "Mein Mann arbeitet bei der Polizei."
     ],
     "page": 20,
-    "meaning_en": "the man, -ä, he"
+    "meaning_en": "the man, -ä, he",
+    "meaning_tr": "adam, -ä, o"
   },
   {
     "id": "a1_0437",
@@ -6666,7 +7102,8 @@
       "Kreuzen Sie bitte an: „weiblich“ oder „männlich“."
     ],
     "page": 20,
-    "meaning_en": "masculine"
+    "meaning_en": "masculine",
+    "meaning_tr": "eril"
   },
   {
     "id": "a1_0438",
@@ -6681,7 +7118,8 @@
       "Die Waschmaschine ist günstig."
     ],
     "page": 20,
-    "meaning_en": "the machine, -n"
+    "meaning_en": "the machine, -n",
+    "meaning_tr": "makine, -n"
   },
   {
     "id": "a1_0439",
@@ -6696,7 +7134,8 @@
       "Wir machen Urlaub am Meer."
     ],
     "page": 20,
-    "meaning_en": "the sea"
+    "meaning_en": "the sea",
+    "meaning_tr": "deniz"
   },
   {
     "id": "a1_0440",
@@ -6711,7 +7150,8 @@
       "Dieses Auto kostet 1.000 Euro mehr als das andere."
     ],
     "page": 20,
-    "meaning_en": "more"
+    "meaning_en": "more",
+    "meaning_tr": "Daha"
   },
   {
     "id": "a1_0441",
@@ -6726,7 +7166,8 @@
       "Mein Vater ist Arzt."
     ],
     "page": 20,
-    "meaning_en": "my"
+    "meaning_en": "my",
+    "meaning_tr": "Benim"
   },
   {
     "id": "a1_0442",
@@ -6741,7 +7182,8 @@
       "Die meisten Norddeutschen sind sehr groß."
     ],
     "page": 20,
-    "meaning_en": "mostly-"
+    "meaning_en": "mostly-",
+    "meaning_tr": "çoğunlukla-"
   },
   {
     "id": "a1_0443",
@@ -6756,7 +7198,8 @@
       "Die Menschen sind hier anders als bei uns."
     ],
     "page": 20,
-    "meaning_en": "the human being, -en"
+    "meaning_en": "the human being, -en",
+    "meaning_tr": "insan, -tr"
   },
   {
     "id": "a1_0444",
@@ -6771,7 +7214,8 @@
       "Ich möchte ein Auto mieten."
     ],
     "page": 20,
-    "meaning_en": "rent"
+    "meaning_en": "rent",
+    "meaning_tr": "kira"
   },
   {
     "id": "a1_0445",
@@ -6786,7 +7230,8 @@
       "Die Miete für diese Wohnung ist 600 Euro."
     ],
     "page": 20,
-    "meaning_en": "the rent"
+    "meaning_en": "the rent",
+    "meaning_tr": "kira"
   },
   {
     "id": "a1_0446",
@@ -6801,7 +7246,8 @@
       "Die Milch steht im Kühlschrank."
     ],
     "page": 20,
-    "meaning_en": "the milk"
+    "meaning_en": "the milk",
+    "meaning_tr": "süt"
   },
   {
     "id": "a1_0447",
@@ -6816,7 +7262,8 @@
       "Trinken Sie den Kaffee mit Milch?"
     ],
     "page": 20,
-    "meaning_en": "with"
+    "meaning_en": "with",
+    "meaning_tr": "ile"
   },
   {
     "id": "a1_0448",
@@ -6832,7 +7279,8 @@
       "Soll ich dir was mitbringen?"
     ],
     "page": 20,
-    "meaning_en": "bring along"
+    "meaning_en": "bring along",
+    "meaning_tr": "yanında getirmek"
   },
   {
     "id": "a1_0449",
@@ -6848,7 +7296,8 @@
       "Kommst du mit?"
     ],
     "page": 20,
-    "meaning_en": "come along"
+    "meaning_en": "come along",
+    "meaning_tr": "gel"
   },
   {
     "id": "a1_0450",
@@ -6863,7 +7312,8 @@
       "Warum macht ihr nicht mit?"
     ],
     "page": 20,
-    "meaning_en": "join in"
+    "meaning_en": "join in",
+    "meaning_tr": "katılmak"
   },
   {
     "id": "a1_0451",
@@ -6878,7 +7328,8 @@
       "Nehmen wir meine Schwester ins Kino mit?"
     ],
     "page": 20,
-    "meaning_en": "take along"
+    "meaning_en": "take along",
+    "meaning_tr": "yanına al"
   },
   {
     "id": "a1_0452",
@@ -6893,7 +7344,8 @@
       "Der Lehrer steht in der Mitte des Klassenzimmers."
     ],
     "page": 20,
-    "meaning_en": "the middle"
+    "meaning_en": "the middle",
+    "meaning_tr": "orta"
   },
   {
     "id": "a1_0453",
@@ -6908,7 +7360,8 @@
       "Sind die Möbel neu?"
     ],
     "page": 20,
-    "meaning_en": "the furniture (pl.)"
+    "meaning_en": "the furniture (pl.)",
+    "meaning_tr": "mobilyalar (pl.)"
   },
   {
     "id": "a1_0454",
@@ -6923,7 +7376,8 @@
       "Was möchten Sie trinken?"
     ],
     "page": 20,
-    "meaning_en": "want"
+    "meaning_en": "want",
+    "meaning_tr": "istek"
   },
   {
     "id": "a1_0455",
@@ -6938,7 +7392,8 @@
       "Magst du Kaffee oder Tee?"
     ],
     "page": 20,
-    "meaning_en": "like"
+    "meaning_en": "like",
+    "meaning_tr": "beğenmek"
   },
   {
     "id": "a1_0456",
@@ -6953,7 +7408,8 @@
       "Mit dieser Fahrkarte ist die Fahrt ab 9 Uhr möglich."
     ],
     "page": 20,
-    "meaning_en": "possible"
+    "meaning_en": "possible",
+    "meaning_tr": "olası"
   },
   {
     "id": "a1_0457",
@@ -6969,7 +7425,8 @@
       "Einen Moment bitte."
     ],
     "page": 20,
-    "meaning_en": "the moment"
+    "meaning_en": "the moment",
+    "meaning_tr": "an"
   },
   {
     "id": "a1_0458",
@@ -6984,7 +7441,8 @@
       "Morgen beginnt die Schule um 10 Uhr."
     ],
     "page": 20,
-    "meaning_en": "morning"
+    "meaning_en": "morning",
+    "meaning_tr": "Sabah"
   },
   {
     "id": "a1_0459",
@@ -7000,7 +7458,8 @@
       "Ich gehe schlafen."
     ],
     "page": 20,
-    "meaning_en": "tired"
+    "meaning_en": "tired",
+    "meaning_tr": "yorgun"
   },
   {
     "id": "a1_0460",
@@ -7015,7 +7474,8 @@
       "Öffnen Sie den Mund."
     ],
     "page": 20,
-    "meaning_en": "the mouth"
+    "meaning_en": "the mouth",
+    "meaning_tr": "ağız"
   },
   {
     "id": "a1_0461",
@@ -7030,7 +7490,8 @@
       "Ich muss jeden Tag von 8 Uhr bis 18 Uhr arbeiten."
     ],
     "page": 20,
-    "meaning_en": "must"
+    "meaning_en": "must",
+    "meaning_tr": "mutlak"
   },
   {
     "id": "a1_0462",
@@ -7045,7 +7506,8 @@
       "Frau Berghäuser ist die Mutter von Michaela."
     ],
     "page": 20,
-    "meaning_en": "the mother, -ü"
+    "meaning_en": "the mother, -ü",
+    "meaning_tr": "anne, -ü"
   },
   {
     "id": "a1_0463",
@@ -7062,7 +7524,8 @@
       "Es ist schon 5 nach 12."
     ],
     "page": 20,
-    "meaning_en": "after"
+    "meaning_en": "after",
+    "meaning_tr": "sonrasında"
   },
   {
     "id": "a1_0464",
@@ -7077,7 +7540,8 @@
       "Sehen wir uns nächste Woche?"
     ],
     "page": 20,
-    "meaning_en": "nächst-"
+    "meaning_en": "nächst-",
+    "meaning_tr": "Sonraki-"
   },
   {
     "id": "a1_0465",
@@ -7093,7 +7557,8 @@
       "Mein Vorname ist Thomas; Schmidt ist der Familienname."
     ],
     "page": 20,
-    "meaning_en": "the name, -n"
+    "meaning_en": "the name, -n",
+    "meaning_tr": "isim, -n"
   },
   {
     "id": "a1_0466",
@@ -7110,7 +7575,8 @@
       "Ich nehme den Bus."
     ],
     "page": 20,
-    "meaning_en": "take"
+    "meaning_en": "take",
+    "meaning_tr": "almak"
   },
   {
     "id": "a1_0467",
@@ -7126,7 +7592,8 @@
       "– Nein, ich habe keine Zeit."
     ],
     "page": 20,
-    "meaning_en": "no"
+    "meaning_en": "no",
+    "meaning_tr": "HAYIR"
   },
   {
     "id": "a1_0468",
@@ -7142,7 +7609,8 @@
       "Wir haben eine neue Wohnung."
     ],
     "page": 20,
-    "meaning_en": "new"
+    "meaning_en": "new",
+    "meaning_tr": "yeni"
   },
   {
     "id": "a1_0469",
@@ -7158,7 +7626,8 @@
       "Das ist doch schön, nicht?"
     ],
     "page": 20,
-    "meaning_en": "not"
+    "meaning_en": "not",
+    "meaning_tr": "Olumsuz"
   },
   {
     "id": "a1_0470",
@@ -7175,7 +7644,8 @@
       "Der Laden gefällt mir nicht."
     ],
     "page": 20,
-    "meaning_en": "nothing"
+    "meaning_en": "nothing",
+    "meaning_tr": "Hiçbir şey"
   },
   {
     "id": "a1_0471",
@@ -7188,7 +7658,8 @@
     "forms": "",
     "examples": [],
     "page": 20,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0472",
@@ -7203,7 +7674,8 @@
       "Er kommt nie pünktlich."
     ],
     "page": 20,
-    "meaning_en": "never"
+    "meaning_en": "never",
+    "meaning_tr": "Asla"
   },
   {
     "id": "a1_0473",
@@ -7220,7 +7692,8 @@
       "Ich habe noch 20 Euro."
     ],
     "page": 21,
-    "meaning_en": "still"
+    "meaning_en": "still",
+    "meaning_tr": "Hala"
   },
   {
     "id": "a1_0474",
@@ -7236,7 +7709,8 @@
       "Sein Gewicht ist normal."
     ],
     "page": 21,
-    "meaning_en": "normal"
+    "meaning_en": "normal",
+    "meaning_tr": "normal"
   },
   {
     "id": "a1_0475",
@@ -7253,7 +7727,8 @@
       "Können Sie mir Ihre Nummer geben?"
     ],
     "page": 21,
-    "meaning_en": "the number, -n"
+    "meaning_en": "the number, -n",
+    "meaning_tr": "sayı, -n"
   },
   {
     "id": "a1_0476",
@@ -7268,7 +7743,8 @@
       "Ich möchte nur ein Glas Wasser."
     ],
     "page": 21,
-    "meaning_en": "only"
+    "meaning_en": "only",
+    "meaning_tr": "sadece"
   },
   {
     "id": "a1_0477",
@@ -7281,7 +7757,8 @@
     "forms": "",
     "examples": [],
     "page": 21,
-    "meaning_en": "O"
+    "meaning_en": "O",
+    "meaning_tr": "O"
   },
   {
     "id": "a1_0478",
@@ -7296,7 +7773,8 @@
       "Ich wohne oben."
     ],
     "page": 21,
-    "meaning_en": "above"
+    "meaning_en": "above",
+    "meaning_tr": "üstünde"
   },
   {
     "id": "a1_0479",
@@ -7311,7 +7789,8 @@
       "Im Sommer ist das Obst billig."
     ],
     "page": 21,
-    "meaning_en": "the fruit"
+    "meaning_en": "the fruit",
+    "meaning_tr": "meyve"
   },
   {
     "id": "a1_0480",
@@ -7326,7 +7805,8 @@
       "Wann können Sie kommen – heute oder morgen?"
     ],
     "page": 21,
-    "meaning_en": "or"
+    "meaning_en": "or",
+    "meaning_tr": "veya"
   },
   {
     "id": "a1_0481",
@@ -7341,7 +7821,8 @@
       "Ich öffne die Tür."
     ],
     "page": 21,
-    "meaning_en": "open"
+    "meaning_en": "open",
+    "meaning_tr": "açık"
   },
   {
     "id": "a1_0482",
@@ -7356,7 +7837,8 @@
       "Der Laden ist samstags bis 16.00 Uhr geöffnet."
     ],
     "page": 21,
-    "meaning_en": "open"
+    "meaning_en": "open",
+    "meaning_tr": "açık"
   },
   {
     "id": "a1_0483",
@@ -7371,7 +7853,8 @@
       "Petra treffe ich oft."
     ],
     "page": 21,
-    "meaning_en": "often"
+    "meaning_en": "often",
+    "meaning_tr": "sıklıkla"
   },
   {
     "id": "a1_0484",
@@ -7386,7 +7869,8 @@
       "Ohne Geld kann er nichts kaufen."
     ],
     "page": 21,
-    "meaning_en": "without"
+    "meaning_en": "without",
+    "meaning_tr": "olmadan"
   },
   {
     "id": "a1_0485",
@@ -7401,7 +7885,8 @@
       "Den Salat machen wir ohne Öl."
     ],
     "page": 21,
-    "meaning_en": "the oil"
+    "meaning_en": "the oil",
+    "meaning_tr": "yağ"
   },
   {
     "id": "a1_0486",
@@ -7416,7 +7901,8 @@
       "Meine Oma ist schon tot."
     ],
     "page": 21,
-    "meaning_en": "die Oma, -s"
+    "meaning_en": "die Oma, -s",
+    "meaning_tr": "büyükanne, -s"
   },
   {
     "id": "a1_0487",
@@ -7431,7 +7917,8 @@
       "Mein Opa heißt Hans."
     ],
     "page": 21,
-    "meaning_en": "the grandfather, -s"
+    "meaning_en": "the grandfather, -s",
+    "meaning_tr": "büyükbaba, -s"
   },
   {
     "id": "a1_0488",
@@ -7446,7 +7933,8 @@
       "Das ist in Ordnung."
     ],
     "page": 21,
-    "meaning_en": "the order"
+    "meaning_en": "the order",
+    "meaning_tr": "sipariş"
   },
   {
     "id": "a1_0489",
@@ -7461,7 +7949,8 @@
       "Der Ort liegt am Meer."
     ],
     "page": 21,
-    "meaning_en": "der Ort, -e"
+    "meaning_en": "der Ort, -e",
+    "meaning_tr": "yer, -e"
   },
   {
     "id": "a1_0490",
@@ -7476,7 +7965,8 @@
       "Hier sind Papier und Bleistift."
     ],
     "page": 21,
-    "meaning_en": "the paper"
+    "meaning_en": "the paper",
+    "meaning_tr": "kağıt"
   },
   {
     "id": "a1_0491",
@@ -7491,7 +7981,8 @@
       "Haben Sie Ihre Papiere dabei?"
     ],
     "page": 21,
-    "meaning_en": "the papers (pl.)"
+    "meaning_en": "the papers (pl.)",
+    "meaning_tr": "gazeteler (pl.)"
   },
   {
     "id": "a1_0492",
@@ -7504,7 +7995,8 @@
     "forms": "",
     "examples": [],
     "page": 21,
-    "meaning_en": "the partner, -/"
+    "meaning_en": "the partner, -/",
+    "meaning_tr": "ortak, -/"
   },
   {
     "id": "a1_0493",
@@ -7519,7 +8011,8 @@
       "Sie ist meine Partnerin."
     ],
     "page": 21,
-    "meaning_en": "the partner, -nen"
+    "meaning_en": "the partner, -nen",
+    "meaning_tr": "ortak, -nen"
   },
   {
     "id": "a1_0494",
@@ -7534,7 +8027,8 @@
       "Heute Abend machen wir eine Party."
     ],
     "page": 21,
-    "meaning_en": "the party"
+    "meaning_en": "the party",
+    "meaning_tr": "parti"
   },
   {
     "id": "a1_0495",
@@ -7549,7 +8043,8 @@
       "Im Hotel brauchst du deinen Pass."
     ],
     "page": 21,
-    "meaning_en": "the passport, -ä, e"
+    "meaning_en": "the passport, -ä, e",
+    "meaning_tr": "pasaport, -ä, e"
   },
   {
     "id": "a1_0496",
@@ -7564,7 +8059,8 @@
       "Von 12.00 bis 12.30 Uhr haben wir Mittagspause."
     ],
     "page": 21,
-    "meaning_en": "the break, -n"
+    "meaning_en": "the break, -n",
+    "meaning_tr": "mola, -n"
   },
   {
     "id": "a1_0497",
@@ -7579,7 +8075,8 @@
       "Ich kaufe mir einen Stadtplan."
     ],
     "page": 21,
-    "meaning_en": "the plan, -ä, e"
+    "meaning_en": "the plan, -ä, e",
+    "meaning_tr": "plan, -ä, e"
   },
   {
     "id": "a1_0498",
@@ -7596,7 +8093,8 @@
       "Ich wohne Messeplatz 5."
     ],
     "page": 21,
-    "meaning_en": "the place, -ä, e"
+    "meaning_en": "the place, -ä, e",
+    "meaning_tr": "yer, -ä, e"
   },
   {
     "id": "a1_0499",
@@ -7611,7 +8109,8 @@
       "Holen Sie die Polizei!"
     ],
     "page": 21,
-    "meaning_en": "the police"
+    "meaning_en": "the police",
+    "meaning_tr": "polis"
   },
   {
     "id": "a1_0500",
@@ -7626,7 +8125,8 @@
       "(pl.) Die Kinder essen Hähnchen mit Pommes frites."
     ],
     "page": 21,
-    "meaning_en": "the french fries"
+    "meaning_en": "the french fries",
+    "meaning_tr": "patates kızartması"
   },
   {
     "id": "a1_0501",
@@ -7642,7 +8142,8 @@
       "Ist Post da?"
     ],
     "page": 21,
-    "meaning_en": "the post"
+    "meaning_en": "the post",
+    "meaning_tr": "gönderi"
   },
   {
     "id": "a1_0502",
@@ -7657,7 +8158,8 @@
       "Wie ist Ihre Postleitzahl?"
     ],
     "page": 21,
-    "meaning_en": "the zip code"
+    "meaning_en": "the zip code",
+    "meaning_tr": "posta kodu"
   },
   {
     "id": "a1_0503",
@@ -7672,7 +8174,8 @@
       "Ich mache ein Praktikum bei Siemens."
     ],
     "page": 21,
-    "meaning_en": "the internship"
+    "meaning_en": "the internship",
+    "meaning_tr": "staj"
   },
   {
     "id": "a1_0504",
@@ -7687,7 +8190,8 @@
       "Die Praxis ist ab acht Uhr geöffnet."
     ],
     "page": 21,
-    "meaning_en": "the practice"
+    "meaning_en": "the practice",
+    "meaning_tr": "pratik"
   },
   {
     "id": "a1_0505",
@@ -7702,7 +8206,8 @@
       "Die Preise sind hoch."
     ],
     "page": 21,
-    "meaning_en": "the price, -e"
+    "meaning_en": "the price, -e",
+    "meaning_tr": "fiyat, -e"
   },
   {
     "id": "a1_0506",
@@ -7717,7 +8222,8 @@
       "Mein Problem ist die Sprache."
     ],
     "page": 21,
-    "meaning_en": "the problem, -e"
+    "meaning_en": "the problem, -e",
+    "meaning_tr": "sorun, -e"
   },
   {
     "id": "a1_0507",
@@ -7732,7 +8238,8 @@
       "Bitte schicken Sie mir einen Prospekt von Ihrem Hotel."
     ],
     "page": 21,
-    "meaning_en": "the prospectus, -e"
+    "meaning_en": "the prospectus, -e",
+    "meaning_tr": "izahname, -e"
   },
   {
     "id": "a1_0508",
@@ -7747,7 +8254,8 @@
       "Die Prüfung ist am Montag um 8.00 Uhr."
     ],
     "page": 21,
-    "meaning_en": "the exam"
+    "meaning_en": "the exam",
+    "meaning_tr": "sınav"
   },
   {
     "id": "a1_0509",
@@ -7763,7 +8271,8 @@
       "Herr Müller ist immer pünktlich."
     ],
     "page": 21,
-    "meaning_en": "on time"
+    "meaning_en": "on time",
+    "meaning_tr": "zamanında"
   },
   {
     "id": "a1_0510",
@@ -7776,7 +8285,8 @@
     "forms": "",
     "examples": [],
     "page": 21,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0511",
@@ -7789,7 +8299,8 @@
     "forms": "",
     "examples": [],
     "page": 22,
-    "meaning_en": "r"
+    "meaning_en": "r",
+    "meaning_tr": "R"
   },
   {
     "id": "a1_0512",
@@ -7804,7 +8315,8 @@
       "Das Kind kann schon Rad fahren."
     ],
     "page": 22,
-    "meaning_en": "ride a bike"
+    "meaning_en": "ride a bike",
+    "meaning_tr": "bisiklet sürmek"
   },
   {
     "id": "a1_0513",
@@ -7819,7 +8331,8 @@
       "Ich rauche nicht."
     ],
     "page": 22,
-    "meaning_en": "smoke"
+    "meaning_en": "smoke",
+    "meaning_tr": "duman"
   },
   {
     "id": "a1_0514",
@@ -7834,7 +8347,8 @@
       "Der Unterricht ist in Raum 332."
     ],
     "page": 22,
-    "meaning_en": "the space, -ä, e"
+    "meaning_en": "the space, -ä, e",
+    "meaning_tr": "boşluk, -ä, e"
   },
   {
     "id": "a1_0515",
@@ -7849,7 +8363,8 @@
       "Die Rechnung, bitte."
     ],
     "page": 22,
-    "meaning_en": "the bill, -en"
+    "meaning_en": "the bill, -en",
+    "meaning_tr": "fatura, -tr"
   },
   {
     "id": "a1_0516",
@@ -7864,7 +8379,8 @@
       "Die Schillerstraße ist hier rechts."
     ],
     "page": 22,
-    "meaning_en": "right"
+    "meaning_en": "right",
+    "meaning_tr": "Sağ"
   },
   {
     "id": "a1_0517",
@@ -7879,7 +8395,8 @@
       "Heute regnet es."
     ],
     "page": 22,
-    "meaning_en": "rain"
+    "meaning_en": "rain",
+    "meaning_tr": "yağmur"
   },
   {
     "id": "a1_0518",
@@ -7894,7 +8411,8 @@
       "Bei diesem Regen gehe ich nicht raus."
     ],
     "page": 22,
-    "meaning_en": "the rain"
+    "meaning_en": "the rain",
+    "meaning_tr": "yağmur"
   },
   {
     "id": "a1_0519",
@@ -7909,7 +8427,8 @@
       "Ich esse gern Reis."
     ],
     "page": 22,
-    "meaning_en": "the rice"
+    "meaning_en": "the rice",
+    "meaning_tr": "pirinç"
   },
   {
     "id": "a1_0520",
@@ -7924,7 +8443,8 @@
       "Ich reise gern."
     ],
     "page": 22,
-    "meaning_en": "travel"
+    "meaning_en": "travel",
+    "meaning_tr": "seyahat"
   },
   {
     "id": "a1_0521",
@@ -7939,7 +8459,8 @@
       "Wir machen eine Reise nach Österreich."
     ],
     "page": 22,
-    "meaning_en": "the trip"
+    "meaning_en": "the trip",
+    "meaning_tr": "yolculuk"
   },
   {
     "id": "a1_0522",
@@ -7954,7 +8475,8 @@
       "Mein Mann arbeitet im Reisebüro."
     ],
     "page": 22,
-    "meaning_en": "the travel agency, -s"
+    "meaning_en": "the travel agency, -s",
+    "meaning_tr": "seyahat acentası, -s"
   },
   {
     "id": "a1_0523",
@@ -7970,7 +8492,8 @@
       "Unser Reiseführer heißt Peter."
     ],
     "page": 22,
-    "meaning_en": "the travel guide"
+    "meaning_en": "the travel guide",
+    "meaning_tr": "seyahat rehberi"
   },
   {
     "id": "a1_0524",
@@ -7985,7 +8508,8 @@
       "Er hat das Fahrrad repariert."
     ],
     "page": 22,
-    "meaning_en": "repair"
+    "meaning_en": "repair",
+    "meaning_tr": "tamirat"
   },
   {
     "id": "a1_0525",
@@ -8000,7 +8524,8 @@
       "Die Reparatur ist sehr teuer."
     ],
     "page": 22,
-    "meaning_en": "the repair"
+    "meaning_en": "the repair",
+    "meaning_tr": "onarım"
   },
   {
     "id": "a1_0526",
@@ -8015,7 +8540,8 @@
       "Wir essen heute in einem Restaurant."
     ],
     "page": 22,
-    "meaning_en": "the restaurant, -s"
+    "meaning_en": "the restaurant, -s",
+    "meaning_tr": "restoran, -s"
   },
   {
     "id": "a1_0527",
@@ -8030,7 +8556,8 @@
       "Fragen Sie bitte im Hotel an der Rezeption."
     ],
     "page": 22,
-    "meaning_en": "the reception"
+    "meaning_en": "the reception",
+    "meaning_tr": "resepsiyon"
   },
   {
     "id": "a1_0528",
@@ -8046,7 +8573,8 @@
       "Das ist richtig."
     ],
     "page": 22,
-    "meaning_en": "correct"
+    "meaning_en": "correct",
+    "meaning_tr": "doğru"
   },
   {
     "id": "a1_0529",
@@ -8061,7 +8589,8 @@
       "Dieser Wein riecht gut."
     ],
     "page": 22,
-    "meaning_en": "smell"
+    "meaning_en": "smell",
+    "meaning_tr": "koku"
   },
   {
     "id": "a1_0530",
@@ -8076,7 +8605,8 @@
       "Ich möchte ein ruhiges Zimmer."
     ],
     "page": 22,
-    "meaning_en": "quiet"
+    "meaning_en": "quiet",
+    "meaning_tr": "sessizlik"
   },
   {
     "id": "a1_0531",
@@ -8089,7 +8619,8 @@
     "forms": "",
     "examples": [],
     "page": 22,
-    "meaning_en": "s"
+    "meaning_en": "s",
+    "meaning_tr": "S"
   },
   {
     "id": "a1_0532",
@@ -8104,7 +8635,8 @@
       "Möchtest du einen Apfelsaft?"
     ],
     "page": 22,
-    "meaning_en": "the juice"
+    "meaning_en": "the juice",
+    "meaning_tr": "meyve suyu"
   },
   {
     "id": "a1_0533",
@@ -8119,7 +8651,8 @@
       "Sag mal, wie geht es dir denn?"
     ],
     "page": 22,
-    "meaning_en": "say"
+    "meaning_en": "say",
+    "meaning_tr": "söylemek"
   },
   {
     "id": "a1_0534",
@@ -8134,7 +8667,8 @@
       "Wie schmeckt dir der Salat?"
     ],
     "page": 22,
-    "meaning_en": "the salad"
+    "meaning_en": "the salad",
+    "meaning_tr": "salata"
   },
   {
     "id": "a1_0535",
@@ -8149,7 +8683,8 @@
       "Herr Ober, kann ich bitte Salz haben?"
     ],
     "page": 22,
-    "meaning_en": "the salt"
+    "meaning_en": "the salt",
+    "meaning_tr": "tuz"
   },
   {
     "id": "a1_0536",
@@ -8164,7 +8699,8 @@
       "Dieser Satz ist sehr einfach."
     ],
     "page": 22,
-    "meaning_en": "Sentence, -ä, e"
+    "meaning_en": "Sentence, -ä, e",
+    "meaning_tr": "Cümle, -ä, e"
   },
   {
     "id": "a1_0537",
@@ -8179,7 +8715,8 @@
       "Ich nehme lieber die S-Bahn."
     ],
     "page": 22,
-    "meaning_en": "the S-Bahn"
+    "meaning_en": "the S-Bahn",
+    "meaning_tr": "S-Bahn"
   },
   {
     "id": "a1_0538",
@@ -8194,7 +8731,8 @@
       "Gehen Sie bitte zum Schalter drei!"
     ],
     "page": 22,
-    "meaning_en": "the desk"
+    "meaning_en": "the desk",
+    "meaning_tr": "masa"
   },
   {
     "id": "a1_0539",
@@ -8209,7 +8747,8 @@
       "Die Sonne scheint."
     ],
     "page": 22,
-    "meaning_en": "seem"
+    "meaning_en": "seem",
+    "meaning_tr": "gözükmek"
   },
   {
     "id": "a1_0540",
@@ -8224,7 +8763,8 @@
       "Bitte schicken Sie mir eine E-Mail."
     ],
     "page": 22,
-    "meaning_en": "send"
+    "meaning_en": "send",
+    "meaning_tr": "Göndermek"
   },
   {
     "id": "a1_0541",
@@ -8239,7 +8779,8 @@
       "Haben Sie nicht das Schild gesehen?"
     ],
     "page": 22,
-    "meaning_en": "the sign, -er"
+    "meaning_en": "the sign, -er",
+    "meaning_tr": "işareti, -er"
   },
   {
     "id": "a1_0542",
@@ -8254,7 +8795,8 @@
       "Ich möchte gern ein Schinkenbrot."
     ],
     "page": 22,
-    "meaning_en": "the ham, -"
+    "meaning_en": "the ham, -",
+    "meaning_tr": "jambon, -"
   },
   {
     "id": "a1_0543",
@@ -8269,7 +8811,8 @@
       "Ich schlafe meistens acht Stunden."
     ],
     "page": 22,
-    "meaning_en": "sleep"
+    "meaning_en": "sleep",
+    "meaning_tr": "uyumak"
   },
   {
     "id": "a1_0544",
@@ -8286,7 +8829,8 @@
       "Wir haben schlechtes Wetter."
     ],
     "page": 22,
-    "meaning_en": "bad"
+    "meaning_en": "bad",
+    "meaning_tr": "kötü"
   },
   {
     "id": "a1_0545",
@@ -8301,7 +8845,8 @@
       "Bitte, schließen Sie die Tür."
     ],
     "page": 22,
-    "meaning_en": "close"
+    "meaning_en": "close",
+    "meaning_tr": "kapalı"
   },
   {
     "id": "a1_0546",
@@ -8316,7 +8861,8 @@
       "Die Bank hat am Samstag geschlossen."
     ],
     "page": 22,
-    "meaning_en": "closed"
+    "meaning_en": "closed",
+    "meaning_tr": "kapalı"
   },
   {
     "id": "a1_0547",
@@ -8332,7 +8878,8 @@
       "Zum Schluss gibt er uns allen die Hand."
     ],
     "page": 22,
-    "meaning_en": "the conclusion"
+    "meaning_en": "the conclusion",
+    "meaning_tr": "sonuç"
   },
   {
     "id": "a1_0548",
@@ -8347,7 +8894,8 @@
       "Ich gebe Ihnen noch den Zimmerschlüssel."
     ],
     "page": 22,
-    "meaning_en": "the key, -"
+    "meaning_en": "the key, -",
+    "meaning_tr": "anahtar, -"
   },
   {
     "id": "a1_0549",
@@ -8362,7 +8910,8 @@
       "Schmeckt das gut?"
     ],
     "page": 22,
-    "meaning_en": "taste good"
+    "meaning_en": "taste good",
+    "meaning_tr": "tadı güzel"
   },
   {
     "id": "a1_0550",
@@ -8377,7 +8926,8 @@
       "Er fährt schnell."
     ],
     "page": 22,
-    "meaning_en": "fast"
+    "meaning_en": "fast",
+    "meaning_tr": "hızlı"
   },
   {
     "id": "a1_0551",
@@ -8392,7 +8942,8 @@
       "Ist das Essen schon fertig?"
     ],
     "page": 22,
-    "meaning_en": "already"
+    "meaning_en": "already",
+    "meaning_tr": "çoktan"
   },
   {
     "id": "a1_0552",
@@ -8408,7 +8959,8 @@
       "Das ist sehr schön."
     ],
     "page": 22,
-    "meaning_en": "nice"
+    "meaning_en": "nice",
+    "meaning_tr": "Güzel"
   },
   {
     "id": "a1_0553",
@@ -8423,7 +8975,8 @@
       "Die Gläser stehen im Schrank."
     ],
     "page": 22,
-    "meaning_en": "the closet, -ä, e"
+    "meaning_en": "the closet, -ä, e",
+    "meaning_tr": "dolap, -ä, e"
   },
   {
     "id": "a1_0554",
@@ -8436,7 +8989,8 @@
     "forms": "",
     "examples": [],
     "page": 22,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0555",
@@ -8451,7 +9005,8 @@
       "Er schreibt jeden Tag fünfzig E-Mails."
     ],
     "page": 22,
-    "meaning_en": "write"
+    "meaning_en": "write",
+    "meaning_tr": "yazmak"
   },
   {
     "id": "a1_0556",
@@ -8466,7 +9021,8 @@
       "Zieh die Schuhe aus!"
     ],
     "page": 23,
-    "meaning_en": "the shoe, -e"
+    "meaning_en": "the shoe, -e",
+    "meaning_tr": "ayakkabı, -e"
   },
   {
     "id": "a1_0557",
@@ -8482,7 +9038,8 @@
       "Die Schule ist gleich hier um die Ecke."
     ],
     "page": 23,
-    "meaning_en": "the school"
+    "meaning_en": "the school",
+    "meaning_tr": "okul"
   },
   {
     "id": "a1_0558",
@@ -8497,7 +9054,8 @@
       "In meinem Kurs sind acht Schülerinnen und fünf Schüler."
     ],
     "page": 23,
-    "meaning_en": "the student, -"
+    "meaning_en": "the student, -",
+    "meaning_tr": "öğrenci, -"
   },
   {
     "id": "a1_0559",
@@ -8513,7 +9071,8 @@
       "Das ist eine schwere Arbeit."
     ],
     "page": 23,
-    "meaning_en": "difficult"
+    "meaning_en": "difficult",
+    "meaning_tr": "zor"
   },
   {
     "id": "a1_0560",
@@ -8528,7 +9087,8 @@
       "Meine Schwester kommt am Dienstag."
     ],
     "page": 23,
-    "meaning_en": "the sister, -n"
+    "meaning_en": "the sister, -n",
+    "meaning_tr": "kız kardeş, -n"
   },
   {
     "id": "a1_0561",
@@ -8543,7 +9103,8 @@
       "Ich schwimme jeden Tag einen Kilometer."
     ],
     "page": 23,
-    "meaning_en": "to swim"
+    "meaning_en": "to swim",
+    "meaning_tr": "yüzmek"
   },
   {
     "id": "a1_0562",
@@ -8558,7 +9119,8 @@
       "Kommst du mit ins Schwimmbad?"
     ],
     "page": 23,
-    "meaning_en": "the swimming pool"
+    "meaning_en": "the swimming pool",
+    "meaning_tr": "yüzme havuzu"
   },
   {
     "id": "a1_0563",
@@ -8573,7 +9135,8 @@
       "Komm, wir fahren zum Starnberger See."
     ],
     "page": 23,
-    "meaning_en": "the lake"
+    "meaning_en": "the lake",
+    "meaning_tr": "göl"
   },
   {
     "id": "a1_0564",
@@ -8589,7 +9152,8 @@
       "Ich habe diesen Jungen schon einmal gesehen."
     ],
     "page": 23,
-    "meaning_en": "see"
+    "meaning_en": "see",
+    "meaning_tr": "Görmek"
   },
   {
     "id": "a1_0565",
@@ -8604,7 +9168,8 @@
       "-en Welche Sehenswürdigkeiten gibt es in Frankfurt?"
     ],
     "page": 23,
-    "meaning_en": "the sight"
+    "meaning_en": "the sight",
+    "meaning_tr": "görüş"
   },
   {
     "id": "a1_0566",
@@ -8620,7 +9185,8 @@
       "Das ist sehr schwer."
     ],
     "page": 23,
-    "meaning_en": "very"
+    "meaning_en": "very",
+    "meaning_tr": "çok"
   },
   {
     "id": "a1_0567",
@@ -8637,7 +9203,8 @@
       "Ich bin dreiundzwanzig."
     ],
     "page": 23,
-    "meaning_en": "sein"
+    "meaning_en": "sein",
+    "meaning_tr": "olmak"
   },
   {
     "id": "a1_0568",
@@ -8652,7 +9219,8 @@
       "Das Licht ist noch an."
     ],
     "page": 23,
-    "meaning_en": "be on"
+    "meaning_en": "be on",
+    "meaning_tr": "açık olmak"
   },
   {
     "id": "a1_0569",
@@ -8667,7 +9235,8 @@
       "Das Fenster ist noch auf."
     ],
     "page": 23,
-    "meaning_en": "to be up"
+    "meaning_en": "to be up",
+    "meaning_tr": "uyanık olmak"
   },
   {
     "id": "a1_0570",
@@ -8682,7 +9251,8 @@
       "Herr Meier ist schon weg."
     ],
     "page": 23,
-    "meaning_en": "be away"
+    "meaning_en": "be away",
+    "meaning_tr": "uzakta olmak"
   },
   {
     "id": "a1_0571",
@@ -8697,7 +9267,8 @@
       "Die Tür ist zu."
     ],
     "page": 23,
-    "meaning_en": "to be"
+    "meaning_en": "to be",
+    "meaning_tr": "olmak"
   },
   {
     "id": "a1_0572",
@@ -8712,7 +9283,8 @@
       "Ich wohne seit drei Jahren in Köln."
     ],
     "page": 23,
-    "meaning_en": "since"
+    "meaning_en": "since",
+    "meaning_tr": "o zamandan beri"
   },
   {
     "id": "a1_0573",
@@ -8727,7 +9299,8 @@
       "Er ist selbstständig."
     ],
     "page": 23,
-    "meaning_en": "self-employed"
+    "meaning_en": "self-employed",
+    "meaning_tr": "serbest meslek"
   },
   {
     "id": "a1_0574",
@@ -8742,7 +9315,8 @@
       "Sie müssen sich erst anmelden."
     ],
     "page": 23,
-    "meaning_en": "itself"
+    "meaning_en": "itself",
+    "meaning_tr": "kendisi"
   },
   {
     "id": "a1_0575",
@@ -8757,7 +9331,8 @@
       "Wie heißt sie?"
     ],
     "page": 23,
-    "meaning_en": "she"
+    "meaning_en": "she",
+    "meaning_tr": "o"
   },
   {
     "id": "a1_0576",
@@ -8772,7 +9347,8 @@
       "Wie heißen Sie, bitte?"
     ],
     "page": 23,
-    "meaning_en": "She"
+    "meaning_en": "She",
+    "meaning_tr": "O"
   },
   {
     "id": "a1_0577",
@@ -8787,7 +9363,8 @@
       "Wo sitzen Sie?"
     ],
     "page": 23,
-    "meaning_en": "sit"
+    "meaning_en": "sit",
+    "meaning_tr": "oturmak"
   },
   {
     "id": "a1_0578",
@@ -8805,7 +9382,8 @@
       "So, das war‘s/wär‘s!"
     ],
     "page": 23,
-    "meaning_en": "so"
+    "meaning_en": "so",
+    "meaning_tr": "Bu yüzden"
   },
   {
     "id": "a1_0579",
@@ -8820,7 +9398,8 @@
       "Das Sofa ist neu."
     ],
     "page": 23,
-    "meaning_en": "the sofa"
+    "meaning_en": "the sofa",
+    "meaning_tr": "kanepe"
   },
   {
     "id": "a1_0580",
@@ -8835,7 +9414,8 @@
       "Bitte antworten Sie sofort."
     ],
     "page": 23,
-    "meaning_en": "immediately"
+    "meaning_en": "immediately",
+    "meaning_tr": "hemen"
   },
   {
     "id": "a1_0581",
@@ -8850,7 +9430,8 @@
       "Das ist Hans, mein Sohn."
     ],
     "page": 23,
-    "meaning_en": "the son, -ö, e"
+    "meaning_en": "the son, -ö, e",
+    "meaning_tr": "oğul, -ö, e"
   },
   {
     "id": "a1_0582",
@@ -8866,7 +9447,8 @@
       "Was soll ich mitbringen?"
     ],
     "page": 23,
-    "meaning_en": "should"
+    "meaning_en": "should",
+    "meaning_tr": "yapmalı"
   },
   {
     "id": "a1_0583",
@@ -8881,7 +9463,8 @@
       "Die Sonne scheint."
     ],
     "page": 23,
-    "meaning_en": "the sun"
+    "meaning_en": "the sun",
+    "meaning_tr": "güneş"
   },
   {
     "id": "a1_0584",
@@ -8896,7 +9479,8 @@
       "Es ist schon spät, ich muss gehen."
     ],
     "page": 23,
-    "meaning_en": "late"
+    "meaning_en": "late",
+    "meaning_tr": "geç"
   },
   {
     "id": "a1_0585",
@@ -8911,7 +9495,8 @@
       "Das können wir später machen."
     ],
     "page": 23,
-    "meaning_en": "later"
+    "meaning_en": "later",
+    "meaning_tr": "Daha sonra"
   },
   {
     "id": "a1_0586",
@@ -8926,7 +9511,8 @@
       "Bringen Sie mir die Speisekarte, bitte."
     ],
     "page": 23,
-    "meaning_en": "the menu"
+    "meaning_en": "the menu",
+    "meaning_tr": "menü"
   },
   {
     "id": "a1_0587",
@@ -8942,7 +9528,8 @@
       "Spielen Sie Karten?"
     ],
     "page": 23,
-    "meaning_en": "play"
+    "meaning_en": "play",
+    "meaning_tr": "oynamak"
   },
   {
     "id": "a1_0588",
@@ -8957,7 +9544,8 @@
       "Ich mache viel Sport."
     ],
     "page": 23,
-    "meaning_en": "the sport"
+    "meaning_en": "the sport",
+    "meaning_tr": "spor"
   },
   {
     "id": "a1_0589",
@@ -8972,7 +9560,8 @@
       "Welche Sprachen sprichst du?"
     ],
     "page": 23,
-    "meaning_en": "the languages"
+    "meaning_en": "the languages",
+    "meaning_tr": "diller"
   },
   {
     "id": "a1_0590",
@@ -8987,7 +9576,8 @@
       "Kann ich (mit) Herrn Klein sprechen?"
     ],
     "page": 23,
-    "meaning_en": "speak"
+    "meaning_en": "speak",
+    "meaning_tr": "konuşmak"
   },
   {
     "id": "a1_0591",
@@ -9002,7 +9592,8 @@
       "Heidelberg ist eine alte Stadt."
     ],
     "page": 23,
-    "meaning_en": "the city, -ä, e"
+    "meaning_en": "the city, -ä, e",
+    "meaning_tr": "şehir, -ä, e"
   },
   {
     "id": "a1_0592",
@@ -9018,7 +9609,8 @@
       "Der Bus steht schon an der Haltestelle."
     ],
     "page": 23,
-    "meaning_en": "stand"
+    "meaning_en": "stand",
+    "meaning_tr": "durmak"
   },
   {
     "id": "a1_0593",
@@ -9031,7 +9623,8 @@
     "forms": "",
     "examples": [],
     "page": 23,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0594",
@@ -9046,7 +9639,8 @@
       "Ich habe eine neue Stelle."
     ],
     "page": 23,
-    "meaning_en": "the place, -n"
+    "meaning_en": "the place, -n",
+    "meaning_tr": "yer, -n"
   },
   {
     "id": "a1_0595",
@@ -9061,7 +9655,8 @@
       "Stell die Tasche rechts in die Ecke!"
     ],
     "page": 24,
-    "meaning_en": "place"
+    "meaning_en": "place",
+    "meaning_tr": "yer"
   },
   {
     "id": "a1_0596",
@@ -9076,7 +9671,8 @@
       "Unsere Wohnung liegt im ersten Stock."
     ],
     "page": 24,
-    "meaning_en": "the stick"
+    "meaning_en": "the stick",
+    "meaning_tr": "sopa"
   },
   {
     "id": "a1_0597",
@@ -9091,7 +9687,8 @@
       "In welcher Straße wohnen Sie?"
     ],
     "page": 24,
-    "meaning_en": "the street, -n"
+    "meaning_en": "the street, -n",
+    "meaning_tr": "sokak, -n"
   },
   {
     "id": "a1_0598",
@@ -9106,7 +9703,8 @@
       "Wo fährt die Straßenbahn ab?"
     ],
     "page": 24,
-    "meaning_en": "the tram"
+    "meaning_en": "the tram",
+    "meaning_tr": "tramvay"
   },
   {
     "id": "a1_0599",
@@ -9121,7 +9719,8 @@
       "Ich studiere in Mainz."
     ],
     "page": 24,
-    "meaning_en": "study"
+    "meaning_en": "study",
+    "meaning_tr": "çalışmak"
   },
   {
     "id": "a1_0600",
@@ -9136,7 +9735,8 @@
       "Das Studium beginnt im Oktober."
     ],
     "page": 24,
-    "meaning_en": "the study"
+    "meaning_en": "the study",
+    "meaning_tr": "çalışma"
   },
   {
     "id": "a1_0601",
@@ -9151,7 +9751,8 @@
       "Ich bin Studentin."
     ],
     "page": 24,
-    "meaning_en": "the student, -en"
+    "meaning_en": "the student, -en",
+    "meaning_tr": "öğrenci, -tr"
   },
   {
     "id": "a1_0602",
@@ -9166,7 +9767,8 @@
       "Ich bin in einer Stunde zurück."
     ],
     "page": 24,
-    "meaning_en": "the hour, -n"
+    "meaning_en": "the hour, -n",
+    "meaning_tr": "saat, -n"
   },
   {
     "id": "a1_0603",
@@ -9181,7 +9783,8 @@
       "Suchst du etwas?"
     ],
     "page": 24,
-    "meaning_en": "seek"
+    "meaning_en": "seek",
+    "meaning_tr": "aramak"
   },
   {
     "id": "a1_0604",
@@ -9196,7 +9799,8 @@
       "Tanzen Sie gern?"
     ],
     "page": 24,
-    "meaning_en": "dance"
+    "meaning_en": "dance",
+    "meaning_tr": "tanzen"
   },
   {
     "id": "a1_0605",
@@ -9211,7 +9815,8 @@
       "Ich habe die Schlüssel in der Tasche."
     ],
     "page": 24,
-    "meaning_en": "the bag, -n"
+    "meaning_en": "the bag, -n",
+    "meaning_tr": "çanta, -n"
   },
   {
     "id": "a1_0606",
@@ -9227,7 +9832,8 @@
       "Er fährt mit dem Taxi."
     ],
     "page": 24,
-    "meaning_en": "the taxi, -s"
+    "meaning_en": "the taxi, -s",
+    "meaning_tr": "taksi, -s"
   },
   {
     "id": "a1_0607",
@@ -9242,7 +9848,8 @@
       "Ich trinke morgens immer Tee."
     ],
     "page": 24,
-    "meaning_en": "the tea"
+    "meaning_en": "the tea",
+    "meaning_tr": "çay"
   },
   {
     "id": "a1_0608",
@@ -9257,7 +9864,8 @@
       "Lies bitte auch den zweiten Teil."
     ],
     "page": 24,
-    "meaning_en": "the part, -e"
+    "meaning_en": "the part, -e",
+    "meaning_tr": "kısım, -e"
   },
   {
     "id": "a1_0609",
@@ -9272,7 +9880,8 @@
       "Darf ich mal telefonieren?"
     ],
     "page": 24,
-    "meaning_en": "make a phone call"
+    "meaning_en": "make a phone call",
+    "meaning_tr": "telefon görüşmesi yapmak"
   },
   {
     "id": "a1_0610",
@@ -9287,7 +9896,8 @@
       "Haben Sie Telefon?"
     ],
     "page": 24,
-    "meaning_en": "the phone"
+    "meaning_en": "the phone",
+    "meaning_tr": "telefon"
   },
   {
     "id": "a1_0611",
@@ -9302,7 +9912,8 @@
       "Am besten machen wir sofort einen Termin."
     ],
     "page": 24,
-    "meaning_en": "der Termin, -e"
+    "meaning_en": "der Termin, -e",
+    "meaning_tr": "randevu, -e"
   },
   {
     "id": "a1_0612",
@@ -9317,7 +9928,8 @@
       "Der Test war einfach."
     ],
     "page": 24,
-    "meaning_en": "the test"
+    "meaning_en": "the test",
+    "meaning_tr": "test"
   },
   {
     "id": "a1_0613",
@@ -9332,7 +9944,8 @@
       "Das ist mir zu teuer."
     ],
     "page": 24,
-    "meaning_en": "expensive"
+    "meaning_en": "expensive",
+    "meaning_tr": "masraflı"
   },
   {
     "id": "a1_0614",
@@ -9347,7 +9960,8 @@
       "Lesen Sie bitte diesen Text."
     ],
     "page": 24,
-    "meaning_en": "the text, -e"
+    "meaning_en": "the text, -e",
+    "meaning_tr": "metin, -e"
   },
   {
     "id": "a1_0615",
@@ -9362,7 +9976,8 @@
       "Wir sprechen heute über das Thema „Essen und Trinken“."
     ],
     "page": 24,
-    "meaning_en": "the topic"
+    "meaning_en": "the topic",
+    "meaning_tr": "konu"
   },
   {
     "id": "a1_0616",
@@ -9377,7 +9992,8 @@
       "Wie viel kostet das Ticket?"
     ],
     "page": 24,
-    "meaning_en": "the ticket, -s"
+    "meaning_en": "the ticket, -s",
+    "meaning_tr": "bilet, -s"
   },
   {
     "id": "a1_0617",
@@ -9392,7 +10008,8 @@
       "Die Fotos liegen auf dem Tisch."
     ],
     "page": 24,
-    "meaning_en": "the table, -e"
+    "meaning_en": "the table, -e",
+    "meaning_tr": "tablo, -e"
   },
   {
     "id": "a1_0618",
@@ -9407,7 +10024,8 @@
       "Das ist meine Tochter Katharina."
     ],
     "page": 24,
-    "meaning_en": "the daughter, -ö"
+    "meaning_en": "the daughter, -ö",
+    "meaning_tr": "kızı, -ö"
   },
   {
     "id": "a1_0619",
@@ -9422,7 +10040,8 @@
       "Wo ist die Toilette, bitte?"
     ],
     "page": 24,
-    "meaning_en": "the toilet, -en"
+    "meaning_en": "the toilet, -en",
+    "meaning_tr": "tuvalet, -tr"
   },
   {
     "id": "a1_0620",
@@ -9437,7 +10056,8 @@
       "Die Tomate ist noch grün."
     ],
     "page": 24,
-    "meaning_en": "the tomato, -n"
+    "meaning_en": "the tomato, -n",
+    "meaning_tr": "domates, -n"
   },
   {
     "id": "a1_0621",
@@ -9452,7 +10072,8 @@
       "Sein Vater ist schon lange tot."
     ],
     "page": 24,
-    "meaning_en": "dead"
+    "meaning_en": "dead",
+    "meaning_tr": "ölü"
   },
   {
     "id": "a1_0622",
@@ -9468,7 +10089,8 @@
       "Wir treffen uns immer freitags."
     ],
     "page": 24,
-    "meaning_en": "(meet"
+    "meaning_en": "(meet",
+    "meaning_tr": "(tanışmak"
   },
   {
     "id": "a1_0623",
@@ -9484,7 +10106,8 @@
       "Die Treppe hoch und dann links."
     ],
     "page": 24,
-    "meaning_en": "the stairs, -n"
+    "meaning_en": "the stairs, -n",
+    "meaning_tr": "merdivenler, -n"
   },
   {
     "id": "a1_0624",
@@ -9499,7 +10122,8 @@
       "Möchtest du etwas trinken?"
     ],
     "page": 24,
-    "meaning_en": "drink"
+    "meaning_en": "drink",
+    "meaning_tr": "içmek"
   },
   {
     "id": "a1_0625",
@@ -9514,7 +10138,8 @@
       "Junge Leute sagen meistens „tschüss!“ und nicht „auf Wiedersehen“."
     ],
     "page": 24,
-    "meaning_en": "bye"
+    "meaning_en": "bye",
+    "meaning_tr": "güle güle"
   },
   {
     "id": "a1_0626",
@@ -9530,7 +10155,8 @@
       "Was tut Ihr Mann?"
     ],
     "page": 24,
-    "meaning_en": "do"
+    "meaning_en": "do",
+    "meaning_tr": "Yapmak"
   },
   {
     "id": "a1_0627",
@@ -9543,7 +10169,8 @@
     "forms": "",
     "examples": [],
     "page": 24,
-    "meaning_en": "u"
+    "meaning_en": "u",
+    "meaning_tr": "sen"
   },
   {
     "id": "a1_0628",
@@ -9560,7 +10187,8 @@
       "Sind Sie über 18?"
     ],
     "page": 24,
-    "meaning_en": "above"
+    "meaning_en": "above",
+    "meaning_tr": "üstünde"
   },
   {
     "id": "a1_0629",
@@ -9575,7 +10203,8 @@
       "Du kannst bei mir übernachten."
     ],
     "page": 24,
-    "meaning_en": "stay overnight"
+    "meaning_en": "stay overnight",
+    "meaning_tr": "geceyi geçirmek"
   },
   {
     "id": "a1_0630",
@@ -9590,7 +10219,8 @@
       "Sie können das Geld auch überweisen."
     ],
     "page": 24,
-    "meaning_en": "transfer"
+    "meaning_en": "transfer",
+    "meaning_tr": "aktarma"
   },
   {
     "id": "a1_0631",
@@ -9605,7 +10235,8 @@
       "Es ist vier Uhr."
     ],
     "page": 24,
-    "meaning_en": "the clock"
+    "meaning_en": "the clock",
+    "meaning_tr": "saat"
   },
   {
     "id": "a1_0632",
@@ -9621,7 +10252,8 @@
       "Da kommt er gerade um die Ecke."
     ],
     "page": 24,
-    "meaning_en": "around"
+    "meaning_en": "around",
+    "meaning_tr": "etrafında"
   },
   {
     "id": "a1_0633",
@@ -9636,7 +10268,8 @@
       "Nächsten Monat ziehen wir um."
     ],
     "page": 24,
-    "meaning_en": "move"
+    "meaning_en": "move",
+    "meaning_tr": "taşınmak"
   },
   {
     "id": "a1_0634",
@@ -9649,7 +10282,8 @@
     "forms": "",
     "examples": [],
     "page": 24,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0635",
@@ -9664,7 +10298,8 @@
       "Peter und Helmut sind meine Söhne."
     ],
     "page": 24,
-    "meaning_en": "and"
+    "meaning_en": "and",
+    "meaning_tr": "Ve"
   },
   {
     "id": "a1_0636",
@@ -9679,7 +10314,8 @@
       "Das ist unsere Lehrerin."
     ],
     "page": 25,
-    "meaning_en": "our-"
+    "meaning_en": "our-",
+    "meaning_tr": "bizim-"
   },
   {
     "id": "a1_0637",
@@ -9694,7 +10330,8 @@
       "Er wohnt ganz unten im Haus."
     ],
     "page": 25,
-    "meaning_en": "below"
+    "meaning_en": "below",
+    "meaning_tr": "altında"
   },
   {
     "id": "a1_0638",
@@ -9709,7 +10346,8 @@
       "Unter uns wohnt eine Familie mit drei Kindern."
     ],
     "page": 25,
-    "meaning_en": "under"
+    "meaning_en": "under",
+    "meaning_tr": "altında"
   },
   {
     "id": "a1_0639",
@@ -9724,7 +10362,8 @@
       "Wir haben Unterricht von 8.00 bis 12.00 Uhr."
     ],
     "page": 25,
-    "meaning_en": "the lesson"
+    "meaning_en": "the lesson",
+    "meaning_tr": "ders"
   },
   {
     "id": "a1_0640",
@@ -9739,7 +10378,8 @@
       "Wo muss ich unterschreiben?"
     ],
     "page": 25,
-    "meaning_en": "sign"
+    "meaning_en": "sign",
+    "meaning_tr": "imza"
   },
   {
     "id": "a1_0641",
@@ -9754,7 +10394,8 @@
       "Hier fehlt noch Ihre Unterschrift."
     ],
     "page": 25,
-    "meaning_en": "the signature"
+    "meaning_en": "the signature",
+    "meaning_tr": "imza"
   },
   {
     "id": "a1_0642",
@@ -9769,7 +10410,8 @@
       "Ich nehme im September Urlaub."
     ],
     "page": 25,
-    "meaning_en": "the holidays"
+    "meaning_en": "the holidays",
+    "meaning_tr": "tatiller"
   },
   {
     "id": "a1_0643",
@@ -9784,7 +10426,8 @@
       "Mein Vater ist Arbeiter."
     ],
     "page": 25,
-    "meaning_en": "the father, -ä"
+    "meaning_en": "the father, -ä",
+    "meaning_tr": "baba, -ä"
   },
   {
     "id": "a1_0644",
@@ -9799,7 +10442,8 @@
       "Hier ist Rauchen verboten."
     ],
     "page": 25,
-    "meaning_en": "forbidden"
+    "meaning_en": "forbidden",
+    "meaning_tr": "yasaklı"
   },
   {
     "id": "a1_0645",
@@ -9814,7 +10458,8 @@
       "Ich verdiene 1.500 Euro im Monat."
     ],
     "page": 25,
-    "meaning_en": "earn"
+    "meaning_en": "earn",
+    "meaning_tr": "para kazanmak"
   },
   {
     "id": "a1_0646",
@@ -9829,7 +10474,8 @@
       "Es gibt einen neuen Sportverein in der Stadt."
     ],
     "page": 25,
-    "meaning_en": "the Union"
+    "meaning_en": "the Union",
+    "meaning_tr": "Birlik"
   },
   {
     "id": "a1_0647",
@@ -9844,7 +10490,8 @@
       "Ich bin verheiratet und habe drei Kinder."
     ],
     "page": 25,
-    "meaning_en": "married"
+    "meaning_en": "married",
+    "meaning_tr": "evli"
   },
   {
     "id": "a1_0648",
@@ -9859,7 +10506,8 @@
       "Er verkauft sein altes Auto."
     ],
     "page": 25,
-    "meaning_en": "sell"
+    "meaning_en": "sell",
+    "meaning_tr": "satmak"
   },
   {
     "id": "a1_0649",
@@ -9874,7 +10522,8 @@
       "Meine Mutter ist Verkäuferin im Kaufhaus."
     ],
     "page": 25,
-    "meaning_en": "the seller, -"
+    "meaning_en": "the seller, -",
+    "meaning_tr": "satıcı, -"
   },
   {
     "id": "a1_0650",
@@ -9889,7 +10538,8 @@
       "Die Wohnung ist schon vermietet."
     ],
     "page": 25,
-    "meaning_en": "rent"
+    "meaning_en": "rent",
+    "meaning_tr": "kira"
   },
   {
     "id": "a1_0651",
@@ -9905,7 +10555,8 @@
       "Er wohnt auch hier."
     ],
     "page": 25,
-    "meaning_en": "the landlord"
+    "meaning_en": "the landlord",
+    "meaning_tr": "ev sahibi"
   },
   {
     "id": "a1_0652",
@@ -9920,7 +10571,8 @@
       "Können Sie mich verstehen?"
     ],
     "page": 25,
-    "meaning_en": "understand"
+    "meaning_en": "understand",
+    "meaning_tr": "anlamak"
   },
   {
     "id": "a1_0653",
@@ -9935,7 +10587,8 @@
       "Peter besucht seine Verwandten in Polen."
     ],
     "page": 25,
-    "meaning_en": "the relative, -n"
+    "meaning_en": "the relative, -n",
+    "meaning_tr": "akraba, -n"
   },
   {
     "id": "a1_0654",
@@ -9950,7 +10603,8 @@
       "Hier regnet es viel."
     ],
     "page": 25,
-    "meaning_en": "much"
+    "meaning_en": "much",
+    "meaning_tr": "fazla"
   },
   {
     "id": "a1_0655",
@@ -9965,7 +10619,8 @@
       "Ich komme vielleicht mit dem Bus."
     ],
     "page": 25,
-    "meaning_en": "perhaps"
+    "meaning_en": "perhaps",
+    "meaning_tr": "belki"
   },
   {
     "id": "a1_0656",
@@ -9981,7 +10636,8 @@
       "Er kommt gerade von Köln/von zu Hause."
     ],
     "page": 25,
-    "meaning_en": "from"
+    "meaning_en": "from",
+    "meaning_tr": "itibaren"
   },
   {
     "id": "a1_0657",
@@ -9997,7 +10653,8 @@
       "Das Auto steht vor der Tür."
     ],
     "page": 25,
-    "meaning_en": "before"
+    "meaning_en": "before",
+    "meaning_tr": "önce"
   },
   {
     "id": "a1_0658",
@@ -10012,7 +10669,8 @@
       "Ich heiße Müller, mein Vorname ist Eva."
     ],
     "page": 25,
-    "meaning_en": "the first name, -n"
+    "meaning_en": "the first name, -n",
+    "meaning_tr": "ilk isim, -n"
   },
   {
     "id": "a1_0659",
@@ -10028,7 +10686,8 @@
       "Da kommt ein Auto."
     ],
     "page": 25,
-    "meaning_en": "the caution"
+    "meaning_en": "the caution",
+    "meaning_tr": "dikkat"
   },
   {
     "id": "a1_0660",
@@ -10044,7 +10703,8 @@
       "Können Sie sich bitte vorstellen?"
     ],
     "page": 25,
-    "meaning_en": "(to) imagine"
+    "meaning_en": "(to) imagine",
+    "meaning_tr": "hayal etmek"
   },
   {
     "id": "a1_0661",
@@ -10059,7 +10719,8 @@
       "Wie ist die Vorwahl von München?"
     ],
     "page": 25,
-    "meaning_en": "the area code"
+    "meaning_en": "the area code",
+    "meaning_tr": "alan kodu"
   },
   {
     "id": "a1_0662",
@@ -10072,7 +10733,8 @@
     "forms": "",
     "examples": [],
     "page": 25,
-    "meaning_en": "w"
+    "meaning_en": "w",
+    "meaning_tr": "w"
   },
   {
     "id": "a1_0663",
@@ -10087,7 +10749,8 @@
       "Wir wandern um den Chiemsee."
     ],
     "page": 25,
-    "meaning_en": "hike"
+    "meaning_en": "hike",
+    "meaning_tr": "yürüyüş"
   },
   {
     "id": "a1_0664",
@@ -10104,7 +10767,8 @@
       "Wann sind Sie geboren?"
     ],
     "page": 25,
-    "meaning_en": "When"
+    "meaning_en": "When",
+    "meaning_tr": "Ne zaman"
   },
   {
     "id": "a1_0665",
@@ -10120,7 +10784,8 @@
       "Auf wen warten Sie?"
     ],
     "page": 25,
-    "meaning_en": "wait"
+    "meaning_en": "wait",
+    "meaning_tr": "Beklemek"
   },
   {
     "id": "a1_0666",
@@ -10135,7 +10800,8 @@
       "Warum kommt er nicht?"
     ],
     "page": 25,
-    "meaning_en": "Why"
+    "meaning_en": "Why",
+    "meaning_tr": "Neden"
   },
   {
     "id": "a1_0667",
@@ -10151,7 +10817,8 @@
       "Was möchten Sie?"
     ],
     "page": 25,
-    "meaning_en": "What"
+    "meaning_en": "What",
+    "meaning_tr": "Ne"
   },
   {
     "id": "a1_0668",
@@ -10166,7 +10833,8 @@
       "Was für eine Farbe möchten Sie?"
     ],
     "page": 25,
-    "meaning_en": "what a"
+    "meaning_en": "what a",
+    "meaning_tr": "ne"
   },
   {
     "id": "a1_0669",
@@ -10182,7 +10850,8 @@
       "Ich muss morgen waschen."
     ],
     "page": 25,
-    "meaning_en": "(to wash one self"
+    "meaning_en": "(to wash one self",
+    "meaning_tr": "(kendini yıkamak"
   },
   {
     "id": "a1_0670",
@@ -10197,7 +10866,8 @@
       "Ein Glas Wasser, bitte."
     ],
     "page": 25,
-    "meaning_en": "the water"
+    "meaning_en": "the water",
+    "meaning_tr": "su"
   },
   {
     "id": "a1_0671",
@@ -10213,7 +10883,8 @@
       "Mein Bein tut weh."
     ],
     "page": 25,
-    "meaning_en": "hurt"
+    "meaning_en": "hurt",
+    "meaning_tr": "acıtmak"
   },
   {
     "id": "a1_0672",
@@ -10228,7 +10899,8 @@
       "Kreuzen Sie bitte an: „weiblich“ oder „männlich“."
     ],
     "page": 25,
-    "meaning_en": "female"
+    "meaning_en": "female",
+    "meaning_tr": "dişi"
   },
   {
     "id": "a1_0673",
@@ -10243,7 +10915,8 @@
       "Nein danke, ich möchte keinen Wein."
     ],
     "page": 25,
-    "meaning_en": "the wine"
+    "meaning_en": "the wine",
+    "meaning_tr": "şarap"
   },
   {
     "id": "a1_0674",
@@ -10256,7 +10929,8 @@
     "forms": "",
     "examples": [],
     "page": 25,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0675",
@@ -10271,7 +10945,8 @@
       "Zum Bahnhof ist es nicht weit."
     ],
     "page": 25,
-    "meaning_en": "far"
+    "meaning_en": "far",
+    "meaning_tr": "uzak"
   },
   {
     "id": "a1_0676",
@@ -10286,7 +10961,8 @@
       "Der Bus fährt nicht weiter."
     ],
     "page": 26,
-    "meaning_en": "further"
+    "meaning_en": "further",
+    "meaning_tr": "daha öte"
   },
   {
     "id": "a1_0677",
@@ -10301,7 +10977,8 @@
       "Welches Buch möchtest du?"
     ],
     "page": 26,
-    "meaning_en": "which-"
+    "meaning_en": "which-",
+    "meaning_tr": "Hangi-"
   },
   {
     "id": "a1_0678",
@@ -10316,7 +10993,8 @@
       "Es gibt viele Probleme auf der Welt."
     ],
     "page": 26,
-    "meaning_en": "the world"
+    "meaning_en": "the world",
+    "meaning_tr": "die Welt"
   },
   {
     "id": "a1_0679",
@@ -10332,7 +11010,8 @@
       "Er verdient wenig."
     ],
     "page": 26,
-    "meaning_en": "few"
+    "meaning_en": "few",
+    "meaning_tr": "bir kaç"
   },
   {
     "id": "a1_0680",
@@ -10347,7 +11026,8 @@
       "Wer ist das?"
     ],
     "page": 26,
-    "meaning_en": "who"
+    "meaning_en": "who",
+    "meaning_tr": "DSÖ"
   },
   {
     "id": "a1_0681",
@@ -10362,7 +11042,8 @@
       "Mein Sohn will Arzt werden."
     ],
     "page": 26,
-    "meaning_en": "become"
+    "meaning_en": "become",
+    "meaning_tr": "haline gelmek"
   },
   {
     "id": "a1_0682",
@@ -10377,7 +11058,8 @@
       "Wir hatten schlechtes Wetter."
     ],
     "page": 26,
-    "meaning_en": "the weather"
+    "meaning_en": "the weather",
+    "meaning_tr": "hava"
   },
   {
     "id": "a1_0683",
@@ -10392,7 +11074,8 @@
       "Dieses Formular ist sehr wichtig."
     ],
     "page": 26,
-    "meaning_en": "important"
+    "meaning_en": "important",
+    "meaning_tr": "önemli"
   },
   {
     "id": "a1_0684",
@@ -10413,7 +11096,8 @@
       "Wie lange bist du schon hier?"
     ],
     "page": 26,
-    "meaning_en": "How"
+    "meaning_en": "How",
+    "meaning_tr": "Nasıl"
   },
   {
     "id": "a1_0685",
@@ -10428,7 +11112,8 @@
       "Können Sie das bitte wiederholen?"
     ],
     "page": 26,
-    "meaning_en": "repeat"
+    "meaning_en": "repeat",
+    "meaning_tr": "tekrarlamak"
   },
   {
     "id": "a1_0686",
@@ -10444,7 +11129,8 @@
       "Also auf Wiederhören!"
     ],
     "page": 26,
-    "meaning_en": "the re-hearing"
+    "meaning_en": "the re-hearing",
+    "meaning_tr": "yeniden duruşma"
   },
   {
     "id": "a1_0687",
@@ -10459,7 +11145,8 @@
       "Auf Wiedersehen!"
     ],
     "page": 26,
-    "meaning_en": "the reunion"
+    "meaning_en": "the reunion",
+    "meaning_tr": "yeniden birleşme"
   },
   {
     "id": "a1_0688",
@@ -10474,7 +11161,8 @@
       "Wie viel Milch nehmen Sie?"
     ],
     "page": 26,
-    "meaning_en": "how much"
+    "meaning_en": "how much",
+    "meaning_tr": "Ne kadar"
   },
   {
     "id": "a1_0689",
@@ -10489,7 +11177,8 @@
       "Herzlich willkommen!"
     ],
     "page": 26,
-    "meaning_en": "welcome"
+    "meaning_en": "welcome",
+    "meaning_tr": "Hoş geldin"
   },
   {
     "id": "a1_0690",
@@ -10504,7 +11193,8 @@
       "Der Wind kommt aus Osten."
     ],
     "page": 26,
-    "meaning_en": "the wind"
+    "meaning_en": "the wind",
+    "meaning_tr": "rüzgar"
   },
   {
     "id": "a1_0691",
@@ -10519,7 +11209,8 @@
       "Wir lernen Deutsch."
     ],
     "page": 26,
-    "meaning_en": "we"
+    "meaning_en": "we",
+    "meaning_tr": "Biz"
   },
   {
     "id": "a1_0692",
@@ -10534,7 +11225,8 @@
       "Weißt du, wie er heißt?"
     ],
     "page": 26,
-    "meaning_en": "knowledge"
+    "meaning_en": "knowledge",
+    "meaning_tr": "bilgi"
   },
   {
     "id": "a1_0693",
@@ -10551,7 +11243,8 @@
       "Wo sind Sie geboren?"
     ],
     "page": 26,
-    "meaning_en": "where"
+    "meaning_en": "where",
+    "meaning_tr": "Neresi"
   },
   {
     "id": "a1_0694",
@@ -10566,7 +11259,8 @@
       "Woher kommen Sie?"
     ],
     "page": 26,
-    "meaning_en": "from where"
+    "meaning_en": "from where",
+    "meaning_tr": "nereden"
   },
   {
     "id": "a1_0695",
@@ -10582,7 +11276,8 @@
       "Wohin wollen Sie am Wochenende?"
     ],
     "page": 26,
-    "meaning_en": "where"
+    "meaning_en": "where",
+    "meaning_tr": "Neresi"
   },
   {
     "id": "a1_0696",
@@ -10597,7 +11292,8 @@
       "Ich wohne in München."
     ],
     "page": 26,
-    "meaning_en": "reside"
+    "meaning_en": "reside",
+    "meaning_tr": "ikamet etmek"
   },
   {
     "id": "a1_0697",
@@ -10612,7 +11308,8 @@
       "Seit wann haben Sie diese Wohnung?"
     ],
     "page": 26,
-    "meaning_en": "the apartment, -en"
+    "meaning_en": "the apartment, -en",
+    "meaning_tr": "daire, -tr"
   },
   {
     "id": "a1_0698",
@@ -10627,7 +11324,8 @@
       "Wollen Sie einen Kaffee trinken?"
     ],
     "page": 26,
-    "meaning_en": "want"
+    "meaning_en": "want",
+    "meaning_tr": "istek"
   },
   {
     "id": "a1_0699",
@@ -10642,7 +11340,8 @@
       "Ich kenne das Wort nicht."
     ],
     "page": 26,
-    "meaning_en": "the word, -ö, he/-e"
+    "meaning_en": "the word, -ö, he/-e",
+    "meaning_tr": "kelime, -ö, o/-e"
   },
   {
     "id": "a1_0700",
@@ -10657,7 +11356,8 @@
       "Das Essen schmeckt wunderbar."
     ],
     "page": 26,
-    "meaning_en": "wonderful"
+    "meaning_en": "wonderful",
+    "meaning_tr": "müthiş"
   },
   {
     "id": "a1_0701",
@@ -10670,7 +11370,8 @@
     "forms": "",
     "examples": [],
     "page": 26,
-    "meaning_en": "e.g"
+    "meaning_en": "e.g",
+    "meaning_tr": "örneğin"
   },
   {
     "id": "a1_0702",
@@ -10685,7 +11386,8 @@
       "Zahlen, bitte!"
     ],
     "page": 26,
-    "meaning_en": "pay"
+    "meaning_en": "pay",
+    "meaning_tr": "ödemek"
   },
   {
     "id": "a1_0703",
@@ -10700,7 +11402,8 @@
       "Ich habe heute keine Zeit."
     ],
     "page": 26,
-    "meaning_en": "the time"
+    "meaning_en": "the time",
+    "meaning_tr": "zaman"
   },
   {
     "id": "a1_0704",
@@ -10715,7 +11418,8 @@
       "Zurzeit habe ich sehr viel zu tun."
     ],
     "page": 26,
-    "meaning_en": "currently"
+    "meaning_en": "currently",
+    "meaning_tr": "zurzeit"
   },
   {
     "id": "a1_0705",
@@ -10730,7 +11434,8 @@
       "Ich lese gern Zeitung."
     ],
     "page": 26,
-    "meaning_en": "the newspaper, -en"
+    "meaning_en": "the newspaper, -en",
+    "meaning_tr": "gazete, -tr"
   },
   {
     "id": "a1_0706",
@@ -10745,7 +11450,8 @@
       "Wie teuer sind die Zigaretten?"
     ],
     "page": 26,
-    "meaning_en": "the cigarette, -n"
+    "meaning_en": "the cigarette, -n",
+    "meaning_tr": "sigara, -n"
   },
   {
     "id": "a1_0707",
@@ -10763,7 +11469,8 @@
       "Ich habe ein Zimmer bestellt."
     ],
     "page": 26,
-    "meaning_en": "the room, -"
+    "meaning_en": "the room, -",
+    "meaning_tr": "oda, -"
   },
   {
     "id": "a1_0708",
@@ -10778,7 +11485,8 @@
       "Wir müssen noch durch den Zoll."
     ],
     "page": 26,
-    "meaning_en": "the customs"
+    "meaning_en": "the customs",
+    "meaning_tr": "gümrükler"
   },
   {
     "id": "a1_0709",
@@ -10794,7 +11502,8 @@
       "Ich gehe zu Fuß."
     ],
     "page": 26,
-    "meaning_en": "to"
+    "meaning_en": "to",
+    "meaning_tr": "ile"
   },
   {
     "id": "a1_0710",
@@ -10809,7 +11518,8 @@
       "Ich bin zu Hause."
     ],
     "page": 26,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0711",
@@ -10824,7 +11534,8 @@
       "Ich bin mit der Wohnung zufrieden."
     ],
     "page": 27,
-    "meaning_en": "satisfied"
+    "meaning_en": "satisfied",
+    "meaning_tr": "memnun"
   },
   {
     "id": "a1_0712",
@@ -10839,7 +11550,8 @@
       "Ich fahre gern mit dem Zug."
     ],
     "page": 27,
-    "meaning_en": "the train, -ü, e"
+    "meaning_en": "the train, -ü, e",
+    "meaning_tr": "tren, -ü, e"
   },
   {
     "id": "a1_0713",
@@ -10855,7 +11567,8 @@
       "Wann kommst du zurück?"
     ],
     "page": 27,
-    "meaning_en": "back"
+    "meaning_en": "back",
+    "meaning_tr": "geri"
   },
   {
     "id": "a1_0714",
@@ -10871,7 +11584,8 @@
       "Das macht zusammen 2 Euro 80."
     ],
     "page": 27,
-    "meaning_en": "together"
+    "meaning_en": "together",
+    "meaning_tr": "birlikte"
   },
   {
     "id": "a1_0715",
@@ -10887,7 +11601,8 @@
       "Zwischen 8 und 10 Uhr bin ich zu Hause."
     ],
     "page": 27,
-    "meaning_en": "between"
+    "meaning_en": "between",
+    "meaning_tr": "arasında"
   },
   {
     "id": "a1_0716",
@@ -10900,7 +11615,8 @@
     "forms": "",
     "examples": [],
     "page": 27,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   },
   {
     "id": "a1_0717",
@@ -10913,7 +11629,8 @@
     "forms": "",
     "examples": [],
     "page": 28,
-    "meaning_en": "Literature"
+    "meaning_en": "Literature",
+    "meaning_tr": "Edebiyat"
   },
   {
     "id": "a1_0718",
@@ -10928,7 +11645,8 @@
       "Sprachprüfungen und Prüfungsverfahren,"
     ],
     "page": 28,
-    "meaning_en": "OLD manual. European"
+    "meaning_en": "OLD manual. European",
+    "meaning_tr": "ESKİ kılavuz. Avrupa"
   },
   {
     "id": "a1_0719",
@@ -10944,7 +11662,8 @@
       "Cambridge, 1998."
     ],
     "page": 28,
-    "meaning_en": "Ed. Association of"
+    "meaning_en": "Ed. Association of",
+    "meaning_tr": "Hg. Association of"
   },
   {
     "id": "a1_0720",
@@ -10959,7 +11678,8 @@
       "Referenzrahmen für Sprachen: lernen, lehren, be-"
     ],
     "page": 28,
-    "meaning_en": "Common European"
+    "meaning_en": "Common European",
+    "meaning_tr": "Ortak Avrupa"
   },
   {
     "id": "a1_0721",
@@ -10974,7 +11694,8 @@
       "des Europarats, Rat für kulturelle Zusammenarbeit, deut-"
     ],
     "page": 28,
-    "meaning_en": "judge, on behalf of"
+    "meaning_en": "judge, on behalf of",
+    "meaning_tr": "adına yargıç"
   },
   {
     "id": "a1_0722",
@@ -10989,7 +11710,8 @@
       "Inter Nationes, der Ständigen Konferenz"
     ],
     "page": 28,
-    "meaning_en": "sche edition published by the Goethe Institute"
+    "meaning_en": "sche edition published by the Goethe Institute",
+    "meaning_tr": "Goethe Enstitüsü tarafından yayınlanan şema baskısı"
   },
   {
     "id": "a1_0723",
@@ -11004,7 +11726,8 @@
       "der Länder in der Bundesrepublik Deutschland (KMK), der"
     ],
     "page": 28,
-    "meaning_en": "der Kultusminister"
+    "meaning_en": "der Kultusminister",
+    "meaning_tr": "Eğitim Bakanı"
   },
   {
     "id": "a1_0724",
@@ -11019,7 +11742,8 @@
       "der Kantonalen Erziehungs direktoren (EDK) und"
     ],
     "page": 28,
-    "meaning_en": "Swiss conference"
+    "meaning_en": "Swiss conference",
+    "meaning_tr": "İsviçre konferansı"
   },
   {
     "id": "a1_0725",
@@ -11034,7 +11758,8 @@
       "Bundesministerium für Bildung, Wissenschaft und Kul-"
     ],
     "page": 28,
-    "meaning_en": "the Austrian"
+    "meaning_en": "the Austrian",
+    "meaning_tr": "Avusturyalı"
   },
   {
     "id": "a1_0726",
@@ -11047,7 +11772,8 @@
     "forms": "",
     "examples": [],
     "page": 28,
-    "meaning_en": "tur (BMBWK), Munich"
+    "meaning_en": "tur (BMBWK), Munich",
+    "meaning_tr": "tur (BMBWK), Münih"
   },
   {
     "id": "a1_0727",
@@ -11060,7 +11786,8 @@
     "forms": "",
     "examples": [],
     "page": 28,
-    "meaning_en": "Langenscheidt"
+    "meaning_en": "Langenscheidt",
+    "meaning_tr": "Langenscheidt"
   },
   {
     "id": "a1_0728",
@@ -11075,7 +11802,8 @@
       "Kannbeschreibungen und kommu-"
     ],
     "page": 28,
-    "meaning_en": "Profiles German. Learning objective definitions"
+    "meaning_en": "Profiles German. Learning objective definitions",
+    "meaning_tr": "Profiller Almanca. Öğrenme hedefi tanımları"
   },
   {
     "id": "a1_0729",
@@ -11090,7 +11818,8 @@
       "die Niveaustufen A1, A2, B1 und B2 des „Gemeinsamen"
     ],
     "page": 28,
-    "meaning_en": "nicative means for"
+    "meaning_en": "nicative means for",
+    "meaning_tr": "için güzel araçlar"
   },
   {
     "id": "a1_0730",
@@ -11105,7 +11834,8 @@
       "für Sprachen“ von Manuela Glaboniat, Martin"
     ],
     "page": 28,
-    "meaning_en": "European frame of reference"
+    "meaning_en": "European frame of reference",
+    "meaning_tr": "Avrupa referans çerçevesi"
   },
   {
     "id": "a1_0731",
@@ -11120,7 +11850,8 @@
       "Helen Schmitz, Lukas Wertenschlag, München, Langen-"
     ],
     "page": 28,
-    "meaning_en": "Müller, Paul Rusch"
+    "meaning_en": "Müller, Paul Rusch",
+    "meaning_tr": "Müller, Paul Rusch"
   },
   {
     "id": "a1_0732",
@@ -11133,7 +11864,8 @@
     "forms": "",
     "examples": [],
     "page": 28,
-    "meaning_en": "separates"
+    "meaning_en": "separates",
+    "meaning_tr": "ayırır"
   },
   {
     "id": "a1_0733",
@@ -11149,7 +11881,8 @@
       "An intermediary"
     ],
     "page": 28,
-    "meaning_en": "Waystage. systems"
+    "meaning_en": "Waystage. systems",
+    "meaning_tr": "Yol aşaması. sistemler"
   },
   {
     "id": "a1_0734",
@@ -11164,7 +11897,8 @@
       "in a European unit/credit system for"
     ],
     "page": 28,
-    "meaning_en": "objective below threshold level"
+    "meaning_en": "objective below threshold level",
+    "meaning_tr": "hedef eşik seviyesinin altında"
   },
   {
     "id": "a1_0735",
@@ -11181,7 +11915,8 @@
       "Alexander in associ-"
     ],
     "page": 28,
-    "meaning_en": "modern language learning"
+    "meaning_en": "modern language learning",
+    "meaning_tr": "modern dil öğrenimi"
   },
   {
     "id": "a1_0736",
@@ -11196,7 +11931,8 @@
       "Strassburg, 1977."
     ],
     "page": 28,
-    "meaning_en": "ation with M.A. Fitzpatrick"
+    "meaning_en": "ation with M.A. Fitzpatrick",
+    "meaning_tr": "ation with M.A. Fitzpatrick,"
   },
   {
     "id": "a1_0737",
@@ -11209,6 +11945,7 @@
     "forms": "",
     "examples": [],
     "page": 28,
-    "meaning_en": "213082_20_SV"
+    "meaning_en": "213082_20_SV",
+    "meaning_tr": "213082_20_SV"
   }
 ]

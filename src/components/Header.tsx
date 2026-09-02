@@ -1,8 +1,9 @@
-import React from 'react';
-import { Home, BookOpen, Layers, Award, Star, Download, Globe, Sun, Moon, Laptop } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Home, BookOpen, Layers, Award, Star, Download, Globe, Sun, Moon, Laptop, Zap, Headphones, Gauge } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { AppView, SupportedLanguage, ThemeMode } from '../types';
 import { SUPPORTED_LANGUAGES } from '../services/translator';
+import { speechService } from '../services/speech';
 
 interface HeaderProps {
   currentView: AppView;
@@ -31,11 +32,21 @@ export const Header: React.FC<HeaderProps> = ({
   onDownloadCSV,
   onDownloadJSON
 }) => {
+  const [speechRate, setSpeechRate] = useState<number>(speechService.getRate());
+
+  const toggleSpeechRate = () => {
+    const nextRate = speechRate === 0.75 ? 1.0 : speechRate === 1.0 ? 1.2 : 0.75;
+    speechService.setRate(nextRate);
+    setSpeechRate(nextRate);
+  };
+
   const navItems: { id: AppView; label: string; icon: React.ReactNode; badge?: number | string }[] = [
     { id: 'home', label: 'Home', icon: <Home className="w-4 h-4" /> },
     { id: 'explorer', label: 'Dictionary', icon: <BookOpen className="w-4 h-4" />, badge: filteredCount },
+    { id: 'speed-drill', label: 'Speed Drill', icon: <Zap className="w-4 h-4 text-amber-500" /> },
     { id: 'flashcards', label: 'Flashcards', icon: <Layers className="w-4 h-4" /> },
     { id: 'quiz', label: 'Quiz', icon: <Award className="w-4 h-4" /> },
+    { id: 'listening', label: 'Listening', icon: <Headphones className="w-4 h-4 text-indigo-500" /> },
     { id: 'favorites', label: 'Saved', icon: <Star className="w-4 h-4" />, badge: favoritesCount > 0 ? favoritesCount : undefined },
   ];
 
@@ -43,12 +54,6 @@ export const Header: React.FC<HeaderProps> = ({
     if (theme === 'dark') return <Moon className="w-4 h-4 text-amber-400" />;
     if (theme === 'light') return <Sun className="w-4 h-4 text-amber-500" />;
     return <Laptop className="w-4 h-4 text-zinc-400" />;
-  };
-
-  const getThemeTitle = () => {
-    if (theme === 'dark') return 'Current: Dark Mode (Click for System)';
-    if (theme === 'light') return 'Current: Light Mode (Click for Dark)';
-    return 'Current: System Default (Click for Light)';
   };
 
   return (
@@ -73,24 +78,24 @@ export const Header: React.FC<HeaderProps> = ({
                   Goethe<span className="text-amber-600 dark:text-amber-500">Vocab</span>
                 </span>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-zinc-200/90 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-300/80 dark:border-zinc-700">
-                  A1 • A2 • B1
+                  A1-B1
                 </span>
               </div>
               <p className="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hidden sm:block">
-                Official Goethe-Institut Wordlists ({totalWords.toLocaleString()} entries)
+                Official Goethe-Institut ({totalWords.toLocaleString()} words)
               </p>
             </div>
           </motion.div>
 
-          {/* Desktop Navigation Modes with Glider Pill */}
-          <nav className="hidden md:flex items-center gap-1 bg-zinc-200/70 dark:bg-zinc-900/90 p-1.5 rounded-2xl border border-zinc-300/60 dark:border-zinc-800 shadow-inner">
+          {/* Desktop Navigation Modes with Animated Glider Pill */}
+          <nav className="hidden lg:flex items-center gap-1 bg-zinc-200/70 dark:bg-zinc-900/90 p-1.5 rounded-2xl border border-zinc-300/60 dark:border-zinc-800 shadow-inner">
             {navItems.map((item) => {
               const isActive = currentView === item.id;
               return (
                 <button
                   key={item.id}
                   onClick={() => onSelectView(item.id)}
-                  className={`relative flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-colors duration-200 select-none ${
+                  className={`relative flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors duration-200 select-none ${
                     isActive ? 'text-zinc-900 dark:text-white' : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
                   }`}
                 >
@@ -121,15 +126,27 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </nav>
 
-          {/* Right Tools: Theme Toggle, Target Language & Exports */}
+          {/* Right Tools */}
           <div className="flex items-center gap-2 sm:gap-2.5">
             
+            {/* Audio Speed Controller Toggle */}
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={toggleSpeechRate}
+              title={`Speech Speed: ${speechRate}x (Click to change)`}
+              className="flex items-center gap-1 px-2.5 py-1.5 bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl shadow-xs text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+            >
+              <Gauge className="w-3.5 h-3.5 text-amber-500" />
+              <span>{speechRate}x</span>
+            </motion.button>
+
             {/* Theme Toggle Button */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={onToggleTheme}
-              title={getThemeTitle()}
+              title="Toggle Theme (Light / Dark / System)"
               className="p-2 bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex items-center justify-center text-zinc-700 dark:text-zinc-300"
             >
               {getThemeIcon()}
@@ -138,12 +155,9 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Language Selector Dropdown */}
             <motion.div 
               whileHover={{ scale: 1.01 }}
-              className="relative flex items-center bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl px-3 py-1.5 shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+              className="relative flex items-center bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl px-2.5 sm:px-3 py-1.5 shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
             >
               <Globe className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 mr-1.5 shrink-0" />
-              <div className="text-[11px] font-medium text-zinc-400 dark:text-zinc-500 mr-1.5 hidden sm:inline">
-                Target:
-              </div>
               <select
                 value={targetLang}
                 onChange={(e) => onChangeLang(e.target.value as SupportedLanguage)}
@@ -158,13 +172,13 @@ export const Header: React.FC<HeaderProps> = ({
             </motion.div>
 
             {/* Quick Export Buttons */}
-            <div className="hidden sm:flex items-center gap-1.5 border-l border-zinc-200/80 dark:border-zinc-800 pl-2">
+            <div className="hidden xl:flex items-center gap-1.5 border-l border-zinc-200/80 dark:border-zinc-800 pl-2">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={onDownloadCSV}
-                title="Download CSV with English translations"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all shadow-xs"
+                title="Download CSV"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all shadow-xs"
               >
                 <Download className="w-3 h-3 text-zinc-500 dark:text-zinc-400" />
                 <span>CSV</span>
@@ -173,8 +187,8 @@ export const Header: React.FC<HeaderProps> = ({
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={onDownloadJSON}
-                title="Download JSON Dataset"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all shadow-xs"
+                title="Download JSON"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all shadow-xs"
               >
                 <Download className="w-3 h-3 text-zinc-500 dark:text-zinc-400" />
                 <span>JSON</span>
@@ -185,15 +199,15 @@ export const Header: React.FC<HeaderProps> = ({
 
         </div>
 
-        {/* Mobile Navigation Row */}
-        <div className="flex md:hidden items-center justify-around py-2 border-t border-zinc-200/60 dark:border-zinc-800/60">
+        {/* Mobile / Tablet Navigation Row */}
+        <div className="flex lg:hidden items-center justify-around py-2 border-t border-zinc-200/60 dark:border-zinc-800/60 overflow-x-auto">
           {navItems.map((item) => {
             const isActive = currentView === item.id;
             return (
               <button
                 key={item.id}
                 onClick={() => onSelectView(item.id)}
-                className={`flex flex-col items-center py-1 px-2.5 text-xs font-medium transition-colors ${
+                className={`flex flex-col items-center py-1 px-2 text-[11px] font-medium whitespace-nowrap transition-colors ${
                   isActive ? 'text-amber-600 dark:text-amber-400 font-bold' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
                 }`}
               >

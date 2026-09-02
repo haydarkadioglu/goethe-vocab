@@ -7,6 +7,7 @@ export interface VocabWord {
   level: 'A1' | 'A2' | 'B1';
   word: string;
   meaning_en?: string;
+  meaning_tr?: string;
   full_entry: string;
   article: 'der' | 'die' | 'das' | null;
   pos: string;
@@ -35,7 +36,7 @@ export interface LanguageOption {
   flag: string;
 }
 
-export type AppView = 'home' | 'explorer' | 'flashcards' | 'quiz' | 'favorites';
+export type AppView = 'home' | 'explorer' | 'flashcards' | 'speed-drill' | 'quiz' | 'listening' | 'favorites';
 
 export type ThemeMode = 'light' | 'dark' | 'system';
 
