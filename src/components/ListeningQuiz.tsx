@@ -188,6 +188,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
   const getWordMeaning = useCallback((w: VocabWord) => {
     if (targetLang === 'tr') return w.meaning_tr || w.meaning_en || '';
     if (targetLang === 'es') return w.meaning_es || w.meaning_en || '';
+    if (targetLang === 'ar') return w.meaning_ar || w.meaning_en || '';
     return w.meaning_en || w.meaning_tr || '';
   }, [targetLang]);
 

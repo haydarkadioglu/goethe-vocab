@@ -39,6 +39,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
   const getWordMeaning = useCallback((w: VocabWord) => {
     if (targetLang === 'tr') return w.meaning_tr || w.meaning_en || '';
     if (targetLang === 'es') return w.meaning_es || w.meaning_en || '';
+    if (targetLang === 'ar') return w.meaning_ar || w.meaning_en || '';
     return w.meaning_en || w.meaning_tr || '';
   }, [targetLang]);
 
@@ -90,6 +91,11 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
     }
     if (targetLang === 'es' && currentWord.meaning_es) {
       setTranslation(currentWord.meaning_es);
+      setLoadingTrans(false);
+      return;
+    }
+    if (targetLang === 'ar' && currentWord.meaning_ar) {
+      setTranslation(currentWord.meaning_ar);
       setLoadingTrans(false);
       return;
     }

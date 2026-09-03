@@ -14,7 +14,8 @@
     "page": 9,
     "meaning_en": "but",
     "meaning_tr": "Ancak",
-    "meaning_es": "pero"
+    "meaning_es": "pero",
+    "meaning_ar": "لكن"
   },
   {
     "id": "a1_0002",
@@ -31,7 +32,8 @@
     "page": 9,
     "meaning_en": "depart",
     "meaning_tr": "ayrılmak",
-    "meaning_es": "salir"
+    "meaning_es": "salir",
+    "meaning_ar": "مغادرة"
   },
   {
     "id": "a1_0003",
@@ -48,7 +50,8 @@
     "page": 9,
     "meaning_en": "the farewell",
     "meaning_tr": "veda",
-    "meaning_es": "la despedida"
+    "meaning_es": "la despedida",
+    "meaning_ar": "الوداع"
   },
   {
     "id": "a1_0004",
@@ -65,7 +68,8 @@
     "page": 9,
     "meaning_en": "hand over",
     "meaning_tr": "devretmek",
-    "meaning_es": "Entregar"
+    "meaning_es": "Entregar",
+    "meaning_ar": "تسليم"
   },
   {
     "id": "a1_0005",
@@ -83,7 +87,8 @@
     "page": 9,
     "meaning_en": "pick up",
     "meaning_tr": "toplamak",
-    "meaning_es": "levantar"
+    "meaning_es": "levantar",
+    "meaning_ar": "يلتقط"
   },
   {
     "id": "a1_0006",
@@ -100,7 +105,8 @@
     "page": 9,
     "meaning_en": "the sender",
     "meaning_tr": "gönderen",
-    "meaning_es": "el remitente"
+    "meaning_es": "el remitente",
+    "meaning_ar": "المرسل"
   },
   {
     "id": "a1_0007",
@@ -118,7 +124,8 @@
     "page": 9,
     "meaning_en": "Danger",
     "meaning_tr": "Tehlike",
-    "meaning_es": "Peligro"
+    "meaning_es": "Peligro",
+    "meaning_ar": "خطر"
   },
   {
     "id": "a1_0008",
@@ -135,7 +142,8 @@
     "page": 9,
     "meaning_en": "the address,-s",
     "meaning_tr": "die Adresse,-en",
-    "meaning_es": "la dirección,-s"
+    "meaning_es": "la dirección,-s",
+    "meaning_ar": "العنوان، -s"
   },
   {
     "id": "a1_0009",
@@ -156,7 +164,8 @@
     "page": 9,
     "meaning_en": "all-",
     "meaning_tr": "Tümü-",
-    "meaning_es": "todo-"
+    "meaning_es": "todo-",
+    "meaning_ar": "الجميع-"
   },
   {
     "id": "a1_0010",
@@ -173,7 +182,8 @@
     "page": 9,
     "meaning_en": "alone",
     "meaning_tr": "yalnız",
-    "meaning_es": "solo"
+    "meaning_es": "solo",
+    "meaning_ar": "وحيد"
   },
   {
     "id": "a1_0011",
@@ -191,7 +201,8 @@
     "page": 9,
     "meaning_en": "so",
     "meaning_tr": "Bu yüzden",
-    "meaning_es": "entonces"
+    "meaning_es": "entonces",
+    "meaning_ar": "لذا"
   },
   {
     "id": "a1_0012",
@@ -212,7 +223,8 @@
     "page": 9,
     "meaning_en": "old",
     "meaning_tr": "eskimiş",
-    "meaning_es": "viejo"
+    "meaning_es": "viejo",
+    "meaning_ar": "قديم"
   },
   {
     "id": "a1_0013",
@@ -229,7 +241,8 @@
     "page": 9,
     "meaning_en": "the age",
     "meaning_tr": "yaş",
-    "meaning_es": "la edad"
+    "meaning_es": "la edad",
+    "meaning_ar": "العمر"
   },
   {
     "id": "a1_0014",
@@ -248,7 +261,8 @@
     "page": 9,
     "meaning_en": "to",
     "meaning_tr": "ile",
-    "meaning_es": "a"
+    "meaning_es": "a",
+    "meaning_ar": "ل"
   },
   {
     "id": "a1_0015",
@@ -265,7 +279,8 @@
     "page": 9,
     "meaning_en": "offer",
     "meaning_tr": "teklif",
-    "meaning_es": "oferta"
+    "meaning_es": "oferta",
+    "meaning_ar": "يعرض"
   },
   {
     "id": "a1_0016",
@@ -282,7 +297,8 @@
     "page": 9,
     "meaning_en": "the offer, -e",
     "meaning_tr": "teklif, -e",
-    "meaning_es": "la oferta, -e"
+    "meaning_es": "la oferta, -e",
+    "meaning_ar": "العرض، -ه"
   },
   {
     "id": "a1_0017",
@@ -300,7 +316,8 @@
     "page": 9,
     "meaning_en": "at the-",
     "meaning_tr": "en...",
-    "meaning_es": "al-"
+    "meaning_es": "al-",
+    "meaning_ar": "في-"
   },
   {
     "id": "a1_0018",
@@ -318,7 +335,8 @@
     "page": 9,
     "meaning_en": "begin",
     "meaning_tr": "başlamak",
-    "meaning_es": "comenzar"
+    "meaning_es": "comenzar",
+    "meaning_ar": "يبدأ"
   },
   {
     "id": "a1_0019",
@@ -336,7 +354,8 @@
     "page": 9,
     "meaning_en": "the beginning",
     "meaning_tr": "başlangıç",
-    "meaning_es": "el comienzo"
+    "meaning_es": "el comienzo",
+    "meaning_ar": "البداية"
   },
   {
     "id": "a1_0020",
@@ -353,7 +372,8 @@
     "page": 9,
     "meaning_en": "click",
     "meaning_tr": "tıklamak",
-    "meaning_es": "hacer clic"
+    "meaning_es": "hacer clic",
+    "meaning_ar": "انقر"
   },
   {
     "id": "a1_0021",
@@ -370,7 +390,8 @@
     "page": 9,
     "meaning_en": "arrive",
     "meaning_tr": "varmak",
-    "meaning_es": "llegar"
+    "meaning_es": "llegar",
+    "meaning_ar": "يصل"
   },
   {
     "id": "a1_0022",
@@ -387,7 +408,8 @@
     "page": 9,
     "meaning_en": "the arrival",
     "meaning_tr": "varış",
-    "meaning_es": "La llegada"
+    "meaning_es": "La llegada",
+    "meaning_ar": "الوصول"
   },
   {
     "id": "a1_0023",
@@ -404,7 +426,8 @@
     "page": 9,
     "meaning_en": "tick",
     "meaning_tr": "kene",
-    "meaning_es": "garrapata"
+    "meaning_es": "garrapata",
+    "meaning_ar": "علامة"
   },
   {
     "id": "a1_0024",
@@ -421,7 +444,8 @@
     "page": 9,
     "meaning_en": "turn on",
     "meaning_tr": "aç",
-    "meaning_es": "encender"
+    "meaning_es": "encender",
+    "meaning_ar": "تشغيل"
   },
   {
     "id": "a1_0025",
@@ -438,7 +462,8 @@
     "page": 9,
     "meaning_en": "(Sign in",
     "meaning_tr": "(Oturum açın",
-    "meaning_es": "(Iniciar sesión"
+    "meaning_es": "(Iniciar sesión",
+    "meaning_ar": "(تسجيل الدخول"
   },
   {
     "id": "a1_0026",
@@ -455,7 +480,8 @@
     "page": 9,
     "meaning_en": "the registration",
     "meaning_tr": "kayıt",
-    "meaning_es": "el registro"
+    "meaning_es": "el registro",
+    "meaning_ar": "التسجيل"
   },
   {
     "id": "a1_0027",
@@ -472,7 +498,8 @@
     "page": 9,
     "meaning_en": "die Anrede",
     "meaning_tr": "selamlama",
-    "meaning_es": "el saludo"
+    "meaning_es": "el saludo",
+    "meaning_ar": "التحية"
   },
   {
     "id": "a1_0028",
@@ -490,7 +517,8 @@
     "page": 9,
     "meaning_en": "call",
     "meaning_tr": "Arama",
-    "meaning_es": "llamar"
+    "meaning_es": "llamar",
+    "meaning_ar": "يتصل"
   },
   {
     "id": "a1_0029",
@@ -507,7 +535,8 @@
     "page": 9,
     "meaning_en": "the call, -e",
     "meaning_tr": "çağrı, -e",
-    "meaning_es": "la llamada, -e"
+    "meaning_es": "la llamada, -e",
+    "meaning_ar": "المكالمة، -ه"
   },
   {
     "id": "a1_0030",
@@ -525,7 +554,8 @@
     "page": 9,
     "meaning_en": "the call",
     "meaning_tr": "çağrı",
-    "meaning_es": "la llamada"
+    "meaning_es": "la llamada",
+    "meaning_ar": "المكالمة"
   },
   {
     "id": "a1_0031",
@@ -542,7 +572,8 @@
     "page": 9,
     "meaning_en": "answerer",
     "meaning_tr": "cevaplayıcı",
-    "meaning_es": "fiador"
+    "meaning_es": "fiador",
+    "meaning_ar": "المجيب"
   },
   {
     "id": "a1_0032",
@@ -557,7 +588,8 @@
     "page": 9,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0033",
@@ -574,7 +606,8 @@
     "page": 10,
     "meaning_en": "the announcement, -n",
     "meaning_tr": "duyuru, -n",
-    "meaning_es": "el anuncio, -n"
+    "meaning_es": "el anuncio, -n",
+    "meaning_ar": "الإعلان، -ن"
   },
   {
     "id": "a1_0034",
@@ -592,7 +625,8 @@
     "page": 10,
     "meaning_en": "the connection",
     "meaning_tr": "bağlantı",
-    "meaning_es": "la conexión"
+    "meaning_es": "la conexión",
+    "meaning_ar": "الاتصال"
   },
   {
     "id": "a1_0035",
@@ -609,7 +643,8 @@
     "page": 10,
     "meaning_en": "be on",
     "meaning_tr": "açık olmak",
-    "meaning_es": "estar encendido"
+    "meaning_es": "estar encendido",
+    "meaning_ar": "يكون على"
   },
   {
     "id": "a1_0036",
@@ -626,7 +661,8 @@
     "page": 10,
     "meaning_en": "answer",
     "meaning_tr": "cevap",
-    "meaning_es": "respuesta"
+    "meaning_es": "respuesta",
+    "meaning_ar": "إجابة"
   },
   {
     "id": "a1_0037",
@@ -643,7 +679,8 @@
     "page": 10,
     "meaning_en": "the answers",
     "meaning_tr": "cevaplar",
-    "meaning_es": "las respuestas"
+    "meaning_es": "las respuestas",
+    "meaning_ar": "الإجابات"
   },
   {
     "id": "a1_0038",
@@ -660,7 +697,8 @@
     "page": 10,
     "meaning_en": "the ad, -n",
     "meaning_tr": "reklam, -n",
-    "meaning_es": "el anuncio, -n"
+    "meaning_es": "el anuncio, -n",
+    "meaning_ar": "الإعلان، -ن"
   },
   {
     "id": "a1_0039",
@@ -677,7 +715,8 @@
     "page": 10,
     "meaning_en": "(to get dressed",
     "meaning_tr": "(giyinmek için",
-    "meaning_es": "(vestirse"
+    "meaning_es": "(vestirse",
+    "meaning_ar": "(لارتداء ملابسه"
   },
   {
     "id": "a1_0040",
@@ -694,7 +733,8 @@
     "page": 10,
     "meaning_en": "the apartment, -s",
     "meaning_tr": "daire, -s",
-    "meaning_es": "el apartamento, -s"
+    "meaning_es": "el apartamento, -s",
+    "meaning_ar": "الشقة -س"
   },
   {
     "id": "a1_0041",
@@ -711,7 +751,8 @@
     "page": 10,
     "meaning_en": "the apple, -Ä",
     "meaning_tr": "elma, -Ä",
-    "meaning_es": "la manzana, -Ä"
+    "meaning_es": "la manzana, -Ä",
+    "meaning_ar": "التفاحة، -أ"
   },
   {
     "id": "a1_0042",
@@ -728,7 +769,8 @@
     "page": 10,
     "meaning_en": "the appetite",
     "meaning_tr": "iştah",
-    "meaning_es": "el apetito"
+    "meaning_es": "el apetito",
+    "meaning_ar": "الشهية"
   },
   {
     "id": "a1_0043",
@@ -745,7 +787,8 @@
     "page": 10,
     "meaning_en": "work",
     "meaning_tr": "iş",
-    "meaning_es": "trabajar"
+    "meaning_es": "trabajar",
+    "meaning_ar": "عمل"
   },
   {
     "id": "a1_0044",
@@ -762,7 +805,8 @@
     "page": 10,
     "meaning_en": "the work, -en",
     "meaning_tr": "iş, -tr",
-    "meaning_es": "el trabajo, -es"
+    "meaning_es": "el trabajo, -es",
+    "meaning_ar": "العمل، -en"
   },
   {
     "id": "a1_0045",
@@ -779,7 +823,8 @@
     "page": 10,
     "meaning_en": "unemployed",
     "meaning_tr": "arbeitslos",
-    "meaning_es": "desempleados"
+    "meaning_es": "desempleados",
+    "meaning_ar": "غير موظف"
   },
   {
     "id": "a1_0046",
@@ -796,7 +841,8 @@
     "page": 10,
     "meaning_en": "the workplace, etc",
     "meaning_tr": "işyeri vb.",
-    "meaning_es": "el lugar de trabajo, etc."
+    "meaning_es": "el lugar de trabajo, etc.",
+    "meaning_ar": "مكان العمل، الخ"
   },
   {
     "id": "a1_0047",
@@ -813,7 +859,8 @@
     "page": 10,
     "meaning_en": "the poor",
     "meaning_tr": "fakir",
-    "meaning_es": "los pobres"
+    "meaning_es": "los pobres",
+    "meaning_ar": "الفقراء"
   },
   {
     "id": "a1_0048",
@@ -830,7 +877,8 @@
     "page": 10,
     "meaning_en": "the doctor, -Ä, e",
     "meaning_tr": "doktor, -Ä, e",
-    "meaning_es": "el doctor, -Ä, e"
+    "meaning_es": "el doctor, -Ä, e",
+    "meaning_ar": "الطبيب، -أ،ه"
   },
   {
     "id": "a1_0049",
@@ -847,7 +895,8 @@
     "page": 10,
     "meaning_en": "also",
     "meaning_tr": "Ayrıca",
-    "meaning_es": "también"
+    "meaning_es": "también",
+    "meaning_ar": "أيضًا"
   },
   {
     "id": "a1_0050",
@@ -866,7 +915,8 @@
     "page": 10,
     "meaning_en": "on",
     "meaning_tr": "Açık",
-    "meaning_es": "en"
+    "meaning_es": "en",
+    "meaning_ar": "على"
   },
   {
     "id": "a1_0051",
@@ -883,7 +933,8 @@
     "page": 10,
     "meaning_en": "the task, -n",
     "meaning_tr": "görev, -n",
-    "meaning_es": "la tarea, -n"
+    "meaning_es": "la tarea, -n",
+    "meaning_ar": "المهمة، -ن"
   },
   {
     "id": "a1_0052",
@@ -901,7 +952,8 @@
     "page": 10,
     "meaning_en": "stop",
     "meaning_tr": "durmak",
-    "meaning_es": "detener"
+    "meaning_es": "detener",
+    "meaning_ar": "قف"
   },
   {
     "id": "a1_0053",
@@ -919,7 +971,8 @@
     "page": 10,
     "meaning_en": "to be up",
     "meaning_tr": "uyanık olmak",
-    "meaning_es": "estar arriba"
+    "meaning_es": "estar arriba",
+    "meaning_ar": "ليكون يصل"
   },
   {
     "id": "a1_0054",
@@ -937,7 +990,8 @@
     "page": 10,
     "meaning_en": "stand up",
     "meaning_tr": "ayağa kalk",
-    "meaning_es": "ponerse de pie"
+    "meaning_es": "ponerse de pie",
+    "meaning_ar": "الوقوف"
   },
   {
     "id": "a1_0055",
@@ -954,7 +1008,8 @@
     "page": 10,
     "meaning_en": "the elevator, -ü, e",
     "meaning_tr": "asansör, -ü, e",
-    "meaning_es": "el ascensor, -ü, e"
+    "meaning_es": "el ascensor, -ü, e",
+    "meaning_ar": "المصعد، -ü، ه"
   },
   {
     "id": "a1_0056",
@@ -971,7 +1026,8 @@
     "page": 10,
     "meaning_en": "the eye, -n",
     "meaning_tr": "göz, ​​-n",
-    "meaning_es": "el ojo, -n"
+    "meaning_es": "el ojo, -n",
+    "meaning_ar": "العين، -ن"
   },
   {
     "id": "a1_0057",
@@ -988,7 +1044,8 @@
     "page": 10,
     "meaning_en": "out of",
     "meaning_tr": "dışında",
-    "meaning_es": "fuera de"
+    "meaning_es": "fuera de",
+    "meaning_ar": "خارج"
   },
   {
     "id": "a1_0058",
@@ -1005,7 +1062,8 @@
     "page": 10,
     "meaning_en": "the excursion",
     "meaning_tr": "gezi",
-    "meaning_es": "la excursión"
+    "meaning_es": "la excursión",
+    "meaning_ar": "الرحلة"
   },
   {
     "id": "a1_0059",
@@ -1022,7 +1080,8 @@
     "page": 10,
     "meaning_en": "fill out",
     "meaning_tr": "doldur",
-    "meaning_es": "llenar"
+    "meaning_es": "llenar",
+    "meaning_ar": "املأ"
   },
   {
     "id": "a1_0060",
@@ -1039,7 +1098,8 @@
     "page": 10,
     "meaning_en": "the exit",
     "meaning_tr": "çıkış",
-    "meaning_es": "la salida"
+    "meaning_es": "la salida",
+    "meaning_ar": "الخروج"
   },
   {
     "id": "a1_0061",
@@ -1056,7 +1116,8 @@
     "page": 10,
     "meaning_en": "the information, -ü, e",
     "meaning_tr": "bilgi, -ü, e",
-    "meaning_es": "la información, -ü, e"
+    "meaning_es": "la información, -ü, e",
+    "meaning_ar": "المعلومات، -ü، ه"
   },
   {
     "id": "a1_0062",
@@ -1073,7 +1134,8 @@
     "page": 10,
     "meaning_en": "the foreign country",
     "meaning_tr": "yabancı ülke",
-    "meaning_es": "el pais extranjero"
+    "meaning_es": "el pais extranjero",
+    "meaning_ar": "البلد الاجنبي"
   },
   {
     "id": "a1_0063",
@@ -1090,7 +1152,8 @@
     "page": 10,
     "meaning_en": "the foreigner, -",
     "meaning_tr": "yabancı, -",
-    "meaning_es": "el extranjero, -"
+    "meaning_es": "el extranjero, -",
+    "meaning_ar": "الأجنبي،-"
   },
   {
     "id": "a1_0064",
@@ -1107,7 +1170,8 @@
     "page": 10,
     "meaning_en": "foreign",
     "meaning_tr": "yabancı",
-    "meaning_es": "extranjero"
+    "meaning_es": "extranjero",
+    "meaning_ar": "أجنبي"
   },
   {
     "id": "a1_0065",
@@ -1124,7 +1188,8 @@
     "page": 10,
     "meaning_en": "turn off",
     "meaning_tr": "kapamak",
-    "meaning_es": "apagar"
+    "meaning_es": "apagar",
+    "meaning_ar": "إيقاف"
   },
   {
     "id": "a1_0066",
@@ -1141,7 +1206,8 @@
     "page": 10,
     "meaning_en": "the statement, -n",
     "meaning_tr": "ifade, -n",
-    "meaning_es": "la declaración, -n"
+    "meaning_es": "la declaración, -n",
+    "meaning_ar": "البيان، -ن"
   },
   {
     "id": "a1_0067",
@@ -1158,7 +1224,8 @@
     "page": 10,
     "meaning_en": "look",
     "meaning_tr": "Bakmak",
-    "meaning_es": "mirar"
+    "meaning_es": "mirar",
+    "meaning_ar": "ينظر"
   },
   {
     "id": "a1_0068",
@@ -1176,7 +1243,8 @@
     "page": 10,
     "meaning_en": "be off",
     "meaning_tr": "kapalı olmak",
-    "meaning_es": "estar fuera"
+    "meaning_es": "estar fuera",
+    "meaning_ar": "يكون خارج"
   },
   {
     "id": "a1_0069",
@@ -1193,7 +1261,8 @@
     "page": 10,
     "meaning_en": "exit",
     "meaning_tr": "çıkış",
-    "meaning_es": "salida"
+    "meaning_es": "salida",
+    "meaning_ar": "مخرج"
   },
   {
     "id": "a1_0070",
@@ -1210,7 +1279,8 @@
     "page": 10,
     "meaning_en": "the ID card",
     "meaning_tr": "kimlik kartı",
-    "meaning_es": "la tarjeta de identificación"
+    "meaning_es": "la tarjeta de identificación",
+    "meaning_ar": "بطاقة الهوية"
   },
   {
     "id": "a1_0071",
@@ -1227,7 +1297,8 @@
     "page": 10,
     "meaning_en": "(undress",
     "meaning_tr": "(soyunmak",
-    "meaning_es": "(desnudo"
+    "meaning_es": "(desnudo",
+    "meaning_ar": "(خلع ملابسه"
   },
   {
     "id": "a1_0072",
@@ -1244,7 +1315,8 @@
     "page": 10,
     "meaning_en": "the car, -s",
     "meaning_tr": "araba, -s",
-    "meaning_es": "el auto, -s"
+    "meaning_es": "el auto, -s",
+    "meaning_ar": "السيارة -س"
   },
   {
     "id": "a1_0073",
@@ -1261,7 +1333,8 @@
     "page": 10,
     "meaning_en": "the highway, -en",
     "meaning_tr": "otoyol, -tr",
-    "meaning_es": "la carretera, -es"
+    "meaning_es": "la carretera, -es",
+    "meaning_ar": "الطريق السريع، -en"
   },
   {
     "id": "a1_0074",
@@ -1278,7 +1351,8 @@
     "page": 10,
     "meaning_en": "the machine",
     "meaning_tr": "makine",
-    "meaning_es": "la maquina"
+    "meaning_es": "la maquina",
+    "meaning_ar": "الآلة"
   },
   {
     "id": "a1_0075",
@@ -1296,7 +1370,8 @@
     "page": 10,
     "meaning_en": "automatically",
     "meaning_tr": "otomatik olarak",
-    "meaning_es": "automáticamente"
+    "meaning_es": "automáticamente",
+    "meaning_ar": "تلقائيا"
   },
   {
     "id": "a1_0076",
@@ -1311,7 +1386,8 @@
     "page": 10,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0077",
@@ -1328,7 +1404,8 @@
     "page": 11,
     "meaning_en": "the baby, -s",
     "meaning_tr": "bebek, -s",
-    "meaning_es": "el bebe, -s"
+    "meaning_es": "el bebe, -s",
+    "meaning_ar": "الطفل، -س"
   },
   {
     "id": "a1_0078",
@@ -1345,7 +1422,8 @@
     "page": 11,
     "meaning_en": "the bakery",
     "meaning_tr": "fırın",
-    "meaning_es": "la panadería"
+    "meaning_es": "la panadería",
+    "meaning_ar": "المخبز"
   },
   {
     "id": "a1_0079",
@@ -1362,7 +1440,8 @@
     "page": 11,
     "meaning_en": "the bathroom",
     "meaning_tr": "banyo",
-    "meaning_es": "el baño"
+    "meaning_es": "el baño",
+    "meaning_ar": "الحمام"
   },
   {
     "id": "a1_0080",
@@ -1379,7 +1458,8 @@
     "page": 11,
     "meaning_en": "bathe",
     "meaning_tr": "yıkanmak",
-    "meaning_es": "bañarse"
+    "meaning_es": "bañarse",
+    "meaning_ar": "يستحم"
   },
   {
     "id": "a1_0081",
@@ -1397,7 +1477,8 @@
     "page": 11,
     "meaning_en": "the train",
     "meaning_tr": "tren",
-    "meaning_es": "el tren"
+    "meaning_es": "el tren",
+    "meaning_ar": "القطار"
   },
   {
     "id": "a1_0082",
@@ -1414,7 +1495,8 @@
     "page": 11,
     "meaning_en": "the station",
     "meaning_tr": "istasyon",
-    "meaning_es": "la estacion"
+    "meaning_es": "la estacion",
+    "meaning_ar": "المحطة"
   },
   {
     "id": "a1_0083",
@@ -1431,7 +1513,8 @@
     "page": 11,
     "meaning_en": "the platform",
     "meaning_tr": "platform",
-    "meaning_es": "la plataforma"
+    "meaning_es": "la plataforma",
+    "meaning_ar": "المنصة"
   },
   {
     "id": "a1_0084",
@@ -1448,7 +1531,8 @@
     "page": 11,
     "meaning_en": "soon",
     "meaning_tr": "yakında",
-    "meaning_es": "pronto"
+    "meaning_es": "pronto",
+    "meaning_ar": "قريباً"
   },
   {
     "id": "a1_0085",
@@ -1465,7 +1549,8 @@
     "page": 11,
     "meaning_en": "the balcony",
     "meaning_tr": "balkon",
-    "meaning_es": "el balcon"
+    "meaning_es": "el balcon",
+    "meaning_ar": "الشرفة"
   },
   {
     "id": "a1_0086",
@@ -1482,7 +1567,8 @@
     "page": 11,
     "meaning_en": "the banana, -n",
     "meaning_tr": "muz, -n",
-    "meaning_es": "el plátano, -n"
+    "meaning_es": "el plátano, -n",
+    "meaning_ar": "الموز، -ن"
   },
   {
     "id": "a1_0087",
@@ -1500,7 +1586,8 @@
     "page": 11,
     "meaning_en": "the Bank",
     "meaning_tr": "Banka",
-    "meaning_es": "el banco"
+    "meaning_es": "el banco",
+    "meaning_ar": "البنك"
   },
   {
     "id": "a1_0088",
@@ -1517,7 +1604,8 @@
     "page": 11,
     "meaning_en": "bear",
     "meaning_tr": "ayı",
-    "meaning_es": "oso"
+    "meaning_es": "oso",
+    "meaning_ar": "دُبٌّ"
   },
   {
     "id": "a1_0089",
@@ -1534,7 +1622,8 @@
     "page": 11,
     "meaning_en": "the stomach",
     "meaning_tr": "mide",
-    "meaning_es": "el estomago"
+    "meaning_es": "el estomago",
+    "meaning_ar": "المعدة"
   },
   {
     "id": "a1_0090",
@@ -1551,7 +1640,8 @@
     "page": 11,
     "meaning_en": "the tree, -ä, e",
     "meaning_tr": "ağaç, -ä, e",
-    "meaning_es": "el árbol, -ä, e"
+    "meaning_es": "el árbol, -ä, e",
+    "meaning_ar": "الشجرة، -أ، ه"
   },
   {
     "id": "a1_0091",
@@ -1568,7 +1658,8 @@
     "page": 11,
     "meaning_en": "the official, -n",
     "meaning_tr": "resmi, -n",
-    "meaning_es": "el funcionario, -n"
+    "meaning_es": "el funcionario, -n",
+    "meaning_ar": "المسؤول -ن"
   },
   {
     "id": "a1_0092",
@@ -1585,7 +1676,8 @@
     "page": 11,
     "meaning_en": "mean",
     "meaning_tr": "Anlam",
-    "meaning_es": "significar"
+    "meaning_es": "significar",
+    "meaning_ar": "يقصد"
   },
   {
     "id": "a1_0093",
@@ -1602,7 +1694,8 @@
     "page": 11,
     "meaning_en": "start",
     "meaning_tr": "başlangıç",
-    "meaning_es": "comenzar"
+    "meaning_es": "comenzar",
+    "meaning_ar": "يبدأ"
   },
   {
     "id": "a1_0094",
@@ -1622,7 +1715,8 @@
     "page": 11,
     "meaning_en": "at",
     "meaning_tr": "en",
-    "meaning_es": "en"
+    "meaning_es": "en",
+    "meaning_ar": "في"
   },
   {
     "id": "a1_0095",
@@ -1640,7 +1734,8 @@
     "page": 11,
     "meaning_en": "both",
     "meaning_tr": "ikisi birden",
-    "meaning_es": "ambos"
+    "meaning_es": "ambos",
+    "meaning_ar": "كلاهما"
   },
   {
     "id": "a1_0096",
@@ -1657,7 +1752,8 @@
     "page": 11,
     "meaning_en": "the leg, -e",
     "meaning_tr": "bacak, -e",
-    "meaning_es": "la pierna, -e"
+    "meaning_es": "la pierna, -e",
+    "meaning_ar": "الساق، -ه"
   },
   {
     "id": "a1_0097",
@@ -1674,7 +1770,8 @@
     "page": 11,
     "meaning_en": "the example, -e",
     "meaning_tr": "örnek, -e",
-    "meaning_es": "el ejemplo, -e"
+    "meaning_es": "el ejemplo, -e",
+    "meaning_ar": "المثال، -ه"
   },
   {
     "id": "a1_0098",
@@ -1692,7 +1789,8 @@
     "page": 11,
     "meaning_en": "for example/e.g. b.",
     "meaning_tr": "örneğin/ör. B.",
-    "meaning_es": "por ejemplo/p.ej. b."
+    "meaning_es": "por ejemplo/p.ej. b.",
+    "meaning_ar": "على سبيل المثال / على سبيل المثال ب."
   },
   {
     "id": "a1_0099",
@@ -1709,7 +1807,8 @@
     "page": 11,
     "meaning_en": "known",
     "meaning_tr": "bilinen",
-    "meaning_es": "conocido"
+    "meaning_es": "conocido",
+    "meaning_ar": "معروف"
   },
   {
     "id": "a1_0100",
@@ -1726,7 +1825,8 @@
     "page": 11,
     "meaning_en": "the acquaintance",
     "meaning_tr": "tanıdık",
-    "meaning_es": "el conocido"
+    "meaning_es": "el conocido",
+    "meaning_ar": "التعارف"
   },
   {
     "id": "a1_0101",
@@ -1745,7 +1845,8 @@
     "page": 11,
     "meaning_en": "receive",
     "meaning_tr": "almak",
-    "meaning_es": "recibir"
+    "meaning_es": "recibir",
+    "meaning_ar": "يستلم"
   },
   {
     "id": "a1_0102",
@@ -1762,7 +1863,8 @@
     "page": 11,
     "meaning_en": "use",
     "meaning_tr": "kullanmak",
-    "meaning_es": "usar"
+    "meaning_es": "usar",
+    "meaning_ar": "يستخدم"
   },
   {
     "id": "a1_0103",
@@ -1780,7 +1882,8 @@
     "page": 11,
     "meaning_en": "the profession, -e",
     "meaning_tr": "meslek, -e",
-    "meaning_es": "la profesión, -e"
+    "meaning_es": "la profesión, -e",
+    "meaning_ar": "المهنة -ه"
   },
   {
     "id": "a1_0104",
@@ -1798,7 +1901,8 @@
     "page": 11,
     "meaning_en": "occupied",
     "meaning_tr": "dolu",
-    "meaning_es": "ocupado"
+    "meaning_es": "ocupado",
+    "meaning_ar": "مشغول"
   },
   {
     "id": "a1_0105",
@@ -1815,7 +1919,8 @@
     "page": 11,
     "meaning_en": "view",
     "meaning_tr": "görüş",
-    "meaning_es": "vista"
+    "meaning_es": "vista",
+    "meaning_ar": "منظر"
   },
   {
     "id": "a1_0106",
@@ -1832,7 +1937,8 @@
     "page": 11,
     "meaning_en": "better",
     "meaning_tr": "daha iyi",
-    "meaning_es": "mejor"
+    "meaning_es": "mejor",
+    "meaning_ar": "أحسن"
   },
   {
     "id": "a1_0107",
@@ -1849,7 +1955,8 @@
     "page": 11,
     "meaning_en": "best-",
     "meaning_tr": "en iyi-",
-    "meaning_es": "mejor-"
+    "meaning_es": "mejor-",
+    "meaning_ar": "أفضل-"
   },
   {
     "id": "a1_0108",
@@ -1867,7 +1974,8 @@
     "page": 11,
     "meaning_en": "order",
     "meaning_tr": "emir",
-    "meaning_es": "orden"
+    "meaning_es": "orden",
+    "meaning_ar": "طلب"
   },
   {
     "id": "a1_0109",
@@ -1884,7 +1992,8 @@
     "page": 11,
     "meaning_en": "visit",
     "meaning_tr": "ziyaret etmek",
-    "meaning_es": "visita"
+    "meaning_es": "visita",
+    "meaning_ar": "يزور"
   },
   {
     "id": "a1_0110",
@@ -1901,7 +2010,8 @@
     "page": 11,
     "meaning_en": "the bed, -en",
     "meaning_tr": "yatak, -tr",
-    "meaning_es": "la cama"
+    "meaning_es": "la cama",
+    "meaning_ar": "السرير، -en"
   },
   {
     "id": "a1_0111",
@@ -1918,7 +2028,8 @@
     "page": 11,
     "meaning_en": "pay",
     "meaning_tr": "ödemek",
-    "meaning_es": "pagar"
+    "meaning_es": "pagar",
+    "meaning_ar": "يدفع"
   },
   {
     "id": "a1_0112",
@@ -1935,7 +2046,8 @@
     "page": 11,
     "meaning_en": "the beer",
     "meaning_tr": "bira",
-    "meaning_es": "la cerveza"
+    "meaning_es": "la cerveza",
+    "meaning_ar": "البيرة"
   },
   {
     "id": "a1_0113",
@@ -1952,7 +2064,8 @@
     "page": 11,
     "meaning_en": "the picture, -er",
     "meaning_tr": "resim, -er",
-    "meaning_es": "la foto, -eh"
+    "meaning_es": "la foto, -eh",
+    "meaning_ar": "الصورة، -إيه"
   },
   {
     "id": "a1_0114",
@@ -1967,7 +2080,8 @@
     "page": 11,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0115",
@@ -1985,7 +2099,8 @@
     "page": 11,
     "meaning_en": "cheap",
     "meaning_tr": "ucuz",
-    "meaning_es": "barato"
+    "meaning_es": "barato",
+    "meaning_ar": "رخيص"
   },
   {
     "id": "a1_0116",
@@ -2002,7 +2117,8 @@
     "page": 12,
     "meaning_en": "the pear, -n",
     "meaning_tr": "armut, -n",
-    "meaning_es": "la pera, -n"
+    "meaning_es": "la pera, -n",
+    "meaning_ar": "الكمثرى، -ن"
   },
   {
     "id": "a1_0117",
@@ -2020,7 +2136,8 @@
     "page": 12,
     "meaning_en": "until",
     "meaning_tr": "değin",
-    "meaning_es": "hasta"
+    "meaning_es": "hasta",
+    "meaning_ar": "حتى"
   },
   {
     "id": "a1_0118",
@@ -2037,7 +2154,8 @@
     "page": 12,
     "meaning_en": "a little",
     "meaning_tr": "biraz",
-    "meaning_es": "un poco"
+    "meaning_es": "un poco",
+    "meaning_ar": "قليلا"
   },
   {
     "id": "a1_0119",
@@ -2055,7 +2173,8 @@
     "page": 12,
     "meaning_en": "please",
     "meaning_tr": "Lütfen",
-    "meaning_es": "por favor"
+    "meaning_es": "por favor",
+    "meaning_ar": "لو سمحت"
   },
   {
     "id": "a1_0120",
@@ -2072,7 +2191,8 @@
     "page": 12,
     "meaning_en": "the request, -n",
     "meaning_tr": "istek, -n",
-    "meaning_es": "la solicitud, -n"
+    "meaning_es": "la solicitud, -n",
+    "meaning_ar": "الطلب، -ن"
   },
   {
     "id": "a1_0121",
@@ -2089,7 +2209,8 @@
     "page": 12,
     "meaning_en": "ask",
     "meaning_tr": "sormak",
-    "meaning_es": "preguntar"
+    "meaning_es": "preguntar",
+    "meaning_ar": "بسأل"
   },
   {
     "id": "a1_0122",
@@ -2106,7 +2227,8 @@
     "page": 12,
     "meaning_en": "bitter",
     "meaning_tr": "acı",
-    "meaning_es": "amargo"
+    "meaning_es": "amargo",
+    "meaning_ar": "مر"
   },
   {
     "id": "a1_0123",
@@ -2124,7 +2246,8 @@
     "page": 12,
     "meaning_en": "remain",
     "meaning_tr": "geriye kalmak",
-    "meaning_es": "permanecer"
+    "meaning_es": "permanecer",
+    "meaning_ar": "يبقى"
   },
   {
     "id": "a1_0124",
@@ -2141,7 +2264,8 @@
     "page": 12,
     "meaning_en": "the pencil, -e",
     "meaning_tr": "kalem, -e",
-    "meaning_es": "el lápiz, -e"
+    "meaning_es": "el lápiz, -e",
+    "meaning_ar": "قلم الرصاص، -ه"
   },
   {
     "id": "a1_0125",
@@ -2158,7 +2282,8 @@
     "page": 12,
     "meaning_en": "the view",
     "meaning_tr": "görünüm",
-    "meaning_es": "la vista"
+    "meaning_es": "la vista",
+    "meaning_ar": "المنظر"
   },
   {
     "id": "a1_0126",
@@ -2175,7 +2300,8 @@
     "page": 12,
     "meaning_en": "die Blume, -n",
     "meaning_tr": "çiçek, -n",
-    "meaning_es": "la flor, -n"
+    "meaning_es": "la flor, -n",
+    "meaning_ar": "الزهرة، -ن"
   },
   {
     "id": "a1_0127",
@@ -2192,7 +2318,8 @@
     "page": 12,
     "meaning_en": "the bow",
     "meaning_tr": "yay",
-    "meaning_es": "el arco"
+    "meaning_es": "el arco",
+    "meaning_ar": "القوس"
   },
   {
     "id": "a1_0128",
@@ -2209,7 +2336,8 @@
     "page": 12,
     "meaning_en": "evil",
     "meaning_tr": "fenalık",
-    "meaning_es": "demonio"
+    "meaning_es": "demonio",
+    "meaning_ar": "شر"
   },
   {
     "id": "a1_0129",
@@ -2226,7 +2354,8 @@
     "page": 12,
     "meaning_en": "need",
     "meaning_tr": "ihtiyaç",
-    "meaning_es": "necesidad"
+    "meaning_es": "necesidad",
+    "meaning_ar": "يحتاج"
   },
   {
     "id": "a1_0130",
@@ -2243,7 +2372,8 @@
     "page": 12,
     "meaning_en": "broad",
     "meaning_tr": "geniş",
-    "meaning_es": "amplio"
+    "meaning_es": "amplio",
+    "meaning_ar": "واسع"
   },
   {
     "id": "a1_0131",
@@ -2260,7 +2390,8 @@
     "page": 12,
     "meaning_en": "the letter, -e",
     "meaning_tr": "harf, -e",
-    "meaning_es": "la letra, -e"
+    "meaning_es": "la letra, -e",
+    "meaning_ar": "الرسالة -ه"
   },
   {
     "id": "a1_0132",
@@ -2277,7 +2408,8 @@
     "page": 12,
     "meaning_en": "the stamp, -n",
     "meaning_tr": "damga, -n",
-    "meaning_es": "el sello, -n"
+    "meaning_es": "el sello, -n",
+    "meaning_ar": "الختم، -ن"
   },
   {
     "id": "a1_0133",
@@ -2295,7 +2427,8 @@
     "page": 12,
     "meaning_en": "bring",
     "meaning_tr": "getirmek",
-    "meaning_es": "traer"
+    "meaning_es": "traer",
+    "meaning_ar": "يحضر"
   },
   {
     "id": "a1_0134",
@@ -2313,7 +2446,8 @@
     "page": 12,
     "meaning_en": "the bread, -e",
     "meaning_tr": "ekmek, -e",
-    "meaning_es": "el pan, -e"
+    "meaning_es": "el pan, -e",
+    "meaning_ar": "الخبز، -ه"
   },
   {
     "id": "a1_0135",
@@ -2330,7 +2464,8 @@
     "page": 12,
     "meaning_en": "the bread bun, -",
     "meaning_tr": "ekmek çöreği, -",
-    "meaning_es": "el bollo de pan, -"
+    "meaning_es": "el bollo de pan, -",
+    "meaning_ar": "كعكة الخبز، -"
   },
   {
     "id": "a1_0136",
@@ -2347,7 +2482,8 @@
     "page": 12,
     "meaning_en": "the brother, -ü",
     "meaning_tr": "erkek kardeş, -ü",
-    "meaning_es": "el hermano, -ü"
+    "meaning_es": "el hermano, -ü",
+    "meaning_ar": "الأخ -"
   },
   {
     "id": "a1_0137",
@@ -2365,7 +2501,8 @@
     "page": 12,
     "meaning_en": "the book, -ü, he",
     "meaning_tr": "kitap, -ü, o",
-    "meaning_es": "el libro, -ü, él"
+    "meaning_es": "el libro, -ü, él",
+    "meaning_ar": "الكتاب، -ü، هو"
   },
   {
     "id": "a1_0138",
@@ -2382,7 +2519,8 @@
     "page": 12,
     "meaning_en": "the letter, -n",
     "meaning_tr": "harf, -n",
-    "meaning_es": "la letra, -n"
+    "meaning_es": "la letra, -n",
+    "meaning_ar": "الرسالة، -ن"
   },
   {
     "id": "a1_0139",
@@ -2399,7 +2537,8 @@
     "page": 12,
     "meaning_en": "spell",
     "meaning_tr": "hecelemek",
-    "meaning_es": "deletrear"
+    "meaning_es": "deletrear",
+    "meaning_ar": "يتهجى"
   },
   {
     "id": "a1_0140",
@@ -2416,7 +2555,8 @@
     "page": 12,
     "meaning_en": "the bus, -se",
     "meaning_tr": "otobüs, -se",
-    "meaning_es": "el autobús, -se"
+    "meaning_es": "el autobús, -se",
+    "meaning_ar": "الحافلة، -se"
   },
   {
     "id": "a1_0141",
@@ -2433,7 +2573,8 @@
     "page": 12,
     "meaning_en": "the butter",
     "meaning_tr": "tereyağı",
-    "meaning_es": "la mantequilla"
+    "meaning_es": "la mantequilla",
+    "meaning_ar": "الزبدة"
   },
   {
     "id": "a1_0142",
@@ -2448,7 +2589,8 @@
     "page": 12,
     "meaning_en": "c",
     "meaning_tr": "C",
-    "meaning_es": "do"
+    "meaning_es": "do",
+    "meaning_ar": "ج"
   },
   {
     "id": "a1_0143",
@@ -2465,7 +2607,8 @@
     "page": 12,
     "meaning_en": "the cafe, -s",
     "meaning_tr": "kafe, -s",
-    "meaning_es": "el café, -s"
+    "meaning_es": "el café, -s",
+    "meaning_ar": "المقهى -س"
   },
   {
     "id": "a1_0144",
@@ -2482,7 +2625,8 @@
     "page": 12,
     "meaning_en": "the CD, -s",
     "meaning_tr": "CD, -s",
-    "meaning_es": "el CD, -s"
+    "meaning_es": "el CD, -s",
+    "meaning_ar": "القرص المضغوط، -s"
   },
   {
     "id": "a1_0145",
@@ -2499,7 +2643,8 @@
     "page": 12,
     "meaning_en": "the boss",
     "meaning_tr": "patron",
-    "meaning_es": "el jefe"
+    "meaning_es": "el jefe",
+    "meaning_ar": "الرئيس"
   },
   {
     "id": "a1_0146",
@@ -2516,7 +2661,8 @@
     "page": 12,
     "meaning_en": "circa/approx.",
     "meaning_tr": "yaklaşık/yaklaşık.",
-    "meaning_es": "alrededor/aprox."
+    "meaning_es": "alrededor/aprox.",
+    "meaning_ar": "حوالي / تقريبا."
   },
   {
     "id": "a1_0147",
@@ -2533,7 +2679,8 @@
     "page": 12,
     "meaning_en": "the computer, -",
     "meaning_tr": "bilgisayar, -",
-    "meaning_es": "la computadora, -"
+    "meaning_es": "la computadora, -",
+    "meaning_ar": "الكمبيوتر، -"
   },
   {
     "id": "a1_0148",
@@ -2554,7 +2701,8 @@
     "page": 12,
     "meaning_en": "there",
     "meaning_tr": "Orası",
-    "meaning_es": "allá"
+    "meaning_es": "allá",
+    "meaning_ar": "هناك"
   },
   {
     "id": "a1_0149",
@@ -2571,7 +2719,8 @@
     "page": 12,
     "meaning_en": "the lady, -n",
     "meaning_tr": "bayan, -n",
-    "meaning_es": "la dama, -n"
+    "meaning_es": "la dama, -n",
+    "meaning_ar": "السيدة، -ن"
   },
   {
     "id": "a1_0150",
@@ -2588,7 +2737,8 @@
     "page": 12,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0151",
@@ -2606,7 +2756,8 @@
     "page": 13,
     "meaning_en": "next to it",
     "meaning_tr": "onun yanında",
-    "meaning_es": "al lado de él"
+    "meaning_es": "al lado de él",
+    "meaning_ar": "بجانبه"
   },
   {
     "id": "a1_0152",
@@ -2623,7 +2774,8 @@
     "page": 13,
     "meaning_en": "thank",
     "meaning_tr": "teşekkür etmek",
-    "meaning_es": "agradecer"
+    "meaning_es": "agradecer",
+    "meaning_ar": "شكر"
   },
   {
     "id": "a1_0153",
@@ -2641,7 +2793,8 @@
     "page": 13,
     "meaning_en": "the thanks",
     "meaning_tr": "teşekkürler",
-    "meaning_es": "el agradecimiento"
+    "meaning_es": "el agradecimiento",
+    "meaning_ar": "الشكر"
   },
   {
     "id": "a1_0154",
@@ -2659,7 +2812,8 @@
     "page": 13,
     "meaning_en": "Thanks",
     "meaning_tr": "Teşekkürler",
-    "meaning_es": "Gracias"
+    "meaning_es": "Gracias",
+    "meaning_ar": "شكرًا"
   },
   {
     "id": "a1_0155",
@@ -2676,7 +2830,8 @@
     "page": 13,
     "meaning_en": "then",
     "meaning_tr": "Daha sonra",
-    "meaning_es": "entonces"
+    "meaning_es": "entonces",
+    "meaning_ar": "ثم"
   },
   {
     "id": "a1_0156",
@@ -2693,7 +2848,8 @@
     "page": 13,
     "meaning_en": "the date",
     "meaning_tr": "tarih",
-    "meaning_es": "la fecha"
+    "meaning_es": "la fecha",
+    "meaning_ar": "التاريخ"
   },
   {
     "id": "a1_0157",
@@ -2710,7 +2866,8 @@
     "page": 13,
     "meaning_en": "last",
     "meaning_tr": "son",
-    "meaning_es": "último"
+    "meaning_es": "último",
+    "meaning_ar": "آخر"
   },
   {
     "id": "a1_0158",
@@ -2728,7 +2885,8 @@
     "page": 13,
     "meaning_en": "your-",
     "meaning_tr": "senin-",
-    "meaning_es": "su-"
+    "meaning_es": "su-",
+    "meaning_ar": "لك-"
   },
   {
     "id": "a1_0159",
@@ -2745,7 +2903,8 @@
     "page": 13,
     "meaning_en": "because",
     "meaning_tr": "Çünkü",
-    "meaning_es": "porque"
+    "meaning_es": "porque",
+    "meaning_ar": "لأن"
   },
   {
     "id": "a1_0160",
@@ -2764,7 +2923,8 @@
     "page": 13,
     "meaning_en": "the, the, that",
     "meaning_tr": "o, o, o",
-    "meaning_es": "el, el, ese"
+    "meaning_es": "el, el, ese",
+    "meaning_ar": "ال، ذلك"
   },
   {
     "id": "a1_0161",
@@ -2781,7 +2941,8 @@
     "page": 13,
     "meaning_en": "you",
     "meaning_tr": "Sen",
-    "meaning_es": "tú"
+    "meaning_es": "tú",
+    "meaning_ar": "أنت"
   },
   {
     "id": "a1_0162",
@@ -2798,7 +2959,8 @@
     "page": 13,
     "meaning_en": "this-",
     "meaning_tr": "Bu-",
-    "meaning_es": "este-"
+    "meaning_es": "este-",
+    "meaning_ar": "هذا-"
   },
   {
     "id": "a1_0163",
@@ -2815,7 +2977,8 @@
     "page": 13,
     "meaning_en": "you",
     "meaning_tr": "Sen",
-    "meaning_es": "tú"
+    "meaning_es": "tú",
+    "meaning_ar": "أنت"
   },
   {
     "id": "a1_0164",
@@ -2832,7 +2995,8 @@
     "page": 13,
     "meaning_en": "the disco",
     "meaning_tr": "disko",
-    "meaning_es": "la discoteca"
+    "meaning_es": "la discoteca",
+    "meaning_ar": "الديسكو"
   },
   {
     "id": "a1_0165",
@@ -2850,7 +3014,8 @@
     "page": 13,
     "meaning_en": "the doctor",
     "meaning_tr": "doktor",
-    "meaning_es": "el doctor"
+    "meaning_es": "el doctor",
+    "meaning_ar": "الطبيب"
   },
   {
     "id": "a1_0166",
@@ -2867,7 +3032,8 @@
     "page": 13,
     "meaning_en": "the double room",
     "meaning_tr": "çift ​​kişilik oda",
-    "meaning_es": "la habitación doble"
+    "meaning_es": "la habitación doble",
+    "meaning_ar": "الغرفة المزدوجة"
   },
   {
     "id": "a1_0167",
@@ -2884,7 +3050,8 @@
     "page": 13,
     "meaning_en": "the village, -ö, he",
     "meaning_tr": "köy, -ö, o",
-    "meaning_es": "el pueblo, -ö, él"
+    "meaning_es": "el pueblo, -ö, él",
+    "meaning_ar": "القرية، -ö، هو"
   },
   {
     "id": "a1_0168",
@@ -2902,7 +3069,8 @@
     "page": 13,
     "meaning_en": "there, here, there",
     "meaning_tr": "orada, burada, orada",
-    "meaning_es": "allí, aquí, allí"
+    "meaning_es": "allí, aquí, allí",
+    "meaning_ar": "هناك، هنا، هناك"
   },
   {
     "id": "a1_0169",
@@ -2919,7 +3087,8 @@
     "page": 13,
     "meaning_en": "outside",
     "meaning_tr": "dıştan",
-    "meaning_es": "afuera"
+    "meaning_es": "afuera",
+    "meaning_ar": "الخارج"
   },
   {
     "id": "a1_0170",
@@ -2936,7 +3105,8 @@
     "page": 13,
     "meaning_en": "press",
     "meaning_tr": "basmak",
-    "meaning_es": "prensa"
+    "meaning_es": "prensa",
+    "meaning_ar": "يضعط"
   },
   {
     "id": "a1_0171",
@@ -2953,7 +3123,8 @@
     "page": 13,
     "meaning_en": "the printer, –",
     "meaning_tr": "yazıcı, –",
-    "meaning_es": "la impresora, –"
+    "meaning_es": "la impresora, –",
+    "meaning_ar": "الطابعة، –"
   },
   {
     "id": "a1_0172",
@@ -2970,7 +3141,8 @@
     "page": 13,
     "meaning_en": "press",
     "meaning_tr": "basmak",
-    "meaning_es": "prensa"
+    "meaning_es": "prensa",
+    "meaning_ar": "يضعط"
   },
   {
     "id": "a1_0173",
@@ -2987,7 +3159,8 @@
     "page": 13,
     "meaning_en": "through",
     "meaning_tr": "başından sonuna kadar",
-    "meaning_es": "a través de"
+    "meaning_es": "a través de",
+    "meaning_ar": "خلال"
   },
   {
     "id": "a1_0174",
@@ -3004,7 +3177,8 @@
     "page": 13,
     "meaning_en": "the announcement, -n",
     "meaning_tr": "duyuru, -n",
-    "meaning_es": "el anuncio, -n"
+    "meaning_es": "el anuncio, -n",
+    "meaning_ar": "الإعلان، -ن"
   },
   {
     "id": "a1_0175",
@@ -3023,7 +3197,8 @@
     "page": 13,
     "meaning_en": "may",
     "meaning_tr": "mayıs",
-    "meaning_es": "puede"
+    "meaning_es": "puede",
+    "meaning_ar": "يمكن"
   },
   {
     "id": "a1_0176",
@@ -3041,7 +3216,8 @@
     "page": 13,
     "meaning_en": "the thirst",
     "meaning_tr": "susuzluk",
-    "meaning_es": "la sed"
+    "meaning_es": "la sed",
+    "meaning_ar": "العطش"
   },
   {
     "id": "a1_0177",
@@ -3058,7 +3234,8 @@
     "page": 13,
     "meaning_en": "(take a shower",
     "meaning_tr": "(duş al",
-    "meaning_es": "(tomar una ducha"
+    "meaning_es": "(tomar una ducha",
+    "meaning_ar": "(الاستحمام"
   },
   {
     "id": "a1_0178",
@@ -3075,7 +3252,8 @@
     "page": 13,
     "meaning_en": "the shower",
     "meaning_tr": "duş",
-    "meaning_es": "la ducha"
+    "meaning_es": "la ducha",
+    "meaning_ar": "الحمام"
   },
   {
     "id": "a1_0179",
@@ -3090,7 +3268,8 @@
     "page": 13,
     "meaning_en": "e",
     "meaning_tr": "e",
-    "meaning_es": "mi"
+    "meaning_es": "mi",
+    "meaning_ar": "ه"
   },
   {
     "id": "a1_0180",
@@ -3107,7 +3286,8 @@
     "page": 13,
     "meaning_en": "the corner, -n",
     "meaning_tr": "köşe, -n",
-    "meaning_es": "la esquina, -n"
+    "meaning_es": "la esquina, -n",
+    "meaning_ar": "الزاوية، -ن"
   },
   {
     "id": "a1_0181",
@@ -3122,7 +3302,8 @@
     "page": 13,
     "meaning_en": "the wife, -en/",
     "meaning_tr": "karısı, -tr/",
-    "meaning_es": "la esposa, -es/"
+    "meaning_es": "la esposa, -es/",
+    "meaning_ar": "الزوجة -en/"
   },
   {
     "id": "a1_0182",
@@ -3139,7 +3320,8 @@
     "page": 13,
     "meaning_en": "the husband, er, he",
     "meaning_tr": "kocası, yani, o",
-    "meaning_es": "el marido, eh, él"
+    "meaning_es": "el marido, eh, él",
+    "meaning_ar": "الزوج، إيه، هو"
   },
   {
     "id": "a1_0183",
@@ -3156,7 +3338,8 @@
     "page": 13,
     "meaning_en": "the egg, -er",
     "meaning_tr": "yumurta, -er",
-    "meaning_es": "el huevo, -er"
+    "meaning_es": "el huevo, -er",
+    "meaning_ar": "البيضة، -إيه"
   },
   {
     "id": "a1_0184",
@@ -3173,7 +3356,8 @@
     "page": 13,
     "meaning_en": "hurry",
     "meaning_tr": "acele etmek",
-    "meaning_es": "apurarse"
+    "meaning_es": "apurarse",
+    "meaning_ar": "عجل"
   },
   {
     "id": "a1_0185",
@@ -3192,7 +3376,8 @@
     "page": 13,
     "meaning_en": "a-",
     "meaning_tr": "A-",
-    "meaning_es": "a-"
+    "meaning_es": "a-",
+    "meaning_ar": "أ-"
   },
   {
     "id": "a1_0186",
@@ -3212,7 +3397,8 @@
     "page": 13,
     "meaning_en": "simply",
     "meaning_tr": "basitçe",
-    "meaning_es": "simplemente"
+    "meaning_es": "simplemente",
+    "meaning_ar": "ببساطة"
   },
   {
     "id": "a1_0187",
@@ -3229,7 +3415,8 @@
     "page": 13,
     "meaning_en": "the entrance",
     "meaning_tr": "giriş",
-    "meaning_es": "la entrada"
+    "meaning_es": "la entrada",
+    "meaning_ar": "المدخل"
   },
   {
     "id": "a1_0188",
@@ -3246,7 +3433,8 @@
     "page": 13,
     "meaning_en": "shopping",
     "meaning_tr": "alışveriş",
-    "meaning_es": "compras"
+    "meaning_es": "compras",
+    "meaning_ar": "التسوق"
   },
   {
     "id": "a1_0189",
@@ -3263,7 +3451,8 @@
     "page": 13,
     "meaning_en": "invite",
     "meaning_tr": "davet etmek",
-    "meaning_es": "invitar"
+    "meaning_es": "invitar",
+    "meaning_ar": "يدعو"
   },
   {
     "id": "a1_0190",
@@ -3278,7 +3467,8 @@
     "page": 13,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0191",
@@ -3295,7 +3485,8 @@
     "page": 13,
     "meaning_en": "the invitation",
     "meaning_tr": "davet",
-    "meaning_es": "la invitación"
+    "meaning_es": "la invitación",
+    "meaning_ar": "الدعوة"
   },
   {
     "id": "a1_0192",
@@ -3312,7 +3503,8 @@
     "page": 14,
     "meaning_en": "once",
     "meaning_tr": "bir kere",
-    "meaning_es": "una vez"
+    "meaning_es": "una vez",
+    "meaning_ar": "مرة واحدة"
   },
   {
     "id": "a1_0193",
@@ -3329,7 +3521,8 @@
     "page": 14,
     "meaning_en": "get in",
     "meaning_tr": "Alın",
-    "meaning_es": "Entra"
+    "meaning_es": "Entra",
+    "meaning_ar": "أدخل"
   },
   {
     "id": "a1_0194",
@@ -3346,7 +3539,8 @@
     "page": 14,
     "meaning_en": "the entry",
     "meaning_tr": "giriş",
-    "meaning_es": "la entrada"
+    "meaning_es": "la entrada",
+    "meaning_ar": "الدخول"
   },
   {
     "id": "a1_0195",
@@ -3363,7 +3557,8 @@
     "page": 14,
     "meaning_en": "the single room",
     "meaning_tr": "tek kişilik oda",
-    "meaning_es": "la habitación individual"
+    "meaning_es": "la habitación individual",
+    "meaning_ar": "الغرفة المفردة"
   },
   {
     "id": "a1_0196",
@@ -3380,7 +3575,8 @@
     "page": 14,
     "meaning_en": "the parents (pl.)",
     "meaning_tr": "ebeveynler (pl.)",
-    "meaning_es": "los padres (pl.)"
+    "meaning_es": "los padres (pl.)",
+    "meaning_ar": "الوالدين (ر.)"
   },
   {
     "id": "a1_0197",
@@ -3397,7 +3593,8 @@
     "page": 14,
     "meaning_en": "the email, -s",
     "meaning_tr": "e-posta, -s",
-    "meaning_es": "el correo electrónico, -s"
+    "meaning_es": "el correo electrónico, -s",
+    "meaning_ar": "البريد الإلكتروني، -s"
   },
   {
     "id": "a1_0198",
@@ -3414,7 +3611,8 @@
     "page": 14,
     "meaning_en": "the recipient, –",
     "meaning_tr": "alıcı, –",
-    "meaning_es": "el destinatario, –"
+    "meaning_es": "el destinatario, –",
+    "meaning_ar": "المتلقي،-"
   },
   {
     "id": "a1_0199",
@@ -3431,7 +3629,8 @@
     "page": 14,
     "meaning_en": "recommend",
     "meaning_tr": "tavsiye etmek",
-    "meaning_es": "recomendar"
+    "meaning_es": "recomendar",
+    "meaning_ar": "يوصي"
   },
   {
     "id": "a1_0200",
@@ -3448,7 +3647,8 @@
     "page": 14,
     "meaning_en": "end",
     "meaning_tr": "son",
-    "meaning_es": "fin"
+    "meaning_es": "fin",
+    "meaning_ar": "نهاية"
   },
   {
     "id": "a1_0201",
@@ -3466,7 +3666,8 @@
     "page": 14,
     "meaning_en": "the end",
     "meaning_tr": "son",
-    "meaning_es": "el fin"
+    "meaning_es": "el fin",
+    "meaning_ar": "النهاية"
   },
   {
     "id": "a1_0202",
@@ -3483,7 +3684,8 @@
     "page": 14,
     "meaning_en": "excuse",
     "meaning_tr": "mazeret",
-    "meaning_es": "disculpar"
+    "meaning_es": "disculpar",
+    "meaning_ar": "عذر"
   },
   {
     "id": "a1_0203",
@@ -3501,7 +3703,8 @@
     "page": 14,
     "meaning_en": "the apology",
     "meaning_tr": "özür",
-    "meaning_es": "la disculpa"
+    "meaning_es": "la disculpa",
+    "meaning_ar": "الاعتذار"
   },
   {
     "id": "a1_0204",
@@ -3518,7 +3721,8 @@
     "page": 14,
     "meaning_en": "he",
     "meaning_tr": "O",
-    "meaning_es": "él"
+    "meaning_es": "él",
+    "meaning_ar": "هو"
   },
   {
     "id": "a1_0205",
@@ -3535,7 +3739,8 @@
     "page": 14,
     "meaning_en": "the result, -se",
     "meaning_tr": "sonuç, -se",
-    "meaning_es": "el resultado, -se"
+    "meaning_es": "el resultado, -se",
+    "meaning_ar": "النتيجة، -se"
   },
   {
     "id": "a1_0206",
@@ -3552,7 +3757,8 @@
     "page": 14,
     "meaning_en": "explain",
     "meaning_tr": "açıklamak",
-    "meaning_es": "explicar"
+    "meaning_es": "explicar",
+    "meaning_ar": "يشرح"
   },
   {
     "id": "a1_0207",
@@ -3569,7 +3775,8 @@
     "page": 14,
     "meaning_en": "allow",
     "meaning_tr": "izin vermek",
-    "meaning_es": "permitir"
+    "meaning_es": "permitir",
+    "meaning_ar": "يسمح"
   },
   {
     "id": "a1_0208",
@@ -3586,7 +3793,8 @@
     "page": 14,
     "meaning_en": "the adult, -n",
     "meaning_tr": "yetişkin, -n",
-    "meaning_es": "el adulto, -n"
+    "meaning_es": "el adulto, -n",
+    "meaning_ar": "البالغ، -ن"
   },
   {
     "id": "a1_0209",
@@ -3603,7 +3811,8 @@
     "page": 14,
     "meaning_en": "tell",
     "meaning_tr": "söylemek",
-    "meaning_es": "decir"
+    "meaning_es": "decir",
+    "meaning_ar": "يخبر"
   },
   {
     "id": "a1_0210",
@@ -3620,7 +3829,8 @@
     "page": 14,
     "meaning_en": "it",
     "meaning_tr": "BT",
-    "meaning_es": "él"
+    "meaning_es": "él",
+    "meaning_ar": "هو - هي"
   },
   {
     "id": "a1_0211",
@@ -3637,7 +3847,8 @@
     "page": 14,
     "meaning_en": "eat",
     "meaning_tr": "yemek yemek",
-    "meaning_es": "comer"
+    "meaning_es": "comer",
+    "meaning_ar": "يأكل"
   },
   {
     "id": "a1_0212",
@@ -3654,7 +3865,8 @@
     "page": 14,
     "meaning_en": "the food",
     "meaning_tr": "yemek",
-    "meaning_es": "la comida"
+    "meaning_es": "la comida",
+    "meaning_ar": "الطعام"
   },
   {
     "id": "a1_0213",
@@ -3671,7 +3883,8 @@
     "page": 14,
     "meaning_en": "your",
     "meaning_tr": "senin",
-    "meaning_es": "su"
+    "meaning_es": "su",
+    "meaning_ar": "لك"
   },
   {
     "id": "a1_0214",
@@ -3688,7 +3901,8 @@
     "page": 14,
     "meaning_en": "drive",
     "meaning_tr": "sürmek",
-    "meaning_es": "conducir"
+    "meaning_es": "conducir",
+    "meaning_ar": "يقود"
   },
   {
     "id": "a1_0215",
@@ -3705,7 +3919,8 @@
     "page": 14,
     "meaning_en": "the driver",
     "meaning_tr": "sürücü",
-    "meaning_es": "el conductor"
+    "meaning_es": "el conductor",
+    "meaning_ar": "السائق"
   },
   {
     "id": "a1_0216",
@@ -3722,7 +3937,8 @@
     "page": 14,
     "meaning_en": "the ticket, -n",
     "meaning_tr": "bilet, -n",
-    "meaning_es": "el billete, -n"
+    "meaning_es": "el billete, -n",
+    "meaning_ar": "التذكرة، -ن"
   },
   {
     "id": "a1_0217",
@@ -3739,7 +3955,8 @@
     "page": 14,
     "meaning_en": "the bike, -ä, he",
     "meaning_tr": "bisiklet, -ä, o",
-    "meaning_es": "la bicicleta, -ä, él"
+    "meaning_es": "la bicicleta, -ä, él",
+    "meaning_ar": "الدراجة، -ä، هو"
   },
   {
     "id": "a1_0218",
@@ -3756,7 +3973,8 @@
     "page": 14,
     "meaning_en": "incorrect",
     "meaning_tr": "yanlış",
-    "meaning_es": "incorrecto"
+    "meaning_es": "incorrecto",
+    "meaning_ar": "غير صحيح"
   },
   {
     "id": "a1_0219",
@@ -3773,7 +3991,8 @@
     "page": 14,
     "meaning_en": "the family, -n",
     "meaning_tr": "aile, -n",
-    "meaning_es": "la familia, -n"
+    "meaning_es": "la familia, -n",
+    "meaning_ar": "الأسرة، -ن"
   },
   {
     "id": "a1_0220",
@@ -3790,7 +4009,8 @@
     "page": 14,
     "meaning_en": "the family name",
     "meaning_tr": "aile adı",
-    "meaning_es": "el apellido"
+    "meaning_es": "el apellido",
+    "meaning_ar": "اسم العائلة"
   },
   {
     "id": "a1_0221",
@@ -3807,7 +4027,8 @@
     "page": 14,
     "meaning_en": "the marital status",
     "meaning_tr": "medeni durum",
-    "meaning_es": "el estado civil"
+    "meaning_es": "el estado civil",
+    "meaning_ar": "الحالة الاجتماعية"
   },
   {
     "id": "a1_0222",
@@ -3824,7 +4045,8 @@
     "page": 14,
     "meaning_en": "the color, -n",
     "meaning_tr": "renk, -n",
-    "meaning_es": "el color, -n"
+    "meaning_es": "el color, -n",
+    "meaning_ar": "اللون، -ن"
   },
   {
     "id": "a1_0223",
@@ -3841,7 +4063,8 @@
     "page": 14,
     "meaning_en": "das Fax, -e",
     "meaning_tr": "faks, -e",
-    "meaning_es": "el fax, -e"
+    "meaning_es": "el fax, -e",
+    "meaning_ar": "الفاكس، -ه"
   },
   {
     "id": "a1_0224",
@@ -3860,7 +4083,8 @@
     "page": 14,
     "meaning_en": "Celebration-",
     "meaning_tr": "Kutlama-",
-    "meaning_es": "Celebración-"
+    "meaning_es": "Celebración-",
+    "meaning_ar": "احتفال-"
   },
   {
     "id": "a1_0225",
@@ -3877,7 +4101,8 @@
     "page": 14,
     "meaning_en": "celebrate",
     "meaning_tr": "kutlamak",
-    "meaning_es": "celebrar"
+    "meaning_es": "celebrar",
+    "meaning_ar": "احتفل"
   },
   {
     "id": "a1_0226",
@@ -3895,7 +4120,8 @@
     "page": 14,
     "meaning_en": "miss",
     "meaning_tr": "kayıp",
-    "meaning_es": "extrañar"
+    "meaning_es": "extrañar",
+    "meaning_ar": "يفتقد"
   },
   {
     "id": "a1_0227",
@@ -3912,7 +4138,8 @@
     "page": 14,
     "meaning_en": "the error, –",
     "meaning_tr": "hata, –",
-    "meaning_es": "el error, –"
+    "meaning_es": "el error, –",
+    "meaning_ar": "الخطأ، –"
   },
   {
     "id": "a1_0228",
@@ -3929,7 +4156,8 @@
     "page": 14,
     "meaning_en": "TV",
     "meaning_tr": "TV",
-    "meaning_es": "TELEVISOR"
+    "meaning_es": "TELEVISOR",
+    "meaning_ar": "تلفزيون"
   },
   {
     "id": "a1_0229",
@@ -3947,7 +4175,8 @@
     "page": 14,
     "meaning_en": "complete",
     "meaning_tr": "tamamlamak",
-    "meaning_es": "completo"
+    "meaning_es": "completo",
+    "meaning_ar": "مكتمل"
   },
   {
     "id": "a1_0230",
@@ -3964,7 +4193,8 @@
     "page": 14,
     "meaning_en": "the fire",
     "meaning_tr": "ateş",
-    "meaning_es": "el fuego"
+    "meaning_es": "el fuego",
+    "meaning_ar": "النار"
   },
   {
     "id": "a1_0231",
@@ -3981,7 +4211,8 @@
     "page": 14,
     "meaning_en": "the fever",
     "meaning_tr": "ateş",
-    "meaning_es": "la fiebre"
+    "meaning_es": "la fiebre",
+    "meaning_ar": "الحمى"
   },
   {
     "id": "a1_0232",
@@ -3998,7 +4229,8 @@
     "page": 14,
     "meaning_en": "the film, -e",
     "meaning_tr": "film, -e",
-    "meaning_es": "la película, -e"
+    "meaning_es": "la película, -e",
+    "meaning_ar": "الفيلم -ه"
   },
   {
     "id": "a1_0233",
@@ -4015,7 +4247,8 @@
     "page": 14,
     "meaning_en": "find",
     "meaning_tr": "bulmak",
-    "meaning_es": "encontrar"
+    "meaning_es": "encontrar",
+    "meaning_ar": "يجد"
   },
   {
     "id": "a1_0234",
@@ -4032,7 +4265,8 @@
     "page": 14,
     "meaning_en": "the Company",
     "meaning_tr": "Şirket",
-    "meaning_es": "la empresa"
+    "meaning_es": "la empresa",
+    "meaning_ar": "الشركة"
   },
   {
     "id": "a1_0235",
@@ -4047,7 +4281,8 @@
     "page": 14,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0236",
@@ -4065,7 +4300,8 @@
     "page": 14,
     "meaning_en": "the fish, -e",
     "meaning_tr": "balık, -e",
-    "meaning_es": "el pescado, -e"
+    "meaning_es": "el pescado, -e",
+    "meaning_ar": "السمك، -ه"
   },
   {
     "id": "a1_0237",
@@ -4082,7 +4318,8 @@
     "page": 15,
     "meaning_en": "the bottle, -n",
     "meaning_tr": "şişe, -n",
-    "meaning_es": "la botella, -n"
+    "meaning_es": "la botella, -n",
+    "meaning_ar": "الزجاجة، -ن"
   },
   {
     "id": "a1_0238",
@@ -4099,7 +4336,8 @@
     "page": 15,
     "meaning_en": "the meat",
     "meaning_tr": "et",
-    "meaning_es": "la carne"
+    "meaning_es": "la carne",
+    "meaning_ar": "اللحوم"
   },
   {
     "id": "a1_0239",
@@ -4117,7 +4355,8 @@
     "page": 15,
     "meaning_en": "fly",
     "meaning_tr": "uçmak",
-    "meaning_es": "volar"
+    "meaning_es": "volar",
+    "meaning_ar": "سافر"
   },
   {
     "id": "a1_0240",
@@ -4134,7 +4373,8 @@
     "page": 15,
     "meaning_en": "fly off",
     "meaning_tr": "uçup gitmek",
-    "meaning_es": "desprenderse"
+    "meaning_es": "desprenderse",
+    "meaning_ar": "يطير بعيدا"
   },
   {
     "id": "a1_0241",
@@ -4151,7 +4391,8 @@
     "page": 15,
     "meaning_en": "the departure",
     "meaning_tr": "kalkış",
-    "meaning_es": "la salida"
+    "meaning_es": "la salida",
+    "meaning_ar": "المغادرة"
   },
   {
     "id": "a1_0242",
@@ -4168,7 +4409,8 @@
     "page": 15,
     "meaning_en": "the airport",
     "meaning_tr": "havaalanı",
-    "meaning_es": "el aeropuerto"
+    "meaning_es": "el aeropuerto",
+    "meaning_ar": "المطار"
   },
   {
     "id": "a1_0243",
@@ -4185,7 +4427,8 @@
     "page": 15,
     "meaning_en": "The plane",
     "meaning_tr": "Uçak",
-    "meaning_es": "el avion"
+    "meaning_es": "el avion",
+    "meaning_ar": "الطائرة"
   },
   {
     "id": "a1_0244",
@@ -4202,7 +4445,8 @@
     "page": 15,
     "meaning_en": "the form, -e",
     "meaning_tr": "form, -e",
-    "meaning_es": "la forma, -e"
+    "meaning_es": "la forma, -e",
+    "meaning_ar": "النموذج -ه"
   },
   {
     "id": "a1_0245",
@@ -4219,7 +4463,8 @@
     "page": 15,
     "meaning_en": "the photo, -s",
     "meaning_tr": "fotoğraf, -s",
-    "meaning_es": "la foto, -s"
+    "meaning_es": "la foto, -s",
+    "meaning_ar": "الصورة، -s"
   },
   {
     "id": "a1_0246",
@@ -4237,7 +4482,8 @@
     "page": 15,
     "meaning_en": "questions",
     "meaning_tr": "sorular",
-    "meaning_es": "preguntas"
+    "meaning_es": "preguntas",
+    "meaning_ar": "أسئلة"
   },
   {
     "id": "a1_0247",
@@ -4254,7 +4500,8 @@
     "page": 15,
     "meaning_en": "the questions",
     "meaning_tr": "sorular",
-    "meaning_es": "las preguntas"
+    "meaning_es": "las preguntas",
+    "meaning_ar": "الأسئلة"
   },
   {
     "id": "a1_0248",
@@ -4273,7 +4520,8 @@
     "page": 15,
     "meaning_en": "the women",
     "meaning_tr": "kadınlar",
-    "meaning_es": "las mujeres"
+    "meaning_es": "las mujeres",
+    "meaning_ar": "النساء"
   },
   {
     "id": "a1_0249",
@@ -4290,7 +4538,8 @@
     "page": 15,
     "meaning_en": "free",
     "meaning_tr": "özgür",
-    "meaning_es": "gratis"
+    "meaning_es": "gratis",
+    "meaning_ar": "حر"
   },
   {
     "id": "a1_0250",
@@ -4307,7 +4556,8 @@
     "page": 15,
     "meaning_en": "the free time",
     "meaning_tr": "boş zaman",
-    "meaning_es": "el tiempo libre"
+    "meaning_es": "el tiempo libre",
+    "meaning_ar": "وقت الفراغ"
   },
   {
     "id": "a1_0251",
@@ -4324,7 +4574,8 @@
     "page": 15,
     "meaning_en": "foreign",
     "meaning_tr": "yabancı",
-    "meaning_es": "extranjero"
+    "meaning_es": "extranjero",
+    "meaning_ar": "أجنبي"
   },
   {
     "id": "a1_0252",
@@ -4341,7 +4592,8 @@
     "page": 15,
     "meaning_en": "(rejoice",
     "meaning_tr": "(sevin",
-    "meaning_es": "(alegrarse"
+    "meaning_es": "(alegrarse",
+    "meaning_ar": "(افرح"
   },
   {
     "id": "a1_0253",
@@ -4359,7 +4611,8 @@
     "page": 15,
     "meaning_en": "the friend, -e",
     "meaning_tr": "arkadaş, -e",
-    "meaning_es": "el amigo, -e"
+    "meaning_es": "el amigo, -e",
+    "meaning_ar": "الصديق، -ه"
   },
   {
     "id": "a1_0254",
@@ -4376,7 +4629,8 @@
     "page": 15,
     "meaning_en": "earlier",
     "meaning_tr": "daha erken",
-    "meaning_es": "más temprano"
+    "meaning_es": "más temprano",
+    "meaning_ar": "سابقًا"
   },
   {
     "id": "a1_0255",
@@ -4393,7 +4647,8 @@
     "page": 15,
     "meaning_en": "have breakfast",
     "meaning_tr": "frühstücken",
-    "meaning_es": "desayunar"
+    "meaning_es": "desayunar",
+    "meaning_ar": "تناول وجبة الإفطار"
   },
   {
     "id": "a1_0256",
@@ -4410,7 +4665,8 @@
     "page": 15,
     "meaning_en": "the breakfast",
     "meaning_tr": "kahvaltı",
-    "meaning_es": "el desayuno"
+    "meaning_es": "el desayuno",
+    "meaning_ar": "الإفطار"
   },
   {
     "id": "a1_0257",
@@ -4427,7 +4683,8 @@
     "page": 15,
     "meaning_en": "the leadership",
     "meaning_tr": "liderlik",
-    "meaning_es": "el liderazgo"
+    "meaning_es": "el liderazgo",
+    "meaning_ar": "القيادة"
   },
   {
     "id": "a1_0258",
@@ -4446,7 +4703,8 @@
     "page": 15,
     "meaning_en": "for",
     "meaning_tr": "için",
-    "meaning_es": "para"
+    "meaning_es": "para",
+    "meaning_ar": "ل"
   },
   {
     "id": "a1_0259",
@@ -4463,7 +4721,8 @@
     "page": 15,
     "meaning_en": "the foot, -ü, e",
     "meaning_tr": "ayak, -ü, e",
-    "meaning_es": "el pie, -ü, e"
+    "meaning_es": "el pie, -ü, e",
+    "meaning_ar": "القدم، -ü، ه"
   },
   {
     "id": "a1_0260",
@@ -4480,7 +4739,8 @@
     "page": 15,
     "meaning_en": "the football",
     "meaning_tr": "futbol",
-    "meaning_es": "el futbol"
+    "meaning_es": "el futbol",
+    "meaning_ar": "كرة القدم"
   },
   {
     "id": "a1_0261",
@@ -4497,7 +4757,8 @@
     "page": 15,
     "meaning_en": "the garden",
     "meaning_tr": "bahçe",
-    "meaning_es": "el jardin"
+    "meaning_es": "el jardin",
+    "meaning_ar": "الحديقة"
   },
   {
     "id": "a1_0262",
@@ -4514,7 +4775,8 @@
     "page": 15,
     "meaning_en": "the guest, -ä, e",
     "meaning_tr": "misafir, -ä, e",
-    "meaning_es": "el invitado, -ä, e"
+    "meaning_es": "el invitado, -ä, e",
+    "meaning_ar": "الضيف، -أ، ه"
   },
   {
     "id": "a1_0263",
@@ -4532,7 +4794,8 @@
     "page": 15,
     "meaning_en": "give",
     "meaning_tr": "vermek",
-    "meaning_es": "dar"
+    "meaning_es": "dar",
+    "meaning_ar": "يعطي"
   },
   {
     "id": "a1_0264",
@@ -4549,7 +4812,8 @@
     "page": 15,
     "meaning_en": "born",
     "meaning_tr": "doğmak",
-    "meaning_es": "nacido"
+    "meaning_es": "nacido",
+    "meaning_ar": "وُلِدّ"
   },
   {
     "id": "a1_0265",
@@ -4566,7 +4830,8 @@
     "page": 15,
     "meaning_en": "the year of birth",
     "meaning_tr": "doğum yılı",
-    "meaning_es": "el año de nacimiento"
+    "meaning_es": "el año de nacimiento",
+    "meaning_ar": "سنة الميلاد"
   },
   {
     "id": "a1_0266",
@@ -4583,7 +4848,8 @@
     "page": 15,
     "meaning_en": "the place of birth",
     "meaning_tr": "doğum yeri",
-    "meaning_es": "el lugar de nacimiento"
+    "meaning_es": "el lugar de nacimiento",
+    "meaning_ar": "مكان الميلاد"
   },
   {
     "id": "a1_0267",
@@ -4600,7 +4866,8 @@
     "page": 15,
     "meaning_en": "the birthday",
     "meaning_tr": "doğum günü",
-    "meaning_es": "el cumpleaños"
+    "meaning_es": "el cumpleaños",
+    "meaning_ar": "عيد الميلاد"
   },
   {
     "id": "a1_0268",
@@ -4617,7 +4884,8 @@
     "page": 15,
     "meaning_en": "fallen",
     "meaning_tr": "düşmüş",
-    "meaning_es": "caído"
+    "meaning_es": "caído",
+    "meaning_ar": "سقط"
   },
   {
     "id": "a1_0269",
@@ -4636,7 +4904,8 @@
     "page": 15,
     "meaning_en": "against",
     "meaning_tr": "aykırı",
-    "meaning_es": "contra"
+    "meaning_es": "contra",
+    "meaning_ar": "ضد"
   },
   {
     "id": "a1_0270",
@@ -4657,7 +4926,8 @@
     "page": 15,
     "meaning_en": "go",
     "meaning_tr": "Gitmek",
-    "meaning_es": "ir"
+    "meaning_es": "ir",
+    "meaning_ar": "يذهب"
   },
   {
     "id": "a1_0271",
@@ -4674,7 +4944,8 @@
     "page": 15,
     "meaning_en": "belong",
     "meaning_tr": "ait olmak",
-    "meaning_es": "pertenecer"
+    "meaning_es": "pertenecer",
+    "meaning_ar": "ينتمي ل"
   },
   {
     "id": "a1_0272",
@@ -4691,7 +4962,8 @@
     "page": 15,
     "meaning_en": "the money",
     "meaning_tr": "para",
-    "meaning_es": "el dinero"
+    "meaning_es": "el dinero",
+    "meaning_ar": "المال"
   },
   {
     "id": "a1_0273",
@@ -4706,7 +4978,8 @@
     "page": 15,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0274",
@@ -4723,7 +4996,8 @@
     "page": 15,
     "meaning_en": "the vegetable",
     "meaning_tr": "sebze",
-    "meaning_es": "la verdura"
+    "meaning_es": "la verdura",
+    "meaning_ar": "الخضار"
   },
   {
     "id": "a1_0275",
@@ -4740,7 +5014,8 @@
     "page": 16,
     "meaning_en": "the luggage",
     "meaning_tr": "bagaj",
-    "meaning_es": "el equipaje"
+    "meaning_es": "el equipaje",
+    "meaning_ar": "الأمتعة"
   },
   {
     "id": "a1_0276",
@@ -4757,7 +5032,8 @@
     "page": 16,
     "meaning_en": "straight",
     "meaning_tr": "dümdüz",
-    "meaning_es": "derecho"
+    "meaning_es": "derecho",
+    "meaning_ar": "مستقيم"
   },
   {
     "id": "a1_0277",
@@ -4774,7 +5050,8 @@
     "page": 16,
     "meaning_en": "straight ahead",
     "meaning_tr": "dümdüz ileri",
-    "meaning_es": "todo derecho"
+    "meaning_es": "todo derecho",
+    "meaning_ar": "إلى الأمام مباشرة"
   },
   {
     "id": "a1_0278",
@@ -4791,7 +5068,8 @@
     "page": 16,
     "meaning_en": "gladly)",
     "meaning_tr": "memnuniyetle)",
-    "meaning_es": "con alegría)"
+    "meaning_es": "con alegría)",
+    "meaning_ar": "بكل سرور)"
   },
   {
     "id": "a1_0279",
@@ -4808,7 +5086,8 @@
     "page": 16,
     "meaning_en": "the business, -e",
     "meaning_tr": "iş, -e",
-    "meaning_es": "el negocio, -e"
+    "meaning_es": "el negocio, -e",
+    "meaning_ar": "الأعمال، -ه"
   },
   {
     "id": "a1_0280",
@@ -4825,7 +5104,8 @@
     "page": 16,
     "meaning_en": "the gift, -e",
     "meaning_tr": "hediye, -e",
-    "meaning_es": "el regalo, -e"
+    "meaning_es": "el regalo, -e",
+    "meaning_ar": "الهدية، -ه"
   },
   {
     "id": "a1_0281",
@@ -4842,7 +5122,8 @@
     "page": 16,
     "meaning_en": "the siblings (pl.)",
     "meaning_tr": "kardeşler (pl.)",
-    "meaning_es": "los hermanos (pl.)"
+    "meaning_es": "los hermanos (pl.)",
+    "meaning_ar": "الأخوة (ر.)"
   },
   {
     "id": "a1_0282",
@@ -4859,7 +5140,8 @@
     "page": 16,
     "meaning_en": "the conversation, -e",
     "meaning_tr": "konuşma, -e",
-    "meaning_es": "la conversación, -e"
+    "meaning_es": "la conversación, -e",
+    "meaning_ar": "المحادثة، -ه"
   },
   {
     "id": "a1_0283",
@@ -4876,7 +5158,8 @@
     "page": 16,
     "meaning_en": "yesterday",
     "meaning_tr": "Dün",
-    "meaning_es": "ayer"
+    "meaning_es": "ayer",
+    "meaning_ar": "أمس"
   },
   {
     "id": "a1_0284",
@@ -4893,7 +5176,8 @@
     "page": 16,
     "meaning_en": "died",
     "meaning_tr": "ölü",
-    "meaning_es": "fallecido"
+    "meaning_es": "fallecido",
+    "meaning_ar": "مات"
   },
   {
     "id": "a1_0285",
@@ -4910,7 +5194,8 @@
     "page": 16,
     "meaning_en": "the drink, -e",
     "meaning_tr": "içki, -e",
-    "meaning_es": "la bebida, -e"
+    "meaning_es": "la bebida, -e",
+    "meaning_ar": "الشراب، -ه"
   },
   {
     "id": "a1_0286",
@@ -4927,7 +5212,8 @@
     "page": 16,
     "meaning_en": "the weight",
     "meaning_tr": "ağırlık",
-    "meaning_es": "el peso"
+    "meaning_es": "el peso",
+    "meaning_ar": "الوزن"
   },
   {
     "id": "a1_0287",
@@ -4944,7 +5230,8 @@
     "page": 16,
     "meaning_en": "win",
     "meaning_tr": "kazanç",
-    "meaning_es": "ganar"
+    "meaning_es": "ganar",
+    "meaning_ar": "يفوز"
   },
   {
     "id": "a1_0288",
@@ -4962,7 +5249,8 @@
     "page": 16,
     "meaning_en": "the glass, -ä, he",
     "meaning_tr": "bardak, -ä, o",
-    "meaning_es": "el vaso, -ä, él"
+    "meaning_es": "el vaso, -ä, él",
+    "meaning_ar": "الزجاج، -ä، هو"
   },
   {
     "id": "a1_0289",
@@ -4980,7 +5268,8 @@
     "page": 16,
     "meaning_en": "believe",
     "meaning_tr": "inanmak",
-    "meaning_es": "creer"
+    "meaning_es": "creer",
+    "meaning_ar": "يعتقد"
   },
   {
     "id": "a1_0290",
@@ -4999,7 +5288,8 @@
     "page": 16,
     "meaning_en": "even",
     "meaning_tr": "eşit",
-    "meaning_es": "incluso"
+    "meaning_es": "incluso",
+    "meaning_ar": "حتى"
   },
   {
     "id": "a1_0291",
@@ -5016,7 +5306,8 @@
     "page": 16,
     "meaning_en": "the track, -e",
     "meaning_tr": "parça, -e",
-    "meaning_es": "la pista, -e"
+    "meaning_es": "la pista, -e",
+    "meaning_ar": "المسار، -e"
   },
   {
     "id": "a1_0292",
@@ -5033,7 +5324,8 @@
     "page": 16,
     "meaning_en": "the happiness",
     "meaning_tr": "mutluluk",
-    "meaning_es": "la felicidad"
+    "meaning_es": "la felicidad",
+    "meaning_ar": "السعادة"
   },
   {
     "id": "a1_0293",
@@ -5050,7 +5342,8 @@
     "page": 16,
     "meaning_en": "happy",
     "meaning_tr": "mutlu",
-    "meaning_es": "feliz"
+    "meaning_es": "feliz",
+    "meaning_ar": "سعيد"
   },
   {
     "id": "a1_0294",
@@ -5067,7 +5360,8 @@
     "page": 16,
     "meaning_en": "the congratulations",
     "meaning_tr": "tebrikler",
-    "meaning_es": "las felicitaciones"
+    "meaning_es": "las felicitaciones",
+    "meaning_ar": "التهاني"
   },
   {
     "id": "a1_0295",
@@ -5084,7 +5378,8 @@
     "page": 16,
     "meaning_en": "Degrees Celsius)",
     "meaning_tr": "Santigrat derece)",
-    "meaning_es": "grados centígrados)"
+    "meaning_es": "grados centígrados)",
+    "meaning_ar": "درجة مئوية)"
   },
   {
     "id": "a1_0296",
@@ -5101,7 +5396,8 @@
     "page": 16,
     "meaning_en": "congratulate",
     "meaning_tr": "tebrik etmek",
-    "meaning_es": "felicitar"
+    "meaning_es": "felicitar",
+    "meaning_ar": "تهنئة"
   },
   {
     "id": "a1_0297",
@@ -5118,7 +5414,8 @@
     "page": 16,
     "meaning_en": "grill",
     "meaning_tr": "ızgara",
-    "meaning_es": "parrilla"
+    "meaning_es": "parrilla",
+    "meaning_ar": "شواء"
   },
   {
     "id": "a1_0298",
@@ -5136,7 +5433,8 @@
     "page": 16,
     "meaning_en": "large",
     "meaning_tr": "büyük",
-    "meaning_es": "grande"
+    "meaning_es": "grande",
+    "meaning_ar": "كبير"
   },
   {
     "id": "a1_0299",
@@ -5153,7 +5451,8 @@
     "page": 16,
     "meaning_en": "the size",
     "meaning_tr": "boyut",
-    "meaning_es": "el tamaño"
+    "meaning_es": "el tamaño",
+    "meaning_ar": "الحجم"
   },
   {
     "id": "a1_0300",
@@ -5170,7 +5469,8 @@
     "page": 16,
     "meaning_en": "the grandparents (pl.)",
     "meaning_tr": "büyükanne ve büyükbaba (pl.)",
-    "meaning_es": "los abuelos (pl.)"
+    "meaning_es": "los abuelos (pl.)",
+    "meaning_ar": "الأجداد (رر)"
   },
   {
     "id": "a1_0301",
@@ -5187,7 +5487,8 @@
     "page": 16,
     "meaning_en": "the grandmother",
     "meaning_tr": "büyükanne",
-    "meaning_es": "la abuela"
+    "meaning_es": "la abuela",
+    "meaning_ar": "الجدة"
   },
   {
     "id": "a1_0302",
@@ -5204,7 +5505,8 @@
     "page": 16,
     "meaning_en": "the grandfather",
     "meaning_tr": "büyükbaba",
-    "meaning_es": "el abuelo"
+    "meaning_es": "el abuelo",
+    "meaning_ar": "الجد"
   },
   {
     "id": "a1_0303",
@@ -5221,7 +5523,8 @@
     "page": 16,
     "meaning_en": "the group, -n",
     "meaning_tr": "grup, -n",
-    "meaning_es": "el grupo, -n"
+    "meaning_es": "el grupo, -n",
+    "meaning_ar": "المجموعة، -ن"
   },
   {
     "id": "a1_0304",
@@ -5239,7 +5542,8 @@
     "page": 16,
     "meaning_en": "the greeting, -ü, e",
     "meaning_tr": "selamlama, -ü, e",
-    "meaning_es": "el saludo, -ü, e"
+    "meaning_es": "el saludo, -ü, e",
+    "meaning_ar": "التحية، -ü، ه"
   },
   {
     "id": "a1_0305",
@@ -5256,7 +5560,8 @@
     "page": 16,
     "meaning_en": "valid",
     "meaning_tr": "geçerli",
-    "meaning_es": "válido"
+    "meaning_es": "válido",
+    "meaning_ar": "صالح"
   },
   {
     "id": "a1_0306",
@@ -5273,7 +5578,8 @@
     "page": 16,
     "meaning_en": "cheap",
     "meaning_tr": "ucuz",
-    "meaning_es": "barato"
+    "meaning_es": "barato",
+    "meaning_ar": "رخيص"
   },
   {
     "id": "a1_0307",
@@ -5295,7 +5601,8 @@
     "page": 16,
     "meaning_en": "good",
     "meaning_tr": "iyi",
-    "meaning_es": "bien"
+    "meaning_es": "bien",
+    "meaning_ar": "جيد"
   },
   {
     "id": "a1_0308",
@@ -5312,7 +5619,8 @@
     "page": 16,
     "meaning_en": "the hair, -e",
     "meaning_tr": "saç, -e",
-    "meaning_es": "el pelo, -e"
+    "meaning_es": "el pelo, -e",
+    "meaning_ar": "الشعر، -ه"
   },
   {
     "id": "a1_0309",
@@ -5329,7 +5637,8 @@
     "page": 16,
     "meaning_en": "have",
     "meaning_tr": "sahip olmak",
-    "meaning_es": "tener"
+    "meaning_es": "tener",
+    "meaning_ar": "يملك"
   },
   {
     "id": "a1_0310",
@@ -5346,7 +5655,8 @@
     "page": 16,
     "meaning_en": "the chicken, -",
     "meaning_tr": "tavuk, -",
-    "meaning_es": "el pollo, -"
+    "meaning_es": "el pollo, -",
+    "meaning_ar": "الدجاج، -"
   },
   {
     "id": "a1_0311",
@@ -5363,7 +5673,8 @@
     "page": 16,
     "meaning_en": "the half board",
     "meaning_tr": "yarım pansiyon",
-    "meaning_es": "la media pensión"
+    "meaning_es": "la media pensión",
+    "meaning_ar": "نصف القيمة"
   },
   {
     "id": "a1_0312",
@@ -5380,7 +5691,8 @@
     "page": 16,
     "meaning_en": "the hall",
     "meaning_tr": "salon",
-    "meaning_es": "el pasillo"
+    "meaning_es": "el pasillo",
+    "meaning_ar": "القاعة"
   },
   {
     "id": "a1_0313",
@@ -5395,7 +5707,8 @@
     "page": 16,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0314",
@@ -5413,7 +5726,8 @@
     "page": 16,
     "meaning_en": "Hello",
     "meaning_tr": "Merhaba",
-    "meaning_es": "Hola"
+    "meaning_es": "Hola",
+    "meaning_ar": "مرحبًا"
   },
   {
     "id": "a1_0315",
@@ -5430,7 +5744,8 @@
     "page": 17,
     "meaning_en": "hold",
     "meaning_tr": "tutmak",
-    "meaning_es": "sostener"
+    "meaning_es": "sostener",
+    "meaning_ar": "يمسك"
   },
   {
     "id": "a1_0316",
@@ -5447,7 +5762,8 @@
     "page": 17,
     "meaning_en": "the bus stop",
     "meaning_tr": "otobüs durağı",
-    "meaning_es": "la parada de autobús"
+    "meaning_es": "la parada de autobús",
+    "meaning_ar": "محطة الحافلات"
   },
   {
     "id": "a1_0317",
@@ -5464,7 +5780,8 @@
     "page": 17,
     "meaning_en": "the hand, -ä, e",
     "meaning_tr": "el, -ä, e",
-    "meaning_es": "la mano, -ä, e"
+    "meaning_es": "la mano, -ä, e",
+    "meaning_ar": "اليد، -ä، ه"
   },
   {
     "id": "a1_0318",
@@ -5481,7 +5798,8 @@
     "page": 17,
     "meaning_en": "the cell phone, -s",
     "meaning_tr": "cep telefonu, -s",
-    "meaning_es": "el celular, -s"
+    "meaning_es": "el celular, -s",
+    "meaning_ar": "الهاتف الخليوي، -s"
   },
   {
     "id": "a1_0319",
@@ -5500,7 +5818,8 @@
     "page": 17,
     "meaning_en": "the house, -ä, he",
     "meaning_tr": "ev, -ä, o",
-    "meaning_es": "la casa, -ä, él"
+    "meaning_es": "la casa, -ä, él",
+    "meaning_ar": "المنزل، -ä، هو"
   },
   {
     "id": "a1_0320",
@@ -5517,7 +5836,8 @@
     "page": 17,
     "meaning_en": "the homework, -n",
     "meaning_tr": "ödev, -n",
-    "meaning_es": "la tarea, -n"
+    "meaning_es": "la tarea, -n",
+    "meaning_ar": "الواجب المنزلي، -ن"
   },
   {
     "id": "a1_0321",
@@ -5532,7 +5852,8 @@
     "page": 17,
     "meaning_en": "the housewife, -en/",
     "meaning_tr": "die Hausfrau, -en/",
-    "meaning_es": "el ama de casa, -es/"
+    "meaning_es": "el ama de casa, -es/",
+    "meaning_ar": "ربة البيت -en/"
   },
   {
     "id": "a1_0322",
@@ -5549,7 +5870,8 @@
     "page": 17,
     "meaning_en": "the househusband",
     "meaning_tr": "ev kocası",
-    "meaning_es": "el amo de casa"
+    "meaning_es": "el amo de casa",
+    "meaning_ar": "رب البيت"
   },
   {
     "id": "a1_0323",
@@ -5567,7 +5889,8 @@
     "page": 17,
     "meaning_en": "the homeland",
     "meaning_tr": "vatan",
-    "meaning_es": "la patria"
+    "meaning_es": "la patria",
+    "meaning_ar": "الوطن"
   },
   {
     "id": "a1_0324",
@@ -5584,7 +5907,8 @@
     "page": 17,
     "meaning_en": "marry",
     "meaning_tr": "evlenmek",
-    "meaning_es": "casarse"
+    "meaning_es": "casarse",
+    "meaning_ar": "الزواج"
   },
   {
     "id": "a1_0325",
@@ -5602,7 +5926,8 @@
     "page": 17,
     "meaning_en": "be called",
     "meaning_tr": "çağrılmak",
-    "meaning_es": "ser llamado"
+    "meaning_es": "ser llamado",
+    "meaning_ar": "يمكن استدعاؤه"
   },
   {
     "id": "a1_0326",
@@ -5619,7 +5944,8 @@
     "page": 17,
     "meaning_en": "help",
     "meaning_tr": "yardım",
-    "meaning_es": "ayuda"
+    "meaning_es": "ayuda",
+    "meaning_ar": "يساعد"
   },
   {
     "id": "a1_0327",
@@ -5636,7 +5962,8 @@
     "page": 17,
     "meaning_en": "bright",
     "meaning_tr": "parlak",
-    "meaning_es": "brillante"
+    "meaning_es": "brillante",
+    "meaning_ar": "ساطع"
   },
   {
     "id": "a1_0328",
@@ -5653,7 +5980,8 @@
     "page": 17,
     "meaning_en": "the stove",
     "meaning_tr": "soba",
-    "meaning_es": "la estufa"
+    "meaning_es": "la estufa",
+    "meaning_ar": "الموقد"
   },
   {
     "id": "a1_0329",
@@ -5670,7 +5998,8 @@
     "page": 17,
     "meaning_en": "the gentleman, -en",
     "meaning_tr": "beyefendi, -tr",
-    "meaning_es": "el caballero, -es"
+    "meaning_es": "el caballero, -es",
+    "meaning_ar": "الرجل المحترم، -en"
   },
   {
     "id": "a1_0330",
@@ -5687,7 +6016,8 @@
     "page": 17,
     "meaning_en": "herzlich",
     "meaning_tr": "yürekten",
-    "meaning_es": "sentido"
+    "meaning_es": "sentido",
+    "meaning_ar": "القلبية"
   },
   {
     "id": "a1_0331",
@@ -5704,7 +6034,8 @@
     "page": 17,
     "meaning_en": "today",
     "meaning_tr": "Bugün",
-    "meaning_es": "hoy"
+    "meaning_es": "hoy",
+    "meaning_ar": "اليوم"
   },
   {
     "id": "a1_0332",
@@ -5722,7 +6053,8 @@
     "page": 17,
     "meaning_en": "here",
     "meaning_tr": "Burada",
-    "meaning_es": "aquí"
+    "meaning_es": "aquí",
+    "meaning_ar": "هنا"
   },
   {
     "id": "a1_0333",
@@ -5741,7 +6073,8 @@
     "page": 17,
     "meaning_en": "the help",
     "meaning_tr": "yardım",
-    "meaning_es": "la ayuda"
+    "meaning_es": "la ayuda",
+    "meaning_ar": "المساعدة"
   },
   {
     "id": "a1_0334",
@@ -5758,7 +6091,8 @@
     "page": 17,
     "meaning_en": "rear",
     "meaning_tr": "arka",
-    "meaning_es": "trasero"
+    "meaning_es": "trasero",
+    "meaning_ar": "مؤخرة"
   },
   {
     "id": "a1_0335",
@@ -5775,7 +6109,8 @@
     "page": 17,
     "meaning_en": "the hobby, -s",
     "meaning_tr": "hobi, -s",
-    "meaning_es": "el hobby, -s"
+    "meaning_es": "el hobby, -s",
+    "meaning_ar": "الهواية، -s"
   },
   {
     "id": "a1_0336",
@@ -5792,7 +6127,8 @@
     "page": 17,
     "meaning_en": "high",
     "meaning_tr": "yüksek",
-    "meaning_es": "alto"
+    "meaning_es": "alto",
+    "meaning_ar": "عالي"
   },
   {
     "id": "a1_0337",
@@ -5809,7 +6145,8 @@
     "page": 17,
     "meaning_en": "the wedding",
     "meaning_tr": "düğün",
-    "meaning_es": "la boda"
+    "meaning_es": "la boda",
+    "meaning_ar": "الزفاف"
   },
   {
     "id": "a1_0338",
@@ -5826,7 +6163,8 @@
     "page": 17,
     "meaning_en": "fetch",
     "meaning_tr": "gidip getirmek",
-    "meaning_es": "buscar"
+    "meaning_es": "buscar",
+    "meaning_ar": "أحضر"
   },
   {
     "id": "a1_0339",
@@ -5845,7 +6183,8 @@
     "page": 17,
     "meaning_en": "hear",
     "meaning_tr": "duymak",
-    "meaning_es": "escuchar"
+    "meaning_es": "escuchar",
+    "meaning_ar": "يسمع"
   },
   {
     "id": "a1_0340",
@@ -5862,7 +6201,8 @@
     "page": 17,
     "meaning_en": "the hotel, -s",
     "meaning_tr": "otel, -s",
-    "meaning_es": "el hotel, -s"
+    "meaning_es": "el hotel, -s",
+    "meaning_ar": "الفندق -س"
   },
   {
     "id": "a1_0341",
@@ -5879,7 +6219,8 @@
     "page": 17,
     "meaning_en": "the dog, -e",
     "meaning_tr": "köpek, -e",
-    "meaning_es": "el perro, -e"
+    "meaning_es": "el perro, -e",
+    "meaning_ar": "الكلب، -ه"
   },
   {
     "id": "a1_0342",
@@ -5897,7 +6238,8 @@
     "page": 17,
     "meaning_en": "the hunger",
     "meaning_tr": "açlık",
-    "meaning_es": "el hambre"
+    "meaning_es": "el hambre",
+    "meaning_ar": "الجوع"
   },
   {
     "id": "a1_0343",
@@ -5914,7 +6256,8 @@
     "page": 17,
     "meaning_en": "I",
     "meaning_tr": "BEN",
-    "meaning_es": "I"
+    "meaning_es": "I",
+    "meaning_ar": "أنا"
   },
   {
     "id": "a1_0344",
@@ -5932,7 +6275,8 @@
     "page": 17,
     "meaning_en": "ihr/ihm/ihn",
     "meaning_tr": "onu / onu / onu",
-    "meaning_es": "ella/él/él"
+    "meaning_es": "ella/él/él",
+    "meaning_ar": "لها / له / له"
   },
   {
     "id": "a1_0345",
@@ -5949,7 +6293,8 @@
     "page": 17,
     "meaning_en": "always",
     "meaning_tr": "Her zaman",
-    "meaning_es": "siempre"
+    "meaning_es": "siempre",
+    "meaning_ar": "دائماً"
   },
   {
     "id": "a1_0346",
@@ -5969,7 +6314,8 @@
     "page": 17,
     "meaning_en": "in",
     "meaning_tr": "içinde",
-    "meaning_es": "en"
+    "meaning_es": "en",
+    "meaning_ar": "في"
   },
   {
     "id": "a1_0347",
@@ -5987,7 +6333,8 @@
     "page": 17,
     "meaning_en": "the information",
     "meaning_tr": "bilgi",
-    "meaning_es": "la información"
+    "meaning_es": "la información",
+    "meaning_ar": "المعلومات"
   },
   {
     "id": "a1_0348",
@@ -6004,7 +6351,8 @@
     "page": 17,
     "meaning_en": "international",
     "meaning_tr": "uluslararası",
-    "meaning_es": "internacional"
+    "meaning_es": "internacional",
+    "meaning_ar": "دولي"
   },
   {
     "id": "a1_0349",
@@ -6021,7 +6369,8 @@
     "page": 17,
     "meaning_en": "the Internet",
     "meaning_tr": "internet",
-    "meaning_es": "La Internet"
+    "meaning_es": "La Internet",
+    "meaning_ar": "الإنترنت"
   },
   {
     "id": "a1_0350",
@@ -6036,7 +6385,8 @@
     "page": 17,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0351",
@@ -6054,7 +6404,8 @@
     "page": 18,
     "meaning_en": "Yes",
     "meaning_tr": "Evet",
-    "meaning_es": "Sí"
+    "meaning_es": "Sí",
+    "meaning_ar": "نعم"
   },
   {
     "id": "a1_0352",
@@ -6072,7 +6423,8 @@
     "page": 18,
     "meaning_en": "the jacket, -n",
     "meaning_tr": "ceket, -n",
-    "meaning_es": "la chaqueta, -n"
+    "meaning_es": "la chaqueta, -n",
+    "meaning_ar": "السترة، -ن"
   },
   {
     "id": "a1_0353",
@@ -6089,7 +6441,8 @@
     "page": 18,
     "meaning_en": "any-",
     "meaning_tr": "herhangi-",
-    "meaning_es": "cualquier-"
+    "meaning_es": "cualquier-",
+    "meaning_ar": "أي-"
   },
   {
     "id": "a1_0354",
@@ -6106,7 +6459,8 @@
     "page": 18,
     "meaning_en": "now",
     "meaning_tr": "Şimdi",
-    "meaning_es": "ahora"
+    "meaning_es": "ahora",
+    "meaning_ar": "الآن"
   },
   {
     "id": "a1_0355",
@@ -6123,7 +6477,8 @@
     "page": 18,
     "meaning_en": "the job, -s",
     "meaning_tr": "iş, -s",
-    "meaning_es": "el trabajo, -s"
+    "meaning_es": "el trabajo, -s",
+    "meaning_ar": "الوظيفة،-س"
   },
   {
     "id": "a1_0356",
@@ -6140,7 +6495,8 @@
     "page": 18,
     "meaning_en": "the young person, -n",
     "meaning_tr": "genç kişi, -n",
-    "meaning_es": "el joven, -n"
+    "meaning_es": "el joven, -n",
+    "meaning_ar": "الشاب، -ن"
   },
   {
     "id": "a1_0357",
@@ -6159,7 +6515,8 @@
     "page": 18,
     "meaning_en": "young",
     "meaning_tr": "genç",
-    "meaning_es": "joven"
+    "meaning_es": "joven",
+    "meaning_ar": "شاب"
   },
   {
     "id": "a1_0358",
@@ -6177,7 +6534,8 @@
     "page": 18,
     "meaning_en": "the boy, -n",
     "meaning_tr": "oğlan, -n",
-    "meaning_es": "el chico, -n"
+    "meaning_es": "el chico, -n",
+    "meaning_ar": "الصبي، -ن"
   },
   {
     "id": "a1_0359",
@@ -6194,7 +6552,8 @@
     "page": 18,
     "meaning_en": "the coffee",
     "meaning_tr": "kahve",
-    "meaning_es": "el cafe"
+    "meaning_es": "el cafe",
+    "meaning_ar": "القهوة"
   },
   {
     "id": "a1_0360",
@@ -6212,7 +6571,8 @@
     "page": 18,
     "meaning_en": "broken",
     "meaning_tr": "kırık",
-    "meaning_es": "roto"
+    "meaning_es": "roto",
+    "meaning_ar": "مكسور"
   },
   {
     "id": "a1_0361",
@@ -6232,7 +6592,8 @@
     "page": 18,
     "meaning_en": "the card, -n",
     "meaning_tr": "kart, -n",
-    "meaning_es": "la tarjeta, -n"
+    "meaning_es": "la tarjeta, -n",
+    "meaning_ar": "البطاقة، -ن"
   },
   {
     "id": "a1_0362",
@@ -6249,7 +6610,8 @@
     "page": 18,
     "meaning_en": "(credit) card, -n",
     "meaning_tr": "(kredi) kartı, -n",
-    "meaning_es": "tarjeta (de crédito), -n"
+    "meaning_es": "tarjeta (de crédito), -n",
+    "meaning_ar": "بطاقة (الائتمان)، -ن"
   },
   {
     "id": "a1_0363",
@@ -6266,7 +6628,8 @@
     "page": 18,
     "meaning_en": "the potato, -n",
     "meaning_tr": "patates, -n",
-    "meaning_es": "la papa, -n"
+    "meaning_es": "la papa, -n",
+    "meaning_ar": "البطاطس، -ن"
   },
   {
     "id": "a1_0364",
@@ -6283,7 +6646,8 @@
     "page": 18,
     "meaning_en": "the cash register",
     "meaning_tr": "yazarkasa",
-    "meaning_es": "la caja registradora"
+    "meaning_es": "la caja registradora",
+    "meaning_ar": "السجل النقدي"
   },
   {
     "id": "a1_0365",
@@ -6300,7 +6664,8 @@
     "page": 18,
     "meaning_en": "buy",
     "meaning_tr": "satın almak",
-    "meaning_es": "comprar"
+    "meaning_es": "comprar",
+    "meaning_ar": "يشتري"
   },
   {
     "id": "a1_0366",
@@ -6317,7 +6682,8 @@
     "page": 18,
     "meaning_en": "no",
     "meaning_tr": "HAYIR",
-    "meaning_es": "No"
+    "meaning_es": "No",
+    "meaning_ar": "لا"
   },
   {
     "id": "a1_0367",
@@ -6335,7 +6701,8 @@
     "page": 18,
     "meaning_en": "know",
     "meaning_tr": "Bilmek",
-    "meaning_es": "saber"
+    "meaning_es": "saber",
+    "meaning_ar": "يعرف"
   },
   {
     "id": "a1_0368",
@@ -6353,7 +6720,8 @@
     "page": 18,
     "meaning_en": "get to know",
     "meaning_tr": "tanımak",
-    "meaning_es": "llegar a saber"
+    "meaning_es": "llegar a saber",
+    "meaning_ar": "تعرف على"
   },
   {
     "id": "a1_0369",
@@ -6370,7 +6738,8 @@
     "page": 18,
     "meaning_en": "the child, -he",
     "meaning_tr": "çocuk, -o",
-    "meaning_es": "el niño, -él"
+    "meaning_es": "el niño, -él",
+    "meaning_ar": "الطفل - هو"
   },
   {
     "id": "a1_0370",
@@ -6387,7 +6756,8 @@
     "page": 18,
     "meaning_en": "the kindergarten",
     "meaning_tr": "anaokulu",
-    "meaning_es": "el jardín de infantes"
+    "meaning_es": "el jardín de infantes",
+    "meaning_ar": "الروضة"
   },
   {
     "id": "a1_0371",
@@ -6404,7 +6774,8 @@
     "page": 18,
     "meaning_en": "the cinema, -s",
     "meaning_tr": "sinema, -s",
-    "meaning_es": "el cine, -s"
+    "meaning_es": "el cine, -s",
+    "meaning_ar": "السينما، -س"
   },
   {
     "id": "a1_0372",
@@ -6421,7 +6792,8 @@
     "page": 18,
     "meaning_en": "the kiosk",
     "meaning_tr": "kiosk",
-    "meaning_es": "el quiosco"
+    "meaning_es": "el quiosco",
+    "meaning_ar": "الكشك"
   },
   {
     "id": "a1_0373",
@@ -6439,7 +6811,8 @@
     "page": 18,
     "meaning_en": "clear",
     "meaning_tr": "temizlemek",
-    "meaning_es": "claro"
+    "meaning_es": "claro",
+    "meaning_ar": "واضح"
   },
   {
     "id": "a1_0374",
@@ -6457,7 +6830,8 @@
     "page": 18,
     "meaning_en": "the class",
     "meaning_tr": "sınıf",
-    "meaning_es": "la clase"
+    "meaning_es": "la clase",
+    "meaning_ar": "الفصل"
   },
   {
     "id": "a1_0375",
@@ -6475,7 +6849,8 @@
     "page": 18,
     "meaning_en": "the clothing",
     "meaning_tr": "giyim",
-    "meaning_es": "la ropa"
+    "meaning_es": "la ropa",
+    "meaning_ar": "الملابس"
   },
   {
     "id": "a1_0376",
@@ -6492,7 +6867,8 @@
     "page": 18,
     "meaning_en": "small",
     "meaning_tr": "küçük",
-    "meaning_es": "pequeño"
+    "meaning_es": "pequeño",
+    "meaning_ar": "صغير"
   },
   {
     "id": "a1_0377",
@@ -6509,7 +6885,8 @@
     "page": 18,
     "meaning_en": "cook",
     "meaning_tr": "aşçı",
-    "meaning_es": "cocinar"
+    "meaning_es": "cocinar",
+    "meaning_ar": "يطبخ"
   },
   {
     "id": "a1_0378",
@@ -6526,7 +6903,8 @@
     "page": 18,
     "meaning_en": "the suitcase, -",
     "meaning_tr": "bavul, -",
-    "meaning_es": "la maleta, -"
+    "meaning_es": "la maleta, -",
+    "meaning_ar": "الحقيبة، -"
   },
   {
     "id": "a1_0379",
@@ -6543,7 +6921,8 @@
     "page": 18,
     "meaning_en": "the colleague, -n",
     "meaning_tr": "meslektaşım, -n",
-    "meaning_es": "el colega, -n"
+    "meaning_es": "el colega, -n",
+    "meaning_ar": "الزميل، -ن"
   },
   {
     "id": "a1_0380",
@@ -6562,7 +6941,8 @@
     "page": 18,
     "meaning_en": "come",
     "meaning_tr": "Gelmek",
-    "meaning_es": "venir"
+    "meaning_es": "venir",
+    "meaning_ar": "يأتي"
   },
   {
     "id": "a1_0381",
@@ -6580,7 +6960,8 @@
     "page": 18,
     "meaning_en": "can",
     "meaning_tr": "olabilmek",
-    "meaning_es": "poder"
+    "meaning_es": "poder",
+    "meaning_ar": "يستطيع"
   },
   {
     "id": "a1_0382",
@@ -6597,7 +6978,8 @@
     "page": 18,
     "meaning_en": "the account",
     "meaning_tr": "hesap",
-    "meaning_es": "la cuenta"
+    "meaning_es": "la cuenta",
+    "meaning_ar": "الحساب"
   },
   {
     "id": "a1_0383",
@@ -6614,7 +6996,8 @@
     "page": 18,
     "meaning_en": "the head",
     "meaning_tr": "kafa",
-    "meaning_es": "la cabeza"
+    "meaning_es": "la cabeza",
+    "meaning_ar": "الرأس"
   },
   {
     "id": "a1_0384",
@@ -6632,7 +7015,8 @@
     "page": 18,
     "meaning_en": "cost",
     "meaning_tr": "maliyet",
-    "meaning_es": "costo"
+    "meaning_es": "costo",
+    "meaning_ar": "يكلف"
   },
   {
     "id": "a1_0385",
@@ -6649,7 +7033,8 @@
     "page": 18,
     "meaning_en": "sick",
     "meaning_tr": "hasta",
-    "meaning_es": "enfermo"
+    "meaning_es": "enfermo",
+    "meaning_ar": "مريض"
   },
   {
     "id": "a1_0386",
@@ -6666,7 +7051,8 @@
     "page": 18,
     "meaning_en": "get",
     "meaning_tr": "elde etmek",
-    "meaning_es": "conseguir"
+    "meaning_es": "conseguir",
+    "meaning_ar": "يحصل"
   },
   {
     "id": "a1_0387",
@@ -6683,7 +7069,8 @@
     "page": 18,
     "meaning_en": "the kitchen",
     "meaning_tr": "mutfak",
-    "meaning_es": "la cocina"
+    "meaning_es": "la cocina",
+    "meaning_ar": "المطبخ"
   },
   {
     "id": "a1_0388",
@@ -6698,7 +7085,8 @@
     "page": 18,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0389",
@@ -6715,7 +7103,8 @@
     "page": 18,
     "meaning_en": "the cake",
     "meaning_tr": "kek",
-    "meaning_es": "el pastel"
+    "meaning_es": "el pastel",
+    "meaning_ar": "الكعكة"
   },
   {
     "id": "a1_0390",
@@ -6732,7 +7121,8 @@
     "page": 19,
     "meaning_en": "the ballpoint pen",
     "meaning_tr": "tükenmez kalem",
-    "meaning_es": "el bolígrafo"
+    "meaning_es": "el bolígrafo",
+    "meaning_ar": "قلم الحبر"
   },
   {
     "id": "a1_0391",
@@ -6750,7 +7140,8 @@
     "page": 19,
     "meaning_en": "the refrigerator",
     "meaning_tr": "buzdolabı",
-    "meaning_es": "el refrigerador"
+    "meaning_es": "el refrigerador",
+    "meaning_ar": "الثلاجة"
   },
   {
     "id": "a1_0392",
@@ -6768,7 +7159,8 @@
     "page": 19,
     "meaning_en": "cultural",
     "meaning_tr": "kültürel",
-    "meaning_es": "cultural"
+    "meaning_es": "cultural",
+    "meaning_ar": "ثقافية"
   },
   {
     "id": "a1_0393",
@@ -6785,7 +7177,8 @@
     "page": 19,
     "meaning_en": "take care",
     "meaning_tr": "Dikkatli ol",
-    "meaning_es": "cuidarse"
+    "meaning_es": "cuidarse",
+    "meaning_ar": "يعتني"
   },
   {
     "id": "a1_0394",
@@ -6803,7 +7196,8 @@
     "page": 19,
     "meaning_en": "the customer, -n",
     "meaning_tr": "müşteri, -n",
-    "meaning_es": "el cliente, -n"
+    "meaning_es": "el cliente, -n",
+    "meaning_ar": "العميل، -ن"
   },
   {
     "id": "a1_0395",
@@ -6820,7 +7214,8 @@
     "page": 19,
     "meaning_en": "the course, -e",
     "meaning_tr": "kurs, -e",
-    "meaning_es": "el curso, -e"
+    "meaning_es": "el curso, -e",
+    "meaning_ar": "الدورة -ه"
   },
   {
     "id": "a1_0396",
@@ -6837,7 +7232,8 @@
     "page": 19,
     "meaning_en": "short",
     "meaning_tr": "kısa",
-    "meaning_es": "corto"
+    "meaning_es": "corto",
+    "meaning_ar": "قصير"
   },
   {
     "id": "a1_0397",
@@ -6854,7 +7250,8 @@
     "page": 19,
     "meaning_en": "laugh",
     "meaning_tr": "lachen",
-    "meaning_es": "reír"
+    "meaning_es": "reír",
+    "meaning_ar": "يضحك"
   },
   {
     "id": "a1_0398",
@@ -6871,7 +7268,8 @@
     "page": 19,
     "meaning_en": "the shop, -ä",
     "meaning_tr": "dükkan, -ä",
-    "meaning_es": "la tienda, -ä"
+    "meaning_es": "la tienda, -ä",
+    "meaning_ar": "المحل، -أ"
   },
   {
     "id": "a1_0399",
@@ -6888,7 +7286,8 @@
     "page": 19,
     "meaning_en": "the country, -ä, he",
     "meaning_tr": "ülke, -ä, o",
-    "meaning_es": "el país, -ä, él"
+    "meaning_es": "el país, -ä, él",
+    "meaning_ar": "البلاد، -ä، هو"
   },
   {
     "id": "a1_0400",
@@ -6905,7 +7304,8 @@
     "page": 19,
     "meaning_en": "long",
     "meaning_tr": "uzun",
-    "meaning_es": "largo"
+    "meaning_es": "largo",
+    "meaning_ar": "طويل"
   },
   {
     "id": "a1_0401",
@@ -6922,7 +7322,8 @@
     "page": 19,
     "meaning_en": "long",
     "meaning_tr": "uzun",
-    "meaning_es": "largo"
+    "meaning_es": "largo",
+    "meaning_ar": "طويل"
   },
   {
     "id": "a1_0402",
@@ -6939,7 +7340,8 @@
     "page": 19,
     "meaning_en": "slow",
     "meaning_tr": "yavaş",
-    "meaning_es": "lento"
+    "meaning_es": "lento",
+    "meaning_ar": "بطيء"
   },
   {
     "id": "a1_0403",
@@ -6956,7 +7358,8 @@
     "page": 19,
     "meaning_en": "run",
     "meaning_tr": "koşmak",
-    "meaning_es": "correr"
+    "meaning_es": "correr",
+    "meaning_ar": "يجري"
   },
   {
     "id": "a1_0404",
@@ -6974,7 +7377,8 @@
     "page": 19,
     "meaning_en": "loud",
     "meaning_tr": "yüksek sesle",
-    "meaning_es": "alto"
+    "meaning_es": "alto",
+    "meaning_ar": "عالي"
   },
   {
     "id": "a1_0405",
@@ -6992,7 +7396,8 @@
     "page": 19,
     "meaning_en": "life",
     "meaning_tr": "hayat",
-    "meaning_es": "vida"
+    "meaning_es": "vida",
+    "meaning_ar": "حياة"
   },
   {
     "id": "a1_0406",
@@ -7009,7 +7414,8 @@
     "page": 19,
     "meaning_en": "the life",
     "meaning_tr": "hayat",
-    "meaning_es": "la vida"
+    "meaning_es": "la vida",
+    "meaning_ar": "الحياة"
   },
   {
     "id": "a1_0407",
@@ -7024,7 +7430,8 @@
     "page": 19,
     "meaning_en": "the life",
     "meaning_tr": "hayat",
-    "meaning_es": "la vida"
+    "meaning_es": "la vida",
+    "meaning_ar": "الحياة"
   },
   {
     "id": "a1_0408",
@@ -7041,7 +7448,8 @@
     "page": 19,
     "meaning_en": "medium (pl.)",
     "meaning_tr": "orta (pl.)",
-    "meaning_es": "medio (pl.)"
+    "meaning_es": "medio (pl.)",
+    "meaning_ar": "متوسطة (ر.)"
   },
   {
     "id": "a1_0409",
@@ -7060,7 +7468,8 @@
     "page": 19,
     "meaning_en": "single",
     "meaning_tr": "Bekar",
-    "meaning_es": "soltero"
+    "meaning_es": "soltero",
+    "meaning_ar": "أعزب"
   },
   {
     "id": "a1_0410",
@@ -7077,7 +7486,8 @@
     "page": 19,
     "meaning_en": "place",
     "meaning_tr": "yer",
-    "meaning_es": "lugar"
+    "meaning_es": "lugar",
+    "meaning_ar": "مكان"
   },
   {
     "id": "a1_0411",
@@ -7094,7 +7504,8 @@
     "page": 19,
     "meaning_en": "the teacher, -",
     "meaning_tr": "öğretmen, -",
-    "meaning_es": "el maestro, -"
+    "meaning_es": "el maestro, -",
+    "meaning_ar": "المعلم، -"
   },
   {
     "id": "a1_0412",
@@ -7112,7 +7523,8 @@
     "page": 19,
     "meaning_en": "light",
     "meaning_tr": "ışık",
-    "meaning_es": "luz"
+    "meaning_es": "luz",
+    "meaning_ar": "ضوء"
   },
   {
     "id": "a1_0413",
@@ -7130,7 +7542,8 @@
     "page": 19,
     "meaning_en": "unfortunately",
     "meaning_tr": "Ne yazık ki",
-    "meaning_es": "desafortunadamente"
+    "meaning_es": "desafortunadamente",
+    "meaning_ar": "للأسف"
   },
   {
     "id": "a1_0414",
@@ -7148,7 +7561,8 @@
     "page": 19,
     "meaning_en": "quiet",
     "meaning_tr": "sessizlik",
-    "meaning_es": "tranquilo"
+    "meaning_es": "tranquilo",
+    "meaning_ar": "هادئ"
   },
   {
     "id": "a1_0415",
@@ -7165,7 +7579,8 @@
     "page": 19,
     "meaning_en": "learn",
     "meaning_tr": "öğrenmek",
-    "meaning_es": "aprender"
+    "meaning_es": "aprender",
+    "meaning_ar": "يتعلم"
   },
   {
     "id": "a1_0416",
@@ -7182,7 +7597,8 @@
     "page": 19,
     "meaning_en": "read",
     "meaning_tr": "Okumak",
-    "meaning_es": "leer"
+    "meaning_es": "leer",
+    "meaning_ar": "يقرأ"
   },
   {
     "id": "a1_0417",
@@ -7199,7 +7615,8 @@
     "page": 19,
     "meaning_en": "last-",
     "meaning_tr": "son-",
-    "meaning_es": "último-"
+    "meaning_es": "último-",
+    "meaning_ar": "آخر-"
   },
   {
     "id": "a1_0418",
@@ -7216,7 +7633,8 @@
     "page": 19,
     "meaning_en": "the people (pl.)",
     "meaning_tr": "insanlar (pl.)",
-    "meaning_es": "el pueblo (pl.)"
+    "meaning_es": "el pueblo (pl.)",
+    "meaning_ar": "الناس (ر.)"
   },
   {
     "id": "a1_0419",
@@ -7233,7 +7651,8 @@
     "page": 19,
     "meaning_en": "the light",
     "meaning_tr": "ışık",
-    "meaning_es": "la luz"
+    "meaning_es": "la luz",
+    "meaning_ar": "ضوء"
   },
   {
     "id": "a1_0420",
@@ -7250,7 +7669,8 @@
     "page": 19,
     "meaning_en": "dear-",
     "meaning_tr": "Sayın-",
-    "meaning_es": "estimado-"
+    "meaning_es": "estimado-",
+    "meaning_ar": "عزيزي-"
   },
   {
     "id": "a1_0421",
@@ -7267,7 +7687,8 @@
     "page": 19,
     "meaning_en": "love",
     "meaning_tr": "Aşk",
-    "meaning_es": "amar"
+    "meaning_es": "amar",
+    "meaning_ar": "حب"
   },
   {
     "id": "a1_0422",
@@ -7284,7 +7705,8 @@
     "page": 19,
     "meaning_en": "Dear",
     "meaning_tr": "Canım",
-    "meaning_es": "Estimado"
+    "meaning_es": "Estimado",
+    "meaning_ar": "عزيزي"
   },
   {
     "id": "a1_0423",
@@ -7301,7 +7723,8 @@
     "page": 19,
     "meaning_en": "Favorite-",
     "meaning_tr": "Favori-",
-    "meaning_es": "Favorito-"
+    "meaning_es": "Favorito-",
+    "meaning_ar": "مفضل-"
   },
   {
     "id": "a1_0424",
@@ -7318,7 +7741,8 @@
     "page": 19,
     "meaning_en": "the song, -er",
     "meaning_tr": "şarkı, -er",
-    "meaning_es": "la canción, -eh"
+    "meaning_es": "la canción, -eh",
+    "meaning_ar": "الأغنية -إيه"
   },
   {
     "id": "a1_0425",
@@ -7336,7 +7760,8 @@
     "page": 19,
     "meaning_en": "lay",
     "meaning_tr": "sermek",
-    "meaning_es": "poner"
+    "meaning_es": "poner",
+    "meaning_ar": "يضع"
   },
   {
     "id": "a1_0426",
@@ -7353,7 +7778,8 @@
     "page": 19,
     "meaning_en": "left",
     "meaning_tr": "sol",
-    "meaning_es": "izquierda"
+    "meaning_es": "izquierda",
+    "meaning_ar": "غادر"
   },
   {
     "id": "a1_0427",
@@ -7370,7 +7796,8 @@
     "page": 19,
     "meaning_en": "the truck, -s",
     "meaning_tr": "kamyon, -s",
-    "meaning_es": "el camion, -s"
+    "meaning_es": "el camion, -s",
+    "meaning_ar": "الشاحنة، -س"
   },
   {
     "id": "a1_0428",
@@ -7387,7 +7814,8 @@
     "page": 19,
     "meaning_en": "the local",
     "meaning_tr": "yerel",
-    "meaning_es": "el local"
+    "meaning_es": "el local",
+    "meaning_ar": "المحلي"
   },
   {
     "id": "a1_0429",
@@ -7404,7 +7832,8 @@
     "page": 19,
     "meaning_en": "the solution, -en",
     "meaning_tr": "çözüm, -en",
-    "meaning_es": "la solución, -es"
+    "meaning_es": "la solución, -es",
+    "meaning_ar": "الحل، -en"
   },
   {
     "id": "a1_0430",
@@ -7422,7 +7851,8 @@
     "page": 19,
     "meaning_en": "funny",
     "meaning_tr": "eğlenceli",
-    "meaning_es": "divertido"
+    "meaning_es": "divertido",
+    "meaning_ar": "مضحك"
   },
   {
     "id": "a1_0431",
@@ -7437,7 +7867,8 @@
     "page": 19,
     "meaning_en": "m",
     "meaning_tr": "M",
-    "meaning_es": "metro"
+    "meaning_es": "metro",
+    "meaning_ar": "م"
   },
   {
     "id": "a1_0432",
@@ -7454,7 +7885,8 @@
     "page": 19,
     "meaning_en": "make",
     "meaning_tr": "yapmak",
-    "meaning_es": "hacer"
+    "meaning_es": "hacer",
+    "meaning_ar": "يصنع"
   },
   {
     "id": "a1_0433",
@@ -7471,7 +7903,8 @@
     "page": 19,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0434",
@@ -7489,7 +7922,8 @@
     "page": 20,
     "meaning_en": "the girl, -",
     "meaning_tr": "kız, -",
-    "meaning_es": "la chica, -"
+    "meaning_es": "la chica, -",
+    "meaning_ar": "الفتاة، -"
   },
   {
     "id": "a1_0435",
@@ -7506,7 +7940,8 @@
     "page": 20,
     "meaning_en": "man",
     "meaning_tr": "Adam",
-    "meaning_es": "hombre"
+    "meaning_es": "hombre",
+    "meaning_ar": "رجل"
   },
   {
     "id": "a1_0436",
@@ -7523,7 +7958,8 @@
     "page": 20,
     "meaning_en": "the man, -ä, he",
     "meaning_tr": "adam, -ä, o",
-    "meaning_es": "el hombre, -ä, él"
+    "meaning_es": "el hombre, -ä, él",
+    "meaning_ar": "الرجل، -أ، هو"
   },
   {
     "id": "a1_0437",
@@ -7540,7 +7976,8 @@
     "page": 20,
     "meaning_en": "masculine",
     "meaning_tr": "eril",
-    "meaning_es": "masculino"
+    "meaning_es": "masculino",
+    "meaning_ar": "مذكر"
   },
   {
     "id": "a1_0438",
@@ -7557,7 +7994,8 @@
     "page": 20,
     "meaning_en": "the machine, -n",
     "meaning_tr": "makine, -n",
-    "meaning_es": "la máquina, -n"
+    "meaning_es": "la máquina, -n",
+    "meaning_ar": "الآلة، -ن"
   },
   {
     "id": "a1_0439",
@@ -7574,7 +8012,8 @@
     "page": 20,
     "meaning_en": "the sea",
     "meaning_tr": "deniz",
-    "meaning_es": "el mar"
+    "meaning_es": "el mar",
+    "meaning_ar": "البحر"
   },
   {
     "id": "a1_0440",
@@ -7591,7 +8030,8 @@
     "page": 20,
     "meaning_en": "more",
     "meaning_tr": "Daha",
-    "meaning_es": "más"
+    "meaning_es": "más",
+    "meaning_ar": "أكثر"
   },
   {
     "id": "a1_0441",
@@ -7608,7 +8048,8 @@
     "page": 20,
     "meaning_en": "my",
     "meaning_tr": "Benim",
-    "meaning_es": "mi"
+    "meaning_es": "mi",
+    "meaning_ar": "لي"
   },
   {
     "id": "a1_0442",
@@ -7625,7 +8066,8 @@
     "page": 20,
     "meaning_en": "mostly-",
     "meaning_tr": "çoğunlukla-",
-    "meaning_es": "principalmente-"
+    "meaning_es": "principalmente-",
+    "meaning_ar": "في الغالب-"
   },
   {
     "id": "a1_0443",
@@ -7642,7 +8084,8 @@
     "page": 20,
     "meaning_en": "the human being, -en",
     "meaning_tr": "insan, -tr",
-    "meaning_es": "el ser humano, -es"
+    "meaning_es": "el ser humano, -es",
+    "meaning_ar": "الإنسان، -en"
   },
   {
     "id": "a1_0444",
@@ -7659,7 +8102,8 @@
     "page": 20,
     "meaning_en": "rent",
     "meaning_tr": "kira",
-    "meaning_es": "alquilar"
+    "meaning_es": "alquilar",
+    "meaning_ar": "إيجار"
   },
   {
     "id": "a1_0445",
@@ -7676,7 +8120,8 @@
     "page": 20,
     "meaning_en": "the rent",
     "meaning_tr": "kira",
-    "meaning_es": "el alquiler"
+    "meaning_es": "el alquiler",
+    "meaning_ar": "الإيجار"
   },
   {
     "id": "a1_0446",
@@ -7693,7 +8138,8 @@
     "page": 20,
     "meaning_en": "the milk",
     "meaning_tr": "süt",
-    "meaning_es": "la leche"
+    "meaning_es": "la leche",
+    "meaning_ar": "الحليب"
   },
   {
     "id": "a1_0447",
@@ -7710,7 +8156,8 @@
     "page": 20,
     "meaning_en": "with",
     "meaning_tr": "ile",
-    "meaning_es": "con"
+    "meaning_es": "con",
+    "meaning_ar": "مع"
   },
   {
     "id": "a1_0448",
@@ -7728,7 +8175,8 @@
     "page": 20,
     "meaning_en": "bring along",
     "meaning_tr": "yanında getirmek",
-    "meaning_es": "traer"
+    "meaning_es": "traer",
+    "meaning_ar": "أحضر معك"
   },
   {
     "id": "a1_0449",
@@ -7746,7 +8194,8 @@
     "page": 20,
     "meaning_en": "come along",
     "meaning_tr": "gel",
-    "meaning_es": "venir también"
+    "meaning_es": "venir también",
+    "meaning_ar": "تعال معنا"
   },
   {
     "id": "a1_0450",
@@ -7763,7 +8212,8 @@
     "page": 20,
     "meaning_en": "join in",
     "meaning_tr": "katılmak",
-    "meaning_es": "participar"
+    "meaning_es": "participar",
+    "meaning_ar": "انضم"
   },
   {
     "id": "a1_0451",
@@ -7780,7 +8230,8 @@
     "page": 20,
     "meaning_en": "take along",
     "meaning_tr": "yanına al",
-    "meaning_es": "llevar"
+    "meaning_es": "llevar",
+    "meaning_ar": "خذ معك"
   },
   {
     "id": "a1_0452",
@@ -7797,7 +8248,8 @@
     "page": 20,
     "meaning_en": "the middle",
     "meaning_tr": "orta",
-    "meaning_es": "el medio"
+    "meaning_es": "el medio",
+    "meaning_ar": "الوسط"
   },
   {
     "id": "a1_0453",
@@ -7814,7 +8266,8 @@
     "page": 20,
     "meaning_en": "the furniture (pl.)",
     "meaning_tr": "mobilyalar (pl.)",
-    "meaning_es": "los muebles (pl.)"
+    "meaning_es": "los muebles (pl.)",
+    "meaning_ar": "الأثاث (ر.)"
   },
   {
     "id": "a1_0454",
@@ -7831,7 +8284,8 @@
     "page": 20,
     "meaning_en": "want",
     "meaning_tr": "istek",
-    "meaning_es": "desear"
+    "meaning_es": "desear",
+    "meaning_ar": "يريد"
   },
   {
     "id": "a1_0455",
@@ -7848,7 +8302,8 @@
     "page": 20,
     "meaning_en": "like",
     "meaning_tr": "beğenmek",
-    "meaning_es": "como"
+    "meaning_es": "como",
+    "meaning_ar": "يحب"
   },
   {
     "id": "a1_0456",
@@ -7865,7 +8320,8 @@
     "page": 20,
     "meaning_en": "possible",
     "meaning_tr": "olası",
-    "meaning_es": "posible"
+    "meaning_es": "posible",
+    "meaning_ar": "ممكن"
   },
   {
     "id": "a1_0457",
@@ -7883,7 +8339,8 @@
     "page": 20,
     "meaning_en": "the moment",
     "meaning_tr": "an",
-    "meaning_es": "el momento"
+    "meaning_es": "el momento",
+    "meaning_ar": "اللحظة"
   },
   {
     "id": "a1_0458",
@@ -7900,7 +8357,8 @@
     "page": 20,
     "meaning_en": "morning",
     "meaning_tr": "Sabah",
-    "meaning_es": "mañana"
+    "meaning_es": "mañana",
+    "meaning_ar": "صباح"
   },
   {
     "id": "a1_0459",
@@ -7918,7 +8376,8 @@
     "page": 20,
     "meaning_en": "tired",
     "meaning_tr": "yorgun",
-    "meaning_es": "cansado"
+    "meaning_es": "cansado",
+    "meaning_ar": "مرهق"
   },
   {
     "id": "a1_0460",
@@ -7935,7 +8394,8 @@
     "page": 20,
     "meaning_en": "the mouth",
     "meaning_tr": "ağız",
-    "meaning_es": "la boca"
+    "meaning_es": "la boca",
+    "meaning_ar": "الفم"
   },
   {
     "id": "a1_0461",
@@ -7952,7 +8412,8 @@
     "page": 20,
     "meaning_en": "must",
     "meaning_tr": "mutlak",
-    "meaning_es": "debe"
+    "meaning_es": "debe",
+    "meaning_ar": "يجب"
   },
   {
     "id": "a1_0462",
@@ -7969,7 +8430,8 @@
     "page": 20,
     "meaning_en": "the mother, -ü",
     "meaning_tr": "anne, -ü",
-    "meaning_es": "la madre, -ü"
+    "meaning_es": "la madre, -ü",
+    "meaning_ar": "الأم، -ü"
   },
   {
     "id": "a1_0463",
@@ -7988,7 +8450,8 @@
     "page": 20,
     "meaning_en": "after",
     "meaning_tr": "sonrasında",
-    "meaning_es": "después"
+    "meaning_es": "después",
+    "meaning_ar": "بعد"
   },
   {
     "id": "a1_0464",
@@ -8005,7 +8468,8 @@
     "page": 20,
     "meaning_en": "nächst-",
     "meaning_tr": "Sonraki-",
-    "meaning_es": "próximo-"
+    "meaning_es": "próximo-",
+    "meaning_ar": "التالي-"
   },
   {
     "id": "a1_0465",
@@ -8023,7 +8487,8 @@
     "page": 20,
     "meaning_en": "the name, -n",
     "meaning_tr": "isim, -n",
-    "meaning_es": "el nombre, -n"
+    "meaning_es": "el nombre, -n",
+    "meaning_ar": "الاسم، -ن"
   },
   {
     "id": "a1_0466",
@@ -8042,7 +8507,8 @@
     "page": 20,
     "meaning_en": "take",
     "meaning_tr": "almak",
-    "meaning_es": "llevar"
+    "meaning_es": "llevar",
+    "meaning_ar": "يأخذ"
   },
   {
     "id": "a1_0467",
@@ -8060,7 +8526,8 @@
     "page": 20,
     "meaning_en": "no",
     "meaning_tr": "HAYIR",
-    "meaning_es": "No"
+    "meaning_es": "No",
+    "meaning_ar": "لا"
   },
   {
     "id": "a1_0468",
@@ -8078,7 +8545,8 @@
     "page": 20,
     "meaning_en": "new",
     "meaning_tr": "yeni",
-    "meaning_es": "nuevo"
+    "meaning_es": "nuevo",
+    "meaning_ar": "جديد"
   },
   {
     "id": "a1_0469",
@@ -8096,7 +8564,8 @@
     "page": 20,
     "meaning_en": "not",
     "meaning_tr": "Olumsuz",
-    "meaning_es": "no"
+    "meaning_es": "no",
+    "meaning_ar": "لا"
   },
   {
     "id": "a1_0470",
@@ -8115,7 +8584,8 @@
     "page": 20,
     "meaning_en": "nothing",
     "meaning_tr": "Hiçbir şey",
-    "meaning_es": "nada"
+    "meaning_es": "nada",
+    "meaning_ar": "لا شئ"
   },
   {
     "id": "a1_0471",
@@ -8130,7 +8600,8 @@
     "page": 20,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0472",
@@ -8147,7 +8618,8 @@
     "page": 20,
     "meaning_en": "never",
     "meaning_tr": "Asla",
-    "meaning_es": "nunca"
+    "meaning_es": "nunca",
+    "meaning_ar": "أبداً"
   },
   {
     "id": "a1_0473",
@@ -8166,7 +8638,8 @@
     "page": 21,
     "meaning_en": "still",
     "meaning_tr": "Hala",
-    "meaning_es": "aún"
+    "meaning_es": "aún",
+    "meaning_ar": "ما زال"
   },
   {
     "id": "a1_0474",
@@ -8184,7 +8657,8 @@
     "page": 21,
     "meaning_en": "normal",
     "meaning_tr": "normal",
-    "meaning_es": "normal"
+    "meaning_es": "normal",
+    "meaning_ar": "طبيعي"
   },
   {
     "id": "a1_0475",
@@ -8203,7 +8677,8 @@
     "page": 21,
     "meaning_en": "the number, -n",
     "meaning_tr": "sayı, -n",
-    "meaning_es": "el número, -n"
+    "meaning_es": "el número, -n",
+    "meaning_ar": "الرقم، -ن"
   },
   {
     "id": "a1_0476",
@@ -8220,7 +8695,8 @@
     "page": 21,
     "meaning_en": "only",
     "meaning_tr": "sadece",
-    "meaning_es": "solo"
+    "meaning_es": "solo",
+    "meaning_ar": "فقط"
   },
   {
     "id": "a1_0477",
@@ -8235,7 +8711,8 @@
     "page": 21,
     "meaning_en": "O",
     "meaning_tr": "O",
-    "meaning_es": "oh"
+    "meaning_es": "oh",
+    "meaning_ar": "يا"
   },
   {
     "id": "a1_0478",
@@ -8252,7 +8729,8 @@
     "page": 21,
     "meaning_en": "above",
     "meaning_tr": "üstünde",
-    "meaning_es": "arriba"
+    "meaning_es": "arriba",
+    "meaning_ar": "فوق"
   },
   {
     "id": "a1_0479",
@@ -8269,7 +8747,8 @@
     "page": 21,
     "meaning_en": "the fruit",
     "meaning_tr": "meyve",
-    "meaning_es": "la fruta"
+    "meaning_es": "la fruta",
+    "meaning_ar": "الفاكهة"
   },
   {
     "id": "a1_0480",
@@ -8286,7 +8765,8 @@
     "page": 21,
     "meaning_en": "or",
     "meaning_tr": "veya",
-    "meaning_es": "o"
+    "meaning_es": "o",
+    "meaning_ar": "أو"
   },
   {
     "id": "a1_0481",
@@ -8303,7 +8783,8 @@
     "page": 21,
     "meaning_en": "open",
     "meaning_tr": "açık",
-    "meaning_es": "abierto"
+    "meaning_es": "abierto",
+    "meaning_ar": "يفتح"
   },
   {
     "id": "a1_0482",
@@ -8320,7 +8801,8 @@
     "page": 21,
     "meaning_en": "open",
     "meaning_tr": "açık",
-    "meaning_es": "abierto"
+    "meaning_es": "abierto",
+    "meaning_ar": "يفتح"
   },
   {
     "id": "a1_0483",
@@ -8337,7 +8819,8 @@
     "page": 21,
     "meaning_en": "often",
     "meaning_tr": "sıklıkla",
-    "meaning_es": "a menudo"
+    "meaning_es": "a menudo",
+    "meaning_ar": "غالباً"
   },
   {
     "id": "a1_0484",
@@ -8354,7 +8837,8 @@
     "page": 21,
     "meaning_en": "without",
     "meaning_tr": "olmadan",
-    "meaning_es": "sin"
+    "meaning_es": "sin",
+    "meaning_ar": "بدون"
   },
   {
     "id": "a1_0485",
@@ -8371,7 +8855,8 @@
     "page": 21,
     "meaning_en": "the oil",
     "meaning_tr": "yağ",
-    "meaning_es": "el aceite"
+    "meaning_es": "el aceite",
+    "meaning_ar": "الزيت"
   },
   {
     "id": "a1_0486",
@@ -8388,7 +8873,8 @@
     "page": 21,
     "meaning_en": "die Oma, -s",
     "meaning_tr": "büyükanne, -s",
-    "meaning_es": "la abuela, -s"
+    "meaning_es": "la abuela, -s",
+    "meaning_ar": "الجدة، -س"
   },
   {
     "id": "a1_0487",
@@ -8405,7 +8891,8 @@
     "page": 21,
     "meaning_en": "the grandfather, -s",
     "meaning_tr": "büyükbaba, -s",
-    "meaning_es": "el abuelo, -s"
+    "meaning_es": "el abuelo, -s",
+    "meaning_ar": "الجد، -س"
   },
   {
     "id": "a1_0488",
@@ -8422,7 +8909,8 @@
     "page": 21,
     "meaning_en": "the order",
     "meaning_tr": "sipariş",
-    "meaning_es": "la orden"
+    "meaning_es": "la orden",
+    "meaning_ar": "النظام"
   },
   {
     "id": "a1_0489",
@@ -8439,7 +8927,8 @@
     "page": 21,
     "meaning_en": "der Ort, -e",
     "meaning_tr": "yer, -e",
-    "meaning_es": "el lugar, -e"
+    "meaning_es": "el lugar, -e",
+    "meaning_ar": "المكان -ه"
   },
   {
     "id": "a1_0490",
@@ -8456,7 +8945,8 @@
     "page": 21,
     "meaning_en": "the paper",
     "meaning_tr": "kağıt",
-    "meaning_es": "el papel"
+    "meaning_es": "el papel",
+    "meaning_ar": "الورقة"
   },
   {
     "id": "a1_0491",
@@ -8473,7 +8963,8 @@
     "page": 21,
     "meaning_en": "the papers (pl.)",
     "meaning_tr": "gazeteler (pl.)",
-    "meaning_es": "los papeles (pl.)"
+    "meaning_es": "los papeles (pl.)",
+    "meaning_ar": "الأوراق (ر.)"
   },
   {
     "id": "a1_0492",
@@ -8488,7 +8979,8 @@
     "page": 21,
     "meaning_en": "the partner, -/",
     "meaning_tr": "ortak, -/",
-    "meaning_es": "el socio, -/"
+    "meaning_es": "el socio, -/",
+    "meaning_ar": "الشريك -/"
   },
   {
     "id": "a1_0493",
@@ -8505,7 +8997,8 @@
     "page": 21,
     "meaning_en": "the partner, -nen",
     "meaning_tr": "ortak, -nen",
-    "meaning_es": "el socio, -nen"
+    "meaning_es": "el socio, -nen",
+    "meaning_ar": "الشريك، -نين"
   },
   {
     "id": "a1_0494",
@@ -8522,7 +9015,8 @@
     "page": 21,
     "meaning_en": "the party",
     "meaning_tr": "parti",
-    "meaning_es": "la fiesta"
+    "meaning_es": "la fiesta",
+    "meaning_ar": "الحفلة"
   },
   {
     "id": "a1_0495",
@@ -8539,7 +9033,8 @@
     "page": 21,
     "meaning_en": "the passport, -ä, e",
     "meaning_tr": "pasaport, -ä, e",
-    "meaning_es": "el pasaporte, -ä, e"
+    "meaning_es": "el pasaporte, -ä, e",
+    "meaning_ar": "جواز السفر، -أ، ه"
   },
   {
     "id": "a1_0496",
@@ -8556,7 +9051,8 @@
     "page": 21,
     "meaning_en": "the break, -n",
     "meaning_tr": "mola, -n",
-    "meaning_es": "el descanso, -n"
+    "meaning_es": "el descanso, -n",
+    "meaning_ar": "الاستراحة، -ن"
   },
   {
     "id": "a1_0497",
@@ -8573,7 +9069,8 @@
     "page": 21,
     "meaning_en": "the plan, -ä, e",
     "meaning_tr": "plan, -ä, e",
-    "meaning_es": "el plan, -ä, e"
+    "meaning_es": "el plan, -ä, e",
+    "meaning_ar": "الخطة، -ä، e"
   },
   {
     "id": "a1_0498",
@@ -8592,7 +9089,8 @@
     "page": 21,
     "meaning_en": "the place, -ä, e",
     "meaning_tr": "yer, -ä, e",
-    "meaning_es": "el lugar, -ä, e"
+    "meaning_es": "el lugar, -ä, e",
+    "meaning_ar": "المكان، -ä، ه"
   },
   {
     "id": "a1_0499",
@@ -8609,7 +9107,8 @@
     "page": 21,
     "meaning_en": "the police",
     "meaning_tr": "polis",
-    "meaning_es": "la policia"
+    "meaning_es": "la policia",
+    "meaning_ar": "الشرطة"
   },
   {
     "id": "a1_0500",
@@ -8626,7 +9125,8 @@
     "page": 21,
     "meaning_en": "the french fries",
     "meaning_tr": "patates kızartması",
-    "meaning_es": "las papas fritas"
+    "meaning_es": "las papas fritas",
+    "meaning_ar": "البطاطس المقلية"
   },
   {
     "id": "a1_0501",
@@ -8644,7 +9144,8 @@
     "page": 21,
     "meaning_en": "the post",
     "meaning_tr": "gönderi",
-    "meaning_es": "la publicación"
+    "meaning_es": "la publicación",
+    "meaning_ar": "هذا المنصب"
   },
   {
     "id": "a1_0502",
@@ -8661,7 +9162,8 @@
     "page": 21,
     "meaning_en": "the zip code",
     "meaning_tr": "posta kodu",
-    "meaning_es": "el código postal"
+    "meaning_es": "el código postal",
+    "meaning_ar": "الرمز البريدي"
   },
   {
     "id": "a1_0503",
@@ -8678,7 +9180,8 @@
     "page": 21,
     "meaning_en": "the internship",
     "meaning_tr": "staj",
-    "meaning_es": "la pasantía"
+    "meaning_es": "la pasantía",
+    "meaning_ar": "التدريب"
   },
   {
     "id": "a1_0504",
@@ -8695,7 +9198,8 @@
     "page": 21,
     "meaning_en": "the practice",
     "meaning_tr": "pratik",
-    "meaning_es": "la practica"
+    "meaning_es": "la practica",
+    "meaning_ar": "هذه الممارسة"
   },
   {
     "id": "a1_0505",
@@ -8712,7 +9216,8 @@
     "page": 21,
     "meaning_en": "the price, -e",
     "meaning_tr": "fiyat, -e",
-    "meaning_es": "el precio, -e"
+    "meaning_es": "el precio, -e",
+    "meaning_ar": "السعر -ه"
   },
   {
     "id": "a1_0506",
@@ -8729,7 +9234,8 @@
     "page": 21,
     "meaning_en": "the problem, -e",
     "meaning_tr": "sorun, -e",
-    "meaning_es": "el problema, -e"
+    "meaning_es": "el problema, -e",
+    "meaning_ar": "المشكلة، -ه"
   },
   {
     "id": "a1_0507",
@@ -8746,7 +9252,8 @@
     "page": 21,
     "meaning_en": "the prospectus, -e",
     "meaning_tr": "izahname, -e",
-    "meaning_es": "el prospecto, -e"
+    "meaning_es": "el prospecto, -e",
+    "meaning_ar": "نشرة الإصدار، -ه"
   },
   {
     "id": "a1_0508",
@@ -8763,7 +9270,8 @@
     "page": 21,
     "meaning_en": "the exam",
     "meaning_tr": "sınav",
-    "meaning_es": "el examen"
+    "meaning_es": "el examen",
+    "meaning_ar": "الامتحان"
   },
   {
     "id": "a1_0509",
@@ -8781,7 +9289,8 @@
     "page": 21,
     "meaning_en": "on time",
     "meaning_tr": "zamanında",
-    "meaning_es": "a tiempo"
+    "meaning_es": "a tiempo",
+    "meaning_ar": "في الوقت المحدد"
   },
   {
     "id": "a1_0510",
@@ -8796,7 +9305,8 @@
     "page": 21,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0511",
@@ -8811,7 +9321,8 @@
     "page": 22,
     "meaning_en": "r",
     "meaning_tr": "R",
-    "meaning_es": "r"
+    "meaning_es": "r",
+    "meaning_ar": "ص"
   },
   {
     "id": "a1_0512",
@@ -8828,7 +9339,8 @@
     "page": 22,
     "meaning_en": "ride a bike",
     "meaning_tr": "bisiklet sürmek",
-    "meaning_es": "andar en bicicleta"
+    "meaning_es": "andar en bicicleta",
+    "meaning_ar": "ركوب الدراجة"
   },
   {
     "id": "a1_0513",
@@ -8845,7 +9357,8 @@
     "page": 22,
     "meaning_en": "smoke",
     "meaning_tr": "duman",
-    "meaning_es": "fumar"
+    "meaning_es": "fumar",
+    "meaning_ar": "دخان"
   },
   {
     "id": "a1_0514",
@@ -8862,7 +9375,8 @@
     "page": 22,
     "meaning_en": "the space, -ä, e",
     "meaning_tr": "boşluk, -ä, e",
-    "meaning_es": "el espacio, -ä, e"
+    "meaning_es": "el espacio, -ä, e",
+    "meaning_ar": "المساحة، -ä، e"
   },
   {
     "id": "a1_0515",
@@ -8879,7 +9393,8 @@
     "page": 22,
     "meaning_en": "the bill, -en",
     "meaning_tr": "fatura, -tr",
-    "meaning_es": "la factura, -es"
+    "meaning_es": "la factura, -es",
+    "meaning_ar": "الفاتورة، -en"
   },
   {
     "id": "a1_0516",
@@ -8896,7 +9411,8 @@
     "page": 22,
     "meaning_en": "right",
     "meaning_tr": "Sağ",
-    "meaning_es": "bien"
+    "meaning_es": "bien",
+    "meaning_ar": "يمين"
   },
   {
     "id": "a1_0517",
@@ -8913,7 +9429,8 @@
     "page": 22,
     "meaning_en": "rain",
     "meaning_tr": "yağmur",
-    "meaning_es": "lluvia"
+    "meaning_es": "lluvia",
+    "meaning_ar": "مطر"
   },
   {
     "id": "a1_0518",
@@ -8930,7 +9447,8 @@
     "page": 22,
     "meaning_en": "the rain",
     "meaning_tr": "yağmur",
-    "meaning_es": "la lluvia"
+    "meaning_es": "la lluvia",
+    "meaning_ar": "المطر"
   },
   {
     "id": "a1_0519",
@@ -8947,7 +9465,8 @@
     "page": 22,
     "meaning_en": "the rice",
     "meaning_tr": "pirinç",
-    "meaning_es": "el arroz"
+    "meaning_es": "el arroz",
+    "meaning_ar": "الأرز"
   },
   {
     "id": "a1_0520",
@@ -8964,7 +9483,8 @@
     "page": 22,
     "meaning_en": "travel",
     "meaning_tr": "seyahat",
-    "meaning_es": "viajar"
+    "meaning_es": "viajar",
+    "meaning_ar": "يسافر"
   },
   {
     "id": "a1_0521",
@@ -8981,7 +9501,8 @@
     "page": 22,
     "meaning_en": "the trip",
     "meaning_tr": "yolculuk",
-    "meaning_es": "el viaje"
+    "meaning_es": "el viaje",
+    "meaning_ar": "الرحلة"
   },
   {
     "id": "a1_0522",
@@ -8998,7 +9519,8 @@
     "page": 22,
     "meaning_en": "the travel agency, -s",
     "meaning_tr": "seyahat acentası, -s",
-    "meaning_es": "la agencia de viajes, -s"
+    "meaning_es": "la agencia de viajes, -s",
+    "meaning_ar": "وكالة السفر، -s"
   },
   {
     "id": "a1_0523",
@@ -9016,7 +9538,8 @@
     "page": 22,
     "meaning_en": "the travel guide",
     "meaning_tr": "seyahat rehberi",
-    "meaning_es": "la guía de viaje"
+    "meaning_es": "la guía de viaje",
+    "meaning_ar": "دليل السفر"
   },
   {
     "id": "a1_0524",
@@ -9033,7 +9556,8 @@
     "page": 22,
     "meaning_en": "repair",
     "meaning_tr": "tamirat",
-    "meaning_es": "reparar"
+    "meaning_es": "reparar",
+    "meaning_ar": "بصلح"
   },
   {
     "id": "a1_0525",
@@ -9050,7 +9574,8 @@
     "page": 22,
     "meaning_en": "the repair",
     "meaning_tr": "onarım",
-    "meaning_es": "la reparacion"
+    "meaning_es": "la reparacion",
+    "meaning_ar": "الإصلاح"
   },
   {
     "id": "a1_0526",
@@ -9067,7 +9592,8 @@
     "page": 22,
     "meaning_en": "the restaurant, -s",
     "meaning_tr": "restoran, -s",
-    "meaning_es": "el restaurante, -s"
+    "meaning_es": "el restaurante, -s",
+    "meaning_ar": "المطعم -س"
   },
   {
     "id": "a1_0527",
@@ -9084,7 +9610,8 @@
     "page": 22,
     "meaning_en": "the reception",
     "meaning_tr": "resepsiyon",
-    "meaning_es": "la recepción"
+    "meaning_es": "la recepción",
+    "meaning_ar": "الاستقبال"
   },
   {
     "id": "a1_0528",
@@ -9102,7 +9629,8 @@
     "page": 22,
     "meaning_en": "correct",
     "meaning_tr": "doğru",
-    "meaning_es": "correcto"
+    "meaning_es": "correcto",
+    "meaning_ar": "صحيح"
   },
   {
     "id": "a1_0529",
@@ -9119,7 +9647,8 @@
     "page": 22,
     "meaning_en": "smell",
     "meaning_tr": "koku",
-    "meaning_es": "oler"
+    "meaning_es": "oler",
+    "meaning_ar": "يشم"
   },
   {
     "id": "a1_0530",
@@ -9136,7 +9665,8 @@
     "page": 22,
     "meaning_en": "quiet",
     "meaning_tr": "sessizlik",
-    "meaning_es": "tranquilo"
+    "meaning_es": "tranquilo",
+    "meaning_ar": "هادئ"
   },
   {
     "id": "a1_0531",
@@ -9151,7 +9681,8 @@
     "page": 22,
     "meaning_en": "s",
     "meaning_tr": "S",
-    "meaning_es": "s"
+    "meaning_es": "s",
+    "meaning_ar": "ق"
   },
   {
     "id": "a1_0532",
@@ -9168,7 +9699,8 @@
     "page": 22,
     "meaning_en": "the juice",
     "meaning_tr": "meyve suyu",
-    "meaning_es": "el jugo"
+    "meaning_es": "el jugo",
+    "meaning_ar": "العصير"
   },
   {
     "id": "a1_0533",
@@ -9185,7 +9717,8 @@
     "page": 22,
     "meaning_en": "say",
     "meaning_tr": "söylemek",
-    "meaning_es": "decir"
+    "meaning_es": "decir",
+    "meaning_ar": "يقول"
   },
   {
     "id": "a1_0534",
@@ -9202,7 +9735,8 @@
     "page": 22,
     "meaning_en": "the salad",
     "meaning_tr": "salata",
-    "meaning_es": "la ensalada"
+    "meaning_es": "la ensalada",
+    "meaning_ar": "السلطة"
   },
   {
     "id": "a1_0535",
@@ -9219,7 +9753,8 @@
     "page": 22,
     "meaning_en": "the salt",
     "meaning_tr": "tuz",
-    "meaning_es": "la sal"
+    "meaning_es": "la sal",
+    "meaning_ar": "الملح"
   },
   {
     "id": "a1_0536",
@@ -9236,7 +9771,8 @@
     "page": 22,
     "meaning_en": "Sentence, -ä, e",
     "meaning_tr": "Cümle, -ä, e",
-    "meaning_es": "Oración, -ä, e"
+    "meaning_es": "Oración, -ä, e",
+    "meaning_ar": "الجملة، -ä، ه"
   },
   {
     "id": "a1_0537",
@@ -9253,7 +9789,8 @@
     "page": 22,
     "meaning_en": "the S-Bahn",
     "meaning_tr": "S-Bahn",
-    "meaning_es": "el S-Bahn"
+    "meaning_es": "el S-Bahn",
+    "meaning_ar": "S-Bahn"
   },
   {
     "id": "a1_0538",
@@ -9270,7 +9807,8 @@
     "page": 22,
     "meaning_en": "the desk",
     "meaning_tr": "masa",
-    "meaning_es": "el escritorio"
+    "meaning_es": "el escritorio",
+    "meaning_ar": "المكتب"
   },
   {
     "id": "a1_0539",
@@ -9287,7 +9825,8 @@
     "page": 22,
     "meaning_en": "seem",
     "meaning_tr": "gözükmek",
-    "meaning_es": "parecer"
+    "meaning_es": "parecer",
+    "meaning_ar": "يبدو"
   },
   {
     "id": "a1_0540",
@@ -9304,7 +9843,8 @@
     "page": 22,
     "meaning_en": "send",
     "meaning_tr": "Göndermek",
-    "meaning_es": "enviar"
+    "meaning_es": "enviar",
+    "meaning_ar": "يرسل"
   },
   {
     "id": "a1_0541",
@@ -9321,7 +9861,8 @@
     "page": 22,
     "meaning_en": "the sign, -er",
     "meaning_tr": "işareti, -er",
-    "meaning_es": "el signo, -er"
+    "meaning_es": "el signo, -er",
+    "meaning_ar": "العلامة، -إيه"
   },
   {
     "id": "a1_0542",
@@ -9338,7 +9879,8 @@
     "page": 22,
     "meaning_en": "the ham, -",
     "meaning_tr": "jambon, -",
-    "meaning_es": "el jamón, -"
+    "meaning_es": "el jamón, -",
+    "meaning_ar": "لحم الخنزير، -"
   },
   {
     "id": "a1_0543",
@@ -9355,7 +9897,8 @@
     "page": 22,
     "meaning_en": "sleep",
     "meaning_tr": "uyumak",
-    "meaning_es": "dormir"
+    "meaning_es": "dormir",
+    "meaning_ar": "ينام"
   },
   {
     "id": "a1_0544",
@@ -9374,7 +9917,8 @@
     "page": 22,
     "meaning_en": "bad",
     "meaning_tr": "kötü",
-    "meaning_es": "malo"
+    "meaning_es": "malo",
+    "meaning_ar": "سيء"
   },
   {
     "id": "a1_0545",
@@ -9391,7 +9935,8 @@
     "page": 22,
     "meaning_en": "close",
     "meaning_tr": "kapalı",
-    "meaning_es": "cerca"
+    "meaning_es": "cerca",
+    "meaning_ar": "يغلق"
   },
   {
     "id": "a1_0546",
@@ -9408,7 +9953,8 @@
     "page": 22,
     "meaning_en": "closed",
     "meaning_tr": "kapalı",
-    "meaning_es": "cerrado"
+    "meaning_es": "cerrado",
+    "meaning_ar": "مغلق"
   },
   {
     "id": "a1_0547",
@@ -9426,7 +9972,8 @@
     "page": 22,
     "meaning_en": "the conclusion",
     "meaning_tr": "sonuç",
-    "meaning_es": "la conclusión"
+    "meaning_es": "la conclusión",
+    "meaning_ar": "الاستنتاج"
   },
   {
     "id": "a1_0548",
@@ -9443,7 +9990,8 @@
     "page": 22,
     "meaning_en": "the key, -",
     "meaning_tr": "anahtar, -",
-    "meaning_es": "la clave, -"
+    "meaning_es": "la clave, -",
+    "meaning_ar": "المفتاح، -"
   },
   {
     "id": "a1_0549",
@@ -9460,7 +10008,8 @@
     "page": 22,
     "meaning_en": "taste good",
     "meaning_tr": "tadı güzel",
-    "meaning_es": "sabe bien"
+    "meaning_es": "sabe bien",
+    "meaning_ar": "طعم جيد"
   },
   {
     "id": "a1_0550",
@@ -9477,7 +10026,8 @@
     "page": 22,
     "meaning_en": "fast",
     "meaning_tr": "hızlı",
-    "meaning_es": "rápido"
+    "meaning_es": "rápido",
+    "meaning_ar": "سريع"
   },
   {
     "id": "a1_0551",
@@ -9494,7 +10044,8 @@
     "page": 22,
     "meaning_en": "already",
     "meaning_tr": "çoktan",
-    "meaning_es": "ya"
+    "meaning_es": "ya",
+    "meaning_ar": "بالفعل"
   },
   {
     "id": "a1_0552",
@@ -9512,7 +10063,8 @@
     "page": 22,
     "meaning_en": "nice",
     "meaning_tr": "Güzel",
-    "meaning_es": "lindo"
+    "meaning_es": "lindo",
+    "meaning_ar": "لطيف - جيد"
   },
   {
     "id": "a1_0553",
@@ -9529,7 +10081,8 @@
     "page": 22,
     "meaning_en": "the closet, -ä, e",
     "meaning_tr": "dolap, -ä, e",
-    "meaning_es": "el armario, -ä, e"
+    "meaning_es": "el armario, -ä, e",
+    "meaning_ar": "الخزانة، -ä، e"
   },
   {
     "id": "a1_0554",
@@ -9544,7 +10097,8 @@
     "page": 22,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0555",
@@ -9561,7 +10115,8 @@
     "page": 22,
     "meaning_en": "write",
     "meaning_tr": "yazmak",
-    "meaning_es": "escribir"
+    "meaning_es": "escribir",
+    "meaning_ar": "يكتب"
   },
   {
     "id": "a1_0556",
@@ -9578,7 +10133,8 @@
     "page": 23,
     "meaning_en": "the shoe, -e",
     "meaning_tr": "ayakkabı, -e",
-    "meaning_es": "el zapato, -e"
+    "meaning_es": "el zapato, -e",
+    "meaning_ar": "الحذاء، -ه"
   },
   {
     "id": "a1_0557",
@@ -9596,7 +10152,8 @@
     "page": 23,
     "meaning_en": "the school",
     "meaning_tr": "okul",
-    "meaning_es": "la escuela"
+    "meaning_es": "la escuela",
+    "meaning_ar": "المدرسة"
   },
   {
     "id": "a1_0558",
@@ -9613,7 +10170,8 @@
     "page": 23,
     "meaning_en": "the student, -",
     "meaning_tr": "öğrenci, -",
-    "meaning_es": "el estudiante, -"
+    "meaning_es": "el estudiante, -",
+    "meaning_ar": "الطالب، -"
   },
   {
     "id": "a1_0559",
@@ -9631,7 +10189,8 @@
     "page": 23,
     "meaning_en": "difficult",
     "meaning_tr": "zor",
-    "meaning_es": "difícil"
+    "meaning_es": "difícil",
+    "meaning_ar": "صعب"
   },
   {
     "id": "a1_0560",
@@ -9648,7 +10207,8 @@
     "page": 23,
     "meaning_en": "the sister, -n",
     "meaning_tr": "kız kardeş, -n",
-    "meaning_es": "la hermana, -n"
+    "meaning_es": "la hermana, -n",
+    "meaning_ar": "الأخت، -ن"
   },
   {
     "id": "a1_0561",
@@ -9665,7 +10225,8 @@
     "page": 23,
     "meaning_en": "to swim",
     "meaning_tr": "yüzmek",
-    "meaning_es": "nadar"
+    "meaning_es": "nadar",
+    "meaning_ar": "للسباحة"
   },
   {
     "id": "a1_0562",
@@ -9682,7 +10243,8 @@
     "page": 23,
     "meaning_en": "the swimming pool",
     "meaning_tr": "yüzme havuzu",
-    "meaning_es": "la piscina"
+    "meaning_es": "la piscina",
+    "meaning_ar": "حمام السباحة"
   },
   {
     "id": "a1_0563",
@@ -9699,7 +10261,8 @@
     "page": 23,
     "meaning_en": "the lake",
     "meaning_tr": "göl",
-    "meaning_es": "el lago"
+    "meaning_es": "el lago",
+    "meaning_ar": "البحيرة"
   },
   {
     "id": "a1_0564",
@@ -9717,7 +10280,8 @@
     "page": 23,
     "meaning_en": "see",
     "meaning_tr": "Görmek",
-    "meaning_es": "ver"
+    "meaning_es": "ver",
+    "meaning_ar": "يرى"
   },
   {
     "id": "a1_0565",
@@ -9734,7 +10298,8 @@
     "page": 23,
     "meaning_en": "the sight",
     "meaning_tr": "görüş",
-    "meaning_es": "la vista"
+    "meaning_es": "la vista",
+    "meaning_ar": "البصر"
   },
   {
     "id": "a1_0566",
@@ -9752,7 +10317,8 @@
     "page": 23,
     "meaning_en": "very",
     "meaning_tr": "çok",
-    "meaning_es": "muy"
+    "meaning_es": "muy",
+    "meaning_ar": "جداً"
   },
   {
     "id": "a1_0567",
@@ -9771,7 +10337,8 @@
     "page": 23,
     "meaning_en": "sein",
     "meaning_tr": "olmak",
-    "meaning_es": "ser"
+    "meaning_es": "ser",
+    "meaning_ar": "يكون"
   },
   {
     "id": "a1_0568",
@@ -9788,7 +10355,8 @@
     "page": 23,
     "meaning_en": "be on",
     "meaning_tr": "açık olmak",
-    "meaning_es": "estar encendido"
+    "meaning_es": "estar encendido",
+    "meaning_ar": "يكون على"
   },
   {
     "id": "a1_0569",
@@ -9805,7 +10373,8 @@
     "page": 23,
     "meaning_en": "to be up",
     "meaning_tr": "uyanık olmak",
-    "meaning_es": "estar arriba"
+    "meaning_es": "estar arriba",
+    "meaning_ar": "ليكون يصل"
   },
   {
     "id": "a1_0570",
@@ -9822,7 +10391,8 @@
     "page": 23,
     "meaning_en": "be away",
     "meaning_tr": "uzakta olmak",
-    "meaning_es": "estar lejos"
+    "meaning_es": "estar lejos",
+    "meaning_ar": "كن بعيدا"
   },
   {
     "id": "a1_0571",
@@ -9839,7 +10409,8 @@
     "page": 23,
     "meaning_en": "to be",
     "meaning_tr": "olmak",
-    "meaning_es": "ser"
+    "meaning_es": "ser",
+    "meaning_ar": "يكون"
   },
   {
     "id": "a1_0572",
@@ -9856,7 +10427,8 @@
     "page": 23,
     "meaning_en": "since",
     "meaning_tr": "o zamandan beri",
-    "meaning_es": "desde"
+    "meaning_es": "desde",
+    "meaning_ar": "منذ"
   },
   {
     "id": "a1_0573",
@@ -9873,7 +10445,8 @@
     "page": 23,
     "meaning_en": "self-employed",
     "meaning_tr": "serbest meslek",
-    "meaning_es": "Trabajadores por cuenta propia"
+    "meaning_es": "Trabajadores por cuenta propia",
+    "meaning_ar": "العاملون لحسابهم الخاص"
   },
   {
     "id": "a1_0574",
@@ -9890,7 +10463,8 @@
     "page": 23,
     "meaning_en": "itself",
     "meaning_tr": "kendisi",
-    "meaning_es": "sí mismo"
+    "meaning_es": "sí mismo",
+    "meaning_ar": "نفسها"
   },
   {
     "id": "a1_0575",
@@ -9907,7 +10481,8 @@
     "page": 23,
     "meaning_en": "she",
     "meaning_tr": "o",
-    "meaning_es": "ella"
+    "meaning_es": "ella",
+    "meaning_ar": "هي"
   },
   {
     "id": "a1_0576",
@@ -9924,7 +10499,8 @@
     "page": 23,
     "meaning_en": "She",
     "meaning_tr": "O",
-    "meaning_es": "Ella"
+    "meaning_es": "Ella",
+    "meaning_ar": "هي"
   },
   {
     "id": "a1_0577",
@@ -9941,7 +10517,8 @@
     "page": 23,
     "meaning_en": "sit",
     "meaning_tr": "oturmak",
-    "meaning_es": "sentarse"
+    "meaning_es": "sentarse",
+    "meaning_ar": "يجلس"
   },
   {
     "id": "a1_0578",
@@ -9961,7 +10538,8 @@
     "page": 23,
     "meaning_en": "so",
     "meaning_tr": "Bu yüzden",
-    "meaning_es": "entonces"
+    "meaning_es": "entonces",
+    "meaning_ar": "لذا"
   },
   {
     "id": "a1_0579",
@@ -9978,7 +10556,8 @@
     "page": 23,
     "meaning_en": "the sofa",
     "meaning_tr": "kanepe",
-    "meaning_es": "el sofá"
+    "meaning_es": "el sofá",
+    "meaning_ar": "الأريكة"
   },
   {
     "id": "a1_0580",
@@ -9995,7 +10574,8 @@
     "page": 23,
     "meaning_en": "immediately",
     "meaning_tr": "hemen",
-    "meaning_es": "inmediatamente"
+    "meaning_es": "inmediatamente",
+    "meaning_ar": "في الحال"
   },
   {
     "id": "a1_0581",
@@ -10012,7 +10592,8 @@
     "page": 23,
     "meaning_en": "the son, -ö, e",
     "meaning_tr": "oğul, -ö, e",
-    "meaning_es": "el hijo, -ö, e"
+    "meaning_es": "el hijo, -ö, e",
+    "meaning_ar": "الابن، -ö، ه"
   },
   {
     "id": "a1_0582",
@@ -10030,7 +10611,8 @@
     "page": 23,
     "meaning_en": "should",
     "meaning_tr": "yapmalı",
-    "meaning_es": "debería"
+    "meaning_es": "debería",
+    "meaning_ar": "يجب"
   },
   {
     "id": "a1_0583",
@@ -10047,7 +10629,8 @@
     "page": 23,
     "meaning_en": "the sun",
     "meaning_tr": "güneş",
-    "meaning_es": "el sol"
+    "meaning_es": "el sol",
+    "meaning_ar": "الشمس"
   },
   {
     "id": "a1_0584",
@@ -10064,7 +10647,8 @@
     "page": 23,
     "meaning_en": "late",
     "meaning_tr": "geç",
-    "meaning_es": "tarde"
+    "meaning_es": "tarde",
+    "meaning_ar": "متأخر"
   },
   {
     "id": "a1_0585",
@@ -10081,7 +10665,8 @@
     "page": 23,
     "meaning_en": "later",
     "meaning_tr": "Daha sonra",
-    "meaning_es": "más tarde"
+    "meaning_es": "más tarde",
+    "meaning_ar": "لاحقاً"
   },
   {
     "id": "a1_0586",
@@ -10098,7 +10683,8 @@
     "page": 23,
     "meaning_en": "the menu",
     "meaning_tr": "menü",
-    "meaning_es": "el menú"
+    "meaning_es": "el menú",
+    "meaning_ar": "القائمة"
   },
   {
     "id": "a1_0587",
@@ -10116,7 +10702,8 @@
     "page": 23,
     "meaning_en": "play",
     "meaning_tr": "oynamak",
-    "meaning_es": "jugar"
+    "meaning_es": "jugar",
+    "meaning_ar": "يلعب"
   },
   {
     "id": "a1_0588",
@@ -10133,7 +10720,8 @@
     "page": 23,
     "meaning_en": "the sport",
     "meaning_tr": "spor",
-    "meaning_es": "el deporte"
+    "meaning_es": "el deporte",
+    "meaning_ar": "الرياضة"
   },
   {
     "id": "a1_0589",
@@ -10150,7 +10738,8 @@
     "page": 23,
     "meaning_en": "the languages",
     "meaning_tr": "diller",
-    "meaning_es": "los idiomas"
+    "meaning_es": "los idiomas",
+    "meaning_ar": "اللغات"
   },
   {
     "id": "a1_0590",
@@ -10167,7 +10756,8 @@
     "page": 23,
     "meaning_en": "speak",
     "meaning_tr": "konuşmak",
-    "meaning_es": "hablar"
+    "meaning_es": "hablar",
+    "meaning_ar": "يتكلم"
   },
   {
     "id": "a1_0591",
@@ -10184,7 +10774,8 @@
     "page": 23,
     "meaning_en": "the city, -ä, e",
     "meaning_tr": "şehir, -ä, e",
-    "meaning_es": "la ciudad, -ä, e"
+    "meaning_es": "la ciudad, -ä, e",
+    "meaning_ar": "المدينة، -ä، ه"
   },
   {
     "id": "a1_0592",
@@ -10202,7 +10793,8 @@
     "page": 23,
     "meaning_en": "stand",
     "meaning_tr": "durmak",
-    "meaning_es": "pararse"
+    "meaning_es": "pararse",
+    "meaning_ar": "يقف"
   },
   {
     "id": "a1_0593",
@@ -10217,7 +10809,8 @@
     "page": 23,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0594",
@@ -10234,7 +10827,8 @@
     "page": 23,
     "meaning_en": "the place, -n",
     "meaning_tr": "yer, -n",
-    "meaning_es": "el lugar, -n"
+    "meaning_es": "el lugar, -n",
+    "meaning_ar": "المكان -ن"
   },
   {
     "id": "a1_0595",
@@ -10251,7 +10845,8 @@
     "page": 24,
     "meaning_en": "place",
     "meaning_tr": "yer",
-    "meaning_es": "lugar"
+    "meaning_es": "lugar",
+    "meaning_ar": "مكان"
   },
   {
     "id": "a1_0596",
@@ -10268,7 +10863,8 @@
     "page": 24,
     "meaning_en": "the stick",
     "meaning_tr": "sopa",
-    "meaning_es": "el palo"
+    "meaning_es": "el palo",
+    "meaning_ar": "العصا"
   },
   {
     "id": "a1_0597",
@@ -10285,7 +10881,8 @@
     "page": 24,
     "meaning_en": "the street, -n",
     "meaning_tr": "sokak, -n",
-    "meaning_es": "la calle, -n"
+    "meaning_es": "la calle, -n",
+    "meaning_ar": "الشارع، -ن"
   },
   {
     "id": "a1_0598",
@@ -10302,7 +10899,8 @@
     "page": 24,
     "meaning_en": "the tram",
     "meaning_tr": "tramvay",
-    "meaning_es": "el tranvía"
+    "meaning_es": "el tranvía",
+    "meaning_ar": "الترام"
   },
   {
     "id": "a1_0599",
@@ -10319,7 +10917,8 @@
     "page": 24,
     "meaning_en": "study",
     "meaning_tr": "çalışmak",
-    "meaning_es": "estudiar"
+    "meaning_es": "estudiar",
+    "meaning_ar": "يذاكر"
   },
   {
     "id": "a1_0600",
@@ -10336,7 +10935,8 @@
     "page": 24,
     "meaning_en": "the study",
     "meaning_tr": "çalışma",
-    "meaning_es": "el estudio"
+    "meaning_es": "el estudio",
+    "meaning_ar": "الدراسة"
   },
   {
     "id": "a1_0601",
@@ -10353,7 +10953,8 @@
     "page": 24,
     "meaning_en": "the student, -en",
     "meaning_tr": "öğrenci, -tr",
-    "meaning_es": "el estudiante, -es"
+    "meaning_es": "el estudiante, -es",
+    "meaning_ar": "الطالب، -en"
   },
   {
     "id": "a1_0602",
@@ -10370,7 +10971,8 @@
     "page": 24,
     "meaning_en": "the hour, -n",
     "meaning_tr": "saat, -n",
-    "meaning_es": "la hora, -n"
+    "meaning_es": "la hora, -n",
+    "meaning_ar": "الساعة، -ن"
   },
   {
     "id": "a1_0603",
@@ -10387,7 +10989,8 @@
     "page": 24,
     "meaning_en": "seek",
     "meaning_tr": "aramak",
-    "meaning_es": "buscar"
+    "meaning_es": "buscar",
+    "meaning_ar": "يطلب"
   },
   {
     "id": "a1_0604",
@@ -10404,7 +11007,8 @@
     "page": 24,
     "meaning_en": "dance",
     "meaning_tr": "tanzen",
-    "meaning_es": "bailar"
+    "meaning_es": "bailar",
+    "meaning_ar": "رقص"
   },
   {
     "id": "a1_0605",
@@ -10421,7 +11025,8 @@
     "page": 24,
     "meaning_en": "the bag, -n",
     "meaning_tr": "çanta, -n",
-    "meaning_es": "la bolsa, -n"
+    "meaning_es": "la bolsa, -n",
+    "meaning_ar": "الحقيبة، -ن"
   },
   {
     "id": "a1_0606",
@@ -10439,7 +11044,8 @@
     "page": 24,
     "meaning_en": "the taxi, -s",
     "meaning_tr": "taksi, -s",
-    "meaning_es": "el taxi, -s"
+    "meaning_es": "el taxi, -s",
+    "meaning_ar": "سيارة الأجرة، -s"
   },
   {
     "id": "a1_0607",
@@ -10456,7 +11062,8 @@
     "page": 24,
     "meaning_en": "the tea",
     "meaning_tr": "çay",
-    "meaning_es": "el te"
+    "meaning_es": "el te",
+    "meaning_ar": "الشاي"
   },
   {
     "id": "a1_0608",
@@ -10473,7 +11080,8 @@
     "page": 24,
     "meaning_en": "the part, -e",
     "meaning_tr": "kısım, -e",
-    "meaning_es": "la parte, -e"
+    "meaning_es": "la parte, -e",
+    "meaning_ar": "الجزء، -ه"
   },
   {
     "id": "a1_0609",
@@ -10490,7 +11098,8 @@
     "page": 24,
     "meaning_en": "make a phone call",
     "meaning_tr": "telefon görüşmesi yapmak",
-    "meaning_es": "hacer una llamada telefónica"
+    "meaning_es": "hacer una llamada telefónica",
+    "meaning_ar": "إجراء مكالمة هاتفية"
   },
   {
     "id": "a1_0610",
@@ -10507,7 +11116,8 @@
     "page": 24,
     "meaning_en": "the phone",
     "meaning_tr": "telefon",
-    "meaning_es": "el telefono"
+    "meaning_es": "el telefono",
+    "meaning_ar": "الهاتف"
   },
   {
     "id": "a1_0611",
@@ -10524,7 +11134,8 @@
     "page": 24,
     "meaning_en": "der Termin, -e",
     "meaning_tr": "randevu, -e",
-    "meaning_es": "la cita, -e"
+    "meaning_es": "la cita, -e",
+    "meaning_ar": "التعيين، -ه"
   },
   {
     "id": "a1_0612",
@@ -10541,7 +11152,8 @@
     "page": 24,
     "meaning_en": "the test",
     "meaning_tr": "test",
-    "meaning_es": "la prueba"
+    "meaning_es": "la prueba",
+    "meaning_ar": "الاختبار"
   },
   {
     "id": "a1_0613",
@@ -10558,7 +11170,8 @@
     "page": 24,
     "meaning_en": "expensive",
     "meaning_tr": "masraflı",
-    "meaning_es": "caro"
+    "meaning_es": "caro",
+    "meaning_ar": "غالي"
   },
   {
     "id": "a1_0614",
@@ -10575,7 +11188,8 @@
     "page": 24,
     "meaning_en": "the text, -e",
     "meaning_tr": "metin, -e",
-    "meaning_es": "el texto, -e"
+    "meaning_es": "el texto, -e",
+    "meaning_ar": "النص، -ه"
   },
   {
     "id": "a1_0615",
@@ -10592,7 +11206,8 @@
     "page": 24,
     "meaning_en": "the topic",
     "meaning_tr": "konu",
-    "meaning_es": "el tema"
+    "meaning_es": "el tema",
+    "meaning_ar": "الموضوع"
   },
   {
     "id": "a1_0616",
@@ -10609,7 +11224,8 @@
     "page": 24,
     "meaning_en": "the ticket, -s",
     "meaning_tr": "bilet, -s",
-    "meaning_es": "el billete, -s"
+    "meaning_es": "el billete, -s",
+    "meaning_ar": "التذكرة، -s"
   },
   {
     "id": "a1_0617",
@@ -10626,7 +11242,8 @@
     "page": 24,
     "meaning_en": "the table, -e",
     "meaning_tr": "tablo, -e",
-    "meaning_es": "la mesa, -e"
+    "meaning_es": "la mesa, -e",
+    "meaning_ar": "الجدول، -ه"
   },
   {
     "id": "a1_0618",
@@ -10643,7 +11260,8 @@
     "page": 24,
     "meaning_en": "the daughter, -ö",
     "meaning_tr": "kızı, -ö",
-    "meaning_es": "la hija, -ö"
+    "meaning_es": "la hija, -ö",
+    "meaning_ar": "الابنة -ö"
   },
   {
     "id": "a1_0619",
@@ -10660,7 +11278,8 @@
     "page": 24,
     "meaning_en": "the toilet, -en",
     "meaning_tr": "tuvalet, -tr",
-    "meaning_es": "el baño, -es"
+    "meaning_es": "el baño, -es",
+    "meaning_ar": "المرحاض، -en"
   },
   {
     "id": "a1_0620",
@@ -10677,7 +11296,8 @@
     "page": 24,
     "meaning_en": "the tomato, -n",
     "meaning_tr": "domates, -n",
-    "meaning_es": "el tomate, -n"
+    "meaning_es": "el tomate, -n",
+    "meaning_ar": "الطماطم، -ن"
   },
   {
     "id": "a1_0621",
@@ -10694,7 +11314,8 @@
     "page": 24,
     "meaning_en": "dead",
     "meaning_tr": "ölü",
-    "meaning_es": "muerto"
+    "meaning_es": "muerto",
+    "meaning_ar": "ميت"
   },
   {
     "id": "a1_0622",
@@ -10712,7 +11333,8 @@
     "page": 24,
     "meaning_en": "(meet",
     "meaning_tr": "(tanışmak",
-    "meaning_es": "(encontrarse"
+    "meaning_es": "(encontrarse",
+    "meaning_ar": "(يقابل"
   },
   {
     "id": "a1_0623",
@@ -10730,7 +11352,8 @@
     "page": 24,
     "meaning_en": "the stairs, -n",
     "meaning_tr": "merdivenler, -n",
-    "meaning_es": "las escaleras, -n"
+    "meaning_es": "las escaleras, -n",
+    "meaning_ar": "الدرج، -ن"
   },
   {
     "id": "a1_0624",
@@ -10747,7 +11370,8 @@
     "page": 24,
     "meaning_en": "drink",
     "meaning_tr": "içmek",
-    "meaning_es": "beber"
+    "meaning_es": "beber",
+    "meaning_ar": "شرب"
   },
   {
     "id": "a1_0625",
@@ -10764,7 +11388,8 @@
     "page": 24,
     "meaning_en": "bye",
     "meaning_tr": "güle güle",
-    "meaning_es": "adiós"
+    "meaning_es": "adiós",
+    "meaning_ar": "الوداع"
   },
   {
     "id": "a1_0626",
@@ -10782,7 +11407,8 @@
     "page": 24,
     "meaning_en": "do",
     "meaning_tr": "Yapmak",
-    "meaning_es": "hacer"
+    "meaning_es": "hacer",
+    "meaning_ar": "يفعل"
   },
   {
     "id": "a1_0627",
@@ -10797,7 +11423,8 @@
     "page": 24,
     "meaning_en": "u",
     "meaning_tr": "sen",
-    "meaning_es": "tu"
+    "meaning_es": "tu",
+    "meaning_ar": "ش"
   },
   {
     "id": "a1_0628",
@@ -10816,7 +11443,8 @@
     "page": 24,
     "meaning_en": "above",
     "meaning_tr": "üstünde",
-    "meaning_es": "arriba"
+    "meaning_es": "arriba",
+    "meaning_ar": "فوق"
   },
   {
     "id": "a1_0629",
@@ -10833,7 +11461,8 @@
     "page": 24,
     "meaning_en": "stay overnight",
     "meaning_tr": "geceyi geçirmek",
-    "meaning_es": "pasar la noche"
+    "meaning_es": "pasar la noche",
+    "meaning_ar": "البقاء بين عشية وضحاها"
   },
   {
     "id": "a1_0630",
@@ -10850,7 +11479,8 @@
     "page": 24,
     "meaning_en": "transfer",
     "meaning_tr": "aktarma",
-    "meaning_es": "transferir"
+    "meaning_es": "transferir",
+    "meaning_ar": "تحويل"
   },
   {
     "id": "a1_0631",
@@ -10867,7 +11497,8 @@
     "page": 24,
     "meaning_en": "the clock",
     "meaning_tr": "saat",
-    "meaning_es": "el reloj"
+    "meaning_es": "el reloj",
+    "meaning_ar": "الساعة"
   },
   {
     "id": "a1_0632",
@@ -10885,7 +11516,8 @@
     "page": 24,
     "meaning_en": "around",
     "meaning_tr": "etrafında",
-    "meaning_es": "alrededor"
+    "meaning_es": "alrededor",
+    "meaning_ar": "حول"
   },
   {
     "id": "a1_0633",
@@ -10902,7 +11534,8 @@
     "page": 24,
     "meaning_en": "move",
     "meaning_tr": "taşınmak",
-    "meaning_es": "mover"
+    "meaning_es": "mover",
+    "meaning_ar": "يتحرك"
   },
   {
     "id": "a1_0634",
@@ -10917,7 +11550,8 @@
     "page": 24,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0635",
@@ -10934,7 +11568,8 @@
     "page": 24,
     "meaning_en": "and",
     "meaning_tr": "Ve",
-    "meaning_es": "y"
+    "meaning_es": "y",
+    "meaning_ar": "و"
   },
   {
     "id": "a1_0636",
@@ -10951,7 +11586,8 @@
     "page": 25,
     "meaning_en": "our-",
     "meaning_tr": "bizim-",
-    "meaning_es": "nuestro-"
+    "meaning_es": "nuestro-",
+    "meaning_ar": "ملكنا-"
   },
   {
     "id": "a1_0637",
@@ -10968,7 +11604,8 @@
     "page": 25,
     "meaning_en": "below",
     "meaning_tr": "altında",
-    "meaning_es": "abajo"
+    "meaning_es": "abajo",
+    "meaning_ar": "أقل"
   },
   {
     "id": "a1_0638",
@@ -10985,7 +11622,8 @@
     "page": 25,
     "meaning_en": "under",
     "meaning_tr": "altında",
-    "meaning_es": "bajo"
+    "meaning_es": "bajo",
+    "meaning_ar": "تحت"
   },
   {
     "id": "a1_0639",
@@ -11002,7 +11640,8 @@
     "page": 25,
     "meaning_en": "the lesson",
     "meaning_tr": "ders",
-    "meaning_es": "la lección"
+    "meaning_es": "la lección",
+    "meaning_ar": "الدرس"
   },
   {
     "id": "a1_0640",
@@ -11019,7 +11658,8 @@
     "page": 25,
     "meaning_en": "sign",
     "meaning_tr": "imza",
-    "meaning_es": "firmar"
+    "meaning_es": "firmar",
+    "meaning_ar": "لافتة"
   },
   {
     "id": "a1_0641",
@@ -11036,7 +11676,8 @@
     "page": 25,
     "meaning_en": "the signature",
     "meaning_tr": "imza",
-    "meaning_es": "la firma"
+    "meaning_es": "la firma",
+    "meaning_ar": "التوقيع"
   },
   {
     "id": "a1_0642",
@@ -11053,7 +11694,8 @@
     "page": 25,
     "meaning_en": "the holidays",
     "meaning_tr": "tatiller",
-    "meaning_es": "las vacaciones"
+    "meaning_es": "las vacaciones",
+    "meaning_ar": "العطلات"
   },
   {
     "id": "a1_0643",
@@ -11070,7 +11712,8 @@
     "page": 25,
     "meaning_en": "the father, -ä",
     "meaning_tr": "baba, -ä",
-    "meaning_es": "el padre, -ä"
+    "meaning_es": "el padre, -ä",
+    "meaning_ar": "الأب، -أ"
   },
   {
     "id": "a1_0644",
@@ -11087,7 +11730,8 @@
     "page": 25,
     "meaning_en": "forbidden",
     "meaning_tr": "yasaklı",
-    "meaning_es": "prohibido"
+    "meaning_es": "prohibido",
+    "meaning_ar": "مُحرَّم"
   },
   {
     "id": "a1_0645",
@@ -11104,7 +11748,8 @@
     "page": 25,
     "meaning_en": "earn",
     "meaning_tr": "para kazanmak",
-    "meaning_es": "ganar"
+    "meaning_es": "ganar",
+    "meaning_ar": "يكسب"
   },
   {
     "id": "a1_0646",
@@ -11121,7 +11766,8 @@
     "page": 25,
     "meaning_en": "the Union",
     "meaning_tr": "Birlik",
-    "meaning_es": "la unión"
+    "meaning_es": "la unión",
+    "meaning_ar": "الاتحاد"
   },
   {
     "id": "a1_0647",
@@ -11138,7 +11784,8 @@
     "page": 25,
     "meaning_en": "married",
     "meaning_tr": "evli",
-    "meaning_es": "casado"
+    "meaning_es": "casado",
+    "meaning_ar": "متزوج"
   },
   {
     "id": "a1_0648",
@@ -11155,7 +11802,8 @@
     "page": 25,
     "meaning_en": "sell",
     "meaning_tr": "satmak",
-    "meaning_es": "vender"
+    "meaning_es": "vender",
+    "meaning_ar": "يبيع"
   },
   {
     "id": "a1_0649",
@@ -11172,7 +11820,8 @@
     "page": 25,
     "meaning_en": "the seller, -",
     "meaning_tr": "satıcı, -",
-    "meaning_es": "el vendedor, -"
+    "meaning_es": "el vendedor, -",
+    "meaning_ar": "البائع، -"
   },
   {
     "id": "a1_0650",
@@ -11189,7 +11838,8 @@
     "page": 25,
     "meaning_en": "rent",
     "meaning_tr": "kira",
-    "meaning_es": "alquilar"
+    "meaning_es": "alquilar",
+    "meaning_ar": "إيجار"
   },
   {
     "id": "a1_0651",
@@ -11207,7 +11857,8 @@
     "page": 25,
     "meaning_en": "the landlord",
     "meaning_tr": "ev sahibi",
-    "meaning_es": "el propietario"
+    "meaning_es": "el propietario",
+    "meaning_ar": "المالك"
   },
   {
     "id": "a1_0652",
@@ -11224,7 +11875,8 @@
     "page": 25,
     "meaning_en": "understand",
     "meaning_tr": "anlamak",
-    "meaning_es": "entender"
+    "meaning_es": "entender",
+    "meaning_ar": "يفهم"
   },
   {
     "id": "a1_0653",
@@ -11241,7 +11893,8 @@
     "page": 25,
     "meaning_en": "the relative, -n",
     "meaning_tr": "akraba, -n",
-    "meaning_es": "el relativo, -n"
+    "meaning_es": "el relativo, -n",
+    "meaning_ar": "النسبي، -ن"
   },
   {
     "id": "a1_0654",
@@ -11258,7 +11911,8 @@
     "page": 25,
     "meaning_en": "much",
     "meaning_tr": "fazla",
-    "meaning_es": "mucho"
+    "meaning_es": "mucho",
+    "meaning_ar": "كثيراً"
   },
   {
     "id": "a1_0655",
@@ -11275,7 +11929,8 @@
     "page": 25,
     "meaning_en": "perhaps",
     "meaning_tr": "belki",
-    "meaning_es": "tal vez"
+    "meaning_es": "tal vez",
+    "meaning_ar": "ربما"
   },
   {
     "id": "a1_0656",
@@ -11293,7 +11948,8 @@
     "page": 25,
     "meaning_en": "from",
     "meaning_tr": "itibaren",
-    "meaning_es": "de"
+    "meaning_es": "de",
+    "meaning_ar": "من"
   },
   {
     "id": "a1_0657",
@@ -11311,7 +11967,8 @@
     "page": 25,
     "meaning_en": "before",
     "meaning_tr": "önce",
-    "meaning_es": "antes"
+    "meaning_es": "antes",
+    "meaning_ar": "قبل"
   },
   {
     "id": "a1_0658",
@@ -11328,7 +11985,8 @@
     "page": 25,
     "meaning_en": "the first name, -n",
     "meaning_tr": "ilk isim, -n",
-    "meaning_es": "el nombre, -n"
+    "meaning_es": "el nombre, -n",
+    "meaning_ar": "الاسم الأول، -ن"
   },
   {
     "id": "a1_0659",
@@ -11346,7 +12004,8 @@
     "page": 25,
     "meaning_en": "the caution",
     "meaning_tr": "dikkat",
-    "meaning_es": "la precaución"
+    "meaning_es": "la precaución",
+    "meaning_ar": "الحذر"
   },
   {
     "id": "a1_0660",
@@ -11364,7 +12023,8 @@
     "page": 25,
     "meaning_en": "(to) imagine",
     "meaning_tr": "hayal etmek",
-    "meaning_es": "(imaginar)"
+    "meaning_es": "(imaginar)",
+    "meaning_ar": "(ل) تخيل"
   },
   {
     "id": "a1_0661",
@@ -11381,7 +12041,8 @@
     "page": 25,
     "meaning_en": "the area code",
     "meaning_tr": "alan kodu",
-    "meaning_es": "el código de área"
+    "meaning_es": "el código de área",
+    "meaning_ar": "رمز المنطقة"
   },
   {
     "id": "a1_0662",
@@ -11396,7 +12057,8 @@
     "page": 25,
     "meaning_en": "w",
     "meaning_tr": "w",
-    "meaning_es": "w"
+    "meaning_es": "w",
+    "meaning_ar": "ث"
   },
   {
     "id": "a1_0663",
@@ -11413,7 +12075,8 @@
     "page": 25,
     "meaning_en": "hike",
     "meaning_tr": "yürüyüş",
-    "meaning_es": "caminata"
+    "meaning_es": "caminata",
+    "meaning_ar": "رفع"
   },
   {
     "id": "a1_0664",
@@ -11432,7 +12095,8 @@
     "page": 25,
     "meaning_en": "When",
     "meaning_tr": "Ne zaman",
-    "meaning_es": "Cuando"
+    "meaning_es": "Cuando",
+    "meaning_ar": "متى"
   },
   {
     "id": "a1_0665",
@@ -11450,7 +12114,8 @@
     "page": 25,
     "meaning_en": "wait",
     "meaning_tr": "Beklemek",
-    "meaning_es": "esperar"
+    "meaning_es": "esperar",
+    "meaning_ar": "انتظر"
   },
   {
     "id": "a1_0666",
@@ -11467,7 +12132,8 @@
     "page": 25,
     "meaning_en": "Why",
     "meaning_tr": "Neden",
-    "meaning_es": "Por qué"
+    "meaning_es": "Por qué",
+    "meaning_ar": "لماذا"
   },
   {
     "id": "a1_0667",
@@ -11485,7 +12151,8 @@
     "page": 25,
     "meaning_en": "What",
     "meaning_tr": "Ne",
-    "meaning_es": "Qué"
+    "meaning_es": "Qué",
+    "meaning_ar": "ماذا"
   },
   {
     "id": "a1_0668",
@@ -11502,7 +12169,8 @@
     "page": 25,
     "meaning_en": "what a",
     "meaning_tr": "ne",
-    "meaning_es": "que"
+    "meaning_es": "que",
+    "meaning_ar": "ما أ"
   },
   {
     "id": "a1_0669",
@@ -11520,7 +12188,8 @@
     "page": 25,
     "meaning_en": "(to wash one self",
     "meaning_tr": "(kendini yıkamak",
-    "meaning_es": "(lavarse uno mismo"
+    "meaning_es": "(lavarse uno mismo",
+    "meaning_ar": "( ليغتسل"
   },
   {
     "id": "a1_0670",
@@ -11537,7 +12206,8 @@
     "page": 25,
     "meaning_en": "the water",
     "meaning_tr": "su",
-    "meaning_es": "el agua"
+    "meaning_es": "el agua",
+    "meaning_ar": "الماء"
   },
   {
     "id": "a1_0671",
@@ -11555,7 +12225,8 @@
     "page": 25,
     "meaning_en": "hurt",
     "meaning_tr": "acıtmak",
-    "meaning_es": "herir"
+    "meaning_es": "herir",
+    "meaning_ar": "يؤذي"
   },
   {
     "id": "a1_0672",
@@ -11572,7 +12243,8 @@
     "page": 25,
     "meaning_en": "female",
     "meaning_tr": "dişi",
-    "meaning_es": "femenino"
+    "meaning_es": "femenino",
+    "meaning_ar": "أنثى"
   },
   {
     "id": "a1_0673",
@@ -11589,7 +12261,8 @@
     "page": 25,
     "meaning_en": "the wine",
     "meaning_tr": "şarap",
-    "meaning_es": "el vino"
+    "meaning_es": "el vino",
+    "meaning_ar": "النبيذ"
   },
   {
     "id": "a1_0674",
@@ -11604,7 +12277,8 @@
     "page": 25,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0675",
@@ -11621,7 +12295,8 @@
     "page": 25,
     "meaning_en": "far",
     "meaning_tr": "uzak",
-    "meaning_es": "lejos"
+    "meaning_es": "lejos",
+    "meaning_ar": "بعيد"
   },
   {
     "id": "a1_0676",
@@ -11638,7 +12313,8 @@
     "page": 26,
     "meaning_en": "further",
     "meaning_tr": "daha öte",
-    "meaning_es": "más"
+    "meaning_es": "más",
+    "meaning_ar": "إضافي"
   },
   {
     "id": "a1_0677",
@@ -11655,7 +12331,8 @@
     "page": 26,
     "meaning_en": "which-",
     "meaning_tr": "Hangi-",
-    "meaning_es": "cual-"
+    "meaning_es": "cual-",
+    "meaning_ar": "أيّ-"
   },
   {
     "id": "a1_0678",
@@ -11672,7 +12349,8 @@
     "page": 26,
     "meaning_en": "the world",
     "meaning_tr": "die Welt",
-    "meaning_es": "el mundo"
+    "meaning_es": "el mundo",
+    "meaning_ar": "العالم"
   },
   {
     "id": "a1_0679",
@@ -11690,7 +12368,8 @@
     "page": 26,
     "meaning_en": "few",
     "meaning_tr": "bir kaç",
-    "meaning_es": "pocos"
+    "meaning_es": "pocos",
+    "meaning_ar": "عدد قليل"
   },
   {
     "id": "a1_0680",
@@ -11707,7 +12386,8 @@
     "page": 26,
     "meaning_en": "who",
     "meaning_tr": "DSÖ",
-    "meaning_es": "OMS"
+    "meaning_es": "OMS",
+    "meaning_ar": "من"
   },
   {
     "id": "a1_0681",
@@ -11724,7 +12404,8 @@
     "page": 26,
     "meaning_en": "become",
     "meaning_tr": "haline gelmek",
-    "meaning_es": "convertirse"
+    "meaning_es": "convertirse",
+    "meaning_ar": "يصبح"
   },
   {
     "id": "a1_0682",
@@ -11741,7 +12422,8 @@
     "page": 26,
     "meaning_en": "the weather",
     "meaning_tr": "hava",
-    "meaning_es": "El clima"
+    "meaning_es": "El clima",
+    "meaning_ar": "الطقس"
   },
   {
     "id": "a1_0683",
@@ -11758,7 +12440,8 @@
     "page": 26,
     "meaning_en": "important",
     "meaning_tr": "önemli",
-    "meaning_es": "importante"
+    "meaning_es": "importante",
+    "meaning_ar": "مهم"
   },
   {
     "id": "a1_0684",
@@ -11781,7 +12464,8 @@
     "page": 26,
     "meaning_en": "How",
     "meaning_tr": "Nasıl",
-    "meaning_es": "Cómo"
+    "meaning_es": "Cómo",
+    "meaning_ar": "كيف"
   },
   {
     "id": "a1_0685",
@@ -11798,7 +12482,8 @@
     "page": 26,
     "meaning_en": "repeat",
     "meaning_tr": "tekrarlamak",
-    "meaning_es": "repetir"
+    "meaning_es": "repetir",
+    "meaning_ar": "يكرر"
   },
   {
     "id": "a1_0686",
@@ -11816,7 +12501,8 @@
     "page": 26,
     "meaning_en": "the re-hearing",
     "meaning_tr": "yeniden duruşma",
-    "meaning_es": "la nueva audiencia"
+    "meaning_es": "la nueva audiencia",
+    "meaning_ar": "إعادة الاستماع"
   },
   {
     "id": "a1_0687",
@@ -11833,7 +12519,8 @@
     "page": 26,
     "meaning_en": "the reunion",
     "meaning_tr": "yeniden birleşme",
-    "meaning_es": "la reunion"
+    "meaning_es": "la reunion",
+    "meaning_ar": "لم الشمل"
   },
   {
     "id": "a1_0688",
@@ -11850,7 +12537,8 @@
     "page": 26,
     "meaning_en": "how much",
     "meaning_tr": "Ne kadar",
-    "meaning_es": "cuánto"
+    "meaning_es": "cuánto",
+    "meaning_ar": "كم ثمن"
   },
   {
     "id": "a1_0689",
@@ -11867,7 +12555,8 @@
     "page": 26,
     "meaning_en": "welcome",
     "meaning_tr": "Hoş geldin",
-    "meaning_es": "bienvenido"
+    "meaning_es": "bienvenido",
+    "meaning_ar": "مرحباً"
   },
   {
     "id": "a1_0690",
@@ -11884,7 +12573,8 @@
     "page": 26,
     "meaning_en": "the wind",
     "meaning_tr": "rüzgar",
-    "meaning_es": "el viento"
+    "meaning_es": "el viento",
+    "meaning_ar": "الريح"
   },
   {
     "id": "a1_0691",
@@ -11901,7 +12591,8 @@
     "page": 26,
     "meaning_en": "we",
     "meaning_tr": "Biz",
-    "meaning_es": "nosotros"
+    "meaning_es": "nosotros",
+    "meaning_ar": "نحن"
   },
   {
     "id": "a1_0692",
@@ -11918,7 +12609,8 @@
     "page": 26,
     "meaning_en": "knowledge",
     "meaning_tr": "bilgi",
-    "meaning_es": "conocimiento"
+    "meaning_es": "conocimiento",
+    "meaning_ar": "معرفة"
   },
   {
     "id": "a1_0693",
@@ -11937,7 +12629,8 @@
     "page": 26,
     "meaning_en": "where",
     "meaning_tr": "Neresi",
-    "meaning_es": "dónde"
+    "meaning_es": "dónde",
+    "meaning_ar": "أين"
   },
   {
     "id": "a1_0694",
@@ -11954,7 +12647,8 @@
     "page": 26,
     "meaning_en": "from where",
     "meaning_tr": "nereden",
-    "meaning_es": "De donde"
+    "meaning_es": "De donde",
+    "meaning_ar": "من أين"
   },
   {
     "id": "a1_0695",
@@ -11972,7 +12666,8 @@
     "page": 26,
     "meaning_en": "where",
     "meaning_tr": "Neresi",
-    "meaning_es": "dónde"
+    "meaning_es": "dónde",
+    "meaning_ar": "أين"
   },
   {
     "id": "a1_0696",
@@ -11989,7 +12684,8 @@
     "page": 26,
     "meaning_en": "reside",
     "meaning_tr": "ikamet etmek",
-    "meaning_es": "residir"
+    "meaning_es": "residir",
+    "meaning_ar": "يقيم"
   },
   {
     "id": "a1_0697",
@@ -12006,7 +12702,8 @@
     "page": 26,
     "meaning_en": "the apartment, -en",
     "meaning_tr": "daire, -tr",
-    "meaning_es": "el apartamento, -es"
+    "meaning_es": "el apartamento, -es",
+    "meaning_ar": "الشقة، -en"
   },
   {
     "id": "a1_0698",
@@ -12023,7 +12720,8 @@
     "page": 26,
     "meaning_en": "want",
     "meaning_tr": "istek",
-    "meaning_es": "desear"
+    "meaning_es": "desear",
+    "meaning_ar": "يريد"
   },
   {
     "id": "a1_0699",
@@ -12040,7 +12738,8 @@
     "page": 26,
     "meaning_en": "the word, -ö, he/-e",
     "meaning_tr": "kelime, -ö, o/-e",
-    "meaning_es": "la palabra, -ö, él/-e"
+    "meaning_es": "la palabra, -ö, él/-e",
+    "meaning_ar": "الكلمة، -ö، هو / -e"
   },
   {
     "id": "a1_0700",
@@ -12057,7 +12756,8 @@
     "page": 26,
     "meaning_en": "wonderful",
     "meaning_tr": "müthiş",
-    "meaning_es": "maravilloso"
+    "meaning_es": "maravilloso",
+    "meaning_ar": "رائع"
   },
   {
     "id": "a1_0701",
@@ -12072,7 +12772,8 @@
     "page": 26,
     "meaning_en": "e.g",
     "meaning_tr": "örneğin",
-    "meaning_es": "p.ej"
+    "meaning_es": "p.ej",
+    "meaning_ar": "على سبيل المثال"
   },
   {
     "id": "a1_0702",
@@ -12089,7 +12790,8 @@
     "page": 26,
     "meaning_en": "pay",
     "meaning_tr": "ödemek",
-    "meaning_es": "pagar"
+    "meaning_es": "pagar",
+    "meaning_ar": "يدفع"
   },
   {
     "id": "a1_0703",
@@ -12106,7 +12808,8 @@
     "page": 26,
     "meaning_en": "the time",
     "meaning_tr": "zaman",
-    "meaning_es": "el tiempo"
+    "meaning_es": "el tiempo",
+    "meaning_ar": "الوقت"
   },
   {
     "id": "a1_0704",
@@ -12123,7 +12826,8 @@
     "page": 26,
     "meaning_en": "currently",
     "meaning_tr": "zurzeit",
-    "meaning_es": "actualmente"
+    "meaning_es": "actualmente",
+    "meaning_ar": "حالياً"
   },
   {
     "id": "a1_0705",
@@ -12140,7 +12844,8 @@
     "page": 26,
     "meaning_en": "the newspaper, -en",
     "meaning_tr": "gazete, -tr",
-    "meaning_es": "el periódico, -es"
+    "meaning_es": "el periódico, -es",
+    "meaning_ar": "الصحيفة، -en"
   },
   {
     "id": "a1_0706",
@@ -12157,7 +12862,8 @@
     "page": 26,
     "meaning_en": "the cigarette, -n",
     "meaning_tr": "sigara, -n",
-    "meaning_es": "el cigarrillo, -n"
+    "meaning_es": "el cigarrillo, -n",
+    "meaning_ar": "السيجارة، -ن"
   },
   {
     "id": "a1_0707",
@@ -12177,7 +12883,8 @@
     "page": 26,
     "meaning_en": "the room, -",
     "meaning_tr": "oda, -",
-    "meaning_es": "la habitación, -"
+    "meaning_es": "la habitación, -",
+    "meaning_ar": "الغرفة، -"
   },
   {
     "id": "a1_0708",
@@ -12194,7 +12901,8 @@
     "page": 26,
     "meaning_en": "the customs",
     "meaning_tr": "gümrükler",
-    "meaning_es": "las costumbres"
+    "meaning_es": "las costumbres",
+    "meaning_ar": "الجمارك"
   },
   {
     "id": "a1_0709",
@@ -12212,7 +12920,8 @@
     "page": 26,
     "meaning_en": "to",
     "meaning_tr": "ile",
-    "meaning_es": "a"
+    "meaning_es": "a",
+    "meaning_ar": "ل"
   },
   {
     "id": "a1_0710",
@@ -12229,7 +12938,8 @@
     "page": 26,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0711",
@@ -12246,7 +12956,8 @@
     "page": 27,
     "meaning_en": "satisfied",
     "meaning_tr": "memnun",
-    "meaning_es": "satisfecho"
+    "meaning_es": "satisfecho",
+    "meaning_ar": "راضي"
   },
   {
     "id": "a1_0712",
@@ -12263,7 +12974,8 @@
     "page": 27,
     "meaning_en": "the train, -ü, e",
     "meaning_tr": "tren, -ü, e",
-    "meaning_es": "el tren, -ü, e"
+    "meaning_es": "el tren, -ü, e",
+    "meaning_ar": "القطار، -ü، ه"
   },
   {
     "id": "a1_0713",
@@ -12281,7 +12993,8 @@
     "page": 27,
     "meaning_en": "back",
     "meaning_tr": "geri",
-    "meaning_es": "atrás"
+    "meaning_es": "atrás",
+    "meaning_ar": "خلف"
   },
   {
     "id": "a1_0714",
@@ -12299,7 +13012,8 @@
     "page": 27,
     "meaning_en": "together",
     "meaning_tr": "birlikte",
-    "meaning_es": "juntos"
+    "meaning_es": "juntos",
+    "meaning_ar": "معاً"
   },
   {
     "id": "a1_0715",
@@ -12317,7 +13031,8 @@
     "page": 27,
     "meaning_en": "between",
     "meaning_tr": "arasında",
-    "meaning_es": "entre"
+    "meaning_es": "entre",
+    "meaning_ar": "بين"
   },
   {
     "id": "a1_0716",
@@ -12332,7 +13047,8 @@
     "page": 27,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   },
   {
     "id": "a1_0717",
@@ -12347,7 +13063,8 @@
     "page": 28,
     "meaning_en": "Literature",
     "meaning_tr": "Edebiyat",
-    "meaning_es": "Literatura"
+    "meaning_es": "Literatura",
+    "meaning_ar": "الأدب"
   },
   {
     "id": "a1_0718",
@@ -12364,7 +13081,8 @@
     "page": 28,
     "meaning_en": "OLD manual. European",
     "meaning_tr": "ESKİ kılavuz. Avrupa",
-    "meaning_es": "Manual ANTIGUO. europeo"
+    "meaning_es": "Manual ANTIGUO. europeo",
+    "meaning_ar": "دليل قديم. الأوروبية"
   },
   {
     "id": "a1_0719",
@@ -12382,7 +13100,8 @@
     "page": 28,
     "meaning_en": "Ed. Association of",
     "meaning_tr": "Hg. Association of",
-    "meaning_es": "Ed. Asociación de"
+    "meaning_es": "Ed. Asociación de",
+    "meaning_ar": "إد. رابطة"
   },
   {
     "id": "a1_0720",
@@ -12399,7 +13118,8 @@
     "page": 28,
     "meaning_en": "Common European",
     "meaning_tr": "Ortak Avrupa",
-    "meaning_es": "europeo común"
+    "meaning_es": "europeo común",
+    "meaning_ar": "الأوروبية المشتركة"
   },
   {
     "id": "a1_0721",
@@ -12416,7 +13136,8 @@
     "page": 28,
     "meaning_en": "judge, on behalf of",
     "meaning_tr": "adına yargıç",
-    "meaning_es": "juez, en nombre de"
+    "meaning_es": "juez, en nombre de",
+    "meaning_ar": "القاضي نيابة عن"
   },
   {
     "id": "a1_0722",
@@ -12433,7 +13154,8 @@
     "page": 28,
     "meaning_en": "sche edition published by the Goethe Institute",
     "meaning_tr": "Goethe Enstitüsü tarafından yayınlanan şema baskısı",
-    "meaning_es": "edición che publicada por el Instituto Goethe"
+    "meaning_es": "edición che publicada por el Instituto Goethe",
+    "meaning_ar": "طبعة sche الصادرة عن معهد جوته"
   },
   {
     "id": "a1_0723",
@@ -12450,7 +13172,8 @@
     "page": 28,
     "meaning_en": "der Kultusminister",
     "meaning_tr": "Eğitim Bakanı",
-    "meaning_es": "el Ministro de Educación"
+    "meaning_es": "el Ministro de Educación",
+    "meaning_ar": "وزير التربية والتعليم"
   },
   {
     "id": "a1_0724",
@@ -12467,7 +13190,8 @@
     "page": 28,
     "meaning_en": "Swiss conference",
     "meaning_tr": "İsviçre konferansı",
-    "meaning_es": "conferencia suiza"
+    "meaning_es": "conferencia suiza",
+    "meaning_ar": "المؤتمر السويسري"
   },
   {
     "id": "a1_0725",
@@ -12484,7 +13208,8 @@
     "page": 28,
     "meaning_en": "the Austrian",
     "meaning_tr": "Avusturyalı",
-    "meaning_es": "el austriaco"
+    "meaning_es": "el austriaco",
+    "meaning_ar": "النمساوي"
   },
   {
     "id": "a1_0726",
@@ -12499,7 +13224,8 @@
     "page": 28,
     "meaning_en": "tur (BMBWK), Munich",
     "meaning_tr": "tur (BMBWK), Münih",
-    "meaning_es": "tur (BMBWK), Múnich"
+    "meaning_es": "tur (BMBWK), Múnich",
+    "meaning_ar": "تور (BMBWK)، ميونيخ"
   },
   {
     "id": "a1_0727",
@@ -12514,7 +13240,8 @@
     "page": 28,
     "meaning_en": "Langenscheidt",
     "meaning_tr": "Langenscheidt",
-    "meaning_es": "Langenscheidt"
+    "meaning_es": "Langenscheidt",
+    "meaning_ar": "لانجينشيدت"
   },
   {
     "id": "a1_0728",
@@ -12531,7 +13258,8 @@
     "page": 28,
     "meaning_en": "Profiles German. Learning objective definitions",
     "meaning_tr": "Profiller Almanca. Öğrenme hedefi tanımları",
-    "meaning_es": "Perfiles alemanes. Definiciones de objetivos de aprendizaje"
+    "meaning_es": "Perfiles alemanes. Definiciones de objetivos de aprendizaje",
+    "meaning_ar": "الملفات الشخصية الألمانية. تعريفات أهداف التعلم"
   },
   {
     "id": "a1_0729",
@@ -12548,7 +13276,8 @@
     "page": 28,
     "meaning_en": "nicative means for",
     "meaning_tr": "için güzel araçlar",
-    "meaning_es": "medios nicativos para"
+    "meaning_es": "medios nicativos para",
+    "meaning_ar": "وسائل أصلية ل"
   },
   {
     "id": "a1_0730",
@@ -12565,7 +13294,8 @@
     "page": 28,
     "meaning_en": "European frame of reference",
     "meaning_tr": "Avrupa referans çerçevesi",
-    "meaning_es": "Marco de referencia europeo"
+    "meaning_es": "Marco de referencia europeo",
+    "meaning_ar": "الإطار المرجعي الأوروبي"
   },
   {
     "id": "a1_0731",
@@ -12582,7 +13312,8 @@
     "page": 28,
     "meaning_en": "Müller, Paul Rusch",
     "meaning_tr": "Müller, Paul Rusch",
-    "meaning_es": "Müller, Paul Rusch"
+    "meaning_es": "Müller, Paul Rusch",
+    "meaning_ar": "مولر، بول روش"
   },
   {
     "id": "a1_0732",
@@ -12597,7 +13328,8 @@
     "page": 28,
     "meaning_en": "separates",
     "meaning_tr": "ayırır",
-    "meaning_es": "coordinados"
+    "meaning_es": "coordinados",
+    "meaning_ar": "يفصل"
   },
   {
     "id": "a1_0733",
@@ -12615,7 +13347,8 @@
     "page": 28,
     "meaning_en": "Waystage. systems",
     "meaning_tr": "Yol aşaması. sistemler",
-    "meaning_es": "Etapa. sistemas"
+    "meaning_es": "Etapa. sistemas",
+    "meaning_ar": "الطريق. أنظمة"
   },
   {
     "id": "a1_0734",
@@ -12632,7 +13365,8 @@
     "page": 28,
     "meaning_en": "objective below threshold level",
     "meaning_tr": "hedef eşik seviyesinin altında",
-    "meaning_es": "objetivo por debajo del nivel umbral"
+    "meaning_es": "objetivo por debajo del nivel umbral",
+    "meaning_ar": "الهدف تحت مستوى العتبة"
   },
   {
     "id": "a1_0735",
@@ -12651,7 +13385,8 @@
     "page": 28,
     "meaning_en": "modern language learning",
     "meaning_tr": "modern dil öğrenimi",
-    "meaning_es": "aprendizaje de idiomas moderno"
+    "meaning_es": "aprendizaje de idiomas moderno",
+    "meaning_ar": "تعلم اللغة الحديثة"
   },
   {
     "id": "a1_0736",
@@ -12668,7 +13403,8 @@
     "page": 28,
     "meaning_en": "ation with M.A. Fitzpatrick",
     "meaning_tr": "ation with M.A. Fitzpatrick,",
-    "meaning_es": "colaboración con M.A. Fitzpatrick"
+    "meaning_es": "colaboración con M.A. Fitzpatrick",
+    "meaning_ar": "مع M. A. فيتزباتريك"
   },
   {
     "id": "a1_0737",
@@ -12683,6 +13419,7 @@
     "page": 28,
     "meaning_en": "213082_20_SV",
     "meaning_tr": "213082_20_SV",
-    "meaning_es": "213082_20_SV"
+    "meaning_es": "213082_20_SV",
+    "meaning_ar": "213082_20_SV"
   }
 ]

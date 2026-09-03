@@ -61,8 +61,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
     },
     {
       icon: <Globe className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />,
-      title: '🇬🇧, 🇹🇷 & 🇪🇸 Pre-Translated Offline Data',
-      description: 'All 5,791 words have English (meaning_en), Turkish (meaning_tr), and Spanish (meaning_es) baked directly into the dataset for 0ms instant display.'
+      title: '🇬🇧, 🇹🇷, 🇪🇸 & 🇸🇦 Pre-Translated Offline Data',
+      description: 'All 5,791 words have English (meaning_en), Turkish (meaning_tr), Spanish (meaning_es), and Arabic (meaning_ar) baked directly into the dataset for 0ms instant display.'
     },
     {
       icon: <Layers className="w-5 h-5 text-rose-600 dark:text-rose-400" />,
