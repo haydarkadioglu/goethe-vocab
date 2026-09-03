@@ -153,10 +153,11 @@ export const App: React.FC = () => {
         const matchWord = w.word.toLowerCase().includes(q);
         const matchEn = w.meaning_en && w.meaning_en.toLowerCase().includes(q);
         const matchTr = w.meaning_tr && w.meaning_tr.toLowerCase().includes(q);
+        const matchEs = w.meaning_es && w.meaning_es.toLowerCase().includes(q);
         const matchForms = w.forms && w.forms.toLowerCase().includes(q);
         const matchPlural = w.plural && w.plural.toLowerCase().includes(q);
         const matchExamples = w.examples && w.examples.some(ex => ex.toLowerCase().includes(q));
-        return matchWord || matchEn || matchTr || matchForms || matchPlural || matchExamples;
+        return matchWord || matchEn || matchTr || matchEs || matchForms || matchPlural || matchExamples;
       }
       return true;
     });
@@ -201,13 +202,14 @@ export const App: React.FC = () => {
   };
 
   const handleDownloadCSV = () => {
-    const headers = ['id', 'level', 'word', 'meaning_en', 'meaning_tr', 'full_entry', 'article', 'pos', 'plural', 'forms', 'examples', 'page'];
+    const headers = ['id', 'level', 'word', 'meaning_en', 'meaning_tr', 'meaning_es', 'full_entry', 'article', 'pos', 'plural', 'forms', 'examples', 'page'];
     const rows = dictionaryFilteredWords.map(w => [
       `"${w.id}"`,
       `"${w.level}"`,
       `"${w.word.replace(/"/g, '""')}"`,
       `"${(w.meaning_en || '').replace(/"/g, '""')}"`,
       `"${(w.meaning_tr || '').replace(/"/g, '""')}"`,
+      `"${(w.meaning_es || '').replace(/"/g, '""')}"`,
       `"${(w.full_entry || '').replace(/"/g, '""')}"`,
       `"${w.article || ''}"`,
       `"${w.pos || ''}"`,

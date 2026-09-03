@@ -20,10 +20,11 @@ export const VocabCard: React.FC<VocabCardProps> = ({
   onToggleFavorite,
   index = 0
 }) => {
-  // Pre-translated meaning (English or Turkish)
+  // Pre-translated meaning (English, Turkish, or Spanish)
   const getPreTranslated = () => {
     if (targetLang === 'en') return word.meaning_en || null;
     if (targetLang === 'tr') return word.meaning_tr || null;
+    if (targetLang === 'es') return word.meaning_es || null;
     return null;
   };
 
@@ -38,7 +39,7 @@ export const VocabCard: React.FC<VocabCardProps> = ({
     const pre = getPreTranslated();
     setWordTranslation(pre);
     setExampleTranslations({});
-  }, [targetLang, word.meaning_en, word.meaning_tr]);
+  }, [targetLang, word.meaning_en, word.meaning_tr, word.meaning_es]);
 
   // Subscribe to speech state
   useEffect(() => {
@@ -79,7 +80,7 @@ export const VocabCard: React.FC<VocabCardProps> = ({
     );
   };
 
-  const isPreTranslated = targetLang === 'en' || targetLang === 'tr';
+  const isPreTranslated = targetLang === 'en' || targetLang === 'tr' || targetLang === 'es';
 
   const handleTranslateWord = async () => {
     if (wordTranslation && !isPreTranslated) {

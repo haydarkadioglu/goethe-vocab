@@ -132,6 +132,8 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
         correctMeaning = targetWord.meaning_en;
       } else if (lang === 'tr' && targetWord.meaning_tr) {
         correctMeaning = targetWord.meaning_tr;
+      } else if (lang === 'es' && targetWord.meaning_es) {
+        correctMeaning = targetWord.meaning_es;
       } else {
         correctMeaning = await translateText(targetWord.word, lang);
       }
@@ -145,6 +147,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
         let m = '';
         if (lang === 'en' && d.meaning_en) m = d.meaning_en;
         else if (lang === 'tr' && d.meaning_tr) m = d.meaning_tr;
+        else if (lang === 'es' && d.meaning_es) m = d.meaning_es;
         else m = await translateText(d.word, lang);
 
         if (m && !optsSet.has(m)) {

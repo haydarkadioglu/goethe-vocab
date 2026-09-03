@@ -8,6 +8,7 @@ export interface VocabWord {
   word: string;
   meaning_en?: string;
   meaning_tr?: string;
+  meaning_es?: string;
   full_entry: string;
   article: 'der' | 'die' | 'das' | null;
   pos: string;

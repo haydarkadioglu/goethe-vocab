@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Volume2, RotateCw, ArrowLeft, ArrowRight, CheckCircle2, Star, Shuffle, Trophy, RotateCcw, Check, BookmarkCheck, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
@@ -35,6 +35,12 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
   const [translation, setTranslation] = useState<string>('');
   const [loadingTrans, setLoadingTrans] = useState(false);
   const [direction, setDirection] = useState<1 | -1>(1);
+
+  const getWordMeaning = useCallback((w: VocabWord) => {
+    if (targetLang === 'tr') return w.meaning_tr || w.meaning_en || '';
+    if (targetLang === 'es') return w.meaning_es || w.meaning_en || '';
+    return w.meaning_en || w.meaning_tr || '';
+  }, [targetLang]);
 
   useEffect(() => {
     localDb.getLearnedCards().then(ids => {
@@ -79,6 +85,11 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
     }
     if (targetLang === 'tr' && currentWord.meaning_tr) {
       setTranslation(currentWord.meaning_tr);
+      setLoadingTrans(false);
+      return;
+    }
+    if (targetLang === 'es' && currentWord.meaning_es) {
+      setTranslation(currentWord.meaning_es);
       setLoadingTrans(false);
       return;
     }
@@ -252,7 +263,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                     <span className="text-[10px] text-amber-600 dark:text-amber-400 font-semibold">(To Review)</span>
                   </div>
                   <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">
-                    {targetLang === 'tr' ? w.meaning_tr || w.meaning_en : w.meaning_en || w.meaning_tr}
+                    {getWordMeaning(w)}
                   </p>
                 </div>
                 <button
@@ -283,7 +294,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                     </span>
                   </div>
                   <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">
-                    {targetLang === 'tr' ? w.meaning_tr || w.meaning_en : w.meaning_en || w.meaning_tr}
+                    {getWordMeaning(w)}
                   </p>
                 </div>
                 <button
