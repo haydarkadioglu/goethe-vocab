@@ -11,7 +11,7 @@ import { HomePage } from './components/HomePage';
 import { VocabWord, CEFRLevel, PartOfSpeech, AppView, SupportedLanguage, ThemeMode } from './types';
 import { localDb } from './services/storage';
 import { speechService } from './services/speech';
-import { Sparkles, ArrowLeft, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowLeft, ArrowRight, Home, BookOpen, Zap, Layers, Award, Headphones, Star } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [allWords, setAllWords] = useState<VocabWord[]>([]);
@@ -274,7 +274,7 @@ export const App: React.FC = () => {
       />
 
       {/* Main Container */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-8">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 pb-28 xl:pb-10">
         
         {/* Filter Controls (Explorer & Favorites) */}
         {(currentView === 'explorer' || currentView === 'favorites') && (
@@ -499,7 +499,7 @@ export const App: React.FC = () => {
       </main>
 
       {/* Modern Footer */}
-      <footer className="border-t border-zinc-200/90 dark:border-zinc-800/90 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md py-6 transition-colors">
+      <footer className="hidden xl:block border-t border-zinc-200/90 dark:border-zinc-800/90 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md py-6 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400">
           <div className="flex items-center gap-2">
             <span className="font-bold text-zinc-700 dark:text-zinc-300">GoetheVocab PWA</span>
@@ -510,9 +510,53 @@ export const App: React.FC = () => {
             <span>🇩🇪 German</span>
             <span>🇬🇧 English</span>
             <span>🇹🇷 Türkçe</span>
+            <span>🇪🇸 Spanish</span>
+            <span>🇸🇦 Arabic</span>
           </div>
         </div>
       </footer>
+
+      {/* Mobile Fixed Bottom Navigation Bar */}
+      <nav aria-label="Mobile Navigation" className="fixed bottom-0 left-0 right-0 z-40 xl:hidden bg-white/95 dark:bg-zinc-950/95 backdrop-blur-xl border-t border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_-4px_24px_rgba(0,0,0,0.07)] pb-safe transition-colors">
+        <div className="flex items-center justify-around px-1.5 py-1.5 max-w-lg mx-auto">
+          {[
+            { id: 'home' as AppView, label: 'Home', icon: <Home className="w-4 h-4" /> },
+            { id: 'explorer' as AppView, label: 'Words', icon: <BookOpen className="w-4 h-4" /> },
+            { id: 'speed-drill' as AppView, label: 'Drill', icon: <Zap className="w-4 h-4" /> },
+            { id: 'flashcards' as AppView, label: 'Cards', icon: <Layers className="w-4 h-4" /> },
+            { id: 'quiz' as AppView, label: 'Quiz', icon: <Award className="w-4 h-4" /> },
+            { id: 'listening' as AppView, label: 'Listen', icon: <Headphones className="w-4 h-4" /> },
+            { id: 'favorites' as AppView, label: 'Saved', icon: <Star className="w-4 h-4" />, badge: favorites.length > 0 ? favorites.length : undefined },
+          ].map((item) => {
+            const isActive = currentView === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => handleSelectView(item.id)}
+                className={`relative flex flex-col items-center justify-center py-1 px-2 rounded-xl transition-all flex-1 min-w-0 ${
+                  isActive
+                    ? 'text-amber-600 dark:text-amber-400 font-extrabold'
+                    : 'text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-800 dark:hover:text-zinc-200'
+                }`}
+              >
+                <div className="relative">
+                  <div className={`p-1 rounded-xl transition-transform ${isActive ? 'scale-110 bg-amber-100 dark:bg-amber-950/70 text-amber-600 dark:text-amber-400' : ''}`}>
+                    {item.icon}
+                  </div>
+                  {item.badge !== undefined && (
+                    <span className="absolute -top-1 -right-1.5 text-[9px] font-mono px-1 py-0.2 rounded-full bg-amber-500 text-white font-bold leading-none shadow-2xs">
+                      {item.badge}
+                    </span>
+                  )}
+                </div>
+                <span className="text-[10px] mt-0.5 tracking-tight truncate max-w-full">
+                  {item.label}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </nav>
 
     </div>
   );

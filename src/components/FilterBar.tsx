@@ -107,9 +107,10 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                       transition={{ type: 'spring', stiffness: 500, damping: 35 }}
                     />
                   )}
-                  <span className="relative z-10">{lvl.label}</span>
+                  <span className="relative z-10 hidden sm:inline">{lvl.label}</span>
+                  <span className="relative z-10 sm:hidden">{lvl.id === 'ALL' ? 'All' : lvl.id}</span>
                   <span
-                    className={`relative z-10 text-[10px] px-1.5 py-0.2 rounded-full font-mono transition-colors hidden xs:inline ${
+                    className={`relative z-10 text-[10px] px-1 py-0.2 rounded-full font-mono transition-colors hidden sm:inline ${
                       active ? 'bg-zinc-100 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-200 font-bold' : 'bg-zinc-200/70 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400'
                     }`}
                   >
