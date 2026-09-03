@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Zap, Flame, Timer, Trophy, RotateCcw, Volume2, ArrowRight, CheckCircle2, XCircle, BookOpen, PauseCircle, Layers } from 'lucide-react';
+import { Zap, Flame, Timer, Trophy, RotateCcw, Volume2, ArrowRight, CheckCircle2, XCircle, BookOpen, PauseCircle, Layers, Target, Check } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { VocabWord, CEFRLevel, SupportedLanguage } from '../types';
 import { speechService } from '../services/speech';
@@ -18,6 +18,7 @@ interface MistakeItem {
 
 export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => {
   const [selectedLevel, setSelectedLevel] = useState<CEFRLevel>('ALL');
+  const [targetCount, setTargetCount] = useState<number>(25);
 
   // Filter only nouns with definite articles matching selected level
   const nouns = useMemo(() => {
@@ -46,7 +47,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [shuffledNouns, setShuffledNouns] = useState<VocabWord[]>([]);
+  const [drillDeck, setDrillDeck] = useState<VocabWord[]>([]);
   
   const [answerState, setAnswerState] = useState<{
     answered: boolean;
@@ -58,47 +59,41 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
     chosenArticle: null,
   });
 
+  const [correctWords, setCorrectWords] = useState<VocabWord[]>([]);
   const [mistakes, setMistakes] = useState<MistakeItem[]>([]);
   const [isTimerPaused, setIsTimerPaused] = useState(false);
+  const [reviewTab, setReviewTab] = useState<'all' | 'mistakes' | 'correct'>('all');
 
   const getWordMeaning = useCallback((w: VocabWord) => {
     if (targetLang === 'tr') return w.meaning_tr || w.meaning_en || '';
     return w.meaning_en || w.meaning_tr || '';
   }, [targetLang]);
 
-  const startGame = useCallback((modeParam?: 'timer' | 'practice', customDuration?: number) => {
-    const selectedMode = modeParam ?? drillMode;
-    const d = customDuration ?? duration;
-    const shuffled = [...nouns].sort(() => Math.random() - 0.5);
-    setShuffledNouns(shuffled);
+  const startGame = useCallback((customPool?: VocabWord[], modeParam?: 'timer' | 'practice', customDuration?: number) => {
+    const pool = customPool ?? nouns;
+    const count = customPool ? customPool.length : Math.min(Math.max(1, targetCount), pool.length || 1);
+    const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, count);
+    
+    setDrillDeck(shuffled);
     setCurrentIndex(0);
     setScore(0);
     setStreak(0);
     setBestStreak(0);
-    setTimeLeft(d);
+    setTimeLeft(customDuration ?? duration);
+    setCorrectWords([]);
     setMistakes([]);
     setIsTimerPaused(false);
     setAnswerState({ answered: false, isCorrect: false, chosenArticle: null });
+    setReviewTab('all');
     setGameState('playing');
-  }, [nouns, duration, drillMode]);
+  }, [nouns, targetCount, duration]);
 
-  // Timer countdown: only runs in 'timer' mode and when NOT paused on a mistake
+  // Timer countdown
   useEffect(() => {
     if (gameState !== 'playing' || drillMode !== 'timer' || isTimerPaused) return;
 
     if (timeLeft <= 0) {
-      setGameState('gameover');
-      if (score > highScore) {
-        setHighScore(score);
-        try {
-          localStorage.setItem('goethe_drill_highscore', score.toString());
-        } catch {}
-        confetti({
-          particleCount: 150,
-          spread: 100,
-          origin: { y: 0.6 }
-        });
-      }
+      finishGame();
       return;
     }
 
@@ -107,15 +102,34 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [gameState, drillMode, isTimerPaused, timeLeft, score, highScore]);
+  }, [gameState, drillMode, isTimerPaused, timeLeft]);
 
-  const currentWord = shuffledNouns[currentIndex];
+  const finishGame = useCallback(() => {
+    setGameState('gameover');
+    if (score > highScore) {
+      setHighScore(score);
+      try {
+        localStorage.setItem('goethe_drill_highscore', score.toString());
+      } catch {}
+      confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 }
+      });
+    }
+  }, [score, highScore]);
+
+  const currentWord = drillDeck[currentIndex];
 
   const handleNextWord = useCallback(() => {
+    if (currentIndex + 1 >= drillDeck.length) {
+      finishGame();
+      return;
+    }
     setAnswerState({ answered: false, isCorrect: false, chosenArticle: null });
     setIsTimerPaused(false);
-    setCurrentIndex(i => (i + 1 < shuffledNouns.length ? i + 1 : 0));
-  }, [shuffledNouns.length]);
+    setCurrentIndex(i => i + 1);
+  }, [currentIndex, drillDeck.length, finishGame]);
 
   const handleAnswer = useCallback((selectedArticle: 'der' | 'die' | 'das') => {
     if (gameState !== 'playing' || !currentWord || answerState.answered) return;
@@ -139,6 +153,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
         setBestStreak(b => Math.max(b, next));
         return next;
       });
+      setCorrectWords(prev => [...prev, currentWord]);
 
       if (drillMode === 'timer') {
         setTimeout(() => {
@@ -184,7 +199,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [gameState, answerState.answered, handleAnswer, handleNextWord]);
 
-  // IDLE SCREEN: Level Selection, Mode Selection & Rules
+  // IDLE SCREEN: Target Count, Level, Mode Selection
   if (gameState === 'idle') {
     return (
       <motion.div
@@ -198,11 +213,66 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
 
         <h2 className="text-2xl sm:text-3xl font-black tracking-tight">"Der, Die, Das" Article Speed Drill</h2>
         <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1.5 max-w-md mx-auto">
-          Master German noun genders into muscle memory. Practice at your own pace or challenge your reflexes against the clock!
+          Master German noun genders into muscle memory. Choose your target word count and practice at your own pace or against the clock!
         </p>
 
+        {/* Target Words Count Input & Presets */}
+        <div className="my-4 p-4 bg-amber-50/60 dark:bg-amber-950/30 rounded-2xl border border-amber-200/80 dark:border-amber-900/60 text-left">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-900 dark:text-amber-300 flex items-center gap-1.5">
+              <Target className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+              <span>Target Words Count:</span>
+            </span>
+            <span className="text-xs font-mono font-bold text-amber-700 dark:text-amber-400">
+              Default: 25 words
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <input
+              type="number"
+              min={1}
+              max={nouns.length || 1000}
+              value={targetCount}
+              onChange={(e) => {
+                const val = parseInt(e.target.value) || 1;
+                setTargetCount(Math.min(Math.max(1, val), nouns.length || 1));
+              }}
+              className="w-24 bg-white dark:bg-zinc-900 text-sm font-black text-zinc-900 dark:text-white px-3 py-2 rounded-xl border border-amber-300 dark:border-amber-800 text-center focus:outline-none focus:ring-2 focus:ring-amber-500"
+            />
+
+            <div className="flex-1 grid grid-cols-4 gap-1.5">
+              {[10, 25, 50].map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  onClick={() => setTargetCount(n)}
+                  className={`py-2 rounded-xl text-xs font-bold transition-all ${
+                    targetCount === n
+                      ? 'bg-amber-500 text-white shadow-xs font-black'
+                      : 'bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100'
+                  }`}
+                >
+                  {n}
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => setTargetCount(nouns.length || 100)}
+                className={`py-2 rounded-xl text-xs font-bold transition-all ${
+                  targetCount === nouns.length
+                    ? 'bg-amber-500 text-white shadow-xs font-black'
+                    : 'bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100'
+                }`}
+              >
+                All
+              </button>
+            </div>
+          </div>
+        </div>
+
         {/* CEFR Level Selector Filter */}
-        <div className="my-5 p-3.5 bg-zinc-50 dark:bg-zinc-800/60 rounded-2xl border border-zinc-200/80 dark:border-zinc-700 text-left">
+        <div className="mb-4 p-3.5 bg-zinc-50 dark:bg-zinc-800/60 rounded-2xl border border-zinc-200/80 dark:border-zinc-700 text-left">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
               <Layers className="w-3.5 h-3.5 text-amber-500" />
@@ -232,7 +302,6 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
 
         {/* Mode Selector Toggle Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5 text-left">
-          
           <button
             onClick={() => setDrillMode('practice')}
             className={`p-4 rounded-2xl border-2 transition-all flex flex-col justify-between ${
@@ -244,10 +313,10 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
             <div>
               <div className="flex items-center gap-1.5 font-black text-sm text-zinc-900 dark:text-white mb-1">
                 <BookOpen className="w-4 h-4 text-amber-500" />
-                <span>Practice Mode (Recommended)</span>
+                <span>Practice Mode (Zen)</span>
               </div>
               <p className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-snug">
-                No timer pressure. Inspect right/wrong answers with audio, then click "Next Word" or press Space to advance.
+                Study {targetCount} words with instant feedback and audio. Click Next or press Space to proceed.
               </p>
             </div>
             <span className={`text-[10px] font-bold uppercase tracking-wider mt-2.5 ${drillMode === 'practice' ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}`}>
@@ -276,7 +345,6 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
               {drillMode === 'timer' ? '✓ Selected' : 'Select'}
             </span>
           </button>
-
         </div>
 
         {/* Timer Duration (if in timer mode) */}
@@ -303,13 +371,6 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
           </div>
         )}
 
-        {/* Keyboard Shortcuts Hint */}
-        <div className="text-xs text-zinc-400 dark:text-zinc-500 mb-6 flex items-center justify-center gap-2.5 sm:gap-3 flex-wrap">
-          <span>Shortcuts: <kbd className="px-1.5 py-0.5 bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 rounded font-mono font-bold">1</kbd> der</span>
-          <span><kbd className="px-1.5 py-0.5 bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 rounded font-mono font-bold">2</kbd> die</span>
-          <span><kbd className="px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 rounded font-mono font-bold">3</kbd> das</span>
-        </div>
-
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
@@ -318,14 +379,17 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
           className="w-full py-4 bg-amber-500 hover:bg-amber-600 disabled:opacity-50 disabled:cursor-not-allowed text-white font-black text-base rounded-2xl shadow-lg shadow-amber-500/25 transition-all flex items-center justify-center gap-2"
         >
           <Zap className="w-5 h-5" />
-          <span>Start Drill ({nouns.length} Nouns)</span>
+          <span>Start Drill ({Math.min(targetCount, nouns.length)} Words)</span>
         </motion.button>
       </motion.div>
     );
   }
 
-  // GAME OVER SCREEN with Mistake Review Breakdown
+  // GAME OVER SCREEN with Full Correct vs Incorrect Results
   if (gameState === 'gameover') {
+    const totalAnswered = correctWords.length + mistakes.length;
+    const accuracy = totalAnswered > 0 ? Math.round((correctWords.length / totalAnswered) * 100) : 0;
+
     return (
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -337,80 +401,167 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
         </div>
 
         <h2 className="text-2xl sm:text-3xl font-black tracking-tight">Drill Completed!</h2>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Great practice on your German articles.</p>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Here is your full performance breakdown:</p>
 
-        <div className="grid grid-cols-2 gap-3 my-6">
-          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
-            <span className="text-3xl sm:text-4xl font-black text-amber-600 dark:text-amber-400">{score}</span>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Total Score</p>
+        {/* Score and Stats Grid */}
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 my-5">
+          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
+            <span className="text-2xl sm:text-3xl font-black text-amber-600 dark:text-amber-400">{accuracy}%</span>
+            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Accuracy</p>
           </div>
-          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
-            <div className="flex items-center justify-center gap-1 text-rose-500">
-              <Flame className="w-5 h-5 sm:w-6 sm:h-6 fill-rose-500" />
-              <span className="text-3xl sm:text-4xl font-black">{bestStreak}</span>
-            </div>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Best Streak</p>
+          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
+            <span className="text-2xl sm:text-3xl font-black text-emerald-600 dark:text-emerald-400">{correctWords.length}</span>
+            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Correct</p>
+          </div>
+          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
+            <span className="text-2xl sm:text-3xl font-black text-rose-600 dark:text-rose-400">{mistakes.length}</span>
+            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Missed</p>
           </div>
         </div>
 
-        {/* Mistakes Review List */}
-        {mistakes.length > 0 && (
-          <div className="my-6 text-left border-t border-zinc-200 dark:border-zinc-800 pt-5">
-            <div className="flex items-center justify-between mb-3">
-              <h4 className="text-xs font-black uppercase tracking-wider text-rose-600 dark:text-rose-400 flex items-center gap-1.5">
-                <XCircle className="w-4 h-4" />
-                <span>Review Missed Words ({mistakes.length})</span>
-              </h4>
-              <span className="text-[10px] text-zinc-400">Learn correct articles:</span>
-            </div>
+        {/* Results Review Tabs (All, Missed, Correct) */}
+        <div className="my-5 text-left border-t border-zinc-200 dark:border-zinc-800 pt-4">
+          
+          <div className="flex items-center gap-1.5 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-xl mb-3 text-xs">
+            <button
+              onClick={() => setReviewTab('all')}
+              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
+                reviewTab === 'all'
+                  ? 'bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white shadow-2xs'
+                  : 'text-zinc-500 hover:text-zinc-800'
+              }`}
+            >
+              All Words ({totalAnswered})
+            </button>
+            <button
+              onClick={() => setReviewTab('mistakes')}
+              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
+                reviewTab === 'mistakes'
+                  ? 'bg-white dark:bg-zinc-900 text-rose-600 dark:text-rose-400 shadow-2xs'
+                  : 'text-zinc-500 hover:text-rose-600'
+              }`}
+            >
+              Missed ({mistakes.length})
+            </button>
+            <button
+              onClick={() => setReviewTab('correct')}
+              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
+                reviewTab === 'correct'
+                  ? 'bg-white dark:bg-zinc-900 text-emerald-600 dark:text-emerald-400 shadow-2xs'
+                  : 'text-zinc-500 hover:text-emerald-600'
+              }`}
+            >
+              Correct ({correctWords.length})
+            </button>
+          </div>
 
-            <div className="max-h-56 overflow-y-auto space-y-2 pr-1">
-              {mistakes.map((m, idx) => (
-                <div
-                  key={idx}
-                  className="bg-zinc-50 dark:bg-zinc-800/80 p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-700 flex items-center justify-between text-xs gap-2"
-                >
+          {/* List Content */}
+          <div className="max-h-64 overflow-y-auto space-y-2 pr-1">
+            
+            {/* Show Mistakes */}
+            {(reviewTab === 'all' || reviewTab === 'mistakes') && mistakes.map((m, idx) => (
+              <div
+                key={`m-${idx}`}
+                className="bg-rose-50/50 dark:bg-rose-950/30 p-3 rounded-2xl border border-rose-200/70 dark:border-rose-900/60 flex items-center justify-between text-xs gap-2"
+              >
+                <div className="flex flex-col gap-0.5">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="px-2 py-0.5 rounded font-mono font-black uppercase text-white bg-emerald-600">
                       {m.correctArticle}
                     </span>
-                    <span className="font-bold text-zinc-900 dark:text-white">
+                    <span className="font-bold text-zinc-900 dark:text-white text-sm">
                       {m.word.word.replace(/^(der|die|das)\s+/, '')}
                     </span>
-                    <span className="text-[10px] text-zinc-400">
-                      (You selected: <span className="line-through text-rose-500">{m.chosenArticle}</span>)
+                    <span className="text-[11px] text-rose-600 dark:text-rose-400 font-semibold">
+                      (You selected: <span className="line-through">{m.chosenArticle}</span>)
                     </span>
                   </div>
-
-                  <button
-                    onClick={() => speechService.speak(`${m.correctArticle} ${m.word.word}`)}
-                    className="p-1.5 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-500 shrink-0"
-                    title="Pronounce"
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                  </button>
+                  <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                    Meaning: <strong className="text-zinc-700 dark:text-zinc-200">{getWordMeaning(m.word)}</strong>
+                  </p>
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
 
-        <div className="flex flex-col sm:flex-row items-center gap-3">
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => startGame()}
-            className="flex-1 w-full py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
-          >
-            <RotateCcw className="w-4 h-4" />
-            <span>Play Again</span>
-          </motion.button>
-          <button
-            onClick={() => setGameState('idle')}
-            className="w-full sm:w-auto px-5 py-3.5 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 font-bold rounded-2xl transition-all text-sm"
-          >
-            Change Settings
-          </button>
+                <button
+                  onClick={() => speechService.speak(`${m.correctArticle} ${m.word.word}`)}
+                  className="p-2 rounded-xl bg-white dark:bg-zinc-800 hover:bg-zinc-100 text-zinc-600 dark:text-zinc-300 shadow-2xs shrink-0"
+                  title="Pronounce"
+                >
+                  <Volume2 className="w-4 h-4" />
+                </button>
+              </div>
+            ))}
+
+            {/* Show Correct Words */}
+            {(reviewTab === 'all' || reviewTab === 'correct') && correctWords.map((w, idx) => (
+              <div
+                key={`c-${idx}`}
+                className="bg-emerald-50/50 dark:bg-emerald-950/30 p-3 rounded-2xl border border-emerald-200/70 dark:border-emerald-900/60 flex items-center justify-between text-xs gap-2"
+              >
+                <div className="flex flex-col gap-0.5">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="px-2 py-0.5 rounded font-mono font-black uppercase text-white bg-emerald-600">
+                      {w.article}
+                    </span>
+                    <span className="font-bold text-zinc-900 dark:text-white text-sm">
+                      {w.word.replace(/^(der|die|das)\s+/, '')}
+                    </span>
+                    <span className="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-0.5">
+                      <Check className="w-3.5 h-3.5" /> Correct
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                    Meaning: <strong className="text-zinc-700 dark:text-zinc-200">{getWordMeaning(w)}</strong>
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => speechService.speak(`${w.article} ${w.word}`)}
+                  className="p-2 rounded-xl bg-white dark:bg-zinc-800 hover:bg-zinc-100 text-zinc-600 dark:text-zinc-300 shadow-2xs shrink-0"
+                  title="Pronounce"
+                >
+                  <Volume2 className="w-4 h-4" />
+                </button>
+              </div>
+            ))}
+
+            {totalAnswered === 0 && (
+              <p className="text-center py-6 text-zinc-400 text-xs">No words answered.</p>
+            )}
+
+          </div>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex flex-col gap-2.5 pt-2">
+          {mistakes.length > 0 && (
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => startGame(mistakes.map(m => m.word))}
+              className="w-full py-3.5 bg-rose-600 hover:bg-rose-700 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
+            >
+              <RotateCcw className="w-4 h-4" />
+              <span>Practice Missed Words ({mistakes.length})</span>
+            </motion.button>
+          )}
+
+          <div className="flex flex-col sm:flex-row items-center gap-2.5">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => startGame()}
+              className="flex-1 w-full py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
+            >
+              <RotateCcw className="w-4 h-4" />
+              <span>Play Again ({targetCount} Words)</span>
+            </motion.button>
+            <button
+              onClick={() => setGameState('idle')}
+              className="w-full sm:w-auto px-5 py-3.5 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 font-bold rounded-2xl transition-all text-sm"
+            >
+              Change Settings
+            </button>
+          </div>
         </div>
       </motion.div>
     );
@@ -461,7 +612,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
                 </div>
                 <div>
                   <span className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-white">Practice Mode</span>
-                  <p className="text-[9px] sm:text-[10px] text-zinc-400">Untimed</p>
+                  <p className="text-[9px] sm:text-[10px] text-zinc-400">Target: {drillDeck.length} words</p>
                 </div>
               </div>
             )}
@@ -484,7 +635,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
           <div className="text-right shrink-0">
             <span className="text-lg sm:text-2xl font-black text-amber-600 dark:text-amber-400">{score}</span>
             <p className="text-[9px] sm:text-[10px] font-bold text-zinc-400 uppercase tracking-wider">
-              {currentIndex + 1} / {shuffledNouns.length}
+              {currentIndex + 1} / {drillDeck.length}
             </p>
           </div>
 
@@ -515,8 +666,6 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
 
         {/* Noun Prompt */}
         <div className="py-4 sm:py-6">
-          
-          {/* Highlighted Article if Answered */}
           {answerState.answered ? (
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
@@ -582,7 +731,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
           )}
         </AnimatePresence>
 
-        {/* 3 Giant Article Choice Buttons */}
+        {/* 3 Article Buttons */}
         <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-2">
           
           {/* DER */}
@@ -677,7 +826,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
 
         </div>
 
-        {/* PROMINENT "NEXT WORD" BUTTON WHEN ANSWERED */}
+        {/* NEXT BUTTON */}
         {answerState.answered && (
           <motion.div
             initial={{ opacity: 0, y: 8 }}
@@ -694,7 +843,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => 
               onClick={handleNextWord}
               className="w-full sm:w-auto px-7 py-3.5 bg-zinc-900 dark:bg-amber-500 hover:bg-zinc-800 dark:hover:bg-amber-600 text-white dark:text-zinc-950 font-black rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm ml-auto"
             >
-              <span>{drillMode === 'timer' && !answerState.isCorrect ? 'Resume Timer →' : 'Next Word (Advance) →'}</span>
+              <span>{currentIndex + 1 >= drillDeck.length ? 'View Final Results 🏆' : 'Next Word (Advance) →'}</span>
               <ArrowRight className="w-4 h-4" />
             </motion.button>
           </motion.div>
