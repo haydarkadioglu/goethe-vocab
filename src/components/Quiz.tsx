@@ -75,13 +75,21 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
         const regex = new RegExp(`\\b${baseWord}\\w*`, 'i');
         if (regex.test(sentence)) {
           const blanked = sentence.replace(regex, '_______');
-          const distractors = words
-            .filter(x => x.id !== w.id && x.pos === w.pos)
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 3)
-            .map(x => x.word.replace(/^(der|die|das)\s+/, '').split(',')[0].trim());
+          const optsSet = new Set<string>([baseWord]);
 
-          const opts = Array.from(new Set([baseWord, ...distractors])).sort(() => Math.random() - 0.5);
+          const candidates = words
+            .filter(x => x.id !== w.id)
+            .sort(() => Math.random() - 0.5);
+
+          for (const c of candidates) {
+            const clean = c.word.replace(/^(der|die|das)\s+/, '').split(',')[0].trim();
+            if (clean && !optsSet.has(clean)) {
+              optsSet.add(clean);
+              if (optsSet.size === 4) break;
+            }
+          }
+
+          const opts = Array.from(optsSet).sort(() => Math.random() - 0.5);
 
           newQuestions.push({
             type: 'fillIn',
@@ -120,20 +128,24 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
         correctMeaning = await translateText(targetWord.word, lang);
       }
 
-      const distractorsRaw = pool
+      const optsSet = new Set<string>([correctMeaning]);
+      const candidates = pool
         .filter(x => x.id !== targetWord.id)
-        .sort(() => Math.random() - 0.5)
-        .slice(0, 3);
+        .sort(() => Math.random() - 0.5);
 
-      const distractorMeanings = await Promise.all(
-        distractorsRaw.map(async d => {
-          if (lang === 'en' && d.meaning_en) return d.meaning_en;
-          if (lang === 'tr' && d.meaning_tr) return d.meaning_tr;
-          return await translateText(d.word, lang);
-        })
-      );
+      for (const d of candidates) {
+        let m = '';
+        if (lang === 'en' && d.meaning_en) m = d.meaning_en;
+        else if (lang === 'tr' && d.meaning_tr) m = d.meaning_tr;
+        else m = await translateText(d.word, lang);
 
-      const allOpts = Array.from(new Set([correctMeaning, ...distractorMeanings])).sort(() => Math.random() - 0.5);
+        if (m && !optsSet.has(m)) {
+          optsSet.add(m);
+          if (optsSet.size === 4) break;
+        }
+      }
+
+      const allOpts = Array.from(optsSet).sort(() => Math.random() - 0.5);
 
       qList.push({
         type: 'meaning',
@@ -210,7 +222,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
 
   if (loading) {
     return (
-      <div className="max-w-xl mx-auto py-20 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
+      <div className="max-w-xl mx-auto py-16 sm:py-20 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6 sm:p-8">
         <Sparkles className="w-10 h-10 text-amber-500 animate-spin mx-auto mb-3" />
         <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Alıştırma Quizi Hazırlanıyor...</h3>
         <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Orijinal Goethe kelime listesinden {questionCount} soru üretiliyor</p>
@@ -220,7 +232,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
 
   if (questions.length === 0) {
     return (
-      <div className="max-w-xl mx-auto py-16 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-xs">
+      <div className="max-w-xl mx-auto py-16 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-xs p-6 sm:p-8">
         <HelpCircle className="w-12 h-12 text-zinc-400 mx-auto mb-3" />
         <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Filtreye uygun yeterli kelime bulunamadı</h3>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">Lütfen filtreleri sıfırlayın veya "Tüm Seviyeler"i seçin.</p>
@@ -237,7 +249,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="max-w-xl mx-auto bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_12px_40px_rgba(0,0,0,0.06)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] p-6 sm:p-8 text-center text-zinc-900 dark:text-white"
+        className="max-w-xl mx-auto bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_12px_40px_rgba(0,0,0,0.06)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] p-5 sm:p-8 text-center text-zinc-900 dark:text-white"
       >
         <div className="w-16 h-16 rounded-3xl bg-amber-100/80 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 flex items-center justify-center mx-auto mb-4 border border-amber-200/80 dark:border-amber-800 shadow-xs">
           <Award className="w-8 h-8" />
@@ -279,7 +291,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
                     {m.question.subPrompt && (
                       <p className="text-zinc-500 italic text-[11px]">"{m.question.subPrompt}"</p>
                     )}
-                    <div className="flex items-center gap-2 pt-1">
+                    <div className="flex items-center gap-2 pt-1 flex-wrap">
                       <span className="text-rose-600 dark:text-rose-400 font-semibold line-through">
                         Seçilen: {m.selected}
                       </span>
@@ -315,8 +327,8 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
     <div className="max-w-xl mx-auto space-y-4">
       
       {/* Quiz Configuration Bar */}
-      <div className="bg-white/95 dark:bg-zinc-900/95 border border-zinc-200/90 dark:border-zinc-800 rounded-3xl p-4 shadow-xs">
-        <div className="flex flex-wrap items-center justify-between gap-3">
+      <div className="bg-white/95 dark:bg-zinc-900/95 border border-zinc-200/90 dark:border-zinc-800 rounded-3xl p-3 sm:p-4 shadow-xs">
+        <div className="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3">
           
           <div className="flex items-center gap-2">
             <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">
@@ -375,10 +387,10 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
       </div>
 
       {/* Question Card */}
-      <div className="bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_8px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] p-6 sm:p-8 backdrop-blur-md text-zinc-900 dark:text-white">
+      <div className="bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_8px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] p-5 sm:p-8 backdrop-blur-md text-zinc-900 dark:text-white">
         
         {/* Progress Bar */}
-        <div className="w-full h-1.5 bg-zinc-200/70 dark:bg-zinc-800 rounded-full mb-6 overflow-hidden">
+        <div className="w-full h-1.5 bg-zinc-200/70 dark:bg-zinc-800 rounded-full mb-5 sm:mb-6 overflow-hidden">
           <motion.div
             className="h-full bg-amber-500"
             animate={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
@@ -396,15 +408,15 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
             transition={{ duration: 0.2 }}
           >
             {/* Prompt */}
-            <div className="mb-6 text-center">
+            <div className="mb-5 sm:mb-6 text-center">
               <span className="inline-block px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 mb-2">
                 Seviye {currentQ.word.level}
               </span>
-              <h3 className="text-lg font-black leading-snug">
+              <h3 className="text-base sm:text-lg font-black leading-snug">
                 {currentQ.prompt}
               </h3>
               {currentQ.subPrompt && (
-                <div className="mt-3 p-3 bg-zinc-50/90 dark:bg-zinc-800/80 border border-zinc-200/80 dark:border-zinc-700 rounded-2xl text-sm font-medium text-zinc-700 dark:text-zinc-300 italic flex items-center justify-between gap-2">
+                <div className="mt-2.5 p-3 bg-zinc-50/90 dark:bg-zinc-800/80 border border-zinc-200/80 dark:border-zinc-700 rounded-2xl text-xs sm:text-sm font-medium text-zinc-700 dark:text-zinc-300 italic flex items-center justify-between gap-2">
                   <span>"{currentQ.subPrompt}"</span>
                   <button
                     onClick={() => speechService.speak(currentQ.word.word)}
@@ -418,7 +430,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
             </div>
 
             {/* Options Grid */}
-            <div className="space-y-2.5 mb-6">
+            <div className="space-y-2 sm:space-y-2.5 mb-5">
               {currentQ.options.map((opt, idx) => {
                 let btnClass = 'bg-zinc-50/90 dark:bg-zinc-800/80 hover:bg-zinc-100/90 dark:hover:bg-zinc-700/80 border-zinc-200/80 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200';
                 if (isSubmitted) {
@@ -438,10 +450,10 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
                     whileTap={!isSubmitted ? { scale: 0.99 } : {}}
                     onClick={() => handleSelectOption(opt)}
                     disabled={isSubmitted}
-                    className={`w-full text-left px-5 py-3.5 rounded-2xl border-2 transition-all flex items-center justify-between text-sm ${btnClass}`}
+                    className={`w-full text-left px-4 sm:px-5 py-3 sm:py-3.5 rounded-2xl border-2 transition-all flex items-center justify-between text-xs sm:text-sm ${btnClass}`}
                   >
-                    <div className="flex items-center gap-3">
-                      <span className="w-5 h-5 rounded-lg bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-mono text-xs flex items-center justify-center font-bold">
+                    <div className="flex items-center gap-2.5 sm:gap-3">
+                      <span className="w-5 h-5 rounded-lg bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-mono text-xs flex items-center justify-center font-bold shrink-0">
                         {idx + 1}
                       </span>
                       <span className="font-semibold">{opt}</span>
@@ -470,14 +482,14 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
 
                 <div className="flex items-center justify-between gap-3">
                   <span className="text-xs text-zinc-400 hidden sm:inline">
-                    <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> veya <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Enter</kbd> ile geçebilirsiniz
+                    <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> veya <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Enter</kbd> ile geçin
                   </span>
 
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={handleNextQuestion}
-                    className="w-full sm:w-auto px-8 py-3.5 bg-zinc-900 dark:bg-amber-500 hover:bg-zinc-800 dark:hover:bg-amber-600 text-white dark:text-zinc-950 font-bold rounded-2xl shadow-md transition-all text-sm ml-auto flex items-center justify-center gap-2"
+                    className="w-full sm:w-auto px-7 py-3.5 bg-zinc-900 dark:bg-amber-500 hover:bg-zinc-800 dark:hover:bg-amber-600 text-white dark:text-zinc-950 font-bold rounded-2xl shadow-md transition-all text-xs sm:text-sm ml-auto flex items-center justify-center gap-2"
                   >
                     <span>{currentIndex + 1 < questions.length ? 'Sonraki Soru (İleri) →' : 'Sonuçları Gör'}</span>
                     <ArrowRight className="w-4 h-4" />

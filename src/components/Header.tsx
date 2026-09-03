@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Home, BookOpen, Layers, Award, Star, Download, Globe, Sun, Moon, Laptop, Zap, Headphones, Gauge } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { AppView, SupportedLanguage, ThemeMode } from '../types';
@@ -58,37 +58,37 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-40 bg-zinc-100/90 dark:bg-zinc-950/85 backdrop-blur-xl border-b border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_2px_16px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20 gap-2">
           
           {/* Brand */}
           <motion.div 
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
-            className="flex items-center gap-3 cursor-pointer group"
+            className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group shrink-0"
             onClick={() => onSelectView('home')}
           >
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20 border border-white/40 group-hover:scale-105 transition-transform">
-              <span className="text-xl select-none">🇩🇪</span>
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20 border border-white/40 group-hover:scale-105 transition-transform shrink-0">
+              <span className="text-lg sm:text-xl select-none">🇩🇪</span>
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <span className="font-extrabold text-lg sm:text-xl tracking-tight text-zinc-900 dark:text-white">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="font-extrabold text-base sm:text-xl tracking-tight text-zinc-900 dark:text-white">
                   Goethe<span className="text-amber-600 dark:text-amber-500">Vocab</span>
                 </span>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-zinc-200/90 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-300/80 dark:border-zinc-700">
+                <span className="px-1.5 sm:px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold uppercase tracking-wider bg-zinc-200/90 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-300/80 dark:border-zinc-700">
                   A1-B1
                 </span>
               </div>
-              <p className="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hidden sm:block">
+              <p className="text-[10px] sm:text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hidden md:block">
                 Official Goethe-Institut ({totalWords.toLocaleString()} words)
               </p>
             </div>
           </motion.div>
 
           {/* Desktop Navigation Modes with Animated Glider Pill */}
-          <nav className="hidden lg:flex items-center gap-1 bg-zinc-200/70 dark:bg-zinc-900/90 p-1.5 rounded-2xl border border-zinc-300/60 dark:border-zinc-800 shadow-inner">
+          <nav className="hidden xl:flex items-center gap-1 bg-zinc-200/70 dark:bg-zinc-900/90 p-1.5 rounded-2xl border border-zinc-300/60 dark:border-zinc-800 shadow-inner">
             {navItems.map((item) => {
               const isActive = currentView === item.id;
               return (
@@ -126,8 +126,8 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </nav>
 
-          {/* Right Tools */}
-          <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Right Tools (Speed, Theme, Target Language, Quick Exports) */}
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             
             {/* Audio Speed Controller Toggle */}
             <motion.button
@@ -135,7 +135,7 @@ export const Header: React.FC<HeaderProps> = ({
               whileTap={{ scale: 0.95 }}
               onClick={toggleSpeechRate}
               title={`Speech Speed: ${speechRate}x (Click to change)`}
-              className="flex items-center gap-1 px-2.5 py-1.5 bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl shadow-xs text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+              className="flex items-center gap-1 px-2 sm:px-2.5 py-1.5 bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl shadow-xs text-[11px] sm:text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all shrink-0"
             >
               <Gauge className="w-3.5 h-3.5 text-amber-500" />
               <span>{speechRate}x</span>
@@ -147,7 +147,7 @@ export const Header: React.FC<HeaderProps> = ({
               whileTap={{ scale: 0.95 }}
               onClick={onToggleTheme}
               title="Toggle Theme (Light / Dark / System)"
-              className="p-2 bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex items-center justify-center text-zinc-700 dark:text-zinc-300"
+              className="p-1.5 sm:p-2 bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex items-center justify-center text-zinc-700 dark:text-zinc-300 shrink-0"
             >
               {getThemeIcon()}
             </motion.button>
@@ -155,13 +155,13 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Language Selector Dropdown */}
             <motion.div 
               whileHover={{ scale: 1.01 }}
-              className="relative flex items-center bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl px-2.5 sm:px-3 py-1.5 shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+              className="relative flex items-center bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl px-2 sm:px-3 py-1.5 shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all shrink-0"
             >
-              <Globe className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 mr-1.5 shrink-0" />
+              <Globe className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 mr-1 sm:mr-1.5 shrink-0" />
               <select
                 value={targetLang}
                 onChange={(e) => onChangeLang(e.target.value as SupportedLanguage)}
-                className="bg-transparent text-xs font-bold text-zinc-800 dark:text-zinc-200 focus:outline-none cursor-pointer pr-1"
+                className="bg-transparent text-[11px] sm:text-xs font-bold text-zinc-800 dark:text-zinc-200 focus:outline-none cursor-pointer pr-0.5 max-w-[90px] sm:max-w-none"
               >
                 {SUPPORTED_LANGUAGES.map((lang) => (
                   <option key={lang.code} value={lang.code} className="dark:bg-zinc-900 dark:text-zinc-200">
@@ -172,7 +172,7 @@ export const Header: React.FC<HeaderProps> = ({
             </motion.div>
 
             {/* Quick Export Buttons */}
-            <div className="hidden xl:flex items-center gap-1.5 border-l border-zinc-200/80 dark:border-zinc-800 pl-2">
+            <div className="hidden 2xl:flex items-center gap-1.5 border-l border-zinc-200/80 dark:border-zinc-800 pl-2">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -199,20 +199,31 @@ export const Header: React.FC<HeaderProps> = ({
 
         </div>
 
-        {/* Mobile / Tablet Navigation Row */}
-        <div className="flex lg:hidden items-center justify-around py-2 border-t border-zinc-200/60 dark:border-zinc-800/60 overflow-x-auto">
+        {/* Mobile & Tablet Navigation Row with Smooth Horizontal Scroll & Touch Paging */}
+        <div className="flex xl:hidden items-center gap-1.5 py-2 border-t border-zinc-200/60 dark:border-zinc-800/60 overflow-x-auto no-scrollbar scroll-smooth px-1">
           {navItems.map((item) => {
             const isActive = currentView === item.id;
             return (
               <button
                 key={item.id}
                 onClick={() => onSelectView(item.id)}
-                className={`flex flex-col items-center py-1 px-2 text-[11px] font-medium whitespace-nowrap transition-colors ${
-                  isActive ? 'text-amber-600 dark:text-amber-400 font-bold' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
+                className={`flex items-center gap-1.5 py-1.5 px-3 rounded-xl text-xs font-bold whitespace-nowrap transition-all shrink-0 ${
+                  isActive
+                    ? 'bg-amber-500 text-white shadow-xs'
+                    : 'bg-zinc-200/60 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800'
                 }`}
               >
-                <div className="mb-0.5">{item.icon}</div>
+                <div className="shrink-0">{item.icon}</div>
                 <span>{item.label}</span>
+                {item.badge !== undefined && (
+                  <span
+                    className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
+                      isActive ? 'bg-white/20 text-white' : 'bg-zinc-300 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300'
+                    }`}
+                  >
+                    {item.badge}
+                  </span>
+                )}
               </button>
             );
           })}

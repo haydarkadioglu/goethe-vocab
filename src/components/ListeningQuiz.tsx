@@ -51,13 +51,35 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
 
     const shuffled = [...words].sort(() => Math.random() - 0.5).slice(0, 10);
     const newQuestions: ListeningQuestion[] = shuffled.map(w => {
-      const distractors = words
-        .filter(x => x.id !== w.id && x.pos === w.pos)
-        .sort(() => Math.random() - 0.5)
-        .slice(0, 3)
-        .map(x => x.word);
+      const optsSet = new Set<string>([w.word]);
 
-      const opts = Array.from(new Set([w.word, ...distractors])).sort(() => Math.random() - 0.5);
+      // 1. Try matching part of speech
+      const samePosCandidates = words
+        .filter(x => x.id !== w.id && x.pos === w.pos)
+        .sort(() => Math.random() - 0.5);
+
+      for (const c of samePosCandidates) {
+        if (!optsSet.has(c.word)) {
+          optsSet.add(c.word);
+          if (optsSet.size === 4) break;
+        }
+      }
+
+      // 2. Backfill with any other words in pool to guarantee 4 unique options
+      if (optsSet.size < 4) {
+        const anyCandidates = words
+          .filter(x => x.id !== w.id)
+          .sort(() => Math.random() - 0.5);
+
+        for (const c of anyCandidates) {
+          if (!optsSet.has(c.word)) {
+            optsSet.add(c.word);
+            if (optsSet.size === 4) break;
+          }
+        }
+      }
+
+      const opts = Array.from(optsSet).sort(() => Math.random() - 0.5);
 
       return {
         word: w,
@@ -158,7 +180,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
 
   if (loading) {
     return (
-      <div className="max-w-xl mx-auto py-20 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800">
+      <div className="max-w-xl mx-auto py-16 sm:py-20 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 p-6">
         <Sparkles className="w-10 h-10 text-indigo-500 animate-spin mx-auto mb-3" />
         <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Dinleme Soruları Hazırlanıyor...</h3>
       </div>
@@ -167,7 +189,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
 
   if (questions.length === 0) {
     return (
-      <div className="max-w-xl mx-auto py-16 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 p-8">
+      <div className="max-w-xl mx-auto py-16 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8">
         <Headphones className="w-12 h-12 text-zinc-400 mx-auto mb-3" />
         <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Filtreye uygun kelime bulunamadı</h3>
       </div>
@@ -180,7 +202,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="max-w-xl mx-auto bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8 text-center text-zinc-900 dark:text-white shadow-xl"
+        className="max-w-xl mx-auto bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 p-5 sm:p-8 text-center text-zinc-900 dark:text-white shadow-xl"
       >
         <div className="w-16 h-16 rounded-3xl bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mx-auto mb-4 border border-indigo-200 dark:border-indigo-800">
           <Award className="w-8 h-8" />
@@ -214,7 +236,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
                     className="p-3 bg-zinc-50 dark:bg-zinc-800/80 rounded-2xl border border-zinc-200/80 dark:border-zinc-700 text-xs flex items-center justify-between gap-2"
                   >
                     <div>
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2 flex-wrap">
                         <span className="font-bold text-zinc-900 dark:text-white text-sm">
                           {m.correctAnswer}
                         </span>
@@ -229,7 +251,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
 
                     <button
                       onClick={() => speechService.speak(m.correctAnswer, 0.85)}
-                      className="p-2 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 text-indigo-600 dark:text-indigo-300 rounded-xl"
+                      className="p-2 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 text-indigo-600 dark:text-indigo-300 rounded-xl shrink-0"
                       title="Tekrar dinle"
                     >
                       <Volume2 className="w-4 h-4" />
@@ -258,17 +280,17 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
     <div className="max-w-xl mx-auto space-y-4 text-zinc-900 dark:text-white">
       
       {/* Listening Header Bar */}
-      <div className="bg-white/95 dark:bg-zinc-900/95 border border-zinc-200/90 dark:border-zinc-800 rounded-3xl p-4 shadow-xs flex items-center justify-between">
+      <div className="bg-white/95 dark:bg-zinc-900/95 border border-zinc-200/90 dark:border-zinc-800 rounded-3xl p-3 sm:p-4 shadow-xs flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
-          <Headphones className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+          <Headphones className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-600 dark:text-indigo-400 shrink-0" />
           <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300">
-            Dinleme Sorusu {currentIndex + 1} / {questions.length}
+            Soru {currentIndex + 1} / {questions.length}
           </span>
         </div>
 
         {/* Audio Speed Selection */}
-        <div className="flex items-center gap-1.5 bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 rounded-xl border border-zinc-200 dark:border-zinc-700 text-xs">
-          <span className="text-[11px] font-semibold text-zinc-500">Hız:</span>
+        <div className="flex items-center gap-1 sm:gap-1.5 bg-zinc-100 dark:bg-zinc-800 px-2 sm:px-2.5 py-1 rounded-xl border border-zinc-200 dark:border-zinc-700 text-xs shrink-0">
+          <span className="text-[10px] sm:text-[11px] font-semibold text-zinc-500">Hız:</span>
           {[0.75, 0.9, 1.0].map((rate) => (
             <button
               key={rate}
@@ -276,8 +298,8 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
                 setPlaybackRate(rate);
                 playCurrentAudio(rate);
               }}
-              className={`px-1.5 py-0.5 rounded text-[11px] font-bold ${
-                playbackRate === rate ? 'bg-indigo-600 text-white' : 'text-zinc-500 hover:text-zinc-800'
+              className={`px-1.5 py-0.5 rounded text-[10px] sm:text-[11px] font-bold ${
+                playbackRate === rate ? 'bg-indigo-600 text-white' : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
               }`}
             >
               {rate}x
@@ -287,7 +309,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
       </div>
 
       {/* Main Listening Card */}
-      <div className="bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_8px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] p-6 sm:p-8 text-center backdrop-blur-md">
+      <div className="bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_8px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] p-5 sm:p-8 text-center backdrop-blur-md">
         
         {/* Giant Speaker Audio Button */}
         <div className="py-4 sm:py-6 flex flex-col items-center">
@@ -295,11 +317,11 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.94 }}
             onClick={() => playCurrentAudio()}
-            className="w-24 h-24 rounded-3xl bg-gradient-to-tr from-indigo-600 to-sky-500 text-white flex items-center justify-center shadow-lg shadow-indigo-500/25 mb-3 group"
+            className="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-gradient-to-tr from-indigo-600 to-sky-500 text-white flex items-center justify-center shadow-lg shadow-indigo-500/25 mb-3 group"
           >
-            <Volume2 className="w-10 h-10 group-hover:scale-110 transition-transform" />
+            <Volume2 className="w-8 h-8 sm:w-10 sm:h-10 group-hover:scale-110 transition-transform" />
           </motion.button>
-          <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">
+          <span className="text-[11px] sm:text-xs font-bold text-zinc-400 uppercase tracking-wider">
             Almanca Sesi Dinleyin (Tekrar: <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> / <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">R</kbd>)
           </span>
         </div>
@@ -309,9 +331,9 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
           <motion.div
             initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-6 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700"
+            className="mb-5 sm:mb-6 p-3.5 sm:p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700"
           >
-            <h3 className="text-2xl font-black text-zinc-900 dark:text-white">
+            <h3 className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white">
               {currentQ.word.word}
             </h3>
             {(currentQ.word.meaning_tr || currentQ.word.meaning_en) && (
@@ -323,7 +345,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
         )}
 
         {/* 4 Choices */}
-        <div className="space-y-2.5 mb-4">
+        <div className="space-y-2 sm:space-y-2.5 mb-4">
           {currentQ.options.map((opt, idx) => {
             let btnClass = 'bg-zinc-50/90 dark:bg-zinc-800/80 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200';
             if (isSubmitted) {
@@ -343,19 +365,19 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
                 whileTap={!isSubmitted ? { scale: 0.99 } : {}}
                 onClick={() => handleSelectOption(opt)}
                 disabled={isSubmitted}
-                className={`w-full text-left px-5 py-3.5 rounded-2xl border-2 transition-all flex items-center justify-between text-sm ${btnClass}`}
+                className={`w-full text-left px-4 sm:px-5 py-3 sm:py-3.5 rounded-2xl border-2 transition-all flex items-center justify-between text-xs sm:text-sm ${btnClass}`}
               >
-                <div className="flex items-center gap-3">
-                  <span className="w-5 h-5 rounded-lg bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-mono text-xs flex items-center justify-center font-bold">
+                <div className="flex items-center gap-2.5 sm:gap-3">
+                  <span className="w-5 h-5 rounded-lg bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-mono text-xs flex items-center justify-center font-bold shrink-0">
                     {idx + 1}
                   </span>
-                  <span className="font-semibold text-base">{opt}</span>
+                  <span className="font-semibold text-sm sm:text-base">{opt}</span>
                 </div>
                 {isSubmitted && opt === currentQ.correctAnswer && (
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
                 )}
                 {isSubmitted && opt === selectedOption && opt !== currentQ.correctAnswer && (
-                  <XCircle className="w-5 h-5 text-rose-600" />
+                  <XCircle className="w-5 h-5 text-rose-600 shrink-0" />
                 )}
               </motion.button>
             );
@@ -370,7 +392,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleNext}
-            className="w-full py-3.5 bg-zinc-900 dark:bg-indigo-600 hover:bg-zinc-800 dark:hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
+            className="w-full py-3.5 bg-zinc-900 dark:bg-indigo-600 hover:bg-zinc-800 dark:hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-xs sm:text-sm"
           >
             <span>{currentIndex + 1 < questions.length ? 'Sonraki Kelime (İleri) →' : 'Sonuçları Gör'}</span>
             <ArrowRight className="w-4 h-4" />
