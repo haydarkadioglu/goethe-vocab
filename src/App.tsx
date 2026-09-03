@@ -1,17 +1,20 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Header } from './components/Header';
-import { FilterBar } from './components/FilterBar';
-import { VocabCard } from './components/VocabCard';
-import { Flashcards } from './components/Flashcards';
-import { SpeedDrill } from './components/SpeedDrill';
-import { ListeningQuiz } from './components/ListeningQuiz';
-import { Quiz } from './components/Quiz';
-import { HomePage } from './components/HomePage';
+import { Header } from './components/common/Header';
+import { MobileNav } from './components/common/MobileNav';
+import { Footer } from './components/common/Footer';
+import { FilterBar } from './components/common/FilterBar';
+import { VocabCard } from './components/dictionary/VocabCard';
+import { Pagination } from './components/dictionary/Pagination';
+import { Flashcards } from './components/flashcards/Flashcards';
+import { SpeedDrill } from './components/speed-drill/SpeedDrill';
+import { ListeningQuiz } from './components/listening/ListeningQuiz';
+import { Quiz } from './components/quiz/Quiz';
+import { HomePage } from './components/home/HomePage';
 import { VocabWord, CEFRLevel, PartOfSpeech, AppView, SupportedLanguage, ThemeMode } from './types';
 import { localDb } from './services/storage';
 import { speechService } from './services/speech';
-import { Sparkles, ArrowLeft, ArrowRight, Home, BookOpen, Zap, Layers, Award, Headphones, Star } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [allWords, setAllWords] = useState<VocabWord[]>([]);
@@ -24,7 +27,7 @@ export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 24;
 
-  // Theme Management (Light, Dark, System)
+  // Theme Management
   const [theme, setTheme] = useState<ThemeMode>(() => {
     try {
       const saved = localStorage.getItem('goethe_theme') as ThemeMode;
@@ -33,22 +36,17 @@ export const App: React.FC = () => {
     return 'system';
   });
 
-  // Apply dark mode class to <html> based on theme & system preference
   useEffect(() => {
     const root = document.documentElement;
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
     const applyTheme = () => {
       const isDark = theme === 'dark' || (theme === 'system' && mediaQuery.matches);
-      if (isDark) {
-        root.classList.add('dark');
-      } else {
-        root.classList.remove('dark');
-      }
+      if (isDark) root.classList.add('dark');
+      else root.classList.remove('dark');
     };
 
     applyTheme();
-
     const handler = () => {
       if (theme === 'system') applyTheme();
     };
@@ -71,7 +69,7 @@ export const App: React.FC = () => {
     });
   };
 
-  // Favorites backed by browser IndexedDB local database
+  // Favorites
   const [favorites, setFavorites] = useState<string[]>([]);
 
   useEffect(() => {
@@ -103,7 +101,7 @@ export const App: React.FC = () => {
   };
 
   const handleSelectView = (view: AppView) => {
-    speechService.stop(); // Stop ongoing speech when switching views
+    speechService.stop();
     setCurrentView(view);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -136,18 +134,11 @@ export const App: React.FC = () => {
     };
   }, [allWords]);
 
-  // Dictionary filtered words (incorporates text search box)
   const dictionaryFilteredWords = useMemo(() => {
     return allWords.filter(w => {
-      if (currentView === 'favorites' && !favorites.includes(w.id)) {
-        return false;
-      }
-      if (selectedLevel !== 'ALL' && w.level !== selectedLevel) {
-        return false;
-      }
-      if (selectedPos !== 'all' && w.pos !== selectedPos) {
-        return false;
-      }
+      if (currentView === 'favorites' && !favorites.includes(w.id)) return false;
+      if (selectedLevel !== 'ALL' && w.level !== selectedLevel) return false;
+      if (selectedPos !== 'all' && w.pos !== selectedPos) return false;
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase().trim();
         const matchWord = w.word.toLowerCase().includes(q);
@@ -164,15 +155,10 @@ export const App: React.FC = () => {
     });
   }, [allWords, currentView, favorites, selectedLevel, selectedPos, searchQuery]);
 
-  // Study Pool Words (for Flashcards, Quiz, Listening) - level/POS aligned, NOT blocked by single word search!
   const studyPoolWords = useMemo(() => {
     return allWords.filter(w => {
-      if (selectedLevel !== 'ALL' && w.level !== selectedLevel) {
-        return false;
-      }
-      if (selectedPos !== 'all' && w.pos !== selectedPos) {
-        return false;
-      }
+      if (selectedLevel !== 'ALL' && w.level !== selectedLevel) return false;
+      if (selectedPos !== 'all' && w.pos !== selectedPos) return false;
       return true;
     });
   }, [allWords, selectedLevel, selectedPos]);
@@ -196,9 +182,7 @@ export const App: React.FC = () => {
   };
 
   const handleNavigateFromHome = (view: AppView, level?: CEFRLevel) => {
-    if (level) {
-      setSelectedLevel(level);
-    }
+    if (level) setSelectedLevel(level);
     handleSelectView(view);
   };
 
@@ -349,45 +333,13 @@ export const App: React.FC = () => {
                     ))}
                   </div>
 
-                  {totalPages > 1 && (
-                    <motion.div 
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/95 dark:bg-zinc-900/95 p-4 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_-4px_rgba(0,0,0,0.4)] backdrop-blur-md"
-                    >
-                      <div className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">
-                        Showing <strong className="text-zinc-900 dark:text-white">{(currentPage - 1) * itemsPerPage + 1}</strong> to{' '}
-                        <strong className="text-zinc-900 dark:text-white">{Math.min(currentPage * itemsPerPage, dictionaryFilteredWords.length)}</strong> of{' '}
-                        <strong className="text-zinc-900 dark:text-white">{dictionaryFilteredWords.length.toLocaleString()}</strong> words
-                      </div>
-
-                      <div className="flex items-center gap-2">
-                        <motion.button
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
-                          disabled={currentPage === 1}
-                          className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
-                        >
-                          <ArrowLeft className="w-4 h-4" />
-                        </motion.button>
-
-                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 px-3.5 py-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-xl border border-zinc-200/80 dark:border-zinc-700">
-                          Page {currentPage} of {totalPages}
-                        </span>
-
-                        <motion.button
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
-                          disabled={currentPage === totalPages}
-                          className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
-                        >
-                          <ArrowRight className="w-4 h-4" />
-                        </motion.button>
-                      </div>
-                    </motion.div>
-                  )}
+                  <Pagination
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    totalItems={dictionaryFilteredWords.length}
+                    itemsPerPage={itemsPerPage}
+                    onPageChange={setCurrentPage}
+                  />
                 </>
               )}
             </motion.div>
@@ -499,64 +451,14 @@ export const App: React.FC = () => {
       </main>
 
       {/* Modern Footer */}
-      <footer className="hidden xl:block border-t border-zinc-200/90 dark:border-zinc-800/90 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md py-6 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400">
-          <div className="flex items-center gap-2">
-            <span className="font-bold text-zinc-700 dark:text-zinc-300">GoetheVocab PWA</span>
-            <span>•</span>
-            <span>A1, A2, B1 Official Goethe-Institut Wordlists</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span>🇩🇪 German</span>
-            <span>🇬🇧 English</span>
-            <span>🇹🇷 Türkçe</span>
-            <span>🇪🇸 Spanish</span>
-            <span>🇸🇦 Arabic</span>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* Mobile Fixed Bottom Navigation Bar */}
-      <nav aria-label="Mobile Navigation" className="fixed bottom-0 left-0 right-0 z-40 xl:hidden bg-white/95 dark:bg-zinc-950/95 backdrop-blur-xl border-t border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_-4px_24px_rgba(0,0,0,0.07)] pb-safe transition-colors">
-        <div className="flex items-center justify-around px-1.5 py-1.5 max-w-lg mx-auto">
-          {[
-            { id: 'home' as AppView, label: 'Home', icon: <Home className="w-4 h-4" /> },
-            { id: 'explorer' as AppView, label: 'Words', icon: <BookOpen className="w-4 h-4" /> },
-            { id: 'speed-drill' as AppView, label: 'Drill', icon: <Zap className="w-4 h-4" /> },
-            { id: 'flashcards' as AppView, label: 'Cards', icon: <Layers className="w-4 h-4" /> },
-            { id: 'quiz' as AppView, label: 'Quiz', icon: <Award className="w-4 h-4" /> },
-            { id: 'listening' as AppView, label: 'Listen', icon: <Headphones className="w-4 h-4" /> },
-            { id: 'favorites' as AppView, label: 'Saved', icon: <Star className="w-4 h-4" />, badge: favorites.length > 0 ? favorites.length : undefined },
-          ].map((item) => {
-            const isActive = currentView === item.id;
-            return (
-              <button
-                key={item.id}
-                onClick={() => handleSelectView(item.id)}
-                className={`relative flex flex-col items-center justify-center py-1 px-2 rounded-xl transition-all flex-1 min-w-0 ${
-                  isActive
-                    ? 'text-amber-600 dark:text-amber-400 font-extrabold'
-                    : 'text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-800 dark:hover:text-zinc-200'
-                }`}
-              >
-                <div className="relative">
-                  <div className={`p-1 rounded-xl transition-transform ${isActive ? 'scale-110 bg-amber-100 dark:bg-amber-950/70 text-amber-600 dark:text-amber-400' : ''}`}>
-                    {item.icon}
-                  </div>
-                  {item.badge !== undefined && (
-                    <span className="absolute -top-1 -right-1.5 text-[9px] font-mono px-1 py-0.2 rounded-full bg-amber-500 text-white font-bold leading-none shadow-2xs">
-                      {item.badge}
-                    </span>
-                  )}
-                </div>
-                <span className="text-[10px] mt-0.5 tracking-tight truncate max-w-full">
-                  {item.label}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </nav>
+      <MobileNav
+        currentView={currentView}
+        onSelectView={handleSelectView}
+        favoritesCount={favorites.length}
+      />
 
     </div>
   );

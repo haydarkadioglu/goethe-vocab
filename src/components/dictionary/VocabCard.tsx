@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Volume2, Star, Globe, Loader2, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { VocabWord, SupportedLanguage } from '../types';
-import { speechService } from '../services/speech';
-import { translateText } from '../services/translator';
+import { VocabWord, SupportedLanguage } from '../../types';
+import { speechService } from '../../services/speech';
+import { translateText } from '../../services/translator';
+import { getWordMeaning } from '../../utils/meaning';
 
 interface VocabCardProps {
   word: VocabWord;
@@ -20,29 +21,20 @@ export const VocabCard: React.FC<VocabCardProps> = ({
   onToggleFavorite,
   index = 0
 }) => {
-  // Pre-translated meaning (English, Turkish, Spanish, or Arabic)
-  const getPreTranslated = () => {
-    if (targetLang === 'en') return word.meaning_en || null;
-    if (targetLang === 'tr') return word.meaning_tr || null;
-    if (targetLang === 'es') return word.meaning_es || null;
-    if (targetLang === 'ar') return word.meaning_ar || null;
-    return null;
-  };
+  const preMeaning = getWordMeaning(word, targetLang);
+  const isPreTranslated = targetLang === 'en' || targetLang === 'tr' || targetLang === 'es' || targetLang === 'ar';
 
-  const [wordTranslation, setWordTranslation] = useState<string | null>(getPreTranslated());
+  const [wordTranslation, setWordTranslation] = useState<string | null>(isPreTranslated ? preMeaning : null);
   const [exampleTranslations, setExampleTranslations] = useState<Record<number, string>>({});
   const [loadingWordTrans, setLoadingWordTrans] = useState(false);
   const [loadingExTrans, setLoadingExTrans] = useState<Record<number, boolean>>({});
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
-  // Update translation when target language changes
   useEffect(() => {
-    const pre = getPreTranslated();
-    setWordTranslation(pre);
+    setWordTranslation(isPreTranslated ? preMeaning : null);
     setExampleTranslations({});
-  }, [targetLang, word.meaning_en, word.meaning_tr, word.meaning_es, word.meaning_ar]);
+  }, [targetLang, word, isPreTranslated, preMeaning]);
 
-  // Subscribe to speech state
   useEffect(() => {
     return speechService.subscribe((speaking, text) => {
       if (!speaking) {
@@ -80,8 +72,6 @@ export const VocabCard: React.FC<VocabCardProps> = ({
       </span>
     );
   };
-
-  const isPreTranslated = targetLang === 'en' || targetLang === 'tr' || targetLang === 'es' || targetLang === 'ar';
 
   const handleTranslateWord = async () => {
     if (wordTranslation && !isPreTranslated) {
@@ -126,7 +116,7 @@ export const VocabCard: React.FC<VocabCardProps> = ({
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.25, delay: Math.min((index % 12) * 0.03, 0.3) }}
       whileHover={{ y: -3, transition: { duration: 0.2 } }}
-      className="bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/80 dark:border-zinc-800/90 shadow-[0_2px_14px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] dark:hover:border-zinc-700 transition-all p-5 flex flex-col justify-between group backdrop-blur-xs relative overflow-hidden text-zinc-900 dark:text-zinc-100"
+      className="bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/80 dark:border-zinc-800/90 shadow-[0_2px_14px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] dark:hover:border-zinc-700 transition-all p-4 sm:p-5 flex flex-col justify-between group backdrop-blur-xs relative overflow-hidden text-zinc-900 dark:text-zinc-100"
     >
       <div>
         
@@ -248,17 +238,17 @@ export const VocabCard: React.FC<VocabCardProps> = ({
                     <button
                       onClick={() => speechService.speak(sentence, 0.85)}
                       title="Listen to sentence"
-                      className="p-1 rounded-lg text-zinc-400 hover:text-amber-600 hover:bg-amber-50/80 dark:hover:bg-zinc-700 transition-colors"
+                      className="p-1 text-zinc-400 hover:text-amber-600 dark:hover:text-amber-400 rounded-lg hover:bg-white dark:hover:bg-zinc-700 transition-colors"
                     >
                       <Volume2 className="w-3.5 h-3.5" />
                     </button>
                     <button
                       onClick={() => handleTranslateExample(idx, sentence)}
-                      title="Translate sentence"
-                      className="p-1 rounded-lg text-zinc-400 hover:text-indigo-600 hover:bg-indigo-50/80 dark:hover:bg-zinc-700 transition-colors"
+                      title={`Translate sentence to ${targetLang.toUpperCase()}`}
+                      className="p-1 text-zinc-400 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-lg hover:bg-white dark:hover:bg-zinc-700 transition-colors"
                     >
                       {loadingExTrans[idx] ? (
-                        <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                        <Loader2 className="w-3.5 h-3.5 animate-spin text-indigo-600" />
                       ) : (
                         <Globe className="w-3.5 h-3.5" />
                       )}
@@ -266,32 +256,27 @@ export const VocabCard: React.FC<VocabCardProps> = ({
                   </div>
                 </div>
 
-                <AnimatePresence>
-                  {exampleTranslations[idx] && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.18 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="mt-1.5 pt-1.5 border-t border-zinc-200/60 dark:border-zinc-700/60 text-zinc-600 dark:text-zinc-400 italic">
-                        {exampleTranslations[idx]}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {exampleTranslations[idx] && (
+                  <motion.p 
+                    initial={{ opacity: 0, y: -2 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-[11px] font-medium text-indigo-600 dark:text-indigo-400 mt-1.5 pt-1.5 border-t border-indigo-100/60 dark:border-zinc-700/60"
+                  >
+                    {exampleTranslations[idx]}
+                  </motion.p>
+                )}
               </div>
             ))}
           </div>
         )}
+
       </div>
 
-      <div className="mt-4 pt-2.5 flex items-center justify-between text-[10px] font-mono text-zinc-400 dark:text-zinc-500 border-t border-zinc-100 dark:border-zinc-800">
-        <span>ID: {word.id}</span>
-        <span>Goethe PDF p.{word.page}</span>
+      {/* Footer Meta */}
+      <div className="flex items-center justify-between text-[10px] text-zinc-400 dark:text-zinc-500 pt-3 border-t border-zinc-100 dark:border-zinc-800 mt-3">
+        <span className="font-mono">PDF Page {word.page}</span>
+        <span className="font-mono">{word.id}</span>
       </div>
-
     </motion.div>
   );
 };

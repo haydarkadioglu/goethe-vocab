@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Volume2, Award, Headphones, RefreshCw, ArrowRight, CheckCircle2, XCircle, Sparkles, ChevronDown, ChevronUp, RotateCcw, Check } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Volume2, Headphones, ArrowRight, CheckCircle2, XCircle, Sparkles } from 'lucide-react';
+import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { VocabWord, SupportedLanguage } from '../types';
-import { speechService } from '../services/speech';
+import { VocabWord, SupportedLanguage } from '../../types';
+import { speechService } from '../../services/speech';
+import { getWordMeaning } from '../../utils/meaning';
+import { ListeningResults } from './ListeningResults';
 
 interface ListeningQuizProps {
   words: VocabWord[];
@@ -34,9 +36,8 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
   const [playbackRate, setPlaybackRate] = useState<number>(0.85);
   const [mistakes, setMistakes] = useState<ListeningMistake[]>([]);
   const [correctWords, setCorrectWords] = useState<VocabWord[]>([]);
-  const [reviewTab, setReviewTab] = useState<'all' | 'mistakes' | 'correct'>('all');
 
-  const generateListeningQuiz = (customPool?: VocabWord[], customCount?: number) => {
+  const generateListeningQuiz = useCallback((customPool?: VocabWord[], customCount?: number) => {
     const pool = customPool ?? words;
     const count = customCount ?? Math.min(questionCount, pool.length || 1);
     setLoading(true);
@@ -47,7 +48,6 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
     setIsSubmitted(false);
     setMistakes([]);
     setCorrectWords([]);
-    setReviewTab('all');
 
     if (pool.length < 4) {
       setQuestions([]);
@@ -59,7 +59,6 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
     const newQuestions: ListeningQuestion[] = shuffled.map(w => {
       const optsSet = new Set<string>([w.word]);
 
-      // 1. Try matching part of speech
       const samePosCandidates = words
         .filter(x => x.id !== w.id && x.pos === w.pos)
         .sort(() => Math.random() - 0.5);
@@ -71,7 +70,6 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
         }
       }
 
-      // 2. Backfill with any other words in pool to guarantee 4 unique options
       if (optsSet.size < 4) {
         const anyCandidates = words
           .filter(x => x.id !== w.id)
@@ -96,11 +94,11 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
 
     setQuestions(newQuestions);
     setLoading(false);
-  };
+  }, [words, questionCount]);
 
   useEffect(() => {
     generateListeningQuiz();
-  }, [words]);
+  }, [generateListeningQuiz]);
 
   const currentQ = questions[currentIndex];
 
@@ -110,7 +108,6 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
     }
   }, [currentQ, playbackRate]);
 
-  // Auto-play pronunciation when advancing to next question
   useEffect(() => {
     if (currentQ && !isSubmitted) {
       const timer = setTimeout(() => {
@@ -143,15 +140,10 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
       setIsSubmitted(false);
     } else {
       setIsFinished(true);
-      confetti({
-        particleCount: 120,
-        spread: 80,
-        origin: { y: 0.6 }
-      });
+      confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } });
     }
   }, [currentIndex, questions.length]);
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement).tagName === 'INPUT') return;
@@ -166,7 +158,6 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
         return;
       }
 
-      // Replay audio
       if (e.code === 'Space' || e.key.toLowerCase() === 'r') {
         e.preventDefault();
         playCurrentAudio();
@@ -184,13 +175,6 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isSubmitted, currentQ, handleSelectOption, handleNext, playCurrentAudio]);
-
-  const getWordMeaning = useCallback((w: VocabWord) => {
-    if (targetLang === 'tr') return w.meaning_tr || w.meaning_en || '';
-    if (targetLang === 'es') return w.meaning_es || w.meaning_en || '';
-    if (targetLang === 'ar') return w.meaning_ar || w.meaning_en || '';
-    return w.meaning_en || w.meaning_tr || '';
-  }, [targetLang]);
 
   if (loading) {
     return (
@@ -211,165 +195,21 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
   }
 
   if (isFinished) {
-    const percentage = Math.round((score / questions.length) * 100);
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="max-w-xl mx-auto bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 p-5 sm:p-8 text-center text-zinc-900 dark:text-white shadow-xl"
-      >
-        <div className="w-16 h-16 rounded-3xl bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mx-auto mb-4 border border-indigo-200 dark:border-indigo-800">
-          <Award className="w-8 h-8" />
-        </div>
-
-        <h2 className="text-2xl font-black tracking-tight">Listening Practice Complete!</h2>
-        
-        {/* Results Stats */}
-        <div className="grid grid-cols-3 gap-2 sm:gap-3 my-5">
-          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
-            <span className="text-2xl sm:text-3xl font-black text-indigo-600 dark:text-indigo-400">{percentage}%</span>
-            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Accuracy</p>
-          </div>
-          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
-            <span className="text-2xl sm:text-3xl font-black text-emerald-600 dark:text-emerald-400">{correctWords.length}</span>
-            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Correct</p>
-          </div>
-          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
-            <span className="text-2xl sm:text-3xl font-black text-rose-600 dark:text-rose-400">{mistakes.length}</span>
-            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Missed</p>
-          </div>
-        </div>
-
-        {/* Breakdown Tabs */}
-        <div className="my-5 text-left border-t border-zinc-200 dark:border-zinc-800 pt-4">
-          
-          <div className="flex items-center gap-1.5 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-xl mb-3 text-xs">
-            <button
-              onClick={() => setReviewTab('all')}
-              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
-                reviewTab === 'all'
-                  ? 'bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white shadow-2xs'
-                  : 'text-zinc-500 hover:text-zinc-800'
-              }`}
-            >
-              All Words ({questions.length})
-            </button>
-            <button
-              onClick={() => setReviewTab('mistakes')}
-              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
-                reviewTab === 'mistakes'
-                  ? 'bg-white dark:bg-zinc-900 text-rose-600 dark:text-rose-400 shadow-2xs'
-                  : 'text-zinc-500 hover:text-rose-600'
-              }`}
-            >
-              Missed ({mistakes.length})
-            </button>
-            <button
-              onClick={() => setReviewTab('correct')}
-              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
-                reviewTab === 'correct'
-                  ? 'bg-white dark:bg-zinc-900 text-emerald-600 dark:text-emerald-400 shadow-2xs'
-                  : 'text-zinc-500 hover:text-emerald-600'
-              }`}
-            >
-              Correct ({correctWords.length})
-            </button>
-          </div>
-
-          <div className="mt-2 space-y-2 max-h-56 overflow-y-auto pr-1">
-            {/* Show Missed Words */}
-            {(reviewTab === 'all' || reviewTab === 'mistakes') && mistakes.map((m, idx) => (
-              <div
-                key={`m-${idx}`}
-                className="p-3 bg-rose-50/60 dark:bg-rose-950/30 rounded-2xl border border-rose-200/80 dark:border-rose-900/60 text-xs flex items-center justify-between gap-2"
-              >
-                <div>
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <span className="font-bold text-zinc-900 dark:text-white text-sm">
-                      {m.correctAnswer}
-                    </span>
-                    <span className="text-rose-600 dark:text-rose-400 text-[11px] font-semibold">
-                      (Selected: <span className="line-through">{m.selected}</span>)
-                    </span>
-                  </div>
-                  <p className="text-[11px] text-zinc-500 mt-0.5">
-                    Meaning: <strong className="text-zinc-700 dark:text-zinc-200">{getWordMeaning(m.word)}</strong>
-                  </p>
-                </div>
-
-                <button
-                  onClick={() => speechService.speak(m.correctAnswer, 0.85)}
-                  className="p-2 bg-white dark:bg-zinc-800 hover:bg-zinc-100 text-indigo-600 dark:text-indigo-300 rounded-xl shrink-0 shadow-2xs"
-                  title="Listen again"
-                >
-                  <Volume2 className="w-4 h-4" />
-                </button>
-              </div>
-            ))}
-
-            {/* Show Correct Words */}
-            {(reviewTab === 'all' || reviewTab === 'correct') && correctWords.map((w, idx) => (
-              <div
-                key={`c-${idx}`}
-                className="p-3 bg-emerald-50/60 dark:bg-emerald-950/30 rounded-2xl border border-emerald-200/80 dark:border-emerald-900/60 text-xs flex items-center justify-between gap-2"
-              >
-                <div>
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <span className="font-bold text-zinc-900 dark:text-white text-sm">
-                      {w.word}
-                    </span>
-                    <span className="text-emerald-600 dark:text-emerald-400 text-[11px] font-semibold flex items-center gap-0.5">
-                      <Check className="w-3.5 h-3.5" /> Correct
-                    </span>
-                  </div>
-                  <p className="text-[11px] text-zinc-500 mt-0.5">
-                    Meaning: <strong className="text-zinc-700 dark:text-zinc-200">{getWordMeaning(w)}</strong>
-                  </p>
-                </div>
-
-                <button
-                  onClick={() => speechService.speak(w.word, 0.85)}
-                  className="p-2 bg-white dark:bg-zinc-800 hover:bg-zinc-100 text-indigo-600 dark:text-indigo-300 rounded-xl shrink-0 shadow-2xs"
-                  title="Listen again"
-                >
-                  <Volume2 className="w-4 h-4" />
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Action Buttons */}
-        <div className="flex flex-col gap-2.5 pt-2">
-          {mistakes.length > 0 && (
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => generateListeningQuiz(mistakes.map(m => m.word), mistakes.length)}
-              className="w-full py-3.5 bg-rose-600 hover:bg-rose-700 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
-            >
-              <RotateCcw className="w-4 h-4" />
-              <span>Practice Missed Words ({mistakes.length})</span>
-            </motion.button>
-          )}
-
-          <div className="flex flex-col sm:flex-row items-center gap-2.5">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => generateListeningQuiz()}
-              className="flex-1 w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
-            >
-              <RefreshCw className="w-4 h-4" />
-              <span>Restart with {questionCount} Words</span>
-            </motion.button>
-          </div>
-        </div>
-      </motion.div>
+      <ListeningResults
+        questionsCount={questions.length}
+        score={score}
+        correctWords={correctWords}
+        mistakes={mistakes}
+        questionCount={questionCount}
+        targetLang={targetLang}
+        onPracticeMissed={(missedWords, count) => generateListeningQuiz(missedWords, count)}
+        onRestartNew={() => generateListeningQuiz()}
+      />
     );
   }
 
-  const wordMeaning = currentQ ? getWordMeaning(currentQ.word) : '';
+  const wordMeaning = currentQ ? getWordMeaning(currentQ.word, targetLang) : '';
 
   return (
     <div className="max-w-xl mx-auto space-y-4 text-zinc-900 dark:text-white">
@@ -387,7 +227,6 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
         </div>
 
         <div className="flex items-center gap-2">
-          {/* Audio Speed Selection */}
           <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 px-2 py-1 rounded-xl border border-zinc-200 dark:border-zinc-700 text-xs shrink-0">
             <span className="text-[10px] font-semibold text-zinc-500">Speed:</span>
             {[0.75, 0.9, 1.0].map((rate) => (
@@ -406,7 +245,6 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
             ))}
           </div>
 
-          {/* Preset Buttons */}
           <div className="hidden sm:flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 px-2 py-1 rounded-xl border border-zinc-200 dark:border-zinc-700 text-xs shrink-0">
             <span className="text-[10px] font-semibold text-zinc-500">Words:</span>
             {[10, 25, 50].map((n) => (

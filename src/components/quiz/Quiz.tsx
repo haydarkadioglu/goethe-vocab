@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Volume2, Award, CheckCircle2, XCircle, RefreshCw, ArrowRight, Sparkles, HelpCircle, ChevronDown, ChevronUp, RotateCcw, Check } from 'lucide-react';
+import { Volume2, CheckCircle2, XCircle, RefreshCw, ArrowRight, Sparkles, HelpCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { VocabWord, SupportedLanguage } from '../types';
-import { speechService } from '../services/speech';
-import { translateText } from '../services/translator';
+import { VocabWord, SupportedLanguage } from '../../types';
+import { speechService } from '../../services/speech';
+import { translateText } from '../../services/translator';
+import { QuizResults } from './QuizResults';
 
 interface QuizProps {
   words: VocabWord[];
@@ -37,9 +38,63 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
   const [isFinished, setIsFinished] = useState(false);
   const [loading, setLoading] = useState(true);
   const [userHistory, setUserHistory] = useState<UserAnswer[]>([]);
-  const [reviewFilter, setReviewFilter] = useState<'all' | 'mistakes' | 'correct'>('all');
 
-  const generateQuiz = async (customPoolWords?: VocabWord[], customCount?: number) => {
+  const addMeaningQuestion = async (
+    targetWord: VocabWord,
+    pool: VocabWord[],
+    qList: Question[],
+    lang: SupportedLanguage
+  ) => {
+    try {
+      let correctMeaning = '';
+      if (lang === 'en' && targetWord.meaning_en) {
+        correctMeaning = targetWord.meaning_en;
+      } else if (lang === 'tr' && targetWord.meaning_tr) {
+        correctMeaning = targetWord.meaning_tr;
+      } else if (lang === 'es' && targetWord.meaning_es) {
+        correctMeaning = targetWord.meaning_es;
+      } else if (lang === 'ar' && targetWord.meaning_ar) {
+        correctMeaning = targetWord.meaning_ar;
+      } else {
+        correctMeaning = await translateText(targetWord.word, lang);
+      }
+
+      const optsSet = new Set<string>([correctMeaning]);
+      const candidates = pool
+        .filter(x => x.id !== targetWord.id)
+        .sort(() => Math.random() - 0.5);
+
+      for (const d of candidates) {
+        let m = '';
+        if (lang === 'en' && d.meaning_en) m = d.meaning_en;
+        else if (lang === 'tr' && d.meaning_tr) m = d.meaning_tr;
+        else if (lang === 'es' && d.meaning_es) m = d.meaning_es;
+        else if (lang === 'ar' && d.meaning_ar) m = d.meaning_ar;
+        else m = await translateText(d.word, lang);
+
+        if (m && !optsSet.has(m)) {
+          optsSet.add(m);
+          if (optsSet.size === 4) break;
+        }
+      }
+
+      const allOpts = Array.from(optsSet).sort(() => Math.random() - 0.5);
+
+      qList.push({
+        type: 'meaning',
+        prompt: lang === 'tr'
+          ? `"${targetWord.word}" kelimesinin anlamı nedir?`
+          : `What is the meaning of "${targetWord.word}"?`,
+        subPrompt: targetWord.examples && targetWord.examples[0] ? `Example: "${targetWord.examples[0]}"` : undefined,
+        options: allOpts,
+        correctAnswer: correctMeaning,
+        word: targetWord,
+        explanation: `"${targetWord.word}" -> "${correctMeaning}".`
+      });
+    } catch {}
+  };
+
+  const generateQuiz = useCallback(async (customPoolWords?: VocabWord[], customCount?: number) => {
     const pool = customPoolWords ?? words;
     const totalToGenerate = customCount || Math.min(questionCount, pool.length || 1);
     setLoading(true);
@@ -49,7 +104,6 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
     setSelectedOption(null);
     setIsSubmitted(false);
     setUserHistory([]);
-    setReviewFilter('all');
 
     if (pool.length < 4) {
       setQuestions([]);
@@ -118,66 +172,11 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
 
     setQuestions(newQuestions.slice(0, totalToGenerate));
     setLoading(false);
-  };
-
-  const addMeaningQuestion = async (
-    targetWord: VocabWord,
-    pool: VocabWord[],
-    qList: Question[],
-    lang: SupportedLanguage
-  ) => {
-    try {
-      let correctMeaning = '';
-      if (lang === 'en' && targetWord.meaning_en) {
-        correctMeaning = targetWord.meaning_en;
-      } else if (lang === 'tr' && targetWord.meaning_tr) {
-        correctMeaning = targetWord.meaning_tr;
-      } else if (lang === 'es' && targetWord.meaning_es) {
-        correctMeaning = targetWord.meaning_es;
-      } else if (lang === 'ar' && targetWord.meaning_ar) {
-        correctMeaning = targetWord.meaning_ar;
-      } else {
-        correctMeaning = await translateText(targetWord.word, lang);
-      }
-
-      const optsSet = new Set<string>([correctMeaning]);
-      const candidates = pool
-        .filter(x => x.id !== targetWord.id)
-        .sort(() => Math.random() - 0.5);
-
-      for (const d of candidates) {
-        let m = '';
-        if (lang === 'en' && d.meaning_en) m = d.meaning_en;
-        else if (lang === 'tr' && d.meaning_tr) m = d.meaning_tr;
-        else if (lang === 'es' && d.meaning_es) m = d.meaning_es;
-        else if (lang === 'ar' && d.meaning_ar) m = d.meaning_ar;
-        else m = await translateText(d.word, lang);
-
-        if (m && !optsSet.has(m)) {
-          optsSet.add(m);
-          if (optsSet.size === 4) break;
-        }
-      }
-
-      const allOpts = Array.from(optsSet).sort(() => Math.random() - 0.5);
-
-      qList.push({
-        type: 'meaning',
-        prompt: lang === 'tr'
-          ? `"${targetWord.word}" kelimesinin anlamı nedir?`
-          : `What is the meaning of "${targetWord.word}"?`,
-        subPrompt: targetWord.examples && targetWord.examples[0] ? `Example: "${targetWord.examples[0]}"` : undefined,
-        options: allOpts,
-        correctAnswer: correctMeaning,
-        word: targetWord,
-        explanation: `"${targetWord.word}" -> "${correctMeaning}".`
-      });
-    } catch {}
-  };
+  }, [words, targetLang, questionCount]);
 
   useEffect(() => {
     generateQuiz();
-  }, [words, targetLang]);
+  }, [generateQuiz]);
 
   const handleSelectOption = useCallback((option: string) => {
     if (isSubmitted || !questions[currentIndex]) return;
@@ -202,15 +201,10 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
       setIsSubmitted(false);
     } else {
       setIsFinished(true);
-      confetti({
-        particleCount: 130,
-        spread: 90,
-        origin: { y: 0.6 }
-      });
+      confetti({ particleCount: 130, spread: 90, origin: { y: 0.6 } });
     }
   }, [currentIndex, questions.length]);
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement).tagName === 'INPUT') return;
@@ -256,169 +250,16 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
     );
   }
 
-  // QUIZ RESULTS SCREEN with Full Correct vs Missed Breakdown
   if (isFinished) {
-    const percentage = Math.round((score / questions.length) * 100);
-    const mistakes = userHistory.filter(h => !h.isCorrect);
-    const corrects = userHistory.filter(h => h.isCorrect);
-
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="max-w-xl mx-auto bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_12px_40px_rgba(0,0,0,0.06)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] p-5 sm:p-8 text-center text-zinc-900 dark:text-white"
-      >
-        <div className="w-16 h-16 rounded-3xl bg-amber-100/80 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 flex items-center justify-center mx-auto mb-4 border border-amber-200/80 dark:border-amber-800 shadow-xs">
-          <Award className="w-8 h-8" />
-        </div>
-        <h2 className="text-2xl font-black tracking-tight">Quiz Complete!</h2>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Here is your full question review breakdown:</p>
-
-        {/* Score & Stats */}
-        <div className="grid grid-cols-3 gap-2 sm:gap-3 my-5">
-          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
-            <span className="text-2xl sm:text-3xl font-black text-amber-600 dark:text-amber-400">{percentage}%</span>
-            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Score</p>
-          </div>
-          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
-            <span className="text-2xl sm:text-3xl font-black text-emerald-600 dark:text-emerald-400">{corrects.length}</span>
-            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Correct</p>
-          </div>
-          <div className="bg-zinc-50 dark:bg-zinc-800/70 p-3 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
-            <span className="text-2xl sm:text-3xl font-black text-rose-600 dark:text-rose-400">{mistakes.length}</span>
-            <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Missed</p>
-          </div>
-        </div>
-
-        {/* Review Breakdown Tabs */}
-        <div className="my-5 text-left border-t border-zinc-200 dark:border-zinc-800 pt-4">
-          
-          <div className="flex items-center gap-1.5 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-xl mb-3 text-xs">
-            <button
-              onClick={() => setReviewFilter('all')}
-              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
-                reviewFilter === 'all'
-                  ? 'bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white shadow-2xs'
-                  : 'text-zinc-500 hover:text-zinc-800'
-              }`}
-            >
-              All Questions ({questions.length})
-            </button>
-            <button
-              onClick={() => setReviewFilter('mistakes')}
-              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
-                reviewFilter === 'mistakes'
-                  ? 'bg-white dark:bg-zinc-900 text-rose-600 dark:text-rose-400 shadow-2xs'
-                  : 'text-zinc-500 hover:text-rose-600'
-              }`}
-            >
-              Missed ({mistakes.length})
-            </button>
-            <button
-              onClick={() => setReviewFilter('correct')}
-              className={`flex-1 py-1.5 rounded-lg font-bold transition-all text-center ${
-                reviewFilter === 'correct'
-                  ? 'bg-white dark:bg-zinc-900 text-emerald-600 dark:text-emerald-400 shadow-2xs'
-                  : 'text-zinc-500 hover:text-emerald-600'
-              }`}
-            >
-              Correct ({corrects.length})
-            </button>
-          </div>
-
-          <div className="space-y-2.5 max-h-64 overflow-y-auto pr-1">
-            
-            {/* Show Missed Questions */}
-            {(reviewFilter === 'all' || reviewFilter === 'mistakes') && mistakes.map((m, idx) => (
-              <div
-                key={`m-${idx}`}
-                className="p-3 bg-rose-50/60 dark:bg-rose-950/30 rounded-2xl border border-rose-200/80 dark:border-rose-900/60 text-xs space-y-1"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-bold text-zinc-900 dark:text-white">
-                    {m.question.prompt}
-                  </span>
-                  <button
-                    onClick={() => speechService.speak(m.question.word.word)}
-                    className="p-1 rounded-lg text-zinc-400 hover:text-rose-600"
-                    title="Pronounce"
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-                {m.question.subPrompt && (
-                  <p className="text-zinc-500 italic text-[11px]">"{m.question.subPrompt}"</p>
-                )}
-                <div className="flex items-center gap-2 pt-1 flex-wrap">
-                  <span className="text-rose-600 dark:text-rose-400 font-semibold line-through">
-                    Selected: {m.selected}
-                  </span>
-                  <span className="text-emerald-600 dark:text-emerald-400 font-bold">
-                    ✓ Correct: {m.question.correctAnswer}
-                  </span>
-                </div>
-              </div>
-            ))}
-
-            {/* Show Correct Questions */}
-            {(reviewFilter === 'all' || reviewFilter === 'correct') && corrects.map((c, idx) => (
-              <div
-                key={`c-${idx}`}
-                className="p-3 bg-emerald-50/60 dark:bg-emerald-950/30 rounded-2xl border border-emerald-200/80 dark:border-emerald-900/60 text-xs space-y-1"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-bold text-zinc-900 dark:text-white">
-                    {c.question.prompt}
-                  </span>
-                  <button
-                    onClick={() => speechService.speak(c.question.word.word)}
-                    className="p-1 rounded-lg text-zinc-400 hover:text-emerald-600"
-                    title="Pronounce"
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-                {c.question.subPrompt && (
-                  <p className="text-zinc-500 italic text-[11px]">"{c.question.subPrompt}"</p>
-                )}
-                <div className="flex items-center gap-2 pt-1 flex-wrap">
-                  <span className="text-emerald-600 dark:text-emerald-400 font-bold flex items-center gap-0.5">
-                    <Check className="w-3.5 h-3.5" /> Correct Answer: {c.question.correctAnswer}
-                  </span>
-                </div>
-              </div>
-            ))}
-
-          </div>
-        </div>
-
-        {/* Action Buttons */}
-        <div className="flex flex-col gap-2.5 pt-2">
-          {mistakes.length > 0 && (
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => generateQuiz(mistakes.map(m => m.question.word), mistakes.length)}
-              className="w-full flex items-center justify-center gap-2 py-3.5 bg-rose-600 hover:bg-rose-700 text-white font-bold rounded-2xl shadow-md transition-all text-sm"
-            >
-              <RotateCcw className="w-4 h-4" />
-              <span>Retake Missed Questions Only ({mistakes.length})</span>
-            </motion.button>
-          )}
-
-          <div className="flex flex-col sm:flex-row items-center gap-2.5">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => generateQuiz()}
-              className="flex-1 w-full flex items-center justify-center gap-2 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-2xl shadow-md transition-all text-sm"
-            >
-              <RefreshCw className="w-4 h-4" />
-              <span>Retake with {questionCount} Questions</span>
-            </motion.button>
-          </div>
-        </div>
-      </motion.div>
+      <QuizResults
+        questions={questions}
+        userHistory={userHistory}
+        score={score}
+        questionCount={questionCount}
+        onRetakeMissed={(missedWords, count) => generateQuiz(missedWords, count)}
+        onRetakeNew={() => generateQuiz()}
+      />
     );
   }
 

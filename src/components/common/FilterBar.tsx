@@ -1,7 +1,7 @@
 import React from 'react';
 import { Search, X, Shuffle, Filter } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { CEFRLevel, PartOfSpeech } from '../types';
+import { CEFRLevel, PartOfSpeech } from '../../types';
 
 interface FilterBarProps {
   searchQuery: string;

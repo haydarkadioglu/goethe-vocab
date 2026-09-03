@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Home, BookOpen, Layers, Award, Star, Download, Globe, Sun, Moon, Laptop, Zap, Headphones, Gauge } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { AppView, SupportedLanguage, ThemeMode } from '../types';
-import { SUPPORTED_LANGUAGES } from '../services/translator';
-import { speechService } from '../services/speech';
+import { AppView, SupportedLanguage, ThemeMode } from '../../types';
+import { SUPPORTED_LANGUAGES } from '../../services/translator';
+import { speechService } from '../../services/speech';
 
 interface HeaderProps {
   currentView: AppView;
@@ -59,18 +59,18 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-zinc-100/90 dark:bg-zinc-950/85 backdrop-blur-xl border-b border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_2px_16px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] transition-colors">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20 gap-2">
+        <div className="flex items-center justify-between h-14 sm:h-16 xl:h-20 gap-2">
           
           {/* Brand */}
           <motion.div 
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
-            className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group shrink-0"
+            className="flex items-center gap-2 sm:gap-3 cursor-pointer group shrink-0"
             onClick={() => onSelectView('home')}
           >
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20 border border-white/40 group-hover:scale-105 transition-transform shrink-0">
-              <span className="text-lg sm:text-xl select-none">🇩🇪</span>
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20 border border-white/40 group-hover:scale-105 transition-transform shrink-0">
+              <span className="text-base sm:text-xl select-none">🇩🇪</span>
             </div>
             <div>
               <div className="flex items-center gap-1.5 sm:gap-2">
@@ -161,7 +161,7 @@ export const Header: React.FC<HeaderProps> = ({
               <select
                 value={targetLang}
                 onChange={(e) => onChangeLang(e.target.value as SupportedLanguage)}
-                className="bg-transparent text-[11px] sm:text-xs font-bold text-zinc-800 dark:text-zinc-200 focus:outline-none cursor-pointer pr-0.5 max-w-[90px] sm:max-w-none"
+                className="bg-transparent text-[11px] sm:text-xs font-bold text-zinc-800 dark:text-zinc-200 focus:outline-none cursor-pointer pr-0.5 max-w-[85px] sm:max-w-none"
               >
                 {SUPPORTED_LANGUAGES.map((lang) => (
                   <option key={lang.code} value={lang.code} className="dark:bg-zinc-900 dark:text-zinc-200">
@@ -198,37 +198,6 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
         </div>
-
-        {/* Mobile & Tablet Navigation Row with Smooth Horizontal Scroll & Touch Paging */}
-        <div className="flex xl:hidden items-center gap-1.5 py-2 border-t border-zinc-200/60 dark:border-zinc-800/60 overflow-x-auto no-scrollbar scroll-smooth px-1">
-          {navItems.map((item) => {
-            const isActive = currentView === item.id;
-            return (
-              <button
-                key={item.id}
-                onClick={() => onSelectView(item.id)}
-                className={`flex items-center gap-1.5 py-1.5 px-3 rounded-xl text-xs font-bold whitespace-nowrap transition-all shrink-0 ${
-                  isActive
-                    ? 'bg-amber-500 text-white shadow-xs'
-                    : 'bg-zinc-200/60 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800'
-                }`}
-              >
-                <div className="shrink-0">{item.icon}</div>
-                <span>{item.label}</span>
-                {item.badge !== undefined && (
-                  <span
-                    className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
-                      isActive ? 'bg-white/20 text-white' : 'bg-zinc-300 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300'
-                    }`}
-                  >
-                    {item.badge}
-                  </span>
-                )}
-              </button>
-            );
-          })}
-        </div>
-
       </div>
     </header>
   );
