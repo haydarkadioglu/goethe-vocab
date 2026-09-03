@@ -317,8 +317,8 @@ export const App: React.FC = () => {
               {dictionaryFilteredWords.length === 0 ? (
                 <div className="text-center py-20 bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.04)] max-w-xl mx-auto p-6">
                   <Sparkles className="w-12 h-12 text-zinc-300 dark:text-zinc-600 mx-auto mb-3" />
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Filtreye uygun kelime bulunamadı</h3>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Arama terimini temizleyin veya "Tüm Seviyeler"i seçin.</p>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">No words match your filters</h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Try clearing your search query or selecting "All Levels".</p>
                   <button
                     onClick={() => {
                       setSearchQuery('');
@@ -327,7 +327,7 @@ export const App: React.FC = () => {
                     }}
                     className="mt-4 px-4 py-2 bg-zinc-900 dark:bg-zinc-800 text-white rounded-xl text-xs font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors shadow-xs"
                   >
-                    Filtreleri Sıfırla
+                    Reset All Filters
                   </button>
                 </div>
               ) : (
@@ -352,9 +352,9 @@ export const App: React.FC = () => {
                       className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/95 dark:bg-zinc-900/95 p-4 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_-4px_rgba(0,0,0,0.4)] backdrop-blur-md"
                     >
                       <div className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">
-                        Gösterilen: <strong className="text-zinc-900 dark:text-white">{(currentPage - 1) * itemsPerPage + 1}</strong> -{' '}
-                        <strong className="text-zinc-900 dark:text-white">{Math.min(currentPage * itemsPerPage, dictionaryFilteredWords.length)}</strong> /{' '}
-                        <strong className="text-zinc-900 dark:text-white">{dictionaryFilteredWords.length.toLocaleString()}</strong> kelime
+                        Showing <strong className="text-zinc-900 dark:text-white">{(currentPage - 1) * itemsPerPage + 1}</strong> to{' '}
+                        <strong className="text-zinc-900 dark:text-white">{Math.min(currentPage * itemsPerPage, dictionaryFilteredWords.length)}</strong> of{' '}
+                        <strong className="text-zinc-900 dark:text-white">{dictionaryFilteredWords.length.toLocaleString()}</strong> words
                       </div>
 
                       <div className="flex items-center gap-2">
@@ -369,7 +369,7 @@ export const App: React.FC = () => {
                         </motion.button>
 
                         <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 px-3.5 py-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-xl border border-zinc-200/80 dark:border-zinc-700">
-                          Sayfa {currentPage} / {totalPages}
+                          Page {currentPage} of {totalPages}
                         </span>
 
                         <motion.button
@@ -398,7 +398,7 @@ export const App: React.FC = () => {
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.22, ease: 'easeOut' }}
             >
-              <SpeedDrill words={allWords} />
+              <SpeedDrill words={allWords} targetLang={targetLang} />
             </motion.div>
           )}
 
@@ -464,13 +464,13 @@ export const App: React.FC = () => {
               {dictionaryFilteredWords.length === 0 ? (
                 <div className="text-center py-20 bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.04)] max-w-xl mx-auto p-6">
                   <Sparkles className="w-12 h-12 text-zinc-300 dark:text-zinc-600 mx-auto mb-3" />
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Henüz kaydedilen kelime yok</h3>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Sözlükten yıldız simgesine tıklayarak kelimeleri buraya ekleyebilirsiniz.</p>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">No saved words yet</h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Click the star icon on any vocabulary card to save words here.</p>
                   <button
                     onClick={() => handleSelectView('explorer')}
                     className="mt-4 px-4 py-2 bg-zinc-900 dark:bg-zinc-800 text-white rounded-xl text-xs font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors shadow-xs"
                   >
-                    Sözlüğe Git
+                    Go to Dictionary
                   </button>
                 </div>
               ) : (

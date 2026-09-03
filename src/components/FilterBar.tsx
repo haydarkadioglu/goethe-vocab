@@ -26,9 +26,9 @@ export const FilterBar: React.FC<FilterBarProps> = ({
 }) => {
   const levels: { id: CEFRLevel; label: string; count: number }[] = [
     { id: 'ALL', label: 'All Levels', count: counts.all },
-    { id: 'A1', label: 'A1', count: counts.a1 },
-    { id: 'A2', label: 'A2', count: counts.a2 },
-    { id: 'B1', label: 'B1', count: counts.b1 },
+    { id: 'A1', label: 'A1 Beginner', count: counts.a1 },
+    { id: 'A2', label: 'A2 Elementary', count: counts.a2 },
+    { id: 'B1', label: 'B1 Intermediate', count: counts.b1 },
   ];
 
   const posOptions: { id: PartOfSpeech; label: string }[] = [
@@ -58,7 +58,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               type="text"
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
-              placeholder="Kelime, anlam, örnek cümle veya artikel ara..."
+              placeholder="Search German headword, English meaning, examples, or forms..."
               className="w-full pl-10 pr-9 py-2.5 bg-zinc-50/80 dark:bg-zinc-800/80 border border-zinc-200/80 dark:border-zinc-700 rounded-2xl text-xs sm:text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:bg-white dark:focus:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all text-zinc-800 dark:text-zinc-100"
             />
             {searchQuery && (
@@ -77,11 +77,11 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={onRandomWord}
-            title="Rastgele bir kelimeye git"
+            title="Pick a random word to explore"
             className="flex items-center gap-1.5 px-3 py-2.5 bg-zinc-100/90 dark:bg-zinc-800 hover:bg-zinc-200/70 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 font-semibold text-xs rounded-2xl transition-all shrink-0 border border-zinc-200/80 dark:border-zinc-700 shadow-2xs"
           >
             <Shuffle className="w-3.5 h-3.5 text-amber-600" />
-            <span className="hidden sm:inline">Rastgele</span>
+            <span className="hidden sm:inline">Random Word</span>
           </motion.button>
         </div>
 

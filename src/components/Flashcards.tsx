@@ -134,21 +134,21 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
       <div className="text-center py-16 sm:py-20 bg-white/90 dark:bg-zinc-900/90 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-xs max-w-xl mx-auto p-6 sm:p-8">
         <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
           {deckFilter === 'favorites'
-            ? 'Kaydedilen kelime bulunamadı'
+            ? 'No saved words found'
             : deckFilter === 'unlearned'
-            ? 'Tebrikler! Bu filtrenin tüm kelimelerini öğrendiniz!'
-            : 'Filtreye uygun kelime bulunamadı'}
+            ? 'Congratulations! You have mastered all words in this filter!'
+            : 'No words match current filter'}
         </h3>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
           {deckFilter === 'favorites'
-            ? 'Sözlükten yıldızlayarak buraya kelime ekleyebilirsiniz.'
-            : 'Filtreyi "Tümü" olarak değiştirip tekrar çalışabilirsiniz.'}
+            ? 'Star words in the Dictionary to review them here.'
+            : 'Switch to "All" to review completed cards.'}
         </p>
         <button
           onClick={() => setDeckFilter('all')}
           className="mt-4 px-5 py-2.5 bg-zinc-900 dark:bg-zinc-800 text-white rounded-xl text-xs font-semibold"
         >
-          Tüm Kelimeleri Göster
+          Show All Words
         </button>
       </div>
     );
@@ -174,7 +174,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                   : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
               }`}
             >
-              Tümü ({words.length})
+              All ({words.length})
             </button>
             <button
               onClick={() => setDeckFilter('unlearned')}
@@ -184,7 +184,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                   : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
               }`}
             >
-              Öğrenilmeyen ({words.filter(w => !learnedIds.has(w.id)).length})
+              Unlearned ({words.filter(w => !learnedIds.has(w.id)).length})
             </button>
             <button
               onClick={() => setDeckFilter('favorites')}
@@ -194,14 +194,14 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                   : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
               }`}
             >
-              Yıldızlı ({words.filter(w => favorites.includes(w.id)).length})
+              Saved ({words.filter(w => favorites.includes(w.id)).length})
             </button>
           </div>
 
           <div className="flex items-center justify-between sm:justify-end gap-2">
             {/* Count Selector */}
             <div className="flex items-center gap-1.5 bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 rounded-xl border border-zinc-200 dark:border-zinc-700">
-              <span className="text-[11px] font-semibold text-zinc-500">Deste:</span>
+              <span className="text-[11px] font-semibold text-zinc-500">Deck:</span>
               <input
                 type="number"
                 min={1}
@@ -220,11 +220,11 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={handleShuffle}
-              title="Desteyi Karıştır"
+              title="Shuffle deck"
               className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all shadow-2xs"
             >
               <Shuffle className="w-3 h-3 text-amber-600" />
-              <span>Karıştır</span>
+              <span>Shuffle</span>
             </motion.button>
           </div>
 
@@ -234,10 +234,10 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
       {/* Counter & Progress Bar */}
       <div className="w-full flex items-center justify-between mb-2 px-1 text-xs">
         <span className="font-bold text-zinc-600 dark:text-zinc-300">
-          Kart {currentIndex + 1} / {deck.length}
+          Card {currentIndex + 1} of {deck.length}
         </span>
         <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-          Toplam Öğrenilen: {learnedIds.size}
+          Mastered: {learnedIds.size}
         </span>
       </div>
 
@@ -318,20 +318,20 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                         whileHover={{ scale: 1.04 }}
                         whileTap={{ scale: 0.96 }}
                         onClick={() => speechService.speak(currentWord.word)}
-                        title="Dinle (Kısayol: A)"
+                        title="Listen (Shortcut: A)"
                         className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs sm:text-sm shadow-md shadow-amber-500/25 transition-all"
                       >
                         <Volume2 className="w-4 h-4" />
-                        <span>Telaffuz Et</span>
+                        <span>Listen (A)</span>
                       </motion.button>
                     </div>
                   </div>
 
                   {/* Front Footer */}
                   <div className="flex items-center justify-between text-[11px] sm:text-xs text-zinc-400 dark:text-zinc-500 pt-2 border-t border-zinc-100 dark:border-zinc-800">
-                    <span>Çevir: <kbd className="px-1.5 py-0.5 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-300 dark:border-zinc-700 font-mono text-zinc-700 dark:text-zinc-300">Space</kbd></span>
+                    <span>Flip: <kbd className="px-1.5 py-0.5 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-300 dark:border-zinc-700 font-mono text-zinc-700 dark:text-zinc-300">Space</kbd></span>
                     <span className="flex items-center gap-1 text-amber-600 dark:text-amber-500 font-semibold">
-                      <RotateCw className="w-3.5 h-3.5" /> Anlamı gör
+                      <RotateCw className="w-3.5 h-3.5" /> Click to view meaning
                     </span>
                   </div>
                 </div>
@@ -345,7 +345,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                       <span className="px-2.5 py-0.5 rounded-lg text-xs font-bold bg-white/10 text-zinc-300 border border-white/10">
                         {currentWord.level}
                       </span>
-                      <span className="text-[10px] sm:text-xs text-zinc-400 uppercase tracking-wider">{targetLang} Anlamı</span>
+                      <span className="text-[10px] sm:text-xs text-zinc-400 uppercase tracking-wider">{targetLang.toUpperCase()} Meaning</span>
                     </div>
                     <button
                       onClick={(e) => {
@@ -353,6 +353,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                         speechService.speak(currentWord.word);
                       }}
                       className="p-1.5 rounded-lg text-zinc-400 hover:text-white"
+                      title="Pronounce"
                     >
                       <Volume2 className="w-4 h-4" />
                     </button>
@@ -362,14 +363,14 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
                   <div className="flex-1 my-2 overflow-y-auto max-h-[220px] sm:max-h-[250px] pr-1 no-scrollbar flex flex-col justify-center">
                     <div className="text-center mb-3">
                       <h3 className="text-2xl sm:text-4xl font-extrabold text-amber-300 tracking-tight leading-snug">
-                        {loadingTrans ? 'Yükleniyor...' : translation || currentWord.word}
+                        {loadingTrans ? 'Translating...' : translation || currentWord.word}
                       </h3>
                     </div>
 
                     {currentWord.examples && currentWord.examples.length > 0 && (
                       <div className="bg-white/10 rounded-2xl p-3 sm:p-4 border border-white/10 backdrop-blur-xs text-left">
                         <p className="text-[10px] sm:text-xs text-zinc-400 font-bold uppercase tracking-wider mb-1 flex items-center justify-between">
-                          <span>Goethe Örnek Cümlesi:</span>
+                          <span>Goethe Example Sentence:</span>
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
@@ -389,8 +390,8 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
 
                   {/* Back Footer */}
                   <div className="flex items-center justify-between text-[11px] sm:text-xs text-zinc-400 pt-2 border-t border-white/10 shrink-0">
-                    <span>PDF Sayfa {currentWord.page}</span>
-                    <span className="text-zinc-300">Space ile geri dön</span>
+                    <span>PDF Page {currentWord.page}</span>
+                    <span className="text-zinc-300">Press Space to flip back</span>
                   </div>
 
                 </div>
@@ -409,7 +410,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
           className="flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2.5 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300 font-semibold text-xs sm:text-sm rounded-2xl border border-zinc-200/90 dark:border-zinc-800 shadow-xs transition-all"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>Önceki</span>
+          <span>Previous</span>
         </motion.button>
 
         {currentWord && (
@@ -424,7 +425,7 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
             }`}
           >
             <CheckCircle2 className="w-4 h-4" />
-            <span>{isLearned ? 'Öğrenildi ✓' : 'Öğrenildi'}</span>
+            <span>{isLearned ? 'Learned ✓' : 'Mark as Learned'}</span>
           </motion.button>
         )}
 
@@ -434,14 +435,14 @@ export const Flashcards: React.FC<FlashcardsProps> = ({
           onClick={handleNext}
           className="flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2.5 bg-zinc-900 dark:bg-zinc-800 hover:bg-zinc-800 dark:hover:bg-zinc-700 text-white font-semibold text-xs sm:text-sm rounded-2xl shadow-xs transition-all"
         >
-          <span>Sonraki</span>
+          <span>Next</span>
           <ArrowRight className="w-4 h-4" />
         </motion.button>
       </div>
 
       {/* Keyboard Shortcuts Hint */}
       <p className="text-[10px] sm:text-[11px] text-zinc-400 dark:text-zinc-500 mt-3 sm:mt-4 text-center">
-        Kısayollar: <kbd className="px-1.5 py-0.5 bg-zinc-200/70 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 rounded text-zinc-700 dark:text-zinc-300 font-mono">Space</kbd> Çevir • <kbd className="px-1.5 py-0.5 bg-zinc-200/70 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 rounded text-zinc-700 dark:text-zinc-300 font-mono">← / →</kbd> İleri/Geri • <kbd className="px-1.5 py-0.5 bg-zinc-200/70 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 rounded text-zinc-700 dark:text-zinc-300 font-mono">A</kbd> Ses
+        Shortcuts: <kbd className="px-1.5 py-0.5 bg-zinc-200/70 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 rounded text-zinc-700 dark:text-zinc-300 font-mono">Space</kbd> Flip • <kbd className="px-1.5 py-0.5 bg-zinc-200/70 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 rounded text-zinc-700 dark:text-zinc-300 font-mono">← / →</kbd> Next/Prev • <kbd className="px-1.5 py-0.5 bg-zinc-200/70 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 rounded text-zinc-700 dark:text-zinc-300 font-mono">A</kbd> Audio
       </p>
 
     </div>

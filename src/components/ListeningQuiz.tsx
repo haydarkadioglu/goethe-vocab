@@ -178,11 +178,16 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isSubmitted, currentQ, handleSelectOption, handleNext, playCurrentAudio]);
 
+  const getWordMeaning = useCallback((w: VocabWord) => {
+    if (targetLang === 'tr') return w.meaning_tr || w.meaning_en || '';
+    return w.meaning_en || w.meaning_tr || '';
+  }, [targetLang]);
+
   if (loading) {
     return (
       <div className="max-w-xl mx-auto py-16 sm:py-20 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 p-6">
         <Sparkles className="w-10 h-10 text-indigo-500 animate-spin mx-auto mb-3" />
-        <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Dinleme Soruları Hazırlanıyor...</h3>
+        <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Generating Listening Questions...</h3>
       </div>
     );
   }
@@ -191,7 +196,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
     return (
       <div className="max-w-xl mx-auto py-16 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8">
         <Headphones className="w-12 h-12 text-zinc-400 mx-auto mb-3" />
-        <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Filtreye uygun kelime bulunamadı</h3>
+        <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">No words match current filter</h3>
       </div>
     );
   }
@@ -208,10 +213,10 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
           <Award className="w-8 h-8" />
         </div>
 
-        <h2 className="text-2xl font-black tracking-tight">Dinleme Pratiği Tamamlandı!</h2>
+        <h2 className="text-2xl font-black tracking-tight">Listening Practice Complete!</h2>
         <div className="my-6 py-6 bg-zinc-50 dark:bg-zinc-800/80 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
           <span className="text-5xl font-black">{percentage}%</span>
-          <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mt-1">{score} / {questions.length} Doğru</p>
+          <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mt-1">{score} / {questions.length} Correct</p>
         </div>
 
         {/* Mistakes Review with Audio Buttons */}
@@ -223,7 +228,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
             >
               <div className="flex items-center gap-1.5">
                 <XCircle className="w-4 h-4" />
-                <span>Yanlış Duyulan Kelimeleri İncele ({mistakes.length})</span>
+                <span>Review Missed Words ({mistakes.length})</span>
               </div>
               {showMistakes ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
             </button>
@@ -241,18 +246,18 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
                           {m.correctAnswer}
                         </span>
                         <span className="text-zinc-400 text-[11px]">
-                          (Seçiminiz: <span className="line-through text-rose-500">{m.selected}</span>)
+                          (Selected: <span className="line-through text-rose-500">{m.selected}</span>)
                         </span>
                       </div>
                       <p className="text-[11px] text-zinc-500 mt-0.5">
-                        {targetLang === 'tr' ? m.word.meaning_tr : m.word.meaning_en}
+                        {getWordMeaning(m.word)}
                       </p>
                     </div>
 
                     <button
                       onClick={() => speechService.speak(m.correctAnswer, 0.85)}
                       className="p-2 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 text-indigo-600 dark:text-indigo-300 rounded-xl shrink-0"
-                      title="Tekrar dinle"
+                      title="Listen again"
                     >
                       <Volume2 className="w-4 h-4" />
                     </button>
@@ -270,11 +275,13 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
           className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
         >
           <RefreshCw className="w-4 h-4" />
-          <span>Yeni Kelimelerle Tekrar Başlat</span>
+          <span>Restart with New Words</span>
         </motion.button>
       </motion.div>
     );
   }
+
+  const wordMeaning = currentQ ? getWordMeaning(currentQ.word) : '';
 
   return (
     <div className="max-w-xl mx-auto space-y-4 text-zinc-900 dark:text-white">
@@ -284,13 +291,13 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
         <div className="flex items-center gap-2">
           <Headphones className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-600 dark:text-indigo-400 shrink-0" />
           <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300">
-            Soru {currentIndex + 1} / {questions.length}
+            Question {currentIndex + 1} of {questions.length}
           </span>
         </div>
 
         {/* Audio Speed Selection */}
         <div className="flex items-center gap-1 sm:gap-1.5 bg-zinc-100 dark:bg-zinc-800 px-2 sm:px-2.5 py-1 rounded-xl border border-zinc-200 dark:border-zinc-700 text-xs shrink-0">
-          <span className="text-[10px] sm:text-[11px] font-semibold text-zinc-500">Hız:</span>
+          <span className="text-[10px] sm:text-[11px] font-semibold text-zinc-500">Speed:</span>
           {[0.75, 0.9, 1.0].map((rate) => (
             <button
               key={rate}
@@ -322,7 +329,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
             <Volume2 className="w-8 h-8 sm:w-10 sm:h-10 group-hover:scale-110 transition-transform" />
           </motion.button>
           <span className="text-[11px] sm:text-xs font-bold text-zinc-400 uppercase tracking-wider">
-            Almanca Sesi Dinleyin (Tekrar: <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> / <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">R</kbd>)
+            Listen to German audio (Replay: <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> / <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">R</kbd>)
           </span>
         </div>
 
@@ -336,9 +343,9 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
             <h3 className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white">
               {currentQ.word.word}
             </h3>
-            {(currentQ.word.meaning_tr || currentQ.word.meaning_en) && (
+            {wordMeaning && (
               <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-                Anlam: <strong className="text-zinc-700 dark:text-zinc-200">{targetLang === 'tr' ? currentQ.word.meaning_tr : currentQ.word.meaning_en}</strong>
+                Meaning: <strong className="text-zinc-700 dark:text-zinc-200">{wordMeaning}</strong>
               </p>
             )}
           </motion.div>
@@ -350,11 +357,11 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
             let btnClass = 'bg-zinc-50/90 dark:bg-zinc-800/80 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200';
             if (isSubmitted) {
               if (opt === currentQ.correctAnswer) {
-                btnClass = 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 text-emerald-900 dark:text-emerald-300 font-bold';
+                btnClass = 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 text-emerald-900 dark:text-emerald-300 font-bold shadow-xs';
               } else if (opt === selectedOption) {
                 btnClass = 'bg-rose-50 dark:bg-rose-950/60 border-rose-400 text-rose-900 dark:text-rose-300 font-bold';
               } else {
-                btnClass = 'opacity-40 border-zinc-200 dark:border-zinc-800';
+                btnClass = 'bg-zinc-50/40 dark:bg-zinc-900/40 border-zinc-200/60 dark:border-zinc-800 text-zinc-400 opacity-60';
               }
             }
 
@@ -371,7 +378,7 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
                   <span className="w-5 h-5 rounded-lg bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-mono text-xs flex items-center justify-center font-bold shrink-0">
                     {idx + 1}
                   </span>
-                  <span className="font-semibold text-sm sm:text-base">{opt}</span>
+                  <span className="font-semibold">{opt}</span>
                 </div>
                 {isSubmitted && opt === currentQ.correctAnswer && (
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
@@ -384,19 +391,27 @@ export const ListeningQuiz: React.FC<ListeningQuizProps> = ({ words, targetLang 
           })}
         </div>
 
-        {/* Next Button */}
+        {/* Next Question / Finish Button */}
         {isSubmitted && (
-          <motion.button
-            initial={{ opacity: 0, y: 10 }}
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={handleNext}
-            className="w-full py-3.5 bg-zinc-900 dark:bg-indigo-600 hover:bg-zinc-800 dark:hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-xs sm:text-sm"
+            className="pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between gap-3"
           >
-            <span>{currentIndex + 1 < questions.length ? 'Sonraki Kelime (İleri) →' : 'Sonuçları Gör'}</span>
-            <ArrowRight className="w-4 h-4" />
-          </motion.button>
+            <span className="text-xs text-zinc-400 hidden sm:inline">
+              Press <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> or <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Enter</kbd> to proceed
+            </span>
+
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={handleNext}
+              className="w-full sm:w-auto px-7 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-md transition-all text-xs sm:text-sm ml-auto flex items-center justify-center gap-2"
+            >
+              <span>{currentIndex + 1 < questions.length ? 'Next Word (Advance) →' : 'View Results'}</span>
+              <ArrowRight className="w-4 h-4" />
+            </motion.button>
+          </motion.div>
         )}
 
       </div>

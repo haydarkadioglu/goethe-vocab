@@ -59,19 +59,23 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
     const newQuestions: Question[] = [];
 
     for (const w of shuffledWords) {
+      const bareNoun = w.word.replace(/^(der|die|das)\s+/, '').split(',')[0].trim();
+
       if (w.article && Math.random() > 0.4) {
         newQuestions.push({
           type: 'article',
-          prompt: `"${w.word.replace(/^(der|die|das)\s+/, '')}" isminin artikeli hangisidir?`,
-          subPrompt: w.examples && w.examples[0] ? `Örnek: ${w.examples[0]}` : undefined,
+          prompt: targetLang === 'tr' 
+            ? `"${bareNoun}" isminin artikeli hangisidir?` 
+            : `What is the correct grammatical gender article for "${bareNoun}"?`,
+          subPrompt: w.examples && w.examples[0] ? `Example: "${w.examples[0]}"` : undefined,
           options: ['der', 'die', 'das'],
           correctAnswer: w.article,
           word: w,
-          explanation: `Almanca: "${w.article} ${w.word}". ${w.plural ? `Çoğul: ${w.plural}` : ''}`
+          explanation: `German: "${w.article} ${w.word}". ${w.plural ? `Plural: ${w.plural}` : ''}`
         });
       } else if (w.examples && w.examples.length > 0 && Math.random() > 0.5) {
         const sentence = w.examples[0];
-        const baseWord = w.word.replace(/^(der|die|das)\s+/, '').split(',')[0].trim();
+        const baseWord = bareNoun;
         const regex = new RegExp(`\\b${baseWord}\\w*`, 'i');
         if (regex.test(sentence)) {
           const blanked = sentence.replace(regex, '_______');
@@ -93,12 +97,14 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
 
           newQuestions.push({
             type: 'fillIn',
-            prompt: 'Goethe örnek cümlesindeki boşluğu doldurun:',
+            prompt: targetLang === 'tr'
+              ? 'Goethe örnek cümlesindeki boşluğu doldurun:'
+              : 'Fill in the blank in the authentic Goethe sentence:',
             subPrompt: blanked,
             options: opts,
             correctAnswer: baseWord,
             word: w,
-            explanation: `Orijinal Goethe cümlesi: "${sentence}"`
+            explanation: `Original Goethe sentence: "${sentence}"`
           });
         } else {
           await addMeaningQuestion(w, words, newQuestions, targetLang);
@@ -149,8 +155,10 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
 
       qList.push({
         type: 'meaning',
-        prompt: `"${targetWord.word}" kelimesinin anlamı nedir?`,
-        subPrompt: targetWord.examples && targetWord.examples[0] ? `Örnek: ${targetWord.examples[0]}` : undefined,
+        prompt: lang === 'tr'
+          ? `"${targetWord.word}" kelimesinin anlamı nedir?`
+          : `What is the meaning of "${targetWord.word}"?`,
+        subPrompt: targetWord.examples && targetWord.examples[0] ? `Example: "${targetWord.examples[0]}"` : undefined,
         options: allOpts,
         correctAnswer: correctMeaning,
         word: targetWord,
@@ -224,8 +232,8 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
     return (
       <div className="max-w-xl mx-auto py-16 sm:py-20 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6 sm:p-8">
         <Sparkles className="w-10 h-10 text-amber-500 animate-spin mx-auto mb-3" />
-        <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Alıştırma Quizi Hazırlanıyor...</h3>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Orijinal Goethe kelime listesinden {questionCount} soru üretiliyor</p>
+        <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Preparing Practice Quiz...</h3>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Generating {questionCount} questions from official Goethe wordlists</p>
       </div>
     );
   }
@@ -234,8 +242,8 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
     return (
       <div className="max-w-xl mx-auto py-16 text-center bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-xs p-6 sm:p-8">
         <HelpCircle className="w-12 h-12 text-zinc-400 mx-auto mb-3" />
-        <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Filtreye uygun yeterli kelime bulunamadı</h3>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">Lütfen filtreleri sıfırlayın veya "Tüm Seviyeler"i seçin.</p>
+        <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Not enough words in current filter</h3>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">Please reset search or select another level.</p>
       </div>
     );
   }
@@ -254,13 +262,13 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
         <div className="w-16 h-16 rounded-3xl bg-amber-100/80 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 flex items-center justify-center mx-auto mb-4 border border-amber-200/80 dark:border-amber-800 shadow-xs">
           <Award className="w-8 h-8" />
         </div>
-        <h2 className="text-2xl font-black tracking-tight">Quiz Tamamlandı!</h2>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Almanca kelime bilginizi sınadınız</p>
+        <h2 className="text-2xl font-black tracking-tight">Quiz Complete!</h2>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Great practice on your German vocabulary</p>
 
         <div className="my-6 py-6 bg-zinc-50/90 dark:bg-zinc-800/80 rounded-2xl border border-zinc-200/70 dark:border-zinc-700">
           <span className="text-5xl font-black">{percentage}%</span>
           <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mt-1">
-            {score} / {questions.length} Doğru
+            {score} of {questions.length} Correct
           </p>
         </div>
 
@@ -273,7 +281,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
             >
               <div className="flex items-center gap-1.5">
                 <XCircle className="w-4 h-4" />
-                <span>Yanlış Yapılan Soruları İncele ({mistakes.length})</span>
+                <span>Review Missed Questions ({mistakes.length})</span>
               </div>
               {showMistakesReview ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
             </button>
@@ -293,10 +301,10 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
                     )}
                     <div className="flex items-center gap-2 pt-1 flex-wrap">
                       <span className="text-rose-600 dark:text-rose-400 font-semibold line-through">
-                        Seçilen: {m.selected}
+                        Selected: {m.selected}
                       </span>
                       <span className="text-emerald-600 dark:text-emerald-400 font-bold">
-                        ✓ Doğru: {m.question.correctAnswer}
+                        ✓ Correct: {m.question.correctAnswer}
                       </span>
                     </div>
                   </div>
@@ -314,7 +322,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
             className="flex-1 w-full flex items-center justify-center gap-2 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-2xl shadow-md shadow-amber-500/20 transition-all text-sm"
           >
             <RefreshCw className="w-4 h-4" />
-            <span>Yeni {questionCount} Soru ile Tekrar Çöz</span>
+            <span>Retake with {questionCount} Questions</span>
           </motion.button>
         </div>
       </motion.div>
@@ -332,16 +340,16 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
           
           <div className="flex items-center gap-2">
             <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">
-              Soru {currentIndex + 1} / {questions.length}
+              Question {currentIndex + 1} of {questions.length}
             </span>
             <span className="text-xs font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-50/90 dark:bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-200/80 dark:border-emerald-800">
-              Skor: {score}
+              Score: {score}
             </span>
           </div>
 
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1.5 bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 rounded-xl border border-zinc-200 dark:border-zinc-700">
-              <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400">Soru Sayısı:</span>
+              <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400">Questions:</span>
               <input
                 type="number"
                 min={3}
@@ -376,7 +384,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
 
             <button
               onClick={() => generateQuiz(questionCount)}
-              title="Yeni sorularla yeniden başlat"
+              title="Restart with fresh questions"
               className="p-1.5 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400"
             >
               <RefreshCw className="w-3.5 h-3.5" />
@@ -410,7 +418,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
             {/* Prompt */}
             <div className="mb-5 sm:mb-6 text-center">
               <span className="inline-block px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 mb-2">
-                Seviye {currentQ.word.level}
+                Level {currentQ.word.level}
               </span>
               <h3 className="text-base sm:text-lg font-black leading-snug">
                 {currentQ.prompt}
@@ -421,7 +429,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
                   <button
                     onClick={() => speechService.speak(currentQ.word.word)}
                     className="p-1.5 rounded-lg text-zinc-400 hover:text-amber-600 hover:bg-white dark:hover:bg-zinc-700 shrink-0 transition-colors"
-                    title="Telaffuz et"
+                    title="Pronounce"
                   >
                     <Volume2 className="w-4 h-4" />
                   </button>
@@ -482,7 +490,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
 
                 <div className="flex items-center justify-between gap-3">
                   <span className="text-xs text-zinc-400 hidden sm:inline">
-                    <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> veya <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Enter</kbd> ile geçin
+                    Press <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> or <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Enter</kbd> to proceed
                   </span>
 
                   <motion.button
@@ -491,7 +499,7 @@ export const Quiz: React.FC<QuizProps> = ({ words, targetLang }) => {
                     onClick={handleNextQuestion}
                     className="w-full sm:w-auto px-7 py-3.5 bg-zinc-900 dark:bg-amber-500 hover:bg-zinc-800 dark:hover:bg-amber-600 text-white dark:text-zinc-950 font-bold rounded-2xl shadow-md transition-all text-xs sm:text-sm ml-auto flex items-center justify-center gap-2"
                   >
-                    <span>{currentIndex + 1 < questions.length ? 'Sonraki Soru (İleri) →' : 'Sonuçları Gör'}</span>
+                    <span>{currentIndex + 1 < questions.length ? 'Next Question (Advance) →' : 'View Results'}</span>
                     <ArrowRight className="w-4 h-4" />
                   </motion.button>
                 </div>

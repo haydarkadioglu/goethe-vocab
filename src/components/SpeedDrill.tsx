@@ -2,11 +2,12 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Flame, Timer, Trophy, RotateCcw, Volume2, ArrowRight, CheckCircle2, XCircle, BookOpen, PauseCircle, Layers } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { VocabWord, CEFRLevel } from '../types';
+import { VocabWord, CEFRLevel, SupportedLanguage } from '../types';
 import { speechService } from '../services/speech';
 
 interface SpeedDrillProps {
   words: VocabWord[];
+  targetLang: SupportedLanguage;
 }
 
 interface MistakeItem {
@@ -15,7 +16,7 @@ interface MistakeItem {
   correctArticle: string;
 }
 
-export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
+export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words, targetLang }) => {
   const [selectedLevel, setSelectedLevel] = useState<CEFRLevel>('ALL');
 
   // Filter only nouns with definite articles matching selected level
@@ -59,6 +60,11 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
 
   const [mistakes, setMistakes] = useState<MistakeItem[]>([]);
   const [isTimerPaused, setIsTimerPaused] = useState(false);
+
+  const getWordMeaning = useCallback((w: VocabWord) => {
+    if (targetLang === 'tr') return w.meaning_tr || w.meaning_en || '';
+    return w.meaning_en || w.meaning_tr || '';
+  }, [targetLang]);
 
   const startGame = useCallback((modeParam?: 'timer' | 'practice', customDuration?: number) => {
     const selectedMode = modeParam ?? drillMode;
@@ -190,9 +196,9 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
           <Zap className="w-7 h-7 sm:w-8 sm:h-8" />
         </div>
 
-        <h2 className="text-2xl sm:text-3xl font-black tracking-tight">"Der, Die, Das" Artikel Pratiği</h2>
+        <h2 className="text-2xl sm:text-3xl font-black tracking-tight">"Der, Die, Das" Article Speed Drill</h2>
         <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1.5 max-w-md mx-auto">
-          Almanca artikelleri refleks haline getirin. İster seviyenize göre rahatça öğrenin, ister zamana karşı yarışın!
+          Master German noun genders into muscle memory. Practice at your own pace or challenge your reflexes against the clock!
         </p>
 
         {/* CEFR Level Selector Filter */}
@@ -200,10 +206,10 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
               <Layers className="w-3.5 h-3.5 text-amber-500" />
-              <span>Çalışma Seviyesi:</span>
+              <span>Drill Level:</span>
             </span>
             <span className="text-[11px] font-mono font-bold text-amber-600 dark:text-amber-400">
-              {nouns.length} İsim Bulundu
+              {nouns.length} Nouns Found
             </span>
           </div>
 
@@ -218,7 +224,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
                     : 'bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100'
                 }`}
               >
-                {lvl === 'ALL' ? 'Tümü' : lvl}
+                {lvl === 'ALL' ? 'All' : lvl}
               </button>
             ))}
           </div>
@@ -238,14 +244,14 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
             <div>
               <div className="flex items-center gap-1.5 font-black text-sm text-zinc-900 dark:text-white mb-1">
                 <BookOpen className="w-4 h-4 text-amber-500" />
-                <span>Rahat Alıştırma (Önerilen)</span>
+                <span>Practice Mode (Recommended)</span>
               </div>
               <p className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-snug">
-                Süre stresi yok. Doğruyu/yanlışı görüp inceleyin, "İleri" butonuyla sonraki kelimeye geçin.
+                No timer pressure. Inspect right/wrong answers with audio, then click "Next Word" or press Space to advance.
               </p>
             </div>
             <span className={`text-[10px] font-bold uppercase tracking-wider mt-2.5 ${drillMode === 'practice' ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}`}>
-              {drillMode === 'practice' ? '✓ Seçildi' : 'Seç'}
+              {drillMode === 'practice' ? '✓ Selected' : 'Select'}
             </span>
           </button>
 
@@ -260,14 +266,14 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
             <div>
               <div className="flex items-center gap-1.5 font-black text-sm text-zinc-900 dark:text-white mb-1">
                 <Timer className="w-4 h-4 text-amber-500" />
-                <span>Zamana Karşı (Hızlı)</span>
+                <span>Speed Reflex (Timer)</span>
               </div>
               <p className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-snug">
-                Geri sayımlı. Yanlış yapıldığında sayaç duraklar; doğrusunu öğrenip devam edersiniz.
+                Against the clock. If you make a mistake, the timer pauses automatically so you can study the correction.
               </p>
             </div>
             <span className={`text-[10px] font-bold uppercase tracking-wider mt-2.5 ${drillMode === 'timer' ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}`}>
-              {drillMode === 'timer' ? '✓ Seçildi' : 'Seç'}
+              {drillMode === 'timer' ? '✓ Selected' : 'Select'}
             </span>
           </button>
 
@@ -277,7 +283,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
         {drillMode === 'timer' && (
           <div className="mb-5">
             <label className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider block mb-2">
-              Süre Seçimi:
+              Round Duration:
             </label>
             <div className="flex items-center justify-center gap-2">
               {[30, 60, 90].map((sec) => (
@@ -290,7 +296,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
                       : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-200'
                   }`}
                 >
-                  {sec} Saniye
+                  {sec} Seconds
                 </button>
               ))}
             </div>
@@ -299,7 +305,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
 
         {/* Keyboard Shortcuts Hint */}
         <div className="text-xs text-zinc-400 dark:text-zinc-500 mb-6 flex items-center justify-center gap-2.5 sm:gap-3 flex-wrap">
-          <span>Klavye: <kbd className="px-1.5 py-0.5 bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 rounded font-mono font-bold">1</kbd> der</span>
+          <span>Shortcuts: <kbd className="px-1.5 py-0.5 bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 rounded font-mono font-bold">1</kbd> der</span>
           <span><kbd className="px-1.5 py-0.5 bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 rounded font-mono font-bold">2</kbd> die</span>
           <span><kbd className="px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 rounded font-mono font-bold">3</kbd> das</span>
         </div>
@@ -312,7 +318,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
           className="w-full py-4 bg-amber-500 hover:bg-amber-600 disabled:opacity-50 disabled:cursor-not-allowed text-white font-black text-base rounded-2xl shadow-lg shadow-amber-500/25 transition-all flex items-center justify-center gap-2"
         >
           <Zap className="w-5 h-5" />
-          <span>Başlat ({nouns.length} İsim)</span>
+          <span>Start Drill ({nouns.length} Nouns)</span>
         </motion.button>
       </motion.div>
     );
@@ -330,20 +336,20 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
           <Trophy className="w-8 h-8" />
         </div>
 
-        <h2 className="text-2xl sm:text-3xl font-black tracking-tight">Oturum Tamamlandı!</h2>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Harika bir artikel çalışması oldu.</p>
+        <h2 className="text-2xl sm:text-3xl font-black tracking-tight">Drill Completed!</h2>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Great practice on your German articles.</p>
 
         <div className="grid grid-cols-2 gap-3 my-6">
           <div className="bg-zinc-50 dark:bg-zinc-800/70 p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
             <span className="text-3xl sm:text-4xl font-black text-amber-600 dark:text-amber-400">{score}</span>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Toplam Puan</p>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Total Score</p>
           </div>
           <div className="bg-zinc-50 dark:bg-zinc-800/70 p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
             <div className="flex items-center justify-center gap-1 text-rose-500">
               <Flame className="w-5 h-5 sm:w-6 sm:h-6 fill-rose-500" />
               <span className="text-3xl sm:text-4xl font-black">{bestStreak}</span>
             </div>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">En Yüksek Seri</p>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-1">Best Streak</p>
           </div>
         </div>
 
@@ -353,9 +359,9 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
             <div className="flex items-center justify-between mb-3">
               <h4 className="text-xs font-black uppercase tracking-wider text-rose-600 dark:text-rose-400 flex items-center gap-1.5">
                 <XCircle className="w-4 h-4" />
-                <span>Yanlış Yapılan Kelimeler ({mistakes.length})</span>
+                <span>Review Missed Words ({mistakes.length})</span>
               </h4>
-              <span className="text-[10px] text-zinc-400">Doğruları öğrenin:</span>
+              <span className="text-[10px] text-zinc-400">Learn correct articles:</span>
             </div>
 
             <div className="max-h-56 overflow-y-auto space-y-2 pr-1">
@@ -372,14 +378,14 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
                       {m.word.word.replace(/^(der|die|das)\s+/, '')}
                     </span>
                     <span className="text-[10px] text-zinc-400">
-                      (Seçiminiz: <span className="line-through text-rose-500">{m.chosenArticle}</span>)
+                      (You selected: <span className="line-through text-rose-500">{m.chosenArticle}</span>)
                     </span>
                   </div>
 
                   <button
                     onClick={() => speechService.speak(`${m.correctArticle} ${m.word.word}`)}
                     className="p-1.5 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-500 shrink-0"
-                    title="Telaffuz et"
+                    title="Pronounce"
                   >
                     <Volume2 className="w-3.5 h-3.5" />
                   </button>
@@ -397,13 +403,13 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
             className="flex-1 w-full py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>Tekrar Oyna</span>
+            <span>Play Again</span>
           </motion.button>
           <button
             onClick={() => setGameState('idle')}
             className="w-full sm:w-auto px-5 py-3.5 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 font-bold rounded-2xl transition-all text-sm"
           >
-            Ayar Değiştir
+            Change Settings
           </button>
         </div>
       </motion.div>
@@ -412,6 +418,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
 
   // ACTIVE PLAYING SCREEN
   const bareNoun = currentWord.word.replace(/^(der|die|das)\s+/, '').split(',')[0].trim();
+  const wordMeaning = getWordMeaning(currentWord);
 
   return (
     <div className="max-w-xl mx-auto space-y-4">
@@ -438,12 +445,12 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
                     <span className="text-lg sm:text-xl font-black text-zinc-900 dark:text-white">{timeLeft}s</span>
                     {isTimerPaused && (
                       <span className="text-[9px] font-bold px-1 rounded bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-400">
-                        Durdu
+                        Paused
                       </span>
                     )}
                   </div>
                   <p className="text-[9px] sm:text-[10px] font-bold text-zinc-400 uppercase tracking-wider">
-                    {isTimerPaused ? 'İnceleme' : 'Kalan Süre'}
+                    {isTimerPaused ? 'Review Time' : 'Time Left'}
                   </p>
                 </div>
               </>
@@ -453,8 +460,8 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
                   <BookOpen className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
-                  <span className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-white">Alıştırma</span>
-                  <p className="text-[9px] sm:text-[10px] text-zinc-400">Süresiz</p>
+                  <span className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-white">Practice Mode</span>
+                  <p className="text-[9px] sm:text-[10px] text-zinc-400">Untimed</p>
                 </div>
               </div>
             )}
@@ -464,7 +471,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
           <div className="flex items-center gap-1 px-2.5 sm:px-3 py-1 bg-rose-50/80 dark:bg-rose-950/50 rounded-2xl border border-rose-200/80 dark:border-rose-900">
             <Flame className={`w-4 h-4 ${streak >= 5 ? 'text-rose-500 fill-rose-500 animate-bounce' : 'text-zinc-400'}`} />
             <div>
-              <span className="text-xs font-black text-rose-700 dark:text-rose-300">{streak} seri</span>
+              <span className="text-xs font-black text-rose-700 dark:text-rose-300">{streak} streak</span>
               {streak >= 5 && (
                 <span className="ml-1 text-[9px] font-bold text-amber-600 dark:text-amber-400">
                   ({streak >= 10 ? '3x' : '2x'})
@@ -502,7 +509,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
             {currentWord.level}
           </span>
           {currentWord.plural && (
-            <span className="text-xs font-mono text-zinc-400">Çoğul: {currentWord.plural}</span>
+            <span className="text-xs font-mono text-zinc-400">Plural: {currentWord.plural}</span>
           )}
         </div>
 
@@ -529,9 +536,9 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
             {bareNoun}
           </h2>
 
-          {(currentWord.meaning_tr || currentWord.meaning_en) && (
-            <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-medium">
-              {currentWord.meaning_tr || currentWord.meaning_en}
+          {wordMeaning && (
+            <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-medium capitalize">
+              {wordMeaning}
             </p>
           )}
         </div>
@@ -558,8 +565,8 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
                 <div>
                   <p>
                     {answerState.isCorrect
-                      ? `Tebrikler! Doğru: "${currentWord.article} ${bareNoun}"`
-                      : `Yanlış: "${answerState.chosenArticle}" seçildi. Doğrusu: "${currentWord.article} ${bareNoun}"`}
+                      ? `Correct! Full word: "${currentWord.article} ${bareNoun}"`
+                      : `Wrong: You picked "${answerState.chosenArticle}". Correct is: "${currentWord.article} ${bareNoun}"`}
                   </p>
                 </div>
               </div>
@@ -567,7 +574,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
               <button
                 onClick={() => speechService.speak(`${currentWord.article} ${bareNoun}`)}
                 className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 shrink-0 text-zinc-700 dark:text-zinc-200"
-                title="Tekrar dinle"
+                title="Replay audio"
               >
                 <Volume2 className="w-4 h-4" />
               </button>
@@ -670,7 +677,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
 
         </div>
 
-        {/* PROMINENT "SONRAKI SORU (İLERİ)" BUTTON WHEN ANSWERED */}
+        {/* PROMINENT "NEXT WORD" BUTTON WHEN ANSWERED */}
         {answerState.answered && (
           <motion.div
             initial={{ opacity: 0, y: 8 }}
@@ -678,7 +685,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
             className="mt-6 pt-4 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between gap-3"
           >
             <div className="text-xs text-zinc-400 text-left hidden sm:block">
-              <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> veya <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Enter</kbd> ile geçin
+              Press <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Space</kbd> or <kbd className="px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800 rounded font-mono text-zinc-700 dark:text-zinc-300">Enter</kbd> to proceed
             </div>
 
             <motion.button
@@ -687,7 +694,7 @@ export const SpeedDrill: React.FC<SpeedDrillProps> = ({ words }) => {
               onClick={handleNextWord}
               className="w-full sm:w-auto px-7 py-3.5 bg-zinc-900 dark:bg-amber-500 hover:bg-zinc-800 dark:hover:bg-amber-600 text-white dark:text-zinc-950 font-black rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-sm ml-auto"
             >
-              <span>{drillMode === 'timer' && !answerState.isCorrect ? 'Devam Et (Süreyi Başlat) →' : 'Sonraki Kelime (İleri) →'}</span>
+              <span>{drillMode === 'timer' && !answerState.isCorrect ? 'Resume Timer →' : 'Next Word (Advance) →'}</span>
               <ArrowRight className="w-4 h-4" />
             </motion.button>
           </motion.div>
