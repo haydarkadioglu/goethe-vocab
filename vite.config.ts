@@ -9,6 +9,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
+      injectRegister: 'auto',
       includeAssets: ['favicon.ico', 'icon.svg'],
       manifest: {
         name: 'Goethe German Vocabulary (A1 • A2 • B1)',
@@ -29,7 +30,13 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,csv}'],
-        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024 // Cache datasets up to 6MB
+        maximumFileSizeToCacheInBytes: 15 * 1024 * 1024,
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true
+      },
+      devOptions: {
+        enabled: false
       }
     })
   ],
