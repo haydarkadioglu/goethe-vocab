@@ -40,14 +40,15 @@ export const Header: React.FC<HeaderProps> = ({
     setSpeechRate(nextRate);
   };
 
-  const navItems: { id: AppView; label: string; icon: React.ReactNode; badge?: number | string }[] = [
-    { id: 'home', label: 'Home', icon: <Home className="w-4 h-4" /> },
-    { id: 'explorer', label: 'Dictionary', icon: <BookOpen className="w-4 h-4" />, badge: filteredCount },
-    { id: 'speed-drill', label: 'Speed Drill', icon: <Zap className="w-4 h-4 text-amber-500" /> },
-    { id: 'flashcards', label: 'Flashcards', icon: <Layers className="w-4 h-4" /> },
-    { id: 'quiz', label: 'Quiz', icon: <Award className="w-4 h-4" /> },
-    { id: 'listening', label: 'Listening', icon: <Headphones className="w-4 h-4 text-indigo-500" /> },
-    { id: 'favorites', label: 'Saved', icon: <Star className="w-4 h-4" />, badge: favoritesCount > 0 ? favoritesCount : undefined },
+  const isPracticeActive = ['practice', 'speed-drill', 'flashcards', 'quiz', 'listening', 'spelling'].includes(currentView);
+  const isDictActive = currentView === 'explorer' || currentView === 'dictionary';
+  const isProgressActive = currentView === 'progress' || currentView === 'favorites';
+
+  const navItems = [
+    { id: 'home' as AppView, label: 'Ana Sayfa', icon: <Home className="w-4 h-4" />, active: currentView === 'home' },
+    { id: 'explorer' as AppView, label: 'Sözlük', icon: <BookOpen className="w-4 h-4" />, badge: filteredCount, active: isDictActive },
+    { id: 'practice' as AppView, label: 'Pratik Merkezi', icon: <Zap className="w-4 h-4 text-amber-500" />, active: isPracticeActive },
+    { id: 'progress' as AppView, label: 'İlerlemem', icon: <Star className="w-4 h-4 text-amber-500" />, badge: favoritesCount > 0 ? favoritesCount : undefined, active: isProgressActive },
   ];
 
   const getThemeIcon = () => {
@@ -82,20 +83,20 @@ export const Header: React.FC<HeaderProps> = ({
                 </span>
               </div>
               <p className="text-[10px] sm:text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hidden md:block">
-                Official Goethe-Institut ({totalWords.toLocaleString()} words)
+                Resmi Goethe-Institut ({totalWords.toLocaleString()} kelime)
               </p>
             </div>
           </motion.div>
 
           {/* Desktop Navigation Modes with Animated Glider Pill */}
-          <nav className="hidden xl:flex items-center gap-1 bg-zinc-200/70 dark:bg-zinc-900/90 p-1.5 rounded-2xl border border-zinc-300/60 dark:border-zinc-800 shadow-inner">
+          <nav className="hidden lg:flex items-center gap-1 bg-zinc-200/70 dark:bg-zinc-900/90 p-1.5 rounded-2xl border border-zinc-300/60 dark:border-zinc-800 shadow-inner">
             {navItems.map((item) => {
-              const isActive = currentView === item.id;
+              const isActive = item.active;
               return (
                 <button
                   key={item.id}
                   onClick={() => onSelectView(item.id)}
-                  className={`relative flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors duration-200 select-none ${
+                  className={`relative flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-colors duration-200 select-none ${
                     isActive ? 'text-zinc-900 dark:text-white' : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
                   }`}
                 >
@@ -109,7 +110,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <span className={`relative z-10 ${isActive ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-500 dark:text-zinc-400'}`}>
                     {item.icon}
                   </span>
-                  <span className="relative z-10">{item.label}</span>
+                  <span className="relative z-10 font-bold">{item.label}</span>
                   {item.badge !== undefined && (
                     <span
                       className={`relative z-10 text-[10px] px-1.5 py-0.2 rounded-full font-mono transition-colors ${

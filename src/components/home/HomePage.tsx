@@ -110,22 +110,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => onNavigate('speed-drill')}
+              onClick={() => onNavigate('practice')}
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-2xl shadow-md shadow-amber-500/25 transition-all"
             >
               <Zap className="w-4 h-4" />
-              <span>Play "Der, Die, Das" Drill</span>
+              <span>Pratik Merkezine Git (5 Mod)</span>
               <ArrowRight className="w-4 h-4 ml-1" />
-            </motion.button>
-
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => onNavigate('listening')}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-2xl shadow-md shadow-indigo-600/25 transition-all"
-            >
-              <Headphones className="w-4 h-4" />
-              <span>Listening Mode (Hörverstehen)</span>
             </motion.button>
 
             <motion.button
@@ -135,7 +125,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, counts }) => {
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3.5 bg-zinc-900 dark:bg-zinc-800 hover:bg-zinc-800 dark:hover:bg-zinc-700 text-white font-bold text-sm rounded-2xl border border-zinc-200/90 dark:border-zinc-700 shadow-xs transition-all"
             >
               <BookOpen className="w-4 h-4 text-amber-400" />
-              <span>Browse All Words</span>
+              <span>Kelime Sözlüğünü Keşfet</span>
+            </motion.button>
+
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => onNavigate('progress')}
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3.5 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 font-bold text-sm rounded-2xl border border-zinc-200/90 dark:border-zinc-700 shadow-xs transition-all"
+            >
+              <Award className="w-4 h-4 text-indigo-500" />
+              <span>İlerleme & Kayıtlar</span>
             </motion.button>
           </div>
         </div>

@@ -11,18 +11,66 @@ import { SpeedDrill } from './components/speed-drill/SpeedDrill';
 import { ListeningQuiz } from './components/listening/ListeningQuiz';
 import { Quiz } from './components/quiz/Quiz';
 import { HomePage } from './components/home/HomePage';
+import { PracticeHub } from './components/practice/PracticeHub';
+import { SpellingDrill } from './components/spelling/SpellingDrill';
+import { ProgressHub } from './components/progress/ProgressHub';
 import { VocabWord, CEFRLevel, PartOfSpeech, AppView, SupportedLanguage, ThemeMode } from './types';
 import { localDb } from './services/storage';
 import { speechService } from './services/speech';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, ArrowLeft } from 'lucide-react';
+
+const viewToHash: Record<AppView, string> = {
+  home: 'home',
+  explorer: 'dictionary',
+  dictionary: 'dictionary',
+  practice: 'practice',
+  'speed-drill': 'practice/drill',
+  flashcards: 'practice/flashcards',
+  quiz: 'practice/quiz',
+  listening: 'practice/listening',
+  spelling: 'practice/spelling',
+  progress: 'progress',
+  favorites: 'progress',
+};
+
+const hashToView: Record<string, AppView> = {
+  '': 'home',
+  '#': 'home',
+  '#home': 'home',
+  '#dictionary': 'explorer',
+  '#explorer': 'explorer',
+  '#practice': 'practice',
+  '#practice/drill': 'speed-drill',
+  '#practice/flashcards': 'flashcards',
+  '#practice/quiz': 'quiz',
+  '#practice/listening': 'listening',
+  '#practice/spelling': 'spelling',
+  '#speed-drill': 'speed-drill',
+  '#flashcards': 'flashcards',
+  '#quiz': 'quiz',
+  '#listening': 'listening',
+  '#spelling': 'spelling',
+  '#progress': 'progress',
+  '#favorites': 'progress',
+};
 
 export const App: React.FC = () => {
   const [allWords, setAllWords] = useState<VocabWord[]>([]);
   const [loading, setLoading] = useState(true);
-  const [currentView, setCurrentView] = useState<AppView>('home');
+  
+  // URL Hash Sync for initial view
+  const [currentView, setCurrentView] = useState<AppView>(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash.toLowerCase();
+      if (hashToView[hash]) return hashToView[hash];
+    }
+    return 'home';
+  });
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLevel, setSelectedLevel] = useState<CEFRLevel>('ALL');
   const [selectedPos, setSelectedPos] = useState<PartOfSpeech>('all');
+  const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
   const [targetLang, setTargetLang] = useState<SupportedLanguage>('en');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 24;
@@ -69,12 +117,16 @@ export const App: React.FC = () => {
     });
   };
 
-  // Favorites
+  // Favorites & Learned Cards from local storage / IndexedDB
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [learnedCards, setLearnedCards] = useState<string[]>([]);
 
   useEffect(() => {
     localDb.getFavorites().then(ids => {
       setFavorites(ids);
+    });
+    localDb.getLearnedCards().then(ids => {
+      setLearnedCards(ids);
     });
   }, []);
 
@@ -100,9 +152,27 @@ export const App: React.FC = () => {
     });
   };
 
+  // Browser back/forward navigation support
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.toLowerCase();
+      const matched = hashToView[hash];
+      if (matched && matched !== currentView) {
+        setCurrentView(matched);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [currentView]);
+
   const handleSelectView = (view: AppView) => {
     speechService.stop();
     setCurrentView(view);
+    const targetHash = '#' + (viewToHash[view] || 'home');
+    if (window.location.hash !== targetHash) {
+      window.location.hash = targetHash;
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -136,7 +206,7 @@ export const App: React.FC = () => {
 
   const dictionaryFilteredWords = useMemo(() => {
     return allWords.filter(w => {
-      if (currentView === 'favorites' && !favorites.includes(w.id)) return false;
+      if (showOnlyFavorites && !favorites.includes(w.id)) return false;
       if (selectedLevel !== 'ALL' && w.level !== selectedLevel) return false;
       if (selectedPos !== 'all' && w.pos !== selectedPos) return false;
       if (searchQuery.trim()) {
@@ -153,19 +223,20 @@ export const App: React.FC = () => {
       }
       return true;
     });
-  }, [allWords, currentView, favorites, selectedLevel, selectedPos, searchQuery]);
+  }, [allWords, showOnlyFavorites, favorites, selectedLevel, selectedPos, searchQuery]);
 
   const studyPoolWords = useMemo(() => {
     return allWords.filter(w => {
+      if (showOnlyFavorites && !favorites.includes(w.id)) return false;
       if (selectedLevel !== 'ALL' && w.level !== selectedLevel) return false;
       if (selectedPos !== 'all' && w.pos !== selectedPos) return false;
       return true;
     });
-  }, [allWords, selectedLevel, selectedPos]);
+  }, [allWords, showOnlyFavorites, favorites, selectedLevel, selectedPos]);
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedLevel, selectedPos, searchQuery, currentView]);
+  }, [selectedLevel, selectedPos, searchQuery, showOnlyFavorites, currentView]);
 
   const totalPages = Math.ceil(dictionaryFilteredWords.length / itemsPerPage) || 1;
   const paginatedWords = useMemo(() => {
@@ -227,14 +298,26 @@ export const App: React.FC = () => {
     document.body.removeChild(link);
   };
 
+  const highScore = useMemo(() => {
+    try {
+      const saved = localStorage.getItem('goethe_drill_highscore');
+      return saved ? parseInt(saved, 10) : 0;
+    } catch {
+      return 0;
+    }
+  }, []);
+
+  const isPracticeSubMode = ['speed-drill', 'flashcards', 'quiz', 'listening', 'spelling'].includes(currentView);
+  const isDictActive = currentView === 'explorer' || currentView === 'dictionary';
+
   if (loading) {
     return (
       <div className="min-h-screen bg-zinc-100 dark:bg-zinc-950 flex flex-col items-center justify-center p-4">
         <div className="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-amber-500/25 mb-4 animate-bounce border border-white/40">
           🇩🇪
         </div>
-        <h2 className="text-xl font-black text-zinc-900 dark:text-white tracking-tight">Loading Goethe Vocabulary...</h2>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 font-medium">Connecting to browser database</p>
+        <h2 className="text-xl font-black text-zinc-900 dark:text-white tracking-tight">Goethe Almanca Yükleniyor...</h2>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 font-medium">Yerel veri tabanına bağlanılıyor</p>
       </div>
     );
   }
@@ -258,10 +341,30 @@ export const App: React.FC = () => {
       />
 
       {/* Main Container */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 pb-28 xl:pb-10">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 pb-28 lg:pb-10">
         
-        {/* Filter Controls (Explorer & Favorites) */}
-        {(currentView === 'explorer' || currentView === 'favorites') && (
+        {/* Practice Breadcrumb / Return to Practice Hub button */}
+        {isPracticeSubMode && (
+          <motion.div
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-5 flex items-center justify-between"
+          >
+            <button
+              onClick={() => handleSelectView('practice')}
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white/90 dark:bg-zinc-900/90 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 border border-zinc-200/90 dark:border-zinc-800 shadow-xs transition-all hover:scale-102"
+            >
+              <ArrowLeft className="w-4 h-4 text-amber-500" />
+              <span>← Pratik Merkezine Dön</span>
+            </button>
+            <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500 hidden sm:inline">
+              Seviye: <strong className="text-amber-600 dark:text-amber-400">{selectedLevel}</strong>
+            </span>
+          </motion.div>
+        )}
+
+        {/* Filter Controls (Dictionary Explorer) */}
+        {isDictActive && (
           <FilterBar
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
@@ -271,13 +374,18 @@ export const App: React.FC = () => {
             onSelectPos={setSelectedPos}
             counts={counts}
             onRandomWord={handleRandomWord}
+            showOnlyFavorites={showOnlyFavorites}
+            onToggleOnlyFavorites={() => setShowOnlyFavorites(p => !p)}
+            favoritesCount={favorites.length}
+            onPracticeFiltered={() => handleSelectView('flashcards')}
+            filteredCount={dictionaryFilteredWords.length}
           />
         )}
 
         {/* Animated View Container */}
         <AnimatePresence mode="wait">
           
-          {/* VIEW 0: HOME */}
+          {/* 1. HOME VIEW */}
           {currentView === 'home' && (
             <motion.div
               key="home-view"
@@ -293,8 +401,8 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 1: VOCABULARY EXPLORER */}
-          {currentView === 'explorer' && (
+          {/* 2. VOCABULARY DICTIONARY (EXPLORER) */}
+          {isDictActive && (
             <motion.div
               key="explorer-view"
               initial={{ opacity: 0, y: 12 }}
@@ -305,17 +413,20 @@ export const App: React.FC = () => {
               {dictionaryFilteredWords.length === 0 ? (
                 <div className="text-center py-20 bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.04)] max-w-xl mx-auto p-6">
                   <Sparkles className="w-12 h-12 text-zinc-300 dark:text-zinc-600 mx-auto mb-3" />
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">No words match your filters</h3>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Try clearing your search query or selecting "All Levels".</p>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Filtrelere uygun kelime bulunamadı</h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+                    Arama metnini temizlemeyi veya "Tüm Seviyeler"i seçmeyi deneyin.
+                  </p>
                   <button
                     onClick={() => {
                       setSearchQuery('');
                       setSelectedLevel('ALL');
                       setSelectedPos('all');
+                      setShowOnlyFavorites(false);
                     }}
                     className="mt-4 px-4 py-2 bg-zinc-900 dark:bg-zinc-800 text-white rounded-xl text-xs font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors shadow-xs"
                   >
-                    Reset All Filters
+                    Tüm Filtreleri Sıfırla
                   </button>
                 </div>
               ) : (
@@ -345,7 +456,28 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 2: SPEED DRILL ("Der, Die, Das" Reflex) */}
+          {/* 3. PRACTICE HUB (PRATİK MERKEZİ) */}
+          {currentView === 'practice' && (
+            <motion.div
+              key="practice-hub-view"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.22, ease: 'easeOut' }}
+            >
+              <PracticeHub
+                onSelectMode={handleSelectView}
+                selectedLevel={selectedLevel}
+                onSelectLevel={setSelectedLevel}
+                counts={counts}
+                learnedCount={learnedCards.length}
+                favoritesCount={favorites.length}
+                highScore={highScore}
+              />
+            </motion.div>
+          )}
+
+          {/* 3.1 SPEED DRILL ("Der, Die, Das" Refleks) */}
           {currentView === 'speed-drill' && (
             <motion.div
               key="speed-drill-view"
@@ -358,7 +490,7 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 3: FLASHCARDS */}
+          {/* 3.2 FLASHCARDS (3D Kartlar) */}
           {currentView === 'flashcards' && (
             <motion.div
               key="flashcards-view"
@@ -376,7 +508,7 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 4: QUIZ */}
+          {/* 3.3 QUIZ */}
           {currentView === 'quiz' && (
             <motion.div
               key="quiz-view"
@@ -392,7 +524,7 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 5: LISTENING (Hörverstehen) */}
+          {/* 3.4 LISTENING (Hörverstehen) */}
           {currentView === 'listening' && (
             <motion.div
               key="listening-view"
@@ -408,41 +540,44 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {/* VIEW 6: FAVORITES */}
-          {currentView === 'favorites' && (
+          {/* 3.5 SCHREIBTRAINER (Yazma & İmla Modu) */}
+          {currentView === 'spelling' && (
             <motion.div
-              key="favorites-view"
+              key="spelling-view"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.22, ease: 'easeOut' }}
             >
-              {dictionaryFilteredWords.length === 0 ? (
-                <div className="text-center py-20 bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.04)] max-w-xl mx-auto p-6">
-                  <Sparkles className="w-12 h-12 text-zinc-300 dark:text-zinc-600 mx-auto mb-3" />
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">No saved words yet</h3>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Click the star icon on any vocabulary card to save words here.</p>
-                  <button
-                    onClick={() => handleSelectView('explorer')}
-                    className="mt-4 px-4 py-2 bg-zinc-900 dark:bg-zinc-800 text-white rounded-xl text-xs font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors shadow-xs"
-                  >
-                    Go to Dictionary
-                  </button>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                  {dictionaryFilteredWords.map((word, idx) => (
-                    <VocabCard
-                      key={word.id}
-                      word={word}
-                      targetLang={targetLang}
-                      isFavorite={true}
-                      onToggleFavorite={handleToggleFavorite}
-                      index={idx}
-                    />
-                  ))}
-                </div>
-              )}
+              <SpellingDrill
+                words={studyPoolWords}
+                targetLang={targetLang}
+                onBackToHub={() => handleSelectView('practice')}
+              />
+            </motion.div>
+          )}
+
+          {/* 4. PROGRESS & SAVED (İLERLEMEM & KAYITLAR) */}
+          {(currentView === 'progress' || currentView === 'favorites') && (
+            <motion.div
+              key="progress-view"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.22, ease: 'easeOut' }}
+            >
+              <ProgressHub
+                allWords={allWords}
+                favorites={favorites}
+                learnedCards={learnedCards}
+                onToggleFavorite={handleToggleFavorite}
+                targetLang={targetLang}
+                onNavigateToPractice={handleSelectView}
+                onNavigateToDictionary={(lvl) => {
+                  if (lvl) setSelectedLevel(lvl);
+                  handleSelectView('explorer');
+                }}
+              />
             </motion.div>
           )}
 
@@ -453,7 +588,7 @@ export const App: React.FC = () => {
       {/* Modern Footer */}
       <Footer />
 
-      {/* Mobile Fixed Bottom Navigation Bar */}
+      {/* Mobile Fixed Bottom Navigation Bar (4 Ergonomic Pillars) */}
       <MobileNav
         currentView={currentView}
         onSelectView={handleSelectView}

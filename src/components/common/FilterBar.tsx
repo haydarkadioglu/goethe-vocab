@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, X, Shuffle, Filter } from 'lucide-react';
+import { Search, X, Shuffle, Filter, Star, Layers } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { CEFRLevel, PartOfSpeech } from '../../types';
 
@@ -12,6 +12,11 @@ interface FilterBarProps {
   onSelectPos: (pos: PartOfSpeech) => void;
   counts: { all: number; a1: number; a2: number; b1: number };
   onRandomWord: () => void;
+  showOnlyFavorites?: boolean;
+  onToggleOnlyFavorites?: () => void;
+  favoritesCount?: number;
+  onPracticeFiltered?: () => void;
+  filteredCount?: number;
 }
 
 export const FilterBar: React.FC<FilterBarProps> = ({
@@ -23,6 +28,11 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   onSelectPos,
   counts,
   onRandomWord,
+  showOnlyFavorites = false,
+  onToggleOnlyFavorites,
+  favoritesCount = 0,
+  onPracticeFiltered,
+  filteredCount,
 }) => {
   const levels: { id: CEFRLevel; label: string; count: number }[] = [
     { id: 'ALL', label: 'All Levels', count: counts.all },
@@ -121,20 +131,67 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             })}
           </div>
 
-          {/* Part of Speech Filter */}
-          <div className="flex items-center gap-2">
-            <Filter className="w-3.5 h-3.5 text-zinc-400 shrink-0 hidden sm:block" />
-            <select
-              value={selectedPos}
-              onChange={(e) => onSelectPos(e.target.value as PartOfSpeech)}
-              className="w-full sm:w-auto bg-zinc-50/90 dark:bg-zinc-800 border border-zinc-200/90 dark:border-zinc-700 text-xs font-semibold text-zinc-700 dark:text-zinc-200 rounded-xl px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 cursor-pointer shadow-2xs hover:bg-white dark:hover:bg-zinc-700 transition-all"
-            >
-              {posOptions.map((opt) => (
-                <option key={opt.id} value={opt.id} className="dark:bg-zinc-800">
-                  {opt.label}
-                </option>
-              ))}
-            </select>
+          {/* Right Filters & Actions */}
+          <div className="flex flex-wrap items-center gap-2">
+            
+            {/* Part of Speech Filter */}
+            <div className="flex items-center gap-1.5 flex-1 sm:flex-initial">
+              <Filter className="w-3.5 h-3.5 text-zinc-400 shrink-0 hidden sm:block" />
+              <select
+                value={selectedPos}
+                onChange={(e) => onSelectPos(e.target.value as PartOfSpeech)}
+                className="w-full sm:w-auto bg-zinc-50/90 dark:bg-zinc-800 border border-zinc-200/90 dark:border-zinc-700 text-xs font-semibold text-zinc-700 dark:text-zinc-200 rounded-xl px-2.5 py-1.5 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 cursor-pointer shadow-2xs hover:bg-white dark:hover:bg-zinc-700 transition-all"
+              >
+                {posOptions.map((opt) => (
+                  <option key={opt.id} value={opt.id} className="dark:bg-zinc-800">
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Only Favorites Toggle Button */}
+            {onToggleOnlyFavorites && (
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                onClick={onToggleOnlyFavorites}
+                title={showOnlyFavorites ? 'Tüm kelimeleri göster' : 'Yalnızca favori kelimeleri göster'}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all border shrink-0 ${
+                  showOnlyFavorites
+                    ? 'bg-amber-500 text-white border-amber-600 shadow-xs'
+                    : 'bg-zinc-100/90 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-700 hover:border-amber-400'
+                }`}
+              >
+                <Star className={`w-3.5 h-3.5 ${showOnlyFavorites ? 'fill-white' : 'text-amber-500'}`} />
+                <span>Yıldızlılar</span>
+                {favoritesCount > 0 && (
+                  <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
+                    showOnlyFavorites ? 'bg-white/30 text-white' : 'bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300'
+                  }`}>
+                    {favoritesCount}
+                  </span>
+                )}
+              </motion.button>
+            )}
+
+            {/* Practice Filtered Set Button */}
+            {onPracticeFiltered && (
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                onClick={onPracticeFiltered}
+                title="Bu filtrelenen kelimelerle pratik yap"
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-zinc-900 dark:bg-zinc-800 hover:bg-amber-500 dark:hover:bg-amber-500 text-white text-xs font-bold rounded-xl transition-all shadow-2xs shrink-0"
+              >
+                <Layers className="w-3.5 h-3.5 text-amber-400" />
+                <span>Pratik Yap</span>
+                {filteredCount !== undefined && (
+                  <span className="text-[10px] font-mono text-zinc-400">
+                    ({filteredCount})
+                  </span>
+                )}
+              </motion.button>
+            )}
+
           </div>
 
         </div>

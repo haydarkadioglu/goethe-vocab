@@ -38,7 +38,22 @@ export interface LanguageOption {
   flag: string;
 }
 
-export type AppView = 'home' | 'explorer' | 'flashcards' | 'speed-drill' | 'quiz' | 'listening' | 'favorites';
+export type NavTab = 'home' | 'dictionary' | 'practice' | 'progress';
+
+export type PracticeMode = 'drill' | 'flashcards' | 'quiz' | 'listening' | 'spelling';
+
+export type AppView = 
+  | 'home' 
+  | 'explorer' 
+  | 'dictionary'
+  | 'practice'
+  | 'progress'
+  | 'speed-drill' 
+  | 'flashcards' 
+  | 'quiz' 
+  | 'listening' 
+  | 'spelling'
+  | 'favorites';
 
 export type ThemeMode = 'light' | 'dark' | 'system';
 
