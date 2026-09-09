@@ -316,8 +316,8 @@ export const App: React.FC = () => {
         <div className="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-amber-500/25 mb-4 animate-bounce border border-white/40">
           🇩🇪
         </div>
-        <h2 className="text-xl font-black text-zinc-900 dark:text-white tracking-tight">Goethe Almanca Yükleniyor...</h2>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 font-medium">Yerel veri tabanına bağlanılıyor</p>
+        <h2 className="text-xl font-black text-zinc-900 dark:text-white tracking-tight">Loading Goethe Vocabulary...</h2>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 font-medium">Connecting to browser database</p>
       </div>
     );
   }
@@ -355,10 +355,10 @@ export const App: React.FC = () => {
               className="inline-flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white/90 dark:bg-zinc-900/90 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 border border-zinc-200/90 dark:border-zinc-800 shadow-xs transition-all hover:scale-102"
             >
               <ArrowLeft className="w-4 h-4 text-amber-500" />
-              <span>← Pratik Merkezine Dön</span>
+              <span>← Back to Practice Hub</span>
             </button>
             <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500 hidden sm:inline">
-              Seviye: <strong className="text-amber-600 dark:text-amber-400">{selectedLevel}</strong>
+              Level: <strong className="text-amber-600 dark:text-amber-400">{selectedLevel}</strong>
             </span>
           </motion.div>
         )}
@@ -413,9 +413,9 @@ export const App: React.FC = () => {
               {dictionaryFilteredWords.length === 0 ? (
                 <div className="text-center py-20 bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.04)] max-w-xl mx-auto p-6">
                   <Sparkles className="w-12 h-12 text-zinc-300 dark:text-zinc-600 mx-auto mb-3" />
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Filtrelere uygun kelime bulunamadı</h3>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-zinc-200">No words match your filters</h3>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-                    Arama metnini temizlemeyi veya "Tüm Seviyeler"i seçmeyi deneyin.
+                    Try clearing your search query or selecting "All Levels".
                   </p>
                   <button
                     onClick={() => {
@@ -426,7 +426,7 @@ export const App: React.FC = () => {
                     }}
                     className="mt-4 px-4 py-2 bg-zinc-900 dark:bg-zinc-800 text-white rounded-xl text-xs font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors shadow-xs"
                   >
-                    Tüm Filtreleri Sıfırla
+                    Reset All Filters
                   </button>
                 </div>
               ) : (

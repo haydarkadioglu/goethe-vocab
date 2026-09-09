@@ -23,62 +23,62 @@ export const PracticeHub: React.FC<PracticeHubProps> = ({
   highScore,
 }) => {
   const levels: { id: CEFRLevel; label: string; count: number }[] = [
-    { id: 'ALL', label: 'Tüm Seviyeler (A1-B1)', count: counts.all },
-    { id: 'A1', label: 'A1 Başlangıç', count: counts.a1 },
-    { id: 'A2', label: 'A2 Temel', count: counts.a2 },
-    { id: 'B1', label: 'B1 Orta Seviye', count: counts.b1 },
+    { id: 'ALL', label: 'All Levels (A1-B1)', count: counts.all },
+    { id: 'A1', label: 'A1 Beginner', count: counts.a1 },
+    { id: 'A2', label: 'A2 Elementary', count: counts.a2 },
+    { id: 'B1', label: 'B1 Intermediate', count: counts.b1 },
   ];
 
   const modes = [
     {
       id: 'speed-drill' as AppView,
       title: '⚡ "Der, Die, Das" Speed Drill',
-      subtitle: 'Hızlı Refleks Oyunu',
-      desc: 'Doğru artikeli saniyeler içinde seç, combo serisi yap (🔥 2x, 3x) ve artikel refleksini otomatikleştir.',
-      badge: highScore > 0 ? `En Yüksek Skor: ${highScore} Puan` : 'Refleks & Hız',
+      subtitle: 'Rapid Reflex Drill',
+      desc: 'Pick the correct gender article against the clock, build combos (🔥 2x, 3x), and make article recall second nature.',
+      badge: highScore > 0 ? `High Score: ${highScore} pts` : 'Speed & Reflex',
       badgeColor: 'bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 border-amber-200 dark:border-amber-800',
       icon: <Zap className="w-6 h-6 text-amber-500" />,
-      btnText: 'Speed Drill Başlat',
+      btnText: 'Launch Speed Drill',
     },
     {
       id: 'flashcards' as AppView,
       title: '🗂️ 3D Flashcards',
-      subtitle: 'Akıllı Kelime Kartları',
-      desc: '3 boyutlu çevrilebilen kartlarla kelimeleri, artikelleri, çoğul biçimlerini ve örnek cümleleri dinleyerek çalış.',
-      badge: `${learnedCount} Kart Öğrenildi`,
+      subtitle: 'Interactive Vocabulary Cards',
+      desc: 'Spaced repetition cards with 3D flip animation, native German pronunciation, plural forms, and Goethe sample sentences.',
+      badge: `${learnedCount} Cards Learned`,
       badgeColor: 'bg-rose-100 dark:bg-rose-950/70 text-rose-800 dark:text-rose-300 border-rose-200 dark:border-rose-800',
       icon: <Layers className="w-6 h-6 text-rose-500" />,
-      btnText: 'Flashcards Aç',
+      btnText: 'Open Flashcards',
     },
     {
       id: 'quiz' as AppView,
-      title: '📝 Akıllı Goethe Quiz',
-      subtitle: 'Sınav Formatında Testler',
-      desc: 'Orijinal Goethe sınav cümlelerinde boşluk doldurma, artikel bulma ve anlam eşleştirme soruları.',
-      badge: 'Boşluk Doldurma & Anlam',
+      title: '📝 Smart Goethe Quiz',
+      subtitle: 'Authentic Exam-Style Quizzes',
+      desc: 'Test your vocabulary with fill-in-the-blank exam questions, articles, and definitions with immediate explanations.',
+      badge: 'Fill-in & Definitions',
       badgeColor: 'bg-purple-100 dark:bg-purple-950/70 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-800',
       icon: <Award className="w-6 h-6 text-purple-500" />,
-      btnText: 'Quiz Başlat',
+      btnText: 'Start Quiz',
     },
     {
       id: 'listening' as AppView,
-      title: '🎧 Hörverstehen (Dinleme Testi)',
-      subtitle: 'Sesli Algılama Eğitimi',
-      desc: 'Yalnızca ana dili Almanca olan telaffuzu dinle, kelimeyi metin olmadan işiterek doğru seçeneği bul.',
-      badge: 'İşitsel Hafıza & Hız Ayarı',
+      title: '🎧 Hörverstehen (Listening Quiz)',
+      subtitle: 'Ear Training & Audio Recall',
+      desc: 'Listen to native German speech without seeing prompt text first, train your auditory comprehension, and pick the matching word.',
+      badge: 'Audio Recall & Speed Control',
       badgeColor: 'bg-indigo-100 dark:bg-indigo-950/70 text-indigo-800 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800',
       icon: <Headphones className="w-6 h-6 text-indigo-500" />,
-      btnText: 'Dinleme Testi Başlat',
+      btnText: 'Start Listening Quiz',
     },
     {
       id: 'spelling' as AppView,
-      title: '✍️ Schreibtrainer (Yazma & İmla)',
-      subtitle: 'Kelimeleri Hatasız Yazma',
-      desc: 'Kelimeleri dinleyerek veya anlamından yola çıkarak klavyeden doğru yaz. ä, ö, ü, ß karakter tuş destekli.',
-      badge: 'YENİ • Goethe Yazılı Sınav Hazırlığı',
+      title: '✍️ Schreibtrainer (Spelling & Writing)',
+      subtitle: 'Accurate German Writing Drill',
+      desc: 'Practice typing German headwords from listening or definitions. Includes instant on-screen umlaut keys (ä, ö, ü, ß).',
+      badge: 'NEW • Goethe Written Exam Prep',
       badgeColor: 'bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800',
       icon: <PenTool className="w-6 h-6 text-emerald-500" />,
-      btnText: 'Yazma Pratiği Yap',
+      btnText: 'Practice Spelling',
     },
   ];
 
@@ -95,20 +95,20 @@ export const PracticeHub: React.FC<PracticeHubProps> = ({
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800/80 text-amber-900 dark:text-amber-300 text-xs font-bold">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Pratik & Alıştırma Merkezi</span>
+              <span>Practice & Training Arena</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white tracking-tight">
-              Nasıl Çalışmak İstersin?
+              How Would You Like to Practice?
             </h1>
             <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 max-w-xl">
-              Hafızanı güçlendirmek, artikel reflekslerini otomatikleştirmek ve sınav pratiği yapmak için sana en uygun çalışma modunu seç.
+              Reinforce your memory, master article reflexes, and prepare for official Goethe exams with 5 targeted study modes.
             </p>
           </div>
 
           {/* Target Level Filter */}
           <div className="w-full md:w-auto bg-zinc-100 dark:bg-zinc-800/80 p-1.5 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
             <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 px-2 pb-1">
-              Çalışma Seviyesi:
+              Study Level:
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-1">
               {levels.map(lvl => {
@@ -184,4 +184,3 @@ export const PracticeHub: React.FC<PracticeHubProps> = ({
     </div>
   );
 };
-

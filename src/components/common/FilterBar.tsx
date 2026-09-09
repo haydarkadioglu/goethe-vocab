@@ -155,7 +155,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 onClick={onToggleOnlyFavorites}
-                title={showOnlyFavorites ? 'Tüm kelimeleri göster' : 'Yalnızca favori kelimeleri göster'}
+                title={showOnlyFavorites ? 'Show all words' : 'Show only saved words'}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all border shrink-0 ${
                   showOnlyFavorites
                     ? 'bg-amber-500 text-white border-amber-600 shadow-xs'
@@ -163,7 +163,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 }`}
               >
                 <Star className={`w-3.5 h-3.5 ${showOnlyFavorites ? 'fill-white' : 'text-amber-500'}`} />
-                <span>Yıldızlılar</span>
+                <span>Saved</span>
                 {favoritesCount > 0 && (
                   <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
                     showOnlyFavorites ? 'bg-white/30 text-white' : 'bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300'
@@ -179,11 +179,11 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 onClick={onPracticeFiltered}
-                title="Bu filtrelenen kelimelerle pratik yap"
+                title="Practice with these filtered words"
                 className="flex items-center gap-1.5 px-3 py-1.5 bg-zinc-900 dark:bg-zinc-800 hover:bg-amber-500 dark:hover:bg-amber-500 text-white text-xs font-bold rounded-xl transition-all shadow-2xs shrink-0"
               >
                 <Layers className="w-3.5 h-3.5 text-amber-400" />
-                <span>Pratik Yap</span>
+                <span>Practice</span>
                 {filteredCount !== undefined && (
                   <span className="text-[10px] font-mono text-zinc-400">
                     ({filteredCount})

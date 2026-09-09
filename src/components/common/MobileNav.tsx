@@ -18,10 +18,10 @@ export const MobileNav: React.FC<MobileNavProps> = ({
   const isProgressActive = currentView === 'progress' || currentView === 'favorites';
 
   const items = [
-    { id: 'home' as AppView, label: 'Ana Sayfa', icon: <Home className="w-5 h-5" />, active: currentView === 'home' },
-    { id: 'explorer' as AppView, label: 'Sözlük', icon: <BookOpen className="w-5 h-5" />, active: isDictActive },
-    { id: 'practice' as AppView, label: 'Pratik', icon: <Zap className="w-5 h-5" />, active: isPracticeActive },
-    { id: 'progress' as AppView, label: 'İlerlemem', icon: <Star className="w-5 h-5" />, badge: favoritesCount > 0 ? favoritesCount : undefined, active: isProgressActive },
+    { id: 'home' as AppView, label: 'Home', icon: <Home className="w-5 h-5" />, active: currentView === 'home' },
+    { id: 'explorer' as AppView, label: 'Dictionary', icon: <BookOpen className="w-5 h-5" />, active: isDictActive },
+    { id: 'practice' as AppView, label: 'Practice', icon: <Zap className="w-5 h-5" />, active: isPracticeActive },
+    { id: 'progress' as AppView, label: 'Progress', icon: <Star className="w-5 h-5" />, badge: favoritesCount > 0 ? favoritesCount : undefined, active: isProgressActive },
   ];
 
   return (

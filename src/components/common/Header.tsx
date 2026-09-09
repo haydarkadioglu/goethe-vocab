@@ -45,10 +45,10 @@ export const Header: React.FC<HeaderProps> = ({
   const isProgressActive = currentView === 'progress' || currentView === 'favorites';
 
   const navItems = [
-    { id: 'home' as AppView, label: 'Ana Sayfa', icon: <Home className="w-4 h-4" />, active: currentView === 'home' },
-    { id: 'explorer' as AppView, label: 'Sözlük', icon: <BookOpen className="w-4 h-4" />, badge: filteredCount, active: isDictActive },
-    { id: 'practice' as AppView, label: 'Pratik Merkezi', icon: <Zap className="w-4 h-4 text-amber-500" />, active: isPracticeActive },
-    { id: 'progress' as AppView, label: 'İlerlemem', icon: <Star className="w-4 h-4 text-amber-500" />, badge: favoritesCount > 0 ? favoritesCount : undefined, active: isProgressActive },
+    { id: 'home' as AppView, label: 'Home', icon: <Home className="w-4 h-4" />, active: currentView === 'home' },
+    { id: 'explorer' as AppView, label: 'Dictionary', icon: <BookOpen className="w-4 h-4" />, badge: filteredCount, active: isDictActive },
+    { id: 'practice' as AppView, label: 'Practice', icon: <Zap className="w-4 h-4 text-amber-500" />, active: isPracticeActive },
+    { id: 'progress' as AppView, label: 'Progress', icon: <Star className="w-4 h-4 text-amber-500" />, badge: favoritesCount > 0 ? favoritesCount : undefined, active: isProgressActive },
   ];
 
   const getThemeIcon = () => {
@@ -83,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </span>
               </div>
               <p className="text-[10px] sm:text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hidden md:block">
-                Resmi Goethe-Institut ({totalWords.toLocaleString()} kelime)
+                Official Goethe-Institut ({totalWords.toLocaleString()} words)
               </p>
             </div>
           </motion.div>
@@ -153,9 +153,10 @@ export const Header: React.FC<HeaderProps> = ({
               {getThemeIcon()}
             </motion.button>
 
-            {/* Language Selector Dropdown */}
+            {/* Vocabulary Translation Target Language Dropdown */}
             <motion.div 
               whileHover={{ scale: 1.01 }}
+              title="Target Vocabulary Translation Language (English, Turkish, Spanish, Arabic...)"
               className="relative flex items-center bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 rounded-2xl px-2 sm:px-3 py-1.5 shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all shrink-0"
             >
               <Globe className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 mr-1 sm:mr-1.5 shrink-0" />

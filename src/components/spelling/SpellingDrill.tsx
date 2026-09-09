@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Volume2, CheckCircle2, XCircle, ArrowRight, RefreshCw, PenTool, Sparkles, HelpCircle } from 'lucide-react';
+import { Volume2, CheckCircle2, XCircle, ArrowRight, RefreshCw, PenTool, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { VocabWord, SupportedLanguage } from '../../types';
@@ -87,7 +87,6 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
 
     const cleanTarget = currentWord.word.replace(/^(der|die|das)\s+/i, '').trim();
     
-    // Check exact match (or case insensitive fallback)
     const exactMatch = cleanInput === cleanTarget;
     const caseMatch = cleanInput.toLowerCase() === cleanTarget.toLowerCase();
     const correct = exactMatch || caseMatch;
@@ -126,7 +125,6 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
     setCurrentIndex(i => i + 1);
   };
 
-  // Keyboard shortcut: Space or Enter when answered to go next
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
       if (isAnswered && (ev.code === 'Enter' || ev.code === 'ArrowRight')) {
@@ -146,16 +144,16 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
           <PenTool className="w-8 h-8" />
         </div>
         <h2 className="text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white tracking-tight">
-          Schreibtrainer: Almanca Yazma & İmla
+          Schreibtrainer: German Spelling & Writing
         </h2>
         <p className="text-sm text-zinc-600 dark:text-zinc-400 max-w-md mx-auto">
-          Almanca telaffuzunu dinle veya anlamını oku; kelimeyi klavyenden hatasız yazarak Goethe sınavlarındaki yazım hatalarının önüne geç.
+          Listen to German pronunciation or read the definition, then type the German headword accurately to prepare for Goethe exam writing sections.
         </p>
 
         <div className="bg-white/95 dark:bg-zinc-900/95 rounded-3xl border border-zinc-200/90 dark:border-zinc-800/90 p-6 shadow-xs max-w-md mx-auto space-y-5">
           <div className="text-left">
             <label className="text-xs font-bold text-zinc-500 dark:text-zinc-400 block mb-2">
-              Soru Sayısı:
+              Question Count:
             </label>
             <div className="grid grid-cols-3 gap-2">
               {[10, 20, 30].map(cnt => (
@@ -169,7 +167,7 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
                       : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700'
                   }`}
                 >
-                  {cnt} Kelime
+                  {cnt} Words
                 </button>
               ))}
             </div>
@@ -180,7 +178,7 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
             disabled={words.length === 0}
             className="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm rounded-2xl shadow-md shadow-emerald-600/25 transition-all flex items-center justify-center gap-2"
           >
-            <span>Alıştırmaya Başla ({words.length} kelimeden)</span>
+            <span>Start Practice ({words.length} words available)</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
@@ -200,28 +198,28 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
           </div>
 
           <h2 className="text-2xl font-black text-zinc-900 dark:text-white">
-            Alıştırma Tamamlandı!
+            Practice Completed!
           </h2>
 
           <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
             <div className="p-3 bg-zinc-50 dark:bg-zinc-800/80 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
               <div className="text-xl font-black text-emerald-600 dark:text-emerald-400">{score}</div>
-              <div className="text-[10px] font-bold text-zinc-400 uppercase">Puan</div>
+              <div className="text-[10px] font-bold text-zinc-400 uppercase">Points</div>
             </div>
             <div className="p-3 bg-zinc-50 dark:bg-zinc-800/80 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
               <div className="text-xl font-black text-zinc-800 dark:text-zinc-200">%{accuracy}</div>
-              <div className="text-[10px] font-bold text-zinc-400 uppercase">Doğruluk</div>
+              <div className="text-[10px] font-bold text-zinc-400 uppercase">Accuracy</div>
             </div>
             <div className="p-3 bg-zinc-50 dark:bg-zinc-800/80 rounded-2xl border border-zinc-200/80 dark:border-zinc-700">
               <div className="text-xl font-black text-amber-500">🔥 {bestStreak}</div>
-              <div className="text-[10px] font-bold text-zinc-400 uppercase">En İyi Seri</div>
+              <div className="text-[10px] font-bold text-zinc-400 uppercase">Best Streak</div>
             </div>
           </div>
 
           {mistakes.length > 0 && (
             <div className="text-left pt-4 border-t border-zinc-100 dark:border-zinc-800">
               <h4 className="text-xs font-bold text-rose-500 uppercase tracking-wider mb-2">
-                Hatalı Yazılan Kelimeler ({mistakes.length}):
+                Words to Review ({mistakes.length}):
               </h4>
               <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
                 {mistakes.map((m, idx) => (
@@ -246,7 +244,7 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
                 className="w-full sm:flex-1 py-3 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-2xl transition-all flex items-center justify-center gap-2 shadow-xs"
               >
                 <RefreshCw className="w-4 h-4" />
-                <span>Hataları Tekrar Et ({mistakes.length})</span>
+                <span>Review Mistakes ({mistakes.length})</span>
               </button>
             )}
             <button
@@ -254,14 +252,14 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
               className="w-full sm:flex-1 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-2xl transition-all flex items-center justify-center gap-2 shadow-xs"
             >
               <RefreshCw className="w-4 h-4" />
-              <span>Yeni Test Başlat</span>
+              <span>Start New Drill</span>
             </button>
             {onBackToHub && (
               <button
                 onClick={onBackToHub}
                 className="w-full sm:w-auto px-5 py-3 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 font-bold text-xs rounded-2xl transition-all"
               >
-                Pratik Merkezine Dön
+                Back to Practice Hub
               </button>
             )}
           </div>
@@ -294,11 +292,11 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
               animate={{ scale: 1 }}
               className="text-amber-500 font-extrabold"
             >
-              🔥 {streak}x Seri
+              🔥 {streak}x Streak
             </motion.span>
           )}
           <span className="text-zinc-800 dark:text-zinc-200 font-mono">
-            Puan: <strong className="text-emerald-600 dark:text-emerald-400">{score}</strong>
+            Score: <strong className="text-emerald-600 dark:text-emerald-400">{score}</strong>
           </span>
         </div>
       </div>
@@ -316,19 +314,19 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
             onClick={handlePlayAudio}
             type="button"
             className="w-16 h-16 rounded-full bg-emerald-500 text-white hover:bg-emerald-600 flex items-center justify-center mx-auto shadow-md shadow-emerald-500/30 hover:scale-105 transition-all"
-            title="Kelimeyi Dinle"
+            title="Listen to Word"
           >
             <Volume2 className="w-8 h-8" />
           </button>
           <p className="text-[11px] font-semibold text-zinc-400 mt-2">
-            Dinlemek için tıkla (veya otomatik oynatıldı)
+            Click to listen (or played automatically)
           </p>
         </div>
 
         {/* Clues */}
         <div className="space-y-1">
           <div className="text-xs font-bold text-zinc-400 uppercase tracking-wider">
-            {currentWord?.pos ? `Tür: ${currentWord.pos}` : 'Almanca Kelime'}
+            {currentWord?.pos ? `Type: ${currentWord.pos}` : 'German Word'}
             {currentWord?.article && ` • (${currentWord.article})`}
           </div>
           <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-white">
@@ -345,7 +343,7 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
               value={inputVal}
               disabled={isAnswered}
               onChange={(e) => setInputVal(e.target.value)}
-              placeholder="Almanca kelimeyi buraya yaz..."
+              placeholder="Type the German word here..."
               autoCapitalize="none"
               autoComplete="off"
               spellCheck="false"
@@ -382,7 +380,7 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
               disabled={!inputVal.trim()}
               className="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white font-bold text-sm rounded-2xl shadow-md shadow-emerald-600/20 transition-all flex items-center justify-center gap-2"
             >
-              <span>Kontrol Et</span>
+              <span>Check Answer</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           ) : (
@@ -402,7 +400,7 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
                   )}
                   <div>
                     <div className="text-xs font-semibold text-zinc-600 dark:text-zinc-400">
-                      {isCorrect ? 'Tebrikler! Doğru Yazdın' : 'Doğru Cevap:'}
+                      {isCorrect ? 'Great Job! Correct Spelling' : 'Correct Answer:'}
                     </div>
                     <div className="text-base font-black text-zinc-900 dark:text-white">
                       {currentWord.article ? `${currentWord.article} ` : ''}{expectedClean}
@@ -416,7 +414,7 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
                 onClick={handleNextWord}
                 className="w-full py-3.5 bg-zinc-900 dark:bg-zinc-800 hover:bg-zinc-800 dark:hover:bg-zinc-700 text-white font-bold text-sm rounded-2xl shadow-xs transition-all flex items-center justify-center gap-2"
               >
-                <span>Sonraki Kelime</span>
+                <span>Next Word</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </motion.div>
@@ -427,4 +425,3 @@ export const SpellingDrill: React.FC<SpellingDrillProps> = ({ words, targetLang,
     </div>
   );
 };
-
