@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, BookOpen, Layers, Award, Star, Download, Globe, Sun, Moon, Laptop, Zap, Headphones, Gauge } from 'lucide-react';
+import { Home, BookOpen, Layers, Award, Star, Download, Globe, Sun, Moon, Laptop, Zap, Headphones, Gauge, Printer } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { AppView, SupportedLanguage, ThemeMode } from '../../types';
 import { SUPPORTED_LANGUAGES } from '../../services/translator';
@@ -17,6 +17,7 @@ interface HeaderProps {
   filteredCount: number;
   onDownloadCSV: () => void;
   onDownloadJSON: () => void;
+  onOpenExportStudio?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -30,7 +31,8 @@ export const Header: React.FC<HeaderProps> = ({
   totalWords,
   filteredCount,
   onDownloadCSV,
-  onDownloadJSON
+  onDownloadJSON,
+  onOpenExportStudio
 }) => {
   const [speechRate, setSpeechRate] = useState<number>(speechService.getRate());
 
@@ -172,6 +174,20 @@ export const Header: React.FC<HeaderProps> = ({
                 ))}
               </select>
             </motion.div>
+
+            {/* Print & Export Studio Button */}
+            {onOpenExportStudio && (
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={onOpenExportStudio}
+                title="Print Flashcards & Export Notes (PDF, Markdown, Text)"
+                className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white rounded-2xl shadow-xs text-[11px] sm:text-xs font-bold transition-all shrink-0 shadow-amber-500/20"
+              >
+                <Printer className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Print / Export</span>
+              </motion.button>
+            )}
 
             {/* Quick Export Buttons */}
             <div className="hidden 2xl:flex items-center gap-1.5 border-l border-zinc-200/80 dark:border-zinc-800 pl-2">

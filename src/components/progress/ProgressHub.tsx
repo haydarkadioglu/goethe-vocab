@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Star, Award, Layers, Sparkles, Download, ArrowRight, BookOpen, Volume2, Search } from 'lucide-react';
+import { Star, Award, Layers, Sparkles, Download, ArrowRight, BookOpen, Volume2, Search, Printer, FileText } from 'lucide-react';
 import { VocabWord, SupportedLanguage, CEFRLevel, AppView } from '../../types';
 import { VocabCard } from '../dictionary/VocabCard';
 
@@ -12,6 +12,7 @@ interface ProgressHubProps {
   targetLang: SupportedLanguage;
   onNavigateToPractice: (mode: AppView) => void;
   onNavigateToDictionary: (level?: CEFRLevel) => void;
+  onOpenExportStudio?: (pool?: 'favorites') => void;
 }
 
 export const ProgressHub: React.FC<ProgressHubProps> = ({
@@ -22,6 +23,7 @@ export const ProgressHub: React.FC<ProgressHubProps> = ({
   targetLang,
   onNavigateToPractice,
   onNavigateToDictionary,
+  onOpenExportStudio,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -237,6 +239,16 @@ export const ProgressHub: React.FC<ProgressHubProps> = ({
                 <Layers className="w-3.5 h-3.5" />
                 <span>Study with Cards</span>
               </button>
+              {onOpenExportStudio && (
+                <button
+                  onClick={() => onOpenExportStudio('favorites')}
+                  title="Print cuttable cards or export to Notion / Apple Notes"
+                  className="px-3.5 py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-xl shadow-xs transition-all flex items-center gap-1.5 shadow-amber-500/20"
+                >
+                  <Printer className="w-3.5 h-3.5" />
+                  <span>Print / Export Notes</span>
+                </button>
+              )}
               <button
                 onClick={handleExportFavoritesAnki}
                 title="Download as Anki deck (.tsv)"

@@ -14,6 +14,7 @@ import { HomePage } from './components/home/HomePage';
 import { PracticeHub } from './components/practice/PracticeHub';
 import { SpellingDrill } from './components/spelling/SpellingDrill';
 import { ProgressHub } from './components/progress/ProgressHub';
+import { ExportStudioModal } from './components/export/ExportStudioModal';
 import { VocabWord, CEFRLevel, PartOfSpeech, AppView, SupportedLanguage, ThemeMode } from './types';
 import { localDb } from './services/storage';
 import { speechService } from './services/speech';
@@ -120,6 +121,19 @@ export const App: React.FC = () => {
   // Favorites & Learned Cards from local storage / IndexedDB
   const [favorites, setFavorites] = useState<string[]>([]);
   const [learnedCards, setLearnedCards] = useState<string[]>([]);
+
+  // Export Studio State
+  const [isExportStudioOpen, setIsExportStudioOpen] = useState(false);
+  const [exportInitialPool, setExportInitialPool] = useState<'favorites' | 'filtered' | 'A1' | 'A2' | 'B1' | 'ALL'>('favorites');
+
+  const handleOpenExportStudio = (pool?: 'favorites' | 'filtered' | 'A1' | 'A2' | 'B1' | 'ALL') => {
+    if (pool) {
+      setExportInitialPool(pool);
+    } else {
+      setExportInitialPool(favorites.length > 0 ? 'favorites' : selectedLevel !== 'ALL' ? selectedLevel : 'ALL');
+    }
+    setIsExportStudioOpen(true);
+  };
 
   useEffect(() => {
     localDb.getFavorites().then(ids => {
@@ -338,6 +352,7 @@ export const App: React.FC = () => {
         filteredCount={dictionaryFilteredWords.length}
         onDownloadCSV={handleDownloadCSV}
         onDownloadJSON={handleDownloadJSON}
+        onOpenExportStudio={() => handleOpenExportStudio()}
       />
 
       {/* Main Container */}
@@ -577,6 +592,7 @@ export const App: React.FC = () => {
                   if (lvl) setSelectedLevel(lvl);
                   handleSelectView('explorer');
                 }}
+                onOpenExportStudio={(pool) => handleOpenExportStudio(pool || 'favorites')}
               />
             </motion.div>
           )}
@@ -593,6 +609,17 @@ export const App: React.FC = () => {
         currentView={currentView}
         onSelectView={handleSelectView}
         favoritesCount={favorites.length}
+      />
+
+      {/* Export & Print Studio Modal */}
+      <ExportStudioModal
+        isOpen={isExportStudioOpen}
+        onClose={() => setIsExportStudioOpen(false)}
+        allWords={allWords}
+        favorites={favorites}
+        targetLang={targetLang}
+        initialPool={exportInitialPool}
+        filteredWords={dictionaryFilteredWords}
       />
 
     </div>
